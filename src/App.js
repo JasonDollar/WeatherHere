@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {pl, en} from './data/text-locale'
-import {DARK_API, DARK_URL } from './data/api'
+import {DARK_URL} from './data/api/url'
+import {DARK_API} from './data/api/api'
 import axios from 'axios'
 // import getCoords from 'city-to-coords';
 
