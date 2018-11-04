@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 import {pl, en} from './data/text-locale'
-import {DARK_URL} from './data/api/url'
+import {DARK_URL} from './data/url'
 import {DARK_API} from './data/api/api'
 import axios from 'axios'
-// import getCoords from 'city-to-coords';
+
+import './App.scss'
 
 import Header from './components/Header/Header'
+import Footer from './components/Footer/Footer'
+import Current from './components/Current/Current'
 
 class App extends Component {
   constructor(props) {
@@ -18,14 +21,21 @@ class App extends Component {
       },
       forecast: {},
       geoForbidden: false,
+      isLoading: true,
       language: 'pl', // propably it's unnecessary
       localText: pl
     }
   }
+
+  // componentDidMount() {
+  //   this.getUserLocation()
+  // }
   
   getUserLocation = () => {
+    this.setState({isLoading: true})
     console.log(this.state.localText.header)
-    if(navigator.geolocation) {
+    
+    
       navigator.geolocation.getCurrentPosition(position => {
         const {longitude, latitude} = position.coords
         //Could be deleted proppably
@@ -38,14 +48,15 @@ class App extends Component {
         //-------------------
 
       this.getWeather(latitude, longitude, this.state.language)
+      }, error => {
+        this.setState({geoForbidden: true})
       })
       
-    } else {
-      this.setState({ geoForbidden: true})
-    }
+    
   }
 
   getWeather = (lat, long, lang) => {
+    
     console.log(lat, long)
     axios.get(`https://cors-anywhere.herokuapp.com/${DARK_URL}${DARK_API}/${lat},${long}?lang=${lang}`, {
       method: 'HEAD',
@@ -54,7 +65,8 @@ class App extends Component {
       .then(resp => {
         console.log(resp.data)
         this.setState({
-        forecast: resp.data
+        forecast: resp.data,
+        isLoading: false
       })})
   }
 
@@ -77,29 +89,60 @@ class App extends Component {
 
   
   render() {
-    let paragraph = (
-      <React.Fragment>
-        <h1>Your coordinates: </h1>
-        <p>Longitude: {this.state.location.long}</p>
-        <p>Latitude: {this.state.location.lat}</p>
-      </React.Fragment>
-    )
+    // let paragraph = (
+    //   <React.Fragment>
+    //     <h1>Your coordinates: </h1>
+    //     <p>Longitude: {this.state.location.long}</p>
+    //     <p>Latitude: {this.state.location.lat}</p>
+    //   </React.Fragment>
+    // )
 
-    if (this.state.geoForbidden) {
-      paragraph = <p>You must allow geolocation!</p>
-    }
+    // if (this.state.geoForbidden) {
+    //   paragraph = <p>You must allow geolocation!</p>
+    // }
+    
     return (
-      <div >
+      <div className="container">
         <Header text={this.state.localText.header} />
         <select name="lang" id="lang" onChange={this.changeLanguage} defaultValue="pol" >
           <option value="pl">Polski</option>
           <option value="en">English</option>
         </select>
         <button onClick={this.getUserLocation}>Geolocatipon</button>
-        {paragraph}
+        
+
+        
+
+        {
+          this.state.geoForbidden ? <div>Not working</div> :
+          (!this.state.forecast || this.state.isLoading ? <div>Loading</div> : 
+            <Current 
+              currently={this.state.forecast.currently} 
+              hourly={this.state.forecast.hourly}
+              text={this.state.localText.current}
+            />)
+        }
+
+        
+        <Footer />
       </div>
     );
   }
 }
 
 export default App;
+
+/* 
+
+{
+          !this.state.geoForbidden || this.state.isLoading ?
+          <React.Fragment>
+            {paragraph}
+            <div>Loading</div> 
+          </React.Fragment> :
+          
+          <div>
+            
+          </div>
+        }
+        */ 

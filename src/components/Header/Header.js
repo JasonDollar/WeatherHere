@@ -1,9 +1,15 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
-const Header = props => (
+const Header = ({ text }) => (
   <div>
-    <h1>{props.text}</h1> 
+    <h1>{text}</h1> 
+
   </div>
 )
 
 export default Header
+
+Header.propTypes = {
+  text: propTypes.string,
+}
