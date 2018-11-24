@@ -2,8 +2,9 @@
   // height: 150px;
   font-size: var(--head-font-size);
   & svg {
-    height: calc(var(--head-font-size) * 1.3);
-    width: auto;
-    transform: translateY(50%);
+    height: var(--head-font-size);
+    width: var(--head-font-size);
+    transform: scale(2);
+    vertical-align: middle;
   }
 }

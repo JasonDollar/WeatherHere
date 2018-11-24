@@ -49,7 +49,7 @@ const Current = ({
         <li>{`w.bearing ${hourly.data[0].windBearing}`}</li>
         <li>{`cloud cover ${hourly.data[0].cloudCover}`}</li>
         <li>{`visibility ${hourly.data[0].visibility}`}</li>
-        <li>{`uvindex hourly.data[0] ${hourly.data[0].uvIndex}`}</li>
+        <li>{`uvindex ${hourly.data[0].uvIndex}`}</li>
         <li>-----------------------------</li>
         <li>{`sunrise ${moment(daily.data[0].sunriseTime * 1000).format('LTS')}`}</li>
         <li>{`sunset ${moment(daily.data[0].sunsetTime * 1000).format('LTS')}`}</li>
