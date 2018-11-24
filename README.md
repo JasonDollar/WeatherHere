@@ -1,1 +1,1 @@
-Application showing detailed weather based on your geolocation.
+Application that shows detailed weather based on your geolocation.
