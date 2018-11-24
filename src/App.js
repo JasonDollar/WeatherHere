@@ -58,7 +58,7 @@ class App extends Component {
   getWeather = (lat, long, lang) => {
     
     console.log(lat, long)
-    axios.get(`https://cors-anywhere.herokuapp.com/${DARK_URL}${DARK_API}/${lat},${long}?lang=${lang}`, {
+    axios.get(`https://cors-anywhere.herokuapp.com/${DARK_URL}${DARK_API}/${lat},${long}?lang=${lang}&units=si`, {
       method: 'HEAD',
       mode: 'no-cors',
     })
@@ -104,7 +104,7 @@ class App extends Component {
     return (
       <div className="container">
         <Header text={this.state.localText.header} />
-        <select name="lang" id="lang" onChange={this.changeLanguage} defaultValue="pol" >
+        <select name="lang" id="lang" onChange={this.changeLanguage} defaultValue="pl" >
           <option value="pl">Polski</option>
           <option value="en">English</option>
         </select>
@@ -117,9 +117,11 @@ class App extends Component {
           this.state.geoForbidden ? <div>Not working</div> :
           (!this.state.forecast || this.state.isLoading ? <div>Loading</div> : 
             <Current 
-              currently={this.state.forecast.currently} 
+              currently={this.state.forecast.currently}
               hourly={this.state.forecast.hourly}
               text={this.state.localText.current}
+              locale={this.state.language}
+              daily={this.state.forecast.daily}
             />)
         }
 

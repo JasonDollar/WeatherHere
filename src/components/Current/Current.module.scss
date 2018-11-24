@@ -1,0 +1,9 @@
+.head {
+  // height: 150px;
+  font-size: var(--head-font-size);
+  & svg {
+    height: calc(var(--head-font-size) * 1.3);
+    width: auto;
+    transform: translateY(50%);
+  }
+}
