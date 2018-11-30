@@ -4,17 +4,17 @@ import {DARK_URL} from './data/url'
 import {DARK_API} from './data/api/api'
 import axios from 'axios'
 
-import './App.scss'
+import classes from './App.module.scss'
 
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 import Current from './components/Current/Current'
+import Options from './components/Options/Options'
 
 class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      //location could be deleted later
       location: {
         long: null,
         lat: null
@@ -22,7 +22,7 @@ class App extends Component {
       forecast: {},
       geoForbidden: false,
       isLoading: true,
-      language: 'pl', // propably it's unnecessary
+      language: 'pl', 
       localText: pl
     }
   }
@@ -33,12 +33,10 @@ class App extends Component {
   
   getUserLocation = () => {
     this.setState({isLoading: true})
-    console.log(this.state.localText.header)
     
     
       navigator.geolocation.getCurrentPosition(position => {
         const {longitude, latitude} = position.coords
-        //Could be deleted proppably
         this.setState({
           location: {
             lat: position.coords.latitude,
@@ -63,7 +61,7 @@ class App extends Component {
       mode: 'no-cors',
     })
       .then(resp => {
-        console.log(resp.data)
+        // console.log(resp.data)
         this.setState({
         forecast: resp.data,
         isLoading: false
@@ -102,12 +100,11 @@ class App extends Component {
     // }
     
     return (
-      <div className="container">
+      <div className={classes.container}>
         <Header text={this.state.localText.header} />
-        <select name="lang" id="lang" onChange={this.changeLanguage} defaultValue="pl" >
-          <option value="pl">Polski</option>
-          <option value="en">English</option>
-        </select>
+
+        
+        <Options changeLanguage={this.changeLanguage}/>
         <button onClick={this.getUserLocation}>Geolocatipon</button>
         
 
@@ -118,10 +115,11 @@ class App extends Component {
           (!this.state.forecast || this.state.isLoading ? <div>Loading</div> : 
             <Current 
               currently={this.state.forecast.currently}
-              hourly={this.state.forecast.hourly}
               text={this.state.localText.current}
               locale={this.state.language}
               daily={this.state.forecast.daily}
+              units={this.state.forecast.flags.units}
+              date={this.state.localText.date}
             />)
         }
 

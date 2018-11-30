@@ -1,10 +1,40 @@
-.head {
+.Current {
   // height: 150px;
-  font-size: var(--head-font-size);
-  & svg {
-    height: var(--head-font-size);
-    width: var(--head-font-size);
-    transform: scale(2);
-    vertical-align: middle;
+  
+  & .main {
+    font-size: var(--head-font-size);
+    display: flex;
+    justify-content: space-between;
+
+    & svg {
+      height: var(--head-font-size);
+      width: var(--head-font-size);
+      transform: scale(2);
+      vertical-align: middle;
+    }
+  }
+
+  .circlesContainer {
+
+    & ul {
+      display: flex;
+      list-style: none;
+      justify-content: space-around;
+
+      // & li {
+      //   flex: 0 0 25%;
+      // }
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3rem 0;
+    list-style: none;
+
+    & li {
+      flex: 0 0 33.3333%;
+    }
   }
 }
