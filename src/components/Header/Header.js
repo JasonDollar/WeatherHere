@@ -1,15 +1,18 @@
 import React from 'react'
 import propTypes from 'prop-types'
 
-const Header = ({ text }) => (
+const Header = props => (
   <div>
-    <h1>{text}</h1> 
-
+    <h1>{props.text.title}</h1> 
+    <form onSubmit={props.onSearchFormSubmit}>
+      <input type="text" onChange={props.onInputChange} value={props.searchValue} />
+      <button>{props.text.search}</button>
+    </form>
   </div>
 )
 
 export default Header
 
 Header.propTypes = {
-  text: propTypes.string,
+  text: propTypes.objectOf(propTypes.string),
 }

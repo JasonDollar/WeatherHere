@@ -1,5 +1,8 @@
 const pl = {
-  header: 'Pogoda',
+  header: {
+    title: 'Pogoda',
+    search: 'Szukaj',
+  },
   current: {
     today: 'Dziś',
     humidity: 'Wilgotność',
@@ -26,7 +29,10 @@ const pl = {
 }
 
 const en = {
-  header: 'Weather',
+  header: {
+    title: 'Weather',
+    search: 'Search',
+  },
   current: {
     today: 'Today',
     humidity: 'Humidity',

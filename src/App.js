@@ -1,15 +1,16 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import {pl, en} from './data/text-locale'
 import {DARK_URL} from './data/url'
-import {DARK_API} from './data/api/api'
+import {DARK_API, MAP_API} from './data/api/api'
 import axios from 'axios'
 
 import classes from './App.module.scss'
 
 import Header from './components/Header/Header'
-import Footer from './components/Footer/Footer'
-import Current from './components/Current/Current'
 import Options from './components/Options/Options'
+import Current from './components/Current/Current'
+import Daily from './components/Daily/Daily'
+import Footer from './components/Footer/Footer'
 
 class App extends Component {
   constructor(props) {
@@ -17,13 +18,16 @@ class App extends Component {
     this.state = {
       location: {
         long: null,
-        lat: null
+        lat: null,
+        place: {}
       },
       forecast: {},
       geoForbidden: false,
       isLoading: true,
       language: 'pl', 
-      localText: pl
+      localText: pl,
+      searchValue: '',
+      error: '',
     }
   }
 
@@ -34,7 +38,6 @@ class App extends Component {
   getUserLocation = () => {
     this.setState({isLoading: true})
     
-    
       navigator.geolocation.getCurrentPosition(position => {
         const {longitude, latitude} = position.coords
         this.setState({
@@ -43,7 +46,6 @@ class App extends Component {
             long: position.coords.longitude
           }
         })
-        //-------------------
 
       this.getWeather(latitude, longitude, this.state.language)
       }, error => {
@@ -56,6 +58,13 @@ class App extends Component {
   getWeather = (lat, long, lang) => {
     
     console.log(lat, long)
+    axios.post(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${lat},${long}&key=${MAP_API}&language=${lang}`)
+      .then(resp => resp.data)
+      .then(data => {
+        console.log(data.results)
+      })
+      .catch(error => this.setState({error: error.message}))
+
     axios.get(`https://cors-anywhere.herokuapp.com/${DARK_URL}${DARK_API}/${lat},${long}?lang=${lang}&units=si`, {
       method: 'HEAD',
       mode: 'no-cors',
@@ -66,6 +75,7 @@ class App extends Component {
         forecast: resp.data,
         isLoading: false
       })})
+      .catch(error => this.setState({error: error.message}))
   }
 
   changeLanguage = (e) => {
@@ -85,42 +95,65 @@ class App extends Component {
     this.getWeather(lat, long, value)
   }
 
-  
-  render() {
-    // let paragraph = (
-    //   <React.Fragment>
-    //     <h1>Your coordinates: </h1>
-    //     <p>Longitude: {this.state.location.long}</p>
-    //     <p>Latitude: {this.state.location.lat}</p>
-    //   </React.Fragment>
-    // )
+  onInputChange = e => {
+    const value = e.target.value
+    this.setState({searchValue: value})
+  }
 
-    // if (this.state.geoForbidden) {
-    //   paragraph = <p>You must allow geolocation!</p>
-    // }
+  onSearchFormSubmit = (e) => {
+    e.preventDefault();
+    axios.post(`https://maps.googleapis.com/maps/api/geocode/json?address=${this.state.searchValue}&key=${MAP_API}`)
+      .then(resp => {
+        this.setState({isLoading: true})
+        return resp.data.results[0].geometry.location
+      })
+      .then(data => {
+        this.setState({
+          location: {
+            lat: data.lat,
+            long: data.lng
+          },
+        })
+        this.getWeather(data.lat, data.lng, this.state.language)
+      })
+      .catch(error => this.setState({error: error.message}))
+    
+  }
+  render() {
     
     return (
       <div className={classes.container}>
-        <Header text={this.state.localText.header} />
+        <Header 
+          text={this.state.localText.header} 
+          searchValue={this.state.searchValue} 
+          onInputChange={this.onInputChange}
+          onSearchFormSubmit={this.onSearchFormSubmit}
+        />
 
         
         <Options changeLanguage={this.changeLanguage}/>
         <button onClick={this.getUserLocation}>Geolocatipon</button>
         
-
         
 
         {
-          this.state.geoForbidden ? <div>Not working</div> :
+          this.state.geoForbidden && !this.state.location ? <div>Not working</div> :
           (!this.state.forecast || this.state.isLoading ? <div>Loading</div> : 
+            <>
             <Current 
               currently={this.state.forecast.currently}
-              text={this.state.localText.current}
+              currentText={this.state.localText.current}
               locale={this.state.language}
               daily={this.state.forecast.daily}
               units={this.state.forecast.flags.units}
-              date={this.state.localText.date}
-            />)
+              dateText={this.state.localText.date}
+            />
+            <Daily 
+              daily={this.state.forecast.daily}
+              dateText={this.state.localText.date}
+            />
+            </>
+          )
         }
 
         
@@ -131,18 +164,16 @@ class App extends Component {
 }
 
 export default App;
-
 /* 
 
-{
-          !this.state.geoForbidden || this.state.isLoading ?
-          <React.Fragment>
-            {paragraph}
-            <div>Loading</div> 
-          </React.Fragment> :
+
+          // !this.state.geoForbidden || this.state.isLoading ?
+          // <React.Fragment>
+          //   {paragraph}
+          //   <div>Loading</div> 
+          // </React.Fragment> :
           
-          <div>
+          // <div>
             
-          </div>
-        }
-        */ 
+          // </div>
+          */ 

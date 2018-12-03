@@ -7,28 +7,28 @@ import 'moment/locale/pl'
 import Icon from '../Icon/Icon'
 import DataCircle from '../DataCircle/DataCircle'
 
+import { getTime } from '../../data/utils'
 
 import classes from './Current.module.scss'
 
-const getTime = timestamp => ({
-  month: moment(timestamp).format('D.M'),
-  day: moment(timestamp).format('e'),
-})
+
 
 const Current = ({
-  currently, daily, text, locale, date,
+  currently, daily, currentText, locale, dateText,
 }) => {
   // locale === 'en' ? moment().locale('en-gb') : moment().locale('pl')
   const now = moment().valueOf()
+  // const now = DateText.now()
   const today = getTime(now)
+  // console.log(`${moment(now).format('LTS')  } ${  PL}`)
   
-  console.log(currently, daily, text, locale, date)
+  // console.log(currently, daily, currentText, locale, dateText)
   return (
     <div className={classes.Current}>
       <div className={classes.main}>
         <div className={classes.main__city}>Miasto</div>
         <div>
-          {date.weekDay[today.day]} 
+          {dateText.weekDay[today.day]} 
           {' '}
           {today.month}
         </div>
@@ -65,10 +65,10 @@ const Current = ({
         {'Circle data'}
         <ul>
           
-          <li><DataCircle type={text.humidity} unit="%" data={currently.humidity * 100} additionalData={null} /></li>
-          <li><DataCircle type={text.wind} unit="m/s" data={currently.windSpeed} additionalData={currently.windBearing} /></li>
-          <li><DataCircle type={text.precipProp} unit="%" data={currently.precipProbability * 100} additionalData={null} /></li>
-          <li><DataCircle type={text.precipInt} unit="mm/h" data={currently.precipIntensity.toFixed(1)} additionalData={null} /></li>
+          <li><DataCircle type={currentText.humidity} unit="%" data={parseInt(currently.humidity * 100)} additionalData={null} /></li>
+          <li><DataCircle type={currentText.wind} unit="m/s" data={currently.windSpeed} additionalData={currently.windBearing} /></li>
+          <li><DataCircle type={currentText.precipProp} unit="%" data={parseInt(currently.precipProbability * 100)} additionalData={null} /></li>
+          <li><DataCircle type={currentText.precipInt} unit="mm/h" data={currently.precipIntensity.toFixed(1)} additionalData={null} /></li>
           {/*<li>{`windspeed ${currently.windSpeed}`}</li>
   <li>{`w.bearing ${currently.windBearing}`}</li>*/}
           
@@ -122,7 +122,7 @@ Current.propTypes = {
     windSpeed: PropTypes.number,
   }),
 
-  text: PropTypes.objectOf(PropTypes.string),
+  currentText: PropTypes.objectOf(PropTypes.string),
 
   locale: PropTypes.string,
 
@@ -175,7 +175,7 @@ Current.propTypes = {
 
   units: PropTypes.string,
 
-  date: PropTypes.shape({
+  dateText: PropTypes.shape({
     weekDay: PropTypes.arrayOf(PropTypes.string),
   }),
 }
