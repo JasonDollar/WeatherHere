@@ -42,8 +42,8 @@ class App extends Component {
         const {longitude, latitude} = position.coords
         this.setState({
           location: {
-            lat: position.coords.latitude,
-            long: position.coords.longitude
+            lat: latitude,
+            long: longitude
           }
         })
 
@@ -56,8 +56,8 @@ class App extends Component {
   }
 
   getWeather = (lat, long, lang) => {
-    
     console.log(lat, long)
+    // returns all places for given location / TODO should return one place name for given location
     axios.post(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${lat},${long}&key=${MAP_API}&language=${lang}`)
       .then(resp => resp.data)
       .then(data => {
@@ -73,9 +73,21 @@ class App extends Component {
         // console.log(resp.data)
         this.setState({
         forecast: resp.data,
-        isLoading: false
+        isLoading: false,
+        error: '',
       })})
       .catch(error => this.setState({error: error.message}))
+  }
+
+  // TO BE REMOVED
+  parseTimezone = (lat, long) => {
+    const now = Date.now() / 1000 - 1000
+    axios.post(`https://maps.googleapis.com/maps/api/timezone/json?location=${lat},${long}&timestamp=${now}&key=${MAP_API}`)
+      .then(resp => {
+        this.setState({
+          timezone: resp.data
+        })
+      })
   }
 
   changeLanguage = (e) => {
@@ -114,8 +126,10 @@ class App extends Component {
             long: data.lng
           },
         })
+        this.parseTimezone(data.lat, data.lng)
         this.getWeather(data.lat, data.lng, this.state.language)
       })
+    
       .catch(error => this.setState({error: error.message}))
     
   }
@@ -139,7 +153,7 @@ class App extends Component {
         {
           this.state.geoForbidden && !this.state.location ? <div>Not working</div> :
           (!this.state.forecast || this.state.isLoading ? <div>Loading</div> : 
-            <>
+            <Fragment>
             <Current 
               currently={this.state.forecast.currently}
               currentText={this.state.localText.current}
@@ -147,24 +161,26 @@ class App extends Component {
               daily={this.state.forecast.daily}
               units={this.state.forecast.flags.units}
               dateText={this.state.localText.date}
+              timezone={this.state.forecast.timezone}
             />
             <Daily 
               daily={this.state.forecast.daily}
               dateText={this.state.localText.date}
+              timezone={this.state.forecast.timezone}
             />
-            </>
+            </Fragment>
           )
         }
 
         
-        <Footer />
+        <Footer/>
       </div>
     );
   }
 }
 
 export default App;
-/* 
+/*
 
 
           // !this.state.geoForbidden || this.state.isLoading ?

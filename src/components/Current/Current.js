@@ -1,8 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import moment from 'moment'
+import moment from 'moment-timezone'
 import 'moment/locale/en-gb'
 import 'moment/locale/pl'
+// import 'moment-timezone'
 
 import Icon from '../Icon/Icon'
 import DataCircle from '../DataCircle/DataCircle'
@@ -14,15 +15,16 @@ import classes from './Current.module.scss'
 
 
 const Current = ({
-  currently, daily, currentText, locale, dateText,
+  currently, daily, currentText, locale, dateText, timezone,
 }) => {
   // locale === 'en' ? moment().locale('en-gb') : moment().locale('pl')
   const now = moment().valueOf()
   // const now = DateText.now()
-  const today = getTime(now)
-  // console.log(`${moment(now).format('LTS')  } ${  PL}`)
+  const nowTimezone = moment.tz(now, timezone).format('D.MM')
+  const today = getTime(now, timezone)
+  console.log(now, nowTimezone)
   
-  // console.log(currently, daily, currentText, locale, dateText)
+  //TODO jesli timezone bd zly moment wyswietli 'invalid date' w miejsce godziny
   return (
     <div className={classes.Current}>
       <div className={classes.main}>
@@ -42,11 +44,13 @@ const Current = ({
         <div className={classes.main__sun}>
           <div>
             <Icon icon="sunrise" />
-            <span>{moment(daily.data[0].sunriseTime * 1000).format('LT')}</span>
+            <span>{moment.tz(daily.data[0].sunriseTime * 1000, timezone).format('HH:mm')}</span>
           </div>
           <div>
             <Icon icon="sunset" />
-            <span>{moment(daily.data[0].sunsetTime * 1000).format('LT')}</span>
+            <span>{moment.tz(daily.data[0].sunsetTime * 1000, timezone).format('HH:mm')}</span>
+            {/*<span>--</span>
+            <span>{moment.tz(1544799127 * 1000, 'Asia/Tokyo').format('HH:MM')}</span>*/}
           </div>
         </div>
       </div>

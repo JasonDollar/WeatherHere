@@ -6,19 +6,24 @@ import {
 
 import { getTime } from '../../data/utils'
 
-const Daily = ({ daily, dateText }) => {
+const Daily = ({ daily, dateText, timezone }) => {
   console.log(daily, dateText)
   // const test = daily.data.map(item => getTime(item.time * 1000))
 
-  const data = daily.data.map(item => {
-    const day = getTime(item.time * 1000)
+  const data = daily.data.map((item, index) => {
+    
+    const day = getTime(item.time * 1000, timezone)
+    console.log(day)
+    let dayName
+    if (index === 0) {
+      dayName = dateText.today
+    } else dayName = dateText.weekDay[day.day]
     return {
-      name: dateText.weekDay[day.day],
+      name: dayName,
       // change temperature later to localized name
-      temperature: [item.temperatureHigh, item.temperatureLow],
+      [dateText.temperature]: [item.temperatureHigh, item.temperatureLow],
     }
   })
-  console.log(data)
 
 
   
@@ -31,7 +36,7 @@ const Daily = ({ daily, dateText }) => {
         <YAxis />
         <Tooltip />
         <Legend />
-        <Bar dataKey="temperature" />
+        <Bar dataKey={dateText.temperature} />
         
       </BarChart>
     </div>

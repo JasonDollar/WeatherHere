@@ -23,8 +23,9 @@ const pl = {
 
   },
   date: {
-    weekDay: ['Poniedziałek', 'Wtorek', 'Środa', 'Czwartek', 'Piątek', 'Sobota', 'Niedziela'],
-
+    weekDay: ['Niedziela', 'Poniedziałek', 'Wtorek', 'Środa', 'Czwartek', 'Piątek', 'Sobota'],
+    today: 'Dziś',
+    temperature: 'Temperatura',
   },
 }
 
@@ -52,8 +53,9 @@ const en = {
     ozone: 'Ozone',
   },
   date: {
-    weekDay: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
-
+    weekDay: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+    today: 'Today',
+    temperature: 'Temperature',
   },
   
 }
