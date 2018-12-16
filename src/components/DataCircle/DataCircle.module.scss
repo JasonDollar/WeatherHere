@@ -23,6 +23,14 @@
   span {
     display: block;
   }
+
+  & svg {
+    position: absolute;
+    height: var(--head-font-size);
+    width: var(--head-font-size);
+    transform: scale(2);
+    vertical-align: middle;
+  }
 }
 
 .arrow {

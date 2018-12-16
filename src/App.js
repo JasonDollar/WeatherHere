@@ -3,6 +3,7 @@ import {pl, en} from './data/text-locale'
 import {DARK_URL} from './data/url'
 import {DARK_API, MAP_API} from './data/api/api'
 import axios from 'axios'
+import dummyData from './data/random'
 
 import classes from './App.module.scss'
 
@@ -21,9 +22,10 @@ class App extends Component {
         lat: null,
         place: {}
       },
-      forecast: {},
+      forecast: dummyData,
       geoForbidden: false,
-      isLoading: true,
+      // change isLoading to true when using fetched data
+      isLoading: false,
       language: 'pl', 
       localText: pl,
       searchValue: '',

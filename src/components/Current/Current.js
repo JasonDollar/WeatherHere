@@ -8,7 +8,7 @@ import 'moment/locale/pl'
 import Icon from '../Icon/Icon'
 import DataCircle from '../DataCircle/DataCircle'
 
-import { getTime } from '../../data/utils'
+import { getTime, formatTemp } from '../../data/utils'
 
 import classes from './Current.module.scss'
 
@@ -36,7 +36,7 @@ const Current = ({
         </div>
         <div className={classes.main__temp}>
           <Icon icon="temp" />
-          {currently.temperature}
+          {`${formatTemp(currently.temperature)}°C`}
         </div>
         <div className={classes.main__weather}>
           <Icon icon={currently.icon} />  
@@ -55,24 +55,17 @@ const Current = ({
         </div>
       </div>
 
-      <div>
-        <span>Data</span>
-        <span>
-          {'currently: '}
-          {moment(currently.time * 1000).format()}
-        </span>
-        
-      </div>
+      
 
-      <div>{`${currently.summary} daily`}</div>
+      <div className={classes.Summary}>{currently.summary}</div>
       <div className={classes.circlesContainer}>
-        {'Circle data'}
         <ul>
           
           <li><DataCircle type={currentText.humidity} unit="%" data={parseInt(currently.humidity * 100)} additionalData={null} /></li>
           <li><DataCircle type={currentText.wind} unit="m/s" data={currently.windSpeed} additionalData={currently.windBearing} /></li>
           <li><DataCircle type={currentText.precipProp} unit="%" data={parseInt(currently.precipProbability * 100)} additionalData={null} /></li>
-          <li><DataCircle type={currentText.precipInt} unit="mm/h" data={currently.precipIntensity.toFixed(1)} additionalData={null} /></li>
+          
+          <li><DataCircle type={currentText.cloudCov} unit="%" data={currently.cloudCover * 100} additionalData={null} /></li>
           {/*<li>{`windspeed ${currently.windSpeed}`}</li>
   <li>{`w.bearing ${currently.windBearing}`}</li>*/}
           
@@ -88,12 +81,10 @@ const Current = ({
         
         <li>{`windgust ${currently.windGust}`}</li>
         
-        <li>{`cloud cover ${currently.cloudCover}`}</li>
+        <li>{`precip intenmsity ${currently.precipIntensity.toFixed(1)}`}</li>
         <li>{`visibility ${currently.visibility}`}</li>
         <li>{`uvindex ${currently.uvIndex}`}</li>
-        <li>-----------------------------</li>
-        <li>{`sunrise ${moment(daily.data[0].sunriseTime * 1000).format('LTS')}`}</li>
-        <li>{`sunset ${moment(daily.data[0].sunsetTime * 1000).format('LTS')}`}</li>
+        
         <li>{`moonphase ${daily.data[0].moonPhase}`}</li>
         <li>{`ozone ${currently.ozone}`}</li>
         

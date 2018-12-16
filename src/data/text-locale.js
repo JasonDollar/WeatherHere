@@ -26,6 +26,8 @@ const pl = {
     weekDay: ['Niedziela', 'Poniedziałek', 'Wtorek', 'Środa', 'Czwartek', 'Piątek', 'Sobota'],
     today: 'Dziś',
     temperature: 'Temperatura',
+    temperatureMax: 'Temperatura Max.',
+    temperatureMin: 'Temperatura Min.',
   },
 }
 
@@ -56,6 +58,8 @@ const en = {
     weekDay: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
     today: 'Today',
     temperature: 'Temperature',
+    temperatureMax: 'Temperature Max.',
+    temperatureMin: 'Temperature Min',
   },
   
 }

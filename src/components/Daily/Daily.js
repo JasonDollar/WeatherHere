@@ -1,10 +1,13 @@
 import React from 'react'
 // import moment from 'moment'
 import {
-  BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend,
+  BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer,
 } from 'recharts'
+import { CombineLatestSubscriber } from 'rxjs/internal/observable/combineLatest';
+import CustomTooltip from '../CustomTooltip/CustomTooltip'
 
-import { getTime } from '../../data/utils'
+import { getTime, formatTemp } from '../../data/utils'
+import classes from './Daily.module.scss'
 
 const Daily = ({ daily, dateText, timezone }) => {
   console.log(daily, dateText)
@@ -13,7 +16,6 @@ const Daily = ({ daily, dateText, timezone }) => {
   const data = daily.data.map((item, index) => {
     
     const day = getTime(item.time * 1000, timezone)
-    console.log(day)
     let dayName
     if (index === 0) {
       dayName = dateText.today
@@ -21,24 +23,29 @@ const Daily = ({ daily, dateText, timezone }) => {
     return {
       name: dayName,
       // change temperature later to localized name
-      [dateText.temperature]: [item.temperatureHigh, item.temperatureLow],
+      [dateText.temperature]: [formatTemp(item.temperatureHigh), formatTemp(item.temperatureLow)],
+      
     }
   })
 
-
+  
   
   return (
-    <div>
-      {daily.summary}
-      <BarChart width={1000} height={300} barSize={70} data={data}>
-        <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="name" />
-        <YAxis />
-        <Tooltip />
-        <Legend />
-        <Bar dataKey={dateText.temperature} />
-        
-      </BarChart>
+    <div className={classes.Daily}>
+      <div className={classes.Summary}>
+        {daily.summary}
+      </div>
+      <ResponsiveContainer height={300} maxWidth="100%" minWidth="50%" margin={0}>
+        <BarChart maxBarSize={60} data={data}>
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="name" />
+          <YAxis />
+          <Tooltip content={<CustomTooltip tempText={dateText} />} />
+          <Legend />
+          <Bar dataKey={dateText.temperature} fill="#dd0055" unit="°C" />
+          
+        </BarChart>
+      </ResponsiveContainer>
     </div>
   )
 }
