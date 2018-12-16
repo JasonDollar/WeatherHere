@@ -20,13 +20,13 @@ const DataCircle = ({
       <div className={classes.dataFront} />
       <div className={classes.dataContainer}>
         {additionalData !== null ? (
-          <div style={style}>
+          <div style={style} className={classes.bigArrow}>
             {additionalData !== null ? <Icon icon="arrow" viewBox="0 0 24 24" /> : null}
           </div>  
         ) : null }
         <span>
           {data + unit}
-        </span>
+        </span> 
         
         <span>
           {type}

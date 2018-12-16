@@ -8,8 +8,9 @@
   margin: 1rem auto;
 
   .dataContainer {
+    font-size: 2.4rem;
     position: absolute;
-    top: 50%;
+    top: 47%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -17,23 +18,34 @@
     align-items: center;
     text-align: center;
     z-index: 5;
-    font-size: 2rem;
 
     
+    & span {
+      display: block;
+
+      // &:first-of-type {
+      //   margin-top: 2rem;
+      // }
+    }
+
+    .bigArrow {
+      // position: absolute;
+      // top: 0%;
+      // left: 50%;
+      // transform: translate(-50%, -50%);
+      margin-bottom: 1rem;
+    }
+
+    & svg {
+      
+      height: var(--head-font-size);
+      width: var(--head-font-size);
+      transform: scale(1.5);
+      fill: #dd0055;
+    }
   }
 
-  span {
-    display: block;
-  }
 
-  & svg {
-    margin-bottom: 1rem;
-    height: var(--head-font-size);
-    width: var(--head-font-size);
-    transform: scale(1.5);
-    vertical-align: middle;
-    fill: #dd0055;
-  }
 }
 
 .arrow {
