@@ -12,18 +12,18 @@ const DataCircle = ({
   const style = { transform: `rotate(${additionalData - 90}deg)` }
   const style2 = { transform: `rotate(${additionalData}deg)` }
   const conic = { background: `conic-gradient(rgba(198,210,60,.5) 0 ${data}%, #fff ${data}% 100%)` }
-  const smallData = 100 - data
-  const wholeData = [{ name: '12', value: 12 }, { name: '88', value: 88 }]
+  // const smallData = 100 - data
+  // const wholeData = [{ name: '12', value: 12 }, { name: '88', value: 88 }]
   return (
     <div className={classes.DataCircle} style={conic}>
       
       <div className={classes.dataFront} />
-      {additionalData !== null ? (
-        <div style={style}>
-          {additionalData !== null ? <Icon icon="arrow" /> : null}
-        </div>  
-      ) : null }
       <div className={classes.dataContainer}>
+        {additionalData !== null ? (
+          <div style={style}>
+            {additionalData !== null ? <Icon icon="arrow" viewBox="0 0 24 24" /> : null}
+          </div>  
+        ) : null }
         <span>
           {data + unit}
         </span>
@@ -33,7 +33,7 @@ const DataCircle = ({
         </span>
       </div>
       
-      {additionalData !== null ? <div className={classes.arrow} style={style2} /> : null}
+      {/*additionalData !== null ? <div className={classes.arrow} style={style2} /> : null*/}
     </div>
   ) 
   // return (

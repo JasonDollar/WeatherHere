@@ -29,25 +29,25 @@ const Current = ({
     <div className={classes.Current}>
       <div className={classes.main}>
         <div className={classes.main__city}>Miasto</div>
-        <div>
+        <div className={classes.date}>
           {dateText.weekDay[today.day]} 
           {' '}
           {today.month}
         </div>
         <div className={classes.main__temp}>
-          <Icon icon="temp" />
+          <Icon icon="temp" viewBox="0 0 100 100" />
           {`${formatTemp(currently.temperature)}°C`}
         </div>
         <div className={classes.main__weather}>
-          <Icon icon={currently.icon} />  
+          <Icon icon={currently.icon} viewBox="0 0 100 100" />  
         </div>
         <div className={classes.main__sun}>
           <div>
-            <Icon icon="sunrise" />
+            <Icon icon="sunrise" viewBox="0 0 100 100" />
             <span>{moment.tz(daily.data[0].sunriseTime * 1000, timezone).format('HH:mm')}</span>
           </div>
           <div>
-            <Icon icon="sunset" />
+            <Icon icon="sunset" viewBox="0 0 100 100" />
             <span>{moment.tz(daily.data[0].sunsetTime * 1000, timezone).format('HH:mm')}</span>
             {/*<span>--</span>
             <span>{moment.tz(1544799127 * 1000, 'Asia/Tokyo').format('HH:MM')}</span>*/}
@@ -73,22 +73,47 @@ const Current = ({
         </ul>
       </div>
 
-      <ul className={classes.Current__list}>
-        
-        <li>{`apparent temp ${currently.apparentTemperature}`}</li>
-        <li>{`dewpoint ${currently.dewPoint}`}</li>
-        <li>{`pressure ${currently.pressure}`}</li>
-        
-        <li>{`windgust ${currently.windGust}`}</li>
-        
-        <li>{`precip intenmsity ${currently.precipIntensity.toFixed(1)}`}</li>
-        <li>{`visibility ${currently.visibility}`}</li>
-        <li>{`uvindex ${currently.uvIndex}`}</li>
-        
-        <li>{`moonphase ${daily.data[0].moonPhase}`}</li>
-        <li>{`ozone ${currently.ozone}`}</li>
-        
-      </ul>
+
+      <div className={classes.Current__list}>
+
+        <div className={classes.Current__item}>
+          <div>{currentText.appTemp}</div>
+          <div>{`${formatTemp(currently.apparentTemperature)}°C`}</div>
+        </div>
+        <div className={classes.Current__item}>
+          <div>{currentText.dewPoint}</div>
+          <div>{`${formatTemp(currently.dewPoint)}°C`}</div>
+        </div>
+        <div className={classes.Current__item}>
+          <div>{currentText.pressure}</div>
+          <div>{`${formatTemp(currently.pressure)} hPa`}</div>
+        </div>
+        <div className={classes.Current__item}>
+          <div>{currentText.windGust}</div>
+          <div>{`${formatTemp(currently.windGust)} m/s`}</div>
+        </div>
+        <div className={classes.Current__item}>
+          <div>{currentText.precipInt}</div>
+          <div>{`${formatTemp(currently.precipIntensity)} mm/h`}</div>
+        </div>
+        <div className={classes.Current__item}>
+          <div>{currentText.visibility}</div>
+          <div>{`${formatTemp(currently.visibility)} km`}</div>
+        </div>
+        <div className={classes.Current__item}>
+          <div>{currentText.uvIndex}</div>
+          <div>{formatTemp(currently.uvIndex)}</div>
+        </div>
+        <div className={classes.Current__item}>
+          <div>{currentText.moonphase}</div>
+          <div>{`${daily.data[0].moonPhase * 100}%`}</div>
+        </div>
+        <div className={classes.Current__item}>
+          <div>{currentText.ozone}</div>
+          <div>{formatTemp(currently.ozone)}</div>
+        </div>
+
+      </div>
       
     </div>
   )

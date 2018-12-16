@@ -1,8 +1,9 @@
 import React from 'react'
 import propTypes from 'prop-types'
+import classes from './Header.module.scss'
 
 const Header = props => (
-  <div>
+  <div className={classes.container}>
     <h1>{props.text.title}</h1> 
     <form onSubmit={props.onSearchFormSubmit}>
       <input type="text" onChange={props.onInputChange} value={props.searchValue} />

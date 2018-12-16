@@ -4,7 +4,7 @@
   & .main {
     font-size: var(--head-font-size);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 
     @media only screen and (max-width: 499px) {
@@ -27,6 +27,7 @@
       list-style: none;
       justify-content: space-around;
       flex-wrap: wrap;
+      padding: 0;
 
       // & li {
       //   flex: 0 0 25%;
@@ -40,8 +41,31 @@
     margin: 3rem 0;
     list-style: none;
 
-    & li {
+  }
+
+  &__item {
+    font-size: 2rem;
       flex: 0 0 33.3333%;
+      padding: .5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+
+    @media only screen and (max-width: 960px) {
+      & {
+        flex: 0 0 50%;
+      }
+    }
+    @media only screen and (max-width: 630px) {
+      & {
+        flex: 0 0 90%;
+        margin: 0 auto;
+      }
+    }
+    @media only screen and (max-width: 630px) {
+      & {
+        flex: 0 0 90%;
+        margin: 0 auto;
+      }
     }
   }
 }
@@ -50,4 +74,8 @@
   font-size: 2.5rem;
   font-weight: bold;
   text-align: center;
+}
+
+.date {
+  display: flex;
 }

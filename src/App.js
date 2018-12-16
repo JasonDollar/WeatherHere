@@ -12,6 +12,7 @@ import Options from './components/Options/Options'
 import Current from './components/Current/Current'
 import Daily from './components/Daily/Daily'
 import Footer from './components/Footer/Footer'
+import Spinner from './components/Spinner/Spinner'
 
 class App extends Component {
   constructor(props) {
@@ -154,7 +155,7 @@ class App extends Component {
 
         {
           this.state.geoForbidden && !this.state.location ? <div>Not working</div> :
-          (!this.state.forecast || this.state.isLoading ? <div>Loading</div> : 
+          (!this.state.forecast || this.state.isLoading ? <Spinner /> : 
             <Fragment>
             <Current 
               currently={this.state.forecast.currently}

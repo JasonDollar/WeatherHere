@@ -17,5 +17,10 @@ code {
 
 :root {
   font-size: 62.5%;
+  box-sizing: border-box;
   --head-font-size: 4rem;
+}
+
+* {
+  box-sizing: inherit;
 }

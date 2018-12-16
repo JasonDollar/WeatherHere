@@ -15,11 +15,12 @@ const pl = {
     pressure: 'Ciśnienie',
     cloudCov: 'Zachmurzenie',
     visibility: 'Widoczność',
-    UvIndex: 'Indeks UV',
+    uvIndex: 'Indeks UV',
     sunrise: 'Wschód słońca',
     sunset: 'Zachód słońca',
-    moonphase: 'Faz księżyca',
+    moonphase: 'Faza księżyca',
     ozone: 'Ozon',
+    windGust: 'Wiatr w porywach',
 
   },
   date: {
@@ -48,11 +49,12 @@ const en = {
     pressure: 'Pressure',
     cloudCov: 'Cloud cover',
     visibility: 'Visibility',
-    UvIndex: 'UV Index',
+    uvIndex: 'UV Index',
     sunrise: 'Sunrise',
     sunset: 'Sunset',
     moonphase: 'Moon phase',
     ozone: 'Ozone',
+    windGust: 'Wind gust',
   },
   date: {
     weekDay: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
