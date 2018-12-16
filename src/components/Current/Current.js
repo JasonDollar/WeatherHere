@@ -106,7 +106,7 @@ const Current = ({
         </div>
         <div className={classes.Current__item}>
           <div>{currentText.moonphase}</div>
-          <div>{`${daily.data[0].moonPhase * 100}%`}</div>
+          <div>{`${Math.floor(daily.data[0].moonPhase * 100)}%`}</div>
         </div>
         <div className={classes.Current__item}>
           <div>{currentText.ozone}</div>
