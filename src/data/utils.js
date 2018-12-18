@@ -16,7 +16,7 @@ const getTime = (timestamp, timezone) => {
   } 
 }
 
-const formatTemp = temp => Math.floor(temp * 10) / 10
+const formatNumber = number => Math.floor(number * 10) / 10
 
 
-export { getTime, formatTemp }
+export { getTime, formatNumber }

@@ -8,7 +8,7 @@ import 'moment/locale/pl'
 import Icon from '../Icon/Icon'
 import DataCircle from '../DataCircle/DataCircle'
 
-import { getTime, formatTemp } from '../../data/utils'
+import { getTime, formatNumber } from '../../data/utils'
 
 import classes from './Current.module.scss'
 
@@ -36,7 +36,7 @@ const Current = ({
         </div>
         <div className={classes.main__temp}>
           <Icon icon="temp" viewBox="0 0 100 100" />
-          {`${formatTemp(currently.temperature)}°C`}
+          {`${formatNumber(currently.temperature)}°C`}
         </div>
         <div className={classes.main__weather}>
           <Icon icon={currently.icon} viewBox="0 0 100 100" />  
@@ -78,31 +78,31 @@ const Current = ({
 
         <div className={classes.Current__item}>
           <div>{currentText.appTemp}</div>
-          <div>{`${formatTemp(currently.apparentTemperature)}°C`}</div>
+          <div>{`${formatNumber(currently.apparentTemperature)}°C`}</div>
         </div>
         <div className={classes.Current__item}>
           <div>{currentText.dewPoint}</div>
-          <div>{`${formatTemp(currently.dewPoint)}°C`}</div>
+          <div>{`${formatNumber(currently.dewPoint)}°C`}</div>
         </div>
         <div className={classes.Current__item}>
           <div>{currentText.pressure}</div>
-          <div>{`${formatTemp(currently.pressure)} hPa`}</div>
+          <div>{`${formatNumber(currently.pressure)} hPa`}</div>
         </div>
         <div className={classes.Current__item}>
           <div>{currentText.windGust}</div>
-          <div>{`${formatTemp(currently.windGust)} m/s`}</div>
+          <div>{`${formatNumber(currently.windGust)} m/s`}</div>
         </div>
         <div className={classes.Current__item}>
           <div>{currentText.precipInt}</div>
-          <div>{`${formatTemp(currently.precipIntensity)} mm/h`}</div>
+          <div>{`${formatNumber(currently.precipIntensity)} mm/h`}</div>
         </div>
         <div className={classes.Current__item}>
           <div>{currentText.visibility}</div>
-          <div>{`${formatTemp(currently.visibility)} km`}</div>
+          <div>{`${formatNumber(currently.visibility)} km`}</div>
         </div>
         <div className={classes.Current__item}>
           <div>{currentText.uvIndex}</div>
-          <div>{formatTemp(currently.uvIndex)}</div>
+          <div>{formatNumber(currently.uvIndex)}</div>
         </div>
         <div className={classes.Current__item}>
           <div>{currentText.moonphase}</div>
@@ -110,7 +110,7 @@ const Current = ({
         </div>
         <div className={classes.Current__item}>
           <div>{currentText.ozone}</div>
-          <div>{formatTemp(currently.ozone)}</div>
+          <div>{formatNumber(currently.ozone)}</div>
         </div>
 
       </div>

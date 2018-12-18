@@ -3,10 +3,10 @@ import React from 'react'
 import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer,
 } from 'recharts'
-import { CombineLatestSubscriber } from 'rxjs/internal/observable/combineLatest';
+import { CombineLatestSubscriber } from 'rxjs/internal/observable/combineLatest'
 import CustomTooltip from '../CustomTooltip/CustomTooltip'
 
-import { getTime, formatTemp } from '../../data/utils'
+import { getTime, formatNumber } from '../../data/utils'
 import classes from './Daily.module.scss'
 
 const Daily = ({ daily, dateText, timezone }) => {
@@ -23,7 +23,7 @@ const Daily = ({ daily, dateText, timezone }) => {
     return {
       name: dayName,
       // change temperature later to localized name
-      [dateText.temperature]: [formatTemp(item.temperatureHigh), formatTemp(item.temperatureLow)],
+      [dateText.temperature]: [formatNumber(item.temperatureHigh), formatNumber(item.temperatureLow)],
       
     }
   })
