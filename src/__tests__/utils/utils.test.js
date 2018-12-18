@@ -1,4 +1,4 @@
-import moment from 'moment-timezone'
+
 
 import { getTime, formatNumber } from '../../data/utils'
 
@@ -17,7 +17,7 @@ describe('formatNumber test', () => {
 
 
 describe('getTime test', () => {
-  test('should correctly process date of 1st Jan 1970 - thursday', () => {
+  test('should correctly process date of 1st Jan 1970 - thursday when there is no timezone specified', () => {
     const result = getTime(0) // 
     const expected = {
       day: '4', // thursday

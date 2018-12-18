@@ -17,12 +17,8 @@ import classes from './Current.module.scss'
 const Current = ({
   currently, daily, currentText, locale, dateText, timezone,
 }) => {
-  // locale === 'en' ? moment().locale('en-gb') : moment().locale('pl')
   const now = moment().valueOf()
-  // const now = DateText.now()
-  const nowTimezone = moment.tz(now, timezone).format('D.MM')
   const today = getTime(now, timezone)
-  console.log(now, nowTimezone)
   
   //TODO jesli timezone bd zly moment wyswietli 'invalid date' w miejsce godziny
   return (
@@ -61,13 +57,12 @@ const Current = ({
       <div className={classes.circlesContainer}>
         <ul>
           
-          <li><DataCircle type={currentText.humidity} unit="%" data={parseInt(currently.humidity * 100)} additionalData={null} /></li>
-          <li><DataCircle type={currentText.wind} unit="m/s" data={currently.windSpeed} additionalData={currently.windBearing} /></li>
-          <li><DataCircle type={currentText.precipProp} unit="%" data={parseInt(currently.precipProbability * 100)} additionalData={null} /></li>
+          <li><DataCircle type={currentText.humidity} unit="%" data={formatNumber(currently.humidity * 100)} additionalData={null} /></li>
+          <li><DataCircle type={currentText.wind} unit="m/s" data={formatNumber(currently.windSpeed)} additionalData={currently.windBearing} /></li>
+          <li><DataCircle type={currentText.precipProp} unit="%" data={formatNumber(currently.precipProbability * 100)} additionalData={null} /></li>
           
-          <li><DataCircle type={currentText.cloudCov} unit="%" data={currently.cloudCover * 100} additionalData={null} /></li>
-          {/*<li>{`windspeed ${currently.windSpeed}`}</li>
-  <li>{`w.bearing ${currently.windBearing}`}</li>*/}
+          <li><DataCircle type={currentText.cloudCov} unit="%" data={formatNumber(currently.cloudCover * 100)} additionalData={null} /></li>
+          
           
           
         </ul>
@@ -193,7 +188,7 @@ Current.propTypes = {
     })),
   }),
 
-  units: PropTypes.string,
+  timezone: PropTypes.string,
 
   dateText: PropTypes.shape({
     weekDay: PropTypes.arrayOf(PropTypes.string),

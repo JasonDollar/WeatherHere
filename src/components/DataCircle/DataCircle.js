@@ -1,7 +1,8 @@
 import React from 'react'
-import {
-  PieChart, Pie, Sector, Cell, ResponsiveContainer, 
-} from 'recharts'
+import PropTypes from 'prop-types'
+// import {
+//   PieChart, Pie, Sector, Cell, ResponsiveContainer, 
+// } from 'recharts'
 import Icon from '../Icon/Icon'
 
 import classes from './DataCircle.module.scss'
@@ -53,3 +54,11 @@ const DataCircle = ({
 }
 
 export default DataCircle
+
+
+DataCircle.propTypes = {
+  type: PropTypes.string.isRequired,
+  data: PropTypes.number.isRequired,
+  unit: PropTypes.string.isRequired, 
+  additionalData: PropTypes.number,
+}

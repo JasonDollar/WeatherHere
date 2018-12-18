@@ -1,7 +1,6 @@
 import moment from 'moment-timezone'
 
 const getTime = (timestamp, timezone) => {
-  console.log(moment(timestamp).format('LLLL'))
   if (timezone === null) {
     return {
       month: moment(timestamp).format('D.M'),

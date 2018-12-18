@@ -1,16 +1,14 @@
 import React from 'react'
-// import moment from 'moment'
+import PropTypes from 'prop-types'
 import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer,
 } from 'recharts'
-import { CombineLatestSubscriber } from 'rxjs/internal/observable/combineLatest'
 import CustomTooltip from '../CustomTooltip/CustomTooltip'
 
 import { getTime, formatNumber } from '../../data/utils'
 import classes from './Daily.module.scss'
 
 const Daily = ({ daily, dateText, timezone }) => {
-  console.log(daily, dateText)
   // const test = daily.data.map(item => getTime(item.time * 1000))
 
   const data = daily.data.map((item, index) => {
@@ -51,6 +49,59 @@ const Daily = ({ daily, dateText, timezone }) => {
 }
 
 export default Daily
+
+Daily.propTypes = {
+  daily: PropTypes.shape({
+    apparentTemperatureHighTime: PropTypes.number,
+    apparentTemperatureHigh: PropTypes.number,
+    apparentTemperatureLow: PropTypes.number,
+    apparentTemperatureLowTime: PropTypes.number,
+    apparentTemperatureMax: PropTypes.number,
+    apparentTemperatureMaxTime: PropTypes.number,
+    apparentTemperatureMin: PropTypes.number,
+    apparentTemperatureMinTime: PropTypes.number,
+    cloudCover: PropTypes.number,
+    dewPoint: PropTypes.number,
+    humidity: PropTypes.number,
+    icon: PropTypes.string,
+    moonPhase: PropTypes.number,
+    ozone: PropTypes.number,
+    precipIntensity: PropTypes.number,
+    precipIntensityMax: PropTypes.number,
+    precipIntensityMaxTime: PropTypes.number,
+    precipProbability: PropTypes.number,
+    pressure: PropTypes.number,
+    summary: PropTypes.string,
+    sunriseTime: PropTypes.number,
+    sunsetTime: PropTypes.number,
+    temperatureHigh: PropTypes.number,
+    temperatureHighTime: PropTypes.number,
+    temperatureLow: PropTypes.number,
+    temperatureLowTime: PropTypes.number,
+    temperatureMax: PropTypes.number,
+    temperatureMaxTime: PropTypes.number,
+    temperatureMin: PropTypes.number,
+    temperatureMinTime: PropTypes.number,
+    time: PropTypes.number,
+    uvIndex: PropTypes.number,
+    uvIndexTime: PropTypes.number,
+    visibility: PropTypes.number,
+    windBearing: PropTypes.number,
+    windGust: PropTypes.number,
+    windGustTime: PropTypes.number,
+    windSpeed: PropTypes.number,
+  }),
+
+  timezone: PropTypes.string.isRequired,
+
+  dateText: PropTypes.shape({
+    weekDay: PropTypes.arrayOf(PropTypes.string),
+    today: PropTypes.string.isRequired,
+    temperature: PropTypes.string.isRequired,
+    temperatureMax: PropTypes.string.isRequired,
+    temperatureMin: PropTypes.string.isRequired,
+  }),
+}
 
 
 /*
