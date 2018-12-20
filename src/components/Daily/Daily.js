@@ -5,15 +5,15 @@ import {
 } from 'recharts'
 import CustomTooltip from '../CustomTooltip/CustomTooltip'
 
-import { getTime, formatNumber } from '../../data/utils'
+import { getTimeFromSeconds, formatNumber } from '../../data/utils'
 import classes from './Daily.module.scss'
 
 const Daily = ({ daily, dateText, timezone }) => {
-  // const test = daily.data.map(item => getTime(item.time * 1000))
+  // const test = daily.data.map(item => getTimeFromSeconds(item.time * 1000))
 
   const data = daily.data.map((item, index) => {
     
-    const day = getTime(item.time * 1000, timezone)
+    const day = getTimeFromSeconds(item.time, timezone)
     let dayName
     if (index === 0) {
       dayName = dateText.today
@@ -33,12 +33,12 @@ const Daily = ({ daily, dateText, timezone }) => {
       <div className={classes.Summary}>
         {daily.summary}
       </div>
-      <ResponsiveContainer height={300} maxWidth="100%" minWidth="50%" margin={0}>
+      <ResponsiveContainer height={300} width="95%" margin={0}>
         <BarChart maxBarSize={60} data={data}>
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="name" />
           <YAxis />
-          <Tooltip content={<CustomTooltip tempText={dateText} />} />
+          <Tooltip content={<CustomTooltip tempText={dateText} type="daily" />} />
           <Legend />
           <Bar dataKey={dateText.temperature} fill="#dd0055" unit="°C" />
           

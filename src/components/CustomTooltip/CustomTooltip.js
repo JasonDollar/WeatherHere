@@ -5,12 +5,25 @@ import classes from './CustomTooltip.module.scss'
 
 
 
-const CustomTooltip = ({ label, payload, tempText }) => {
-  if (payload[0]) {
+const CustomTooltip = ({
+  label, payload, tempText, type, 
+}) => {
+  if (payload[0] && type === 'daily') {
     return ( 
       <div className={classes.Tooltip}>
-        <p>{`${tempText.temperatureMax}: ${payload[0].value[0]}`}</p>
-        <p>{`${tempText.temperatureMin}: ${payload[0].value[1]}`}</p>
+        <p>{label}</p>
+        <p>{`${tempText.temperatureMax}: ${payload[0].value[0]}°C`}</p>
+        <p>{`${tempText.temperatureMin}: ${payload[0].value[1]}°C`}</p>
+      </div>
+    ) 
+  } 
+  if (payload[0] && type === 'hourly') {
+    return ( 
+      <div className={classes.Tooltip}>
+        <p>{payload[0].payload.summary}</p>
+        <p>{`${tempText.hour}: ${label}`}</p>
+        <p>{`${tempText.temperature}: ${payload[0].value}°C`}</p>
+        <p>{`${tempText.precipProb}: ${payload[1].value}%`}</p>
       </div>
     ) 
   } 
@@ -29,22 +42,39 @@ CustomTooltip.propTypes = {
     formatter: PropTypes.string,
     name: PropTypes.string,
     payload: PropTypes.shape({
-      Temperatura: PropTypes.arrayOf(PropTypes.number),
-      Temperature: PropTypes.arrayOf(PropTypes.number),
+      Temperatura: PropTypes.oneOfType([
+        PropTypes.arrayOf(PropTypes.number),
+        PropTypes.number,
+      ]),
+      Temperature: PropTypes.oneOfType([
+        PropTypes.arrayOf(PropTypes.number),
+        PropTypes.number,
+      ]),
       name: PropTypes.string,
+      precipProbability: PropTypes.number,
+      summary: PropTypes.string,
+      time: PropTypes.string,
+      temperature: PropTypes.number,
     }),
-    unit: PropTypes.string.isRequired,
-    value: PropTypes.arrayOf(PropTypes.number).isRequired,
+    unit: PropTypes.string,
+    value: PropTypes.oneOfType([
+      PropTypes.arrayOf(PropTypes.number),
+      PropTypes.number,
+    ]),
     
   })),
 
   tempText: PropTypes.shape({
-    temperature: PropTypes.string.isRequired,
-    temperatureMax: PropTypes.string.isRequired,
-    temperatureMin: PropTypes.string.isRequired,
-    today: PropTypes.string.isRequired,
+    temperature: PropTypes.string,
+    temperatureMax: PropTypes.string,
+    temperatureMin: PropTypes.string,
+    today: PropTypes.string,
     weekDay: PropTypes.arrayOf(PropTypes.string),
+    hour: PropTypes.string,
+    precipProp: PropTypes.string,
   }),
+
+  type: PropTypes.string.isRequired,
 }
 
 

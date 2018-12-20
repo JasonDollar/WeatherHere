@@ -8,7 +8,7 @@ import 'moment/locale/pl'
 import Icon from '../Icon/Icon'
 import DataCircle from '../DataCircle/DataCircle'
 
-import { getTime, formatNumber } from '../../data/utils'
+import { getTimeFromSeconds, formatNumber } from '../../data/utils'
 
 import classes from './Current.module.scss'
 
@@ -17,8 +17,8 @@ import classes from './Current.module.scss'
 const Current = ({
   currently, daily, currentText, locale, dateText, timezone,
 }) => {
-  const now = moment().valueOf()
-  const today = getTime(now, timezone)
+  const now = moment().unix()
+  const today = getTimeFromSeconds(now, timezone)
   
   //TODO jesli timezone bd zly moment wyswietli 'invalid date' w miejsce godziny
   return (
@@ -53,7 +53,7 @@ const Current = ({
 
       
 
-      <div className={classes.Summary}>{currently.summary}</div>
+      <p className={classes.Summary}>{currently.summary}</p>
       <div className={classes.circlesContainer}>
         <ul>
           

@@ -13,6 +13,7 @@ import Current from './components/Current/Current'
 import Daily from './components/Daily/Daily'
 import Footer from './components/Footer/Footer'
 import Spinner from './components/Spinner/Spinner'
+import Hourly from './components/Hourly/Hourly'
 
 class App extends Component {
   constructor(props) {
@@ -170,6 +171,11 @@ class App extends Component {
               daily={this.state.forecast.daily}
               dateText={this.state.localText.date}
               timezone={this.state.forecast.timezone}
+            />
+            <Hourly 
+            hourly={this.state.forecast.hourly}
+            hourlyText={this.state.localText.hourly}
+            timezone={this.state.forecast.timezone}
             />
             </Fragment>
           )

@@ -30,6 +30,11 @@ const pl = {
     temperatureMax: 'Temperatura Max.',
     temperatureMin: 'Temperatura Min.',
   },
+  hourly: {
+    hour: 'Godzina',
+    precipProb: 'Możliwość Opadów',
+    temperature: 'Temperatura',
+  },
 }
 
 const en = {
@@ -41,7 +46,7 @@ const en = {
     today: 'Today',
     humidity: 'Humidity',
     wind: 'Wind',
-    precipProp: 'Precipitation',
+    precipProp: 'Precipitation chance',
     precipType: 'Precipitation type',
     precipInt: 'Precipitation intensity',
     appTemp: 'Apparent temperature',
@@ -63,7 +68,11 @@ const en = {
     temperatureMax: 'Temperature Max.',
     temperatureMin: 'Temperature Min',
   },
-  
+  hourly: {
+    hour: 'Hour',
+    precipProp: 'Precipitation chance',
+    temperature: 'Temperature',
+  },
 }
 
 export { pl, en } 
