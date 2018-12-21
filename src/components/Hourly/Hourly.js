@@ -28,7 +28,7 @@ const Hourly = ({ hourly, hourlyText, timezone }) => {
         time: time.hour,
       }
     })
-
+  const style = '#dd0055'
   return (
     <div>
       <p className={classes.Summary}>{hourly.summary}</p>
@@ -40,7 +40,7 @@ const Hourly = ({ hourly, hourlyText, timezone }) => {
           <YAxis yAxisId="right" orientation="right" />
           <Tooltip content={<CustomTooltip tempText={hourlyText} type="hourly" />} />
           <Legend />
-          <Line yAxisId="left" type="monotone" dataKey={hourlyText.temperature} stroke="#dd0055" activeDot={{ r: 8 }} />
+          <Line yAxisId="left" type="monotone" dataKey={hourlyText.temperature} stroke={style} activeDot={{ r: 8 }} />
           <Line yAxisId="right" type="monotone" dataKey={hourlyText.precipProb} stroke="#82ca9d" />
         </LineChart>
       </ResponsiveContainer>

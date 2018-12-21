@@ -25,6 +25,8 @@ const Daily = ({ daily, dateText, timezone }) => {
       
     }
   })
+  
+  const style = '#dd0055'
 
   
   
@@ -40,7 +42,7 @@ const Daily = ({ daily, dateText, timezone }) => {
           <YAxis />
           <Tooltip content={<CustomTooltip tempText={dateText} type="daily" />} />
           <Legend />
-          <Bar dataKey={dateText.temperature} fill="#dd0055" unit="°C" />
+          <Bar dataKey={dateText.temperature} fill={style} unit="°C" />
           
         </BarChart>
       </ResponsiveContainer>
