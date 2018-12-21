@@ -7,7 +7,7 @@ const pl = {
     today: 'Dziś',
     humidity: 'Wilgotność',
     wind: 'Wiatr',
-    precipProp: 'Opady',
+    precipProb: 'Opady',
     precipType: 'Rodzaj opadu',
     precipInt: 'Intensywność opadu',
     appTemp: 'Temperatura odczuwalna',
@@ -46,7 +46,7 @@ const en = {
     today: 'Today',
     humidity: 'Humidity',
     wind: 'Wind',
-    precipProp: 'Precipitation chance',
+    precipProb: 'Precipitation chance',
     precipType: 'Precipitation type',
     precipInt: 'Precipitation intensity',
     appTemp: 'Apparent temperature',
@@ -71,7 +71,7 @@ const en = {
   },
   hourly: {
     hour: 'Hour',
-    precipProp: 'Precipitation chance',
+    precipProb: 'Precipitation chance',
     temperature: 'Temperature',
   },
 }
