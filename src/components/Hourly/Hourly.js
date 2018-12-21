@@ -19,10 +19,11 @@ const Hourly = ({ hourly, hourlyText, timezone }) => {
       return false
     })
     .map(item => {
+      const precipProb = item.precipProbability > 0.05 ? item.precipProbability : 0
       const time = getTimeFromSeconds(item.time, timezone)
       return {
         [hourlyText.temperature]: formatNumber(item.temperature),
-        [hourlyText.precipProb]: formatNumber(item.precipProbability * 100),
+        [hourlyText.precipProb]: formatNumber(precipProb * 100),
         summary: item.summary,
         time: time.hour,
       }
