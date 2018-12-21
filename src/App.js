@@ -22,22 +22,32 @@ class App extends Component {
       location: {
         long: null,
         lat: null,
-        place: {}
       },
-      forecast: dummyData,
+      forecast: '',
       geoForbidden: false,
       // change isLoading to true when using fetched data
-      isLoading: false,
+      isLoading: true,
       language: 'pl', 
       localText: pl,
       searchValue: '',
+      locationShortName: '',
       error: '',
     }
   }
 
-  // componentDidMount() {
-  //   this.getUserLocation()
-  // }
+  componentDidMount() {
+    const locationShortName = localStorage.getItem('locationName')
+    if (locationShortName) {
+      this.setState({
+        locationShortName
+      })
+      this.onNameLocationSearch(locationShortName)
+    } else {
+      this.setState({
+        locationShortName: ''
+      })
+    }
+  }
   
   getUserLocation = () => {
     this.setState({isLoading: true})
@@ -54,18 +64,40 @@ class App extends Component {
       this.getWeather(latitude, longitude, this.state.language)
       }, error => {
         this.setState({geoForbidden: true})
-      })
-      
-    
+      })  
+  }
+
+  searchLocationName = (data) => {
+    this.setState({
+      locationShortName: '',
+    })
+    let shortName = ''
+
+    const placeNames = data.results
+
+    for(let i = 0; i < placeNames.length; i++) {
+      for(let j = 0; j < placeNames[i].address_components.length; j++) {
+        if (placeNames[i].address_components[j].types.includes("locality")) {
+          shortName = placeNames[i].address_components[j].short_name
+          break
+        }
+      }
+    }
+    if (shortName) {
+      localStorage.setItem('locationName', shortName)
+      this.setState({
+        locationShortName: shortName,
+      }) 
+    }
   }
 
   getWeather = (lat, long, lang) => {
     console.log(lat, long)
-    // returns all places for given location / TODO should return one place name for given location
+    // returns all places for given location 
     axios.post(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${lat},${long}&key=${MAP_API}&language=${lang}`)
       .then(resp => resp.data)
       .then(data => {
-        console.log(data.results)
+        this.searchLocationName(data)
       })
       .catch(error => this.setState({error: error.message}))
 
@@ -83,16 +115,6 @@ class App extends Component {
       .catch(error => this.setState({error: error.message}))
   }
 
-  // TO BE REMOVED
-  parseTimezone = (lat, long) => {
-    const now = Date.now() / 1000 - 1000
-    axios.post(`https://maps.googleapis.com/maps/api/timezone/json?location=${lat},${long}&timestamp=${now}&key=${MAP_API}`)
-      .then(resp => {
-        this.setState({
-          timezone: resp.data
-        })
-      })
-  }
 
   changeLanguage = (e) => {
     const value = e.target.value
@@ -116,9 +138,8 @@ class App extends Component {
     this.setState({searchValue: value})
   }
 
-  onSearchFormSubmit = (e) => {
-    e.preventDefault();
-    axios.post(`https://maps.googleapis.com/maps/api/geocode/json?address=${this.state.searchValue}&key=${MAP_API}`)
+  onNameLocationSearch = (location) => {
+    axios.post(`https://maps.googleapis.com/maps/api/geocode/json?address=${location}&key=${MAP_API}`)
       .then(resp => {
         this.setState({isLoading: true})
         return resp.data.results[0].geometry.location
@@ -129,14 +150,18 @@ class App extends Component {
             lat: data.lat,
             long: data.lng
           },
+          searchValue: '',
         })
-        this.parseTimezone(data.lat, data.lng)
         this.getWeather(data.lat, data.lng, this.state.language)
       })
-    
       .catch(error => this.setState({error: error.message}))
-    
   }
+
+  onSearchFormSubmit = (e) => {
+    e.preventDefault();
+    this.onNameLocationSearch(this.state.searchValue)
+  }
+
   render() {
     
     return (
@@ -166,6 +191,7 @@ class App extends Component {
               units={this.state.forecast.flags.units}
               dateText={this.state.localText.date}
               timezone={this.state.forecast.timezone}
+              locationShortName={this.state.locationShortName}
             />
             <Daily 
               daily={this.state.forecast.daily}
@@ -189,16 +215,4 @@ class App extends Component {
 }
 
 export default App;
-/*
 
-
-          // !this.state.geoForbidden || this.state.isLoading ?
-          // <React.Fragment>
-          //   {paragraph}
-          //   <div>Loading</div> 
-          // </React.Fragment> :
-          
-          // <div>
-            
-          // </div>
-          */ 

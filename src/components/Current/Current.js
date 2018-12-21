@@ -15,7 +15,7 @@ import classes from './Current.module.scss'
 
 
 const Current = ({
-  currently, daily, currentText, locale, dateText, timezone,
+  currently, daily, currentText, locale, dateText, timezone, locationShortName,
 }) => {
   const now = moment().unix()
   const today = getTimeFromSeconds(now, timezone)
@@ -24,7 +24,7 @@ const Current = ({
   return (
     <div className={classes.Current}>
       <div className={classes.main}>
-        <div className={classes.main__city}>Miasto</div>
+        <div className={classes.main__city}>{locationShortName || currentText.location}</div>
         <div className={classes.date}>
           {dateText.weekDay[today.day]} 
           {' '}
@@ -115,6 +115,8 @@ const Current = ({
 }
 
 export default Current
+
+
 
 Current.propTypes = {
   currently: PropTypes.shape({

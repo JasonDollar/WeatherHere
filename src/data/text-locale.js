@@ -21,7 +21,7 @@ const pl = {
     moonphase: 'Faza księżyca',
     ozone: 'Ozon',
     windGust: 'Wiatr w porywach',
-
+    location: 'Nieznana lokacja',
   },
   date: {
     weekDay: ['Niedziela', 'Poniedziałek', 'Wtorek', 'Środa', 'Czwartek', 'Piątek', 'Sobota'],
@@ -60,6 +60,7 @@ const en = {
     moonphase: 'Moon phase',
     ozone: 'Ozone',
     windGust: 'Wind gust',
+    location: 'Unknown location',
   },
   date: {
     weekDay: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],

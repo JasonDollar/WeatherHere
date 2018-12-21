@@ -11,10 +11,8 @@ const DataCircle = ({
   type, data, unit, additionalData, 
 }) => {
   const style = { transform: `rotate(${additionalData - 90}deg)` }
-  const style2 = { transform: `rotate(${additionalData}deg)` }
   const conic = { background: `conic-gradient(rgba(198,210,60,.5) 0 ${data}%, #fff ${data}% 100%)` }
-  // const smallData = 100 - data
-  // const wholeData = [{ name: '12', value: 12 }, { name: '88', value: 88 }]
+
   return (
     <div className={classes.DataCircle} style={conic}>
       
