@@ -24,3 +24,8 @@ code {
 * {
   box-sizing: inherit;
 }
+
+.container {
+  max-width: 1040px;
+  margin: 0 auto;
+}

@@ -161,21 +161,29 @@ class App extends Component {
 
   render() {
     return (
-      <div className={classes.container}>
-        <Header 
-          text={this.state.localText.header} 
-          searchValue={this.state.searchValue} 
-          onInputChange={this.onInputChange}
-          onSearchFormSubmit={this.onSearchFormSubmit}
-        />
+      <div>
+        <div className={classes.headerBar}>
+          <div className={classes.container}>
+            <Header 
+            text={this.state.localText.header} 
+            searchValue={this.state.searchValue} 
+            onInputChange={this.onInputChange}
+            onSearchFormSubmit={this.onSearchFormSubmit}
+            changeLanguage={this.changeLanguage}
+            onButtonClick={this.getUserLocation}
+            />
 
-        <Options changeLanguage={this.changeLanguage}/>
-        <button onClick={this.getUserLocation}>Geolocatipon</button>
+            {/*<Options changeLanguage={this.changeLanguage}/>
+    <button onClick={this.getUserLocation}>Geolocatipon</button>*/}
+          </div>
+        
+        </div>
+        
         
         {
           this.state.geoForbidden && !this.state.location ? <div>Not working</div> :
           (!this.state.forecast || this.state.isLoading ? <Spinner /> : 
-            <Fragment>
+            <div className={classes.container}>
             <Current 
               currently={this.state.forecast.currently}
               currentText={this.state.localText.current}
@@ -195,11 +203,12 @@ class App extends Component {
               hourlyText={this.state.localText.hourly}
               timezone={this.state.forecast.timezone}
             />
-            </Fragment>
+            </div>
           )
         }
-
-        <Footer/>
+        <div className={classes.container}>
+          <Footer/>
+        </div>
       </div>
     );
   }
