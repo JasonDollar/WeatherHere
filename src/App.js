@@ -1,9 +1,8 @@
 import React, { Component, Fragment } from 'react';
 import {pl, en} from './data/text-locale'
-import {DARK_URL} from './data/url'
+import {DARK_URL, MAP_URL} from './data/url'
 import {DARK_API, MAP_API} from './data/api/api'
 import axios from 'axios'
-import dummyData from './data/random'
 
 import classes from './App.module.scss'
 
@@ -25,7 +24,6 @@ class App extends Component {
       },
       forecast: '',
       geoForbidden: false,
-      // change isLoading to true when using fetched data
       isLoading: true,
       language: 'pl', 
       localText: pl,
@@ -92,9 +90,8 @@ class App extends Component {
   }
 
   getWeather = (lat, long, lang) => {
-    console.log(lat, long)
     // returns all places for given location 
-    axios.post(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${lat},${long}&key=${MAP_API}&language=${lang}`)
+    axios.post(`${MAP_URL}?latlng=${lat},${long}&key=${MAP_API}&language=${lang}`)
       .then(resp => resp.data)
       .then(data => {
         this.searchLocationName(data)
@@ -139,7 +136,7 @@ class App extends Component {
   }
 
   onNameLocationSearch = (location) => {
-    axios.post(`https://maps.googleapis.com/maps/api/geocode/json?address=${location}&key=${MAP_API}`)
+    axios.post(`${MAP_URL}?address=${location}&key=${MAP_API}`)
       .then(resp => {
         this.setState({isLoading: true})
         return resp.data.results[0].geometry.location
@@ -163,7 +160,6 @@ class App extends Component {
   }
 
   render() {
-    
     return (
       <div className={classes.container}>
         <Header 
@@ -173,12 +169,9 @@ class App extends Component {
           onSearchFormSubmit={this.onSearchFormSubmit}
         />
 
-        
         <Options changeLanguage={this.changeLanguage}/>
         <button onClick={this.getUserLocation}>Geolocatipon</button>
         
-        
-
         {
           this.state.geoForbidden && !this.state.location ? <div>Not working</div> :
           (!this.state.forecast || this.state.isLoading ? <Spinner /> : 
@@ -186,7 +179,6 @@ class App extends Component {
             <Current 
               currently={this.state.forecast.currently}
               currentText={this.state.localText.current}
-              locale={this.state.language}
               daily={this.state.forecast.daily}
               units={this.state.forecast.flags.units}
               dateText={this.state.localText.date}
@@ -199,15 +191,14 @@ class App extends Component {
               timezone={this.state.forecast.timezone}
             />
             <Hourly 
-            hourly={this.state.forecast.hourly}
-            hourlyText={this.state.localText.hourly}
-            timezone={this.state.forecast.timezone}
+              hourly={this.state.forecast.hourly}
+              hourlyText={this.state.localText.hourly}
+              timezone={this.state.forecast.timezone}
             />
             </Fragment>
           )
         }
 
-        
         <Footer/>
       </div>
     );

@@ -15,12 +15,11 @@ import classes from './Current.module.scss'
 
 
 const Current = ({
-  currently, daily, currentText, locale, dateText, timezone, locationShortName,
+  currently, daily, currentText, dateText, timezone, locationShortName,
 }) => {
   const now = moment().unix()
   const today = getTimeFromSeconds(now, timezone)
-  
-  //TODO jesli timezone bd zly moment wyswietli 'invalid date' w miejsce godziny
+
   return (
     <div className={classes.Current}>
       <div className={classes.main}>
@@ -45,8 +44,6 @@ const Current = ({
           <div>
             <Icon icon="sunset" viewBox="0 0 100 100" />
             <span>{moment.tz(daily.data[0].sunsetTime * 1000, timezone).format('HH:mm')}</span>
-            {/*<span>--</span>
-            <span>{moment.tz(1544799127 * 1000, 'Asia/Tokyo').format('HH:MM')}</span>*/}
           </div>
         </div>
       </div>
@@ -56,15 +53,10 @@ const Current = ({
       <p className={classes.Summary}>{currently.summary}</p>
       <div className={classes.circlesContainer}>
         <ul>
-          
           <li><DataCircle type={currentText.humidity} unit="%" data={formatNumber(currently.humidity * 100)} additionalData={null} /></li>
           <li><DataCircle type={currentText.wind} unit="m/s" data={formatNumber(currently.windSpeed)} additionalData={currently.windBearing} /></li>
           <li><DataCircle type={currentText.precipProb} unit="%" data={formatNumber(currently.precipProbability * 100)} additionalData={null} /></li>
-          
           <li><DataCircle type={currentText.cloudCov} unit="%" data={formatNumber(currently.cloudCover * 100)} additionalData={null} /></li>
-          
-          
-          
         </ul>
       </div>
 
@@ -191,6 +183,8 @@ Current.propTypes = {
   }),
 
   timezone: PropTypes.string,
+
+  locationShortName: PropTypes.string,
 
   dateText: PropTypes.shape({
     weekDay: PropTypes.arrayOf(PropTypes.string),
