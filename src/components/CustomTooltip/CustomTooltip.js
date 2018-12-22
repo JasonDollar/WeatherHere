@@ -20,8 +20,8 @@ const CustomTooltip = ({
   if (payload[0] && type === 'hourly') {
     return ( 
       <div className={classes.Tooltip}>
-        <p>{payload[0].payload.summary}</p>
         <p>{`${tempText.hour}: ${label}`}</p>
+        <p>{payload[0].payload.summary}</p>
         <p>{`${tempText.temperature}: ${payload[0].value}°C`}</p>
         <p>{`${tempText.precipProb}: ${payload[1].value}%`}</p>
       </div>

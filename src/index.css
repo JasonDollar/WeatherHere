@@ -8,6 +8,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
   font-size: 1.6rem;
+  background-color: #fefefe;
 }
 
 code {

@@ -3,6 +3,7 @@ import {pl, en} from './data/text-locale'
 import {DARK_URL, MAP_URL} from './data/url'
 import {DARK_API, MAP_API} from './data/api/api'
 import axios from 'axios'
+import styled from 'styled-components'
 
 import classes from './App.module.scss'
 
@@ -13,6 +14,11 @@ import Daily from './components/Daily/Daily'
 import Footer from './components/Footer/Footer'
 import Spinner from './components/Spinner/Spinner'
 import Hourly from './components/Hourly/Hourly'
+
+const Container = styled.div`
+  color: #111;
+  background-color: #fefefe;
+`
 
 class App extends Component {
   constructor(props) {
@@ -161,7 +167,7 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <Container>
         <div className={classes.headerBar}>
           <div className={classes.container}>
             <Header 
@@ -209,7 +215,7 @@ class App extends Component {
         <div className={classes.container}>
           <Footer/>
         </div>
-      </div>
+      </Container>
     );
   }
 }

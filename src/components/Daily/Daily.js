@@ -39,8 +39,16 @@ const Daily = ({ daily, dateText, timezone }) => {
         <BarChart maxBarSize={60} data={data}>
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="name" />
-          <YAxis />
-          <Tooltip content={<CustomTooltip tempText={dateText} type="daily" />} />
+          <YAxis label="°C" type="number" />
+          <Tooltip
+            content={<CustomTooltip tempText={dateText} type="daily" />}
+            wrapperStyle={{
+              backgroundColor: '#fff',
+              border: '1px solid #555',
+              borderRadius: '5px',
+              boxShadow: '1px 1px 2px #333',
+            }}
+          />
           <Legend />
           <Bar dataKey={dateText.temperature} fill={style} unit="°C" />
           
