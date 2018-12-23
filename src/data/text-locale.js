@@ -24,9 +24,10 @@ const pl = {
     location: 'Nieznana lokacja',
   },
   date: {
-    weekDay: ['Niedziela', 'Poniedziałek', 'Wtorek', 'Środa', 'Czwartek', 'Piątek', 'Sobota'],
+    weekDay: ['Niedziela', 'Poniedziałek', 'Wtorek', 'Środa', 'Czwartek', 'Piątek', 'Sobota', 'Dziś'],
+    weekDayShort: ['Niedz.', 'Pon.', 'Wt.', 'Śr.', 'Czw.', 'Pt.', 'Sob.'],
     today: 'Dziś',
-    temperature: 'Temperatura',
+    temperature: 'Temperatura (°C)',
     temperatureMax: 'Temperatura Max.',
     temperatureMin: 'Temperatura Min.',
   },
@@ -66,8 +67,9 @@ const en = {
   },
   date: {
     weekDay: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+    weekDayShort: ['Sun.', 'Mon.', 'Tue.', 'Wed.', 'Thu.', 'Fri.', 'Sat.'],
     today: 'Today',
-    temperature: 'Temperature',
+    temperature: 'Temperature (°C)',
     temperatureMax: 'Temperature Max.',
     temperatureMin: 'Temperature Min',
   },

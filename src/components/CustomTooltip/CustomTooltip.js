@@ -8,10 +8,11 @@ import classes from './CustomTooltip.module.scss'
 const CustomTooltip = ({
   label, payload, tempText, type, 
 }) => {
+  const longNameIndex = tempText.weekDay ? tempText.weekDayShort.findIndex(item => item === label) : null
   if (payload[0] && type === 'daily') {
     return ( 
       <div className={classes.Tooltip}>
-        <p>{label}</p>
+        <p>{tempText.weekDay[longNameIndex] || tempText.today}</p>
         <p>{`${tempText.temperatureMax}: ${payload[0].value[0]}°C`}</p>
         <p>{`${tempText.temperatureMin}: ${payload[0].value[1]}°C`}</p>
       </div>

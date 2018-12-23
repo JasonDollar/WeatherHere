@@ -17,12 +17,11 @@ const Daily = ({ daily, dateText, timezone }) => {
     let dayName
     if (index === 0) {
       dayName = dateText.today
-    } else dayName = dateText.weekDay[day.day]
+    } else dayName = dateText.weekDayShort[day.day]
     return {
       name: dayName,
       // change temperature later to localized name
       [dateText.temperature]: [formattedHighTemperature, formattedLowTemperature],
-      
     }
   })
   
@@ -36,21 +35,16 @@ const Daily = ({ daily, dateText, timezone }) => {
         {daily.summary}
       </div>
       <div className={classes.chartContainer}> 
-        <ResponsiveContainer height={300} width="95%" margin={0}>
+        <ResponsiveContainer height={300} width="95%">
           <BarChart maxBarSize={60} data={data}>
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="name" />
             <YAxis type="number" />
             <Tooltip
               content={<CustomTooltip tempText={dateText} type="daily" />}
-              wrapperStyle={{
-                backgroundColor: '#fff',
-                border: '1px solid #555',
-                borderRadius: '5px',
-                boxShadow: '1px 1px 2px #333',
-              }}
+
             />
-            <Legend />
+            <Legend layout="horizontal" />
             <Bar dataKey={dateText.temperature} fill={style} unit="°C" />
             
           </BarChart>

@@ -1,7 +1,7 @@
 .Daily {
   width: 100%;
   margin: 0 auto;
-
+  overflow-x: hidden;
 }
 
 .Summary {
@@ -10,10 +10,14 @@
   margin: 2rem 0 1rem 0;
 }
 
+.chartContainer {
+  overflow-y: hidden;
+}
+
 @media only screen and (max-width: 576px) {
   .chartContainer {
-    overflow-x: hidden;
-    margin: 0 1rem 0 -3rem;
+    overflow-y: hidden;
+    // margin: 0 1rem 0 -3rem;
   }
 
 }

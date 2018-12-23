@@ -30,10 +30,10 @@ const Hourly = ({ hourly, hourlyText, timezone }) => {
 
   const style = '#dd0055'
   return (
-    <div className={classes.container}>
+    <div className={classes.Hourly}>
       <p className={classes.Summary}>{hourly.summary}</p>
       <div className={classes.chartContainer}>
-        <ResponsiveContainer width="100%" height={300}>
+        <ResponsiveContainer width="110%" height={300}>
           <LineChart data={data}>
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="time" />
@@ -41,14 +41,9 @@ const Hourly = ({ hourly, hourlyText, timezone }) => {
             <YAxis yAxisId="right" orientation="right" type="number" domain={[0, 100]} />
             <Tooltip
               content={<CustomTooltip tempText={hourlyText} type="hourly" />} 
-              wrapperStyle={{
-                backgroundColor: '#fff',
-                border: '1px solid #555',
-                borderRadius: '5px',
-                boxShadow: '0 0 20px -5px rgb(18, 18, 18)',
-              }} 
+
             />
-            <Legend />
+            <Legend layout="vertical" />
             <Line yAxisId="left" type="monotone" dataKey={hourlyText.temperature} stroke={style} activeDot={{ r: 8 }} />
             <Line yAxisId="right" type="monotone" dataKey={hourlyText.precipProb} stroke="#82ca9d" />
           </LineChart>

@@ -24,15 +24,20 @@ const Current = ({
     <div className={classes.Current}>
       <div className={classes.main}>
         <div className={classes.city}>{locationShortName || currentText.location}</div>
-        <div className={classes.temp}>
-          <div className={classes.tempIcon}>
-            <Icon icon="temp" viewBox="0 0 100 100" />
-          </div>
-          {`${formatNumber(currently.temperature)}°C`}
-        </div>
         <div className={classes.weather}>
-          <Icon icon={currently.icon} viewBox="0 0 100 100" />  
+          <div className={classes.icon}>
+            <Icon icon="temp" viewBox="0 0 100 100" />
+            {`${formatNumber(currently.temperature)}°C`}
+          </div>
+          <div className={classes.icon}>
+            <Icon icon={currently.icon} viewBox="0 0 100 100" />  
+          </div>
+          
+          
+          
         </div>
+        
+        
         <div className={classes.date}>
           {dateText.weekDay[today.day]} 
           {' '}

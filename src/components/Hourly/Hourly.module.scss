@@ -1,14 +1,28 @@
+.Hourly {
+  overflow-x: hidden;
+}
+
 .Summary {
   font-size: 2.5rem;
   text-align: center;
   margin: 2rem 0 1rem 0;
 }
 
+.chartContainer {
+  overflow: hidden;
+}
 
 @media only screen and (max-width: 576px) {
   .chartContainer {
-    overflow-x: hidden;
-    margin: 0 1rem 0 -3rem;
+    // margin: 0 0 0 -2.5rem;
+    overflow-y: hidden;
   }
 
 }
+ 
+// ul[class^="recharts-default-legend"] {
+//   display: flex;
+//   flex-direction: column;
+//   margin-top: 1rem 0 0 1.5rem !important;
+// }
+//recharts-default-legend

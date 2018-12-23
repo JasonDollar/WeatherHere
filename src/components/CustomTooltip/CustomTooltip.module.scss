@@ -1,6 +1,11 @@
 .Tooltip {
   padding: 10px 20px;
-  
+  background-color: #fff;
+  border: 1px solid #555;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px -2px #333;
 
-  p {margin: 0;}
+  p {
+    margin: 0;
+  }
 }

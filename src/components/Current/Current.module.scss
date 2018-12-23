@@ -8,8 +8,9 @@
     align-items: center;
 
     @media only screen and (max-width: 499px) {
-      // flex-direction: column;
-      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: stretch;
+      // flex-wrap: wrap;
     }
 
     & svg {
@@ -17,15 +18,18 @@
       width: var(--head-font-size);
       transform: scale(2) translateY(-5%);
       vertical-align: middle;
-    }
-
-    .temp {
-      display: flex;
+      // overflow: hidden;
     }
 
     & .weather {
-      // transform: scale(1.2) translateY(-5%);
+      display: flex;
+      flex-direction: row;
+      flex: 1 1 100%;
+      justify-content: space-around;
+      // display: none;
     }
+
+
 
     & .date {
       display: flex;
