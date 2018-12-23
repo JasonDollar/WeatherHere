@@ -22,8 +22,8 @@ const CustomTooltip = ({
       <div className={classes.Tooltip}>
         <p>{`${tempText.hour}: ${label}`}</p>
         <p>{payload[0].payload.summary}</p>
-        <p>{`${tempText.temperature}: ${payload[0].value}°C`}</p>
-        <p>{`${tempText.precipProb}: ${payload[1].value}%`}</p>
+        <p>{`${tempText.temperatureShort}: ${payload[0].value}°C`}</p>
+        <p>{`${tempText.precipProbShort}: ${payload[1].value}%`}</p>
       </div>
     ) 
   } 

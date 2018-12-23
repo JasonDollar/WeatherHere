@@ -21,23 +21,22 @@ const Container = styled.div`
 `
 
 class App extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      location: {
-        long: null,
-        lat: null,
-      },
-      forecast: '',
-      geoForbidden: false,
-      isLoading: true,
-      language: 'pl', 
-      localText: pl,
-      searchValue: '',
-      locationShortName: '',
-      error: '',
-    }
+  
+  state = {
+    location: {
+      long: null,
+      lat: null,
+    },
+    forecast: '',
+    geoForbidden: false,
+    isLoading: true,
+    language: 'pl', 
+    localText: pl,
+    searchValue: '',
+    locationShortName: '',
+    error: '',
   }
+  
 
   componentDidMount() {
     const locationShortName = localStorage.getItem('locationName')

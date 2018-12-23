@@ -18,12 +18,12 @@ const Hourly = ({ hourly, hourlyText, timezone }) => {
       return false
     })
     .map(item => {
-      const precipProb = item.precipProbability > 0.05 ? item.precipProbability : 0
       const time = getTimeFromSeconds(item.time, timezone)
       return {
         [hourlyText.temperature]: formatNumber(item.temperature),
-        [hourlyText.precipProb]: formatNumber(precipProb * 100),
+        [hourlyText.precipProb]: formatNumber(item.precipProbability * 100),
         summary: item.summary,
+        
         time: time.hour,
       }
     })
@@ -38,7 +38,7 @@ const Hourly = ({ hourly, hourlyText, timezone }) => {
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="time" />
             <YAxis yAxisId="left" type="number" tick={{ stroke: style }} domain={['auto', 'auto']} />
-            <YAxis yAxisId="right" orientation="right" type="number" domain={[0, 'dataMax + 20']} />
+            <YAxis yAxisId="right" orientation="right" type="number" domain={[0, 100]} />
             <Tooltip
               content={<CustomTooltip tempText={hourlyText} type="hourly" />} 
               wrapperStyle={{

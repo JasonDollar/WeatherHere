@@ -33,7 +33,9 @@ const pl = {
   hourly: {
     hour: 'Godzina',
     precipProb: 'Możliwość Opadów (%)',
+    precipProbShort: 'Możliwość Opadów',
     temperature: 'Temperatura (°C)',
+    temperatureShort: 'Temperatura',
   },
 }
 
@@ -72,7 +74,9 @@ const en = {
   hourly: {
     hour: 'Hour',
     precipProb: 'Precipitation chance (%)',
+    precipProbShort: 'Precipitation chance',
     temperature: 'Temperature (°C)',
+    temperatureShort: 'Temperature',
   },
 }
 

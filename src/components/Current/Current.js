@@ -23,27 +23,30 @@ const Current = ({
   return (
     <div className={classes.Current}>
       <div className={classes.main}>
-        <div className={classes.main__city}>{locationShortName || currentText.location}</div>
+        <div className={classes.city}>{locationShortName || currentText.location}</div>
+        <div className={classes.temp}>
+          <div className={classes.tempIcon}>
+            <Icon icon="temp" viewBox="0 0 100 100" />
+          </div>
+          {`${formatNumber(currently.temperature)}°C`}
+        </div>
+        <div className={classes.weather}>
+          <Icon icon={currently.icon} viewBox="0 0 100 100" />  
+        </div>
         <div className={classes.date}>
           {dateText.weekDay[today.day]} 
           {' '}
           {today.month}
         </div>
-        <div className={classes.main__temp}>
-          <Icon icon="temp" viewBox="0 0 100 100" />
-          {`${formatNumber(currently.temperature)}°C`}
-        </div>
-        <div className={classes.main__weather}>
-          <Icon icon={currently.icon} viewBox="0 0 100 100" />  
-        </div>
-        <div className={classes.main__sun}>
-          <div>
+        
+        <div className={classes.sun}>
+          <div className={classes.sunContainer}>
             <Icon icon="sunrise" viewBox="0 0 100 100" />
-            <span>{moment.tz(daily.data[0].sunriseTime * 1000, timezone).format('HH:mm')}</span>
+            <span className={classes.sunElement}>{moment.tz(daily.data[0].sunriseTime * 1000, timezone).format('HH:mm')}</span>
           </div>
-          <div>
+          <div className={classes.sunContainer}>
             <Icon icon="sunset" viewBox="0 0 100 100" />
-            <span>{moment.tz(daily.data[0].sunsetTime * 1000, timezone).format('HH:mm')}</span>
+            <span className={classes.sunElement}>{moment.tz(daily.data[0].sunsetTime * 1000, timezone).format('HH:mm')}</span>
           </div>
         </div>
       </div>

@@ -9,11 +9,11 @@ import { getTimeFromSeconds, formatNumber } from '../../data/utils'
 import classes from './Daily.module.scss'
 
 const Daily = ({ daily, dateText, timezone }) => {
-  // const test = daily.data.map(item => getTimeFromSeconds(item.time * 1000))
 
-  const data = daily.data.map((item, index) => {
-    
-    const day = getTimeFromSeconds(item.time, timezone)
+  const data = daily.data.map(({ time, temperatureHigh, temperatureLow }, index) => {
+    const formattedHighTemperature = formatNumber(temperatureHigh)
+    const formattedLowTemperature = formattedHighTemperature === formatNumber(temperatureLow) ? formatNumber(temperatureLow) - 0.1 : formatNumber(temperatureLow)
+    const day = getTimeFromSeconds(time, timezone)
     let dayName
     if (index === 0) {
       dayName = dateText.today
@@ -21,7 +21,7 @@ const Daily = ({ daily, dateText, timezone }) => {
     return {
       name: dayName,
       // change temperature later to localized name
-      [dateText.temperature]: [formatNumber(item.temperatureHigh), formatNumber(item.temperatureLow)],
+      [dateText.temperature]: [formattedHighTemperature, formattedLowTemperature],
       
     }
   })

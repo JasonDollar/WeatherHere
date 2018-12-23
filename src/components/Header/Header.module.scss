@@ -4,11 +4,13 @@
   align-items: center;
   flex-wrap: wrap;
   & > * {
-    padding-right: 1rem;
+    margin-left: .5rem;
+    margin-right: 1rem;
   }
 }
 
 .header {
   margin: 0;
+  margin-left: 1.5rem;
   padding-bottom: 1rem;
 }
