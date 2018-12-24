@@ -14,7 +14,7 @@ const Header = ({
       <button type="submit">{text.search}</button>
     </form>
     <Options changeLanguage={changeLanguage} />
-    <button onClick={onButtonClick}>Geolocatipon</button>
+    <button onClick={onButtonClick}>Geolocation</button>
   </div>
 )
 
