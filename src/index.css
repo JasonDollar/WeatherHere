@@ -19,7 +19,9 @@ code {
 :root {
   font-size: 62.5%;
   box-sizing: border-box;
-  --head-font-size: 4rem;
+  --big-head-font-size: 4.6rem;
+  --head-font-size: 3.8rem;
+  --small-head-font-size: 3.2rem;
   --big-text-font-size: 2.4rem;
   --normal-text-font-size: 1.6rem;
   --color-primary: #dd0055;

@@ -8,7 +8,7 @@ import styled from 'styled-components'
 import classes from './App.module.scss'
 
 import Header from './components/Header/Header'
-import Options from './components/Options/Options'
+// import Options from './components/Options/Options'
 import Current from './components/Current/Current'
 import Daily from './components/Daily/Daily'
 import Footer from './components/Footer/Footer'
@@ -24,8 +24,8 @@ class App extends Component {
   
   state = {
     location: {
-      long: null,
       lat: null,
+      long: null,
     },
     forecast: '',
     geoForbidden: false,
@@ -40,9 +40,17 @@ class App extends Component {
 
   componentDidMount() {
     const locationShortName = localStorage.getItem('locationName')
-    if (locationShortName) {
+    const location = JSON.parse(localStorage.getItem('locationCoords'))
+    console.log(location)
+    if (location) {
       this.setState({
-        locationShortName
+        location,
+      })
+      this.getWeather(location.lat, location.long, this.state.language)
+    }
+    else if (locationShortName) {
+      this.setState({
+        locationShortName,
       })
       this.onNameLocationSearch(locationShortName)
     } else {
@@ -57,11 +65,13 @@ class App extends Component {
     
       navigator.geolocation.getCurrentPosition(position => {
         const {longitude, latitude} = position.coords
+        const location = {
+          lat: latitude,
+          long: longitude
+        }
+        localStorage.setItem('locationCoords', JSON.stringify(location))
         this.setState({
-          location: {
-            lat: latitude,
-            long: longitude
-          }
+          location
         })
 
       this.getWeather(latitude, longitude, this.state.language)
@@ -108,7 +118,6 @@ class App extends Component {
       mode: 'no-cors',
     })
       .then(resp => {
-        // console.log(resp.data)
         this.setState({
         forecast: resp.data,
         isLoading: false,
@@ -147,11 +156,13 @@ class App extends Component {
         return resp.data.results[0].geometry.location
       })
       .then(data => {
+        const location = {
+          lat: data.lat,
+          long: data.lng
+        }
+        localStorage.setItem('locationCoords', JSON.stringify(location))
         this.setState({
-          location: {
-            lat: data.lat,
-            long: data.lng
-          },
+          location,
           searchValue: '',
         })
         this.getWeather(data.lat, data.lng, this.state.language)
@@ -178,8 +189,7 @@ class App extends Component {
             onButtonClick={this.getUserLocation}
             />
 
-            {/*<Options changeLanguage={this.changeLanguage}/>
-    <button onClick={this.getUserLocation}>Geolocatipon</button>*/}
+
           </div>
         
         </div>

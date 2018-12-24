@@ -1,57 +1,7 @@
 .Current {
   // height: 150px;
   
-  & .main {
-    font-size: var(--head-font-size);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-    @media only screen and (max-width: 499px) {
-      flex-direction: column;
-      align-items: stretch;
-      // flex-wrap: wrap;
-    }
-
-    & svg {
-      height: var(--head-font-size);
-      width: var(--head-font-size);
-      transform: scale(2) translateY(-5%);
-      vertical-align: middle;
-      // overflow: hidden;
-    }
-
-    & .weather {
-      display: flex;
-      flex-direction: row;
-      flex: 1 1 100%;
-      justify-content: space-around;
-      // display: none;
-    }
-
-
-
-    & .date {
-      display: flex;
-    }
-
-    & .sun {
-      font-size: var(--big-text-font-size);
-      & .sunElement {
-        display: inline-block;
-        margin-left: 1rem;
-        margin-top: 2px;
-      }
-
-      & svg {
-        height: var(--big-text-font-size);
-        width: var(--big-text-font-size);
-        transform: scale(2.5) translateY(-5%);
-      }
-    }
-
-    
-  }
+  
 
   .circlesContainer {
 
