@@ -9,6 +9,7 @@ import Icon from '../Icon/Icon'
 import DataCircle from '../DataCircle/DataCircle'
 
 import MainInfo from './MainInfo/MainInfo'
+import ListInfo from './ListInfo/ListInfo'
 
 import { getTimeFromSeconds, formatNumber } from '../../data/utils'
 
@@ -47,47 +48,11 @@ const Current = ({
         </ul>
       </div>
 
-
-      <div className={classes.Current__list}>
-
-        <div className={classes.Current__item}>
-          <div>{currentText.appTemp}</div>
-          <div>{`${formatNumber(currently.apparentTemperature)}°C`}</div>
-        </div>
-        <div className={classes.Current__item}>
-          <div>{currentText.dewPoint}</div>
-          <div>{`${formatNumber(currently.dewPoint)}°C`}</div>
-        </div>
-        <div className={classes.Current__item}>
-          <div>{currentText.pressure}</div>
-          <div>{`${formatNumber(currently.pressure)} hPa`}</div>
-        </div>
-        <div className={classes.Current__item}>
-          <div>{currentText.windGust}</div>
-          <div>{`${formatNumber(currently.windGust)} m/s`}</div>
-        </div>
-        <div className={classes.Current__item}>
-          <div>{currentText.precipInt}</div>
-          <div>{`${formatNumber(currently.precipIntensity)} mm/h`}</div>
-        </div>
-        <div className={classes.Current__item}>
-          <div>{currentText.visibility}</div>
-          <div>{`${formatNumber(currently.visibility)} km`}</div>
-        </div>
-        <div className={classes.Current__item}>
-          <div>{currentText.uvIndex}</div>
-          <div>{formatNumber(currently.uvIndex)}</div>
-        </div>
-        <div className={classes.Current__item}>
-          <div>{currentText.moonphase}</div>
-          <div>{`${Math.floor(daily.data[0].moonPhase * 100)}%`}</div>
-        </div>
-        <div className={classes.Current__item}>
-          <div>{currentText.ozone}</div>
-          <div>{formatNumber(currently.ozone)}</div>
-        </div>
-
-      </div>
+      <ListInfo 
+        currentText={currentText}
+        currently={currently}
+        moonphase={Math.floor(daily.data[0].moonPhase * 100)}
+      />
       
     </div>
   )

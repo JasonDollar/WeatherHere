@@ -5,6 +5,7 @@
   justify-content: space-around;
   align-items: stretch;
   flex-direction: column;
+  margin-top: 1rem;
 
   @media only screen and (min-width: 576px) {
     flex-direction: row;
@@ -32,30 +33,31 @@
   flex: 1;
   
   @media only screen and (min-width: 768px) {
-    flex: 0 1 48%;
+    flex: 1 1 48%;
     // flex-wrap: wrap;
   }
   & .city {
     font-size: var(--head-font-size);
+    letter-spacing: 1px;
     flex: 1 1 40%;
-    margin-left: 2rem;
+    margin: 0 1rem 0 2rem;
     text-align: center;
     @media only screen and (min-width: 420px) {
       font-size: var(--big-head-font-size);
     }
   }
   & .temperature {
-    // flex: 1 1 25%;
-    margin-right: 2rem;
+    flex: 0 1 25%;
+    margin: 0 1rem 0 2rem;
     & span {
       font-weight: 300;
     }
   }
 
   & .icon {
-    flex: 1 1 20%;
+    flex: 0 1 20%;
     text-align: center;
-    transform: translateY(5%);
+    transform: translateY(10%);
   }
 }
 
@@ -76,6 +78,9 @@
     margin: 0 1rem;
     @media only screen and (min-width: 420px) {
       font-size: var(--small-head-font-size);
+    }
+    @media only screen and (min-width: 870px) {
+      font-size: var(--head-font-size);
     }
   }
   
@@ -99,12 +104,12 @@
 
 .summary {
   @media only screen and (min-width: 420px) {
-    font-size: var(--smail-head-font-size);
+    // font-size: var(--small-head-font-size);
     // flex-wrap: wrap;
   }
   @media only screen and (min-width: 768px) {
     flex: 0 0 100%;
-    font-size: var(--smail-head-font-size);
+    font-size: var(--small-head-font-size);
     // flex-wrap: wrap;
   }
   font-size: var(--big-text-font-size);
