@@ -6,8 +6,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  min-height: 100vh;
-  font-size: 1.6rem;
+  /* min-height: 100vh; */
+  font-size: var(--normal-text-font-size);
   background-color: #fefefe;
 }
 
@@ -27,7 +27,9 @@ code {
   --color-primary: #dd0055;
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 

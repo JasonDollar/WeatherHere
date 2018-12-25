@@ -5,13 +5,12 @@ import 'moment/locale/en-gb'
 import 'moment/locale/pl'
 // import 'moment-timezone'
 
-import Icon from '../Icon/Icon'
-import DataCircle from '../DataCircle/DataCircle'
 
 import MainInfo from './MainInfo/MainInfo'
 import ListInfo from './ListInfo/ListInfo'
+import CircleContainer from './CircleContainer/CircleContainer'
 
-import { getTimeFromSeconds, formatNumber } from '../../data/utils'
+import { getTimeFromSeconds } from '../../data/utils'
 
 import classes from './Current.module.scss'
 
@@ -39,14 +38,11 @@ const Current = ({
         sunPositionTime={sunPositionTime}
       />
       
-      <div className={classes.circlesContainer}>
-        <ul>
-          <li><DataCircle type={currentText.humidity} unit="%" data={formatNumber(currently.humidity * 100)} additionalData={null} /></li>
-          <li><DataCircle type={currentText.wind} unit="m/s" data={formatNumber(currently.windSpeed)} additionalData={currently.windBearing} /></li>
-          <li><DataCircle type={currentText.precipProb} unit="%" data={formatNumber(currently.precipProbability * 100)} additionalData={null} /></li>
-          <li><DataCircle type={currentText.cloudCov} unit="%" data={formatNumber(currently.cloudCover * 100)} additionalData={null} /></li>
-        </ul>
-      </div>
+      <CircleContainer 
+        currently={currently}
+        currentText={currentText}
+      />
+
 
       <ListInfo 
         currentText={currentText}

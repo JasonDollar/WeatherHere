@@ -33,7 +33,7 @@ const Hourly = ({ hourly, hourlyText, timezone }) => {
     <div className={classes.Hourly}>
       <p className={classes.Summary}>{hourly.summary}</p>
       <div className={classes.chartContainer}>
-        <ResponsiveContainer width="110%" height={300}>
+        <ResponsiveContainer width="100%" height={300}>
           <LineChart data={data}>
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="time" />

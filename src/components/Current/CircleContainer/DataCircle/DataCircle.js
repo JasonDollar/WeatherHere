@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 // import {
 //   PieChart, Pie, Sector, Cell, ResponsiveContainer, 
 // } from 'recharts'
-import Icon from '../Icon/Icon'
+import Icon from '../../../Icon/Icon'
 
 import classes from './DataCircle.module.scss'
 
