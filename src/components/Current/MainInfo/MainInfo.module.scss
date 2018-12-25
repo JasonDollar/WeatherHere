@@ -6,6 +6,7 @@
   align-items: stretch;
   flex-direction: column;
   margin-top: 1rem;
+  overflow-x: hidden;
 
   @media only screen and (min-width: 576px) {
     flex-direction: row;
@@ -27,10 +28,14 @@
 .weather {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   // margin: 0 auto;
   flex: 1;
+  @media only screen and (min-width: 420px) {
+    flex-wrap: nowrap;
+  }
   
   @media only screen and (min-width: 768px) {
     flex: 1 1 48%;
@@ -39,11 +44,16 @@
   & .city {
     font-size: var(--head-font-size);
     letter-spacing: 1px;
-    flex: 1 1 40%;
+    flex: 0 1 100%;
     margin: 0 1rem 0 2rem;
     text-align: center;
     @media only screen and (min-width: 420px) {
       font-size: var(--big-head-font-size);
+      flex: 0 1 40%;
+    }
+    @media only screen and (min-width: 576px) {
+      flex: 0 1 40%;
+      // flex-wrap: wrap;
     }
   }
   & .temperature {
@@ -115,4 +125,6 @@
   font-size: var(--big-text-font-size);
   margin: .5rem 2rem;
   text-align: center;
+  // width: 100%;
+  flex: 1;
 }

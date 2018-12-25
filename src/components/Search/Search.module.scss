@@ -1,9 +1,44 @@
+.container {
+  flex: 1 1;
+}
+
 .Search {
+  position: fixed;
+  top: 0;
+  // bottom: 90%;
+  left: 0;
+  right: 0;
+  z-index: 23;
+  background-color: rgba(1,1,1,0);
+  // flex-grow: 1;
+  @media screen and (min-width: 577px) {
+    position: static;
+  }
+  & .form {
+    padding: 1.5rem 1.5rem;
+    width: 100%;
+    display: flex;
+
+    & .input {
+      padding: 1rem .5rem;
+      flex: 1;
+    }
+
+    & .button {
+      padding: 1rem .5rem;
+    }
+  }
+}
+
+.backdrop {
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 21;
-  background-color: green;
+  z-index: 22;
+  background-color: rgba(1,1,1,.8);
+  @media screen and (min-width: 577px) {
+    display: none;
+  }
 }

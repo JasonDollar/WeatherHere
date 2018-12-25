@@ -5,6 +5,7 @@ import React from 'react'
 import classes from './Settings.module.scss'
 
 const Settings = ({ changeLanguage, showSettingsHandler }) => (
+  
   <div className={classes.Settings}>
     <button onClick={showSettingsHandler}>Done</button>
     <select name="lang" id="lang" onChange={changeLanguage} defaultValue="pl">
@@ -12,6 +13,7 @@ const Settings = ({ changeLanguage, showSettingsHandler }) => (
       <option value="en">English</option>
     </select>
   </div>
+  
 )
 
 export default Settings

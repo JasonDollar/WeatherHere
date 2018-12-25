@@ -11,7 +11,7 @@
   top: 90%;
   bottom: 0%;
   left: 0%;
-  width: 100%;
+  width: var(--screen-width);
   background-color: yellow;
   z-index: 40;
 
@@ -21,4 +21,25 @@
     height: 100%;
     flex: 1;
   }
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 22;
+  background-color: rgba(1,1,1,.8);
+}
+
+.container {
+  max-width: 1040px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.headerBar {
+  width: 100%;
+  background-color: #dd0055;
 }

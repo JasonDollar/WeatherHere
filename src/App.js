@@ -10,6 +10,7 @@ import classes from './App.module.scss'
 import Weather from './containers/Weather/Weather'
 import Settings from './components/Settings/Settings'
 import Search from './components/Search/Search'
+import Header from './components/Header/Header'
 
 const Container = styled.div`
 color: #111;
@@ -37,7 +38,12 @@ class App extends Component {
 
   
   updateWindowDimensions = () => {
-    this.setState({ width: window.innerWidth, height: window.innerHeight });
+    this.setState({ 
+      width: window.innerWidth, 
+      height: window.innerHeight,
+      showSearch: window.innerWidth <= 576 ? false : true 
+    });
+    document.documentElement.style.setProperty('--screen-width', `${window.innerWidth}px`)
   }
 
 
@@ -87,10 +93,10 @@ class App extends Component {
   onSearchFormSubmit = (e) => {
     // console.log(e)
     e.preventDefault();
-    // this.setState({
-    //   searchValue: this.state.inputValue,
-    //   showSearch: false,
-    // })
+    this.setState({
+      searchValue: this.state.inputValue,
+      showSearch: false,
+    })
     // this.setState(prevState => ({
     //   searchValue: prevState.inputValue,
     //   // inputValue: ''
@@ -103,10 +109,30 @@ class App extends Component {
   render() {
     return (
       <Container>
+      <div className={classes.headerBar}>
+          <div className={classes.container}>
+            <Header 
+            text={this.state.localText.header} 
+            
+            />
+
+
+            {this.state.showSearch && (
+              <Search 
+              showSearchHandler={this.showSearchHandler}
+              onInputChange={this.onInputChange}
+              inputValue={this.inputValue}
+              text={this.state.localText.layout}
+              onSearchFormSubmit={this.onSearchFormSubmit}
+              />
+          )}
+          </div>
+        
+        </div>
         <Weather 
         text={this.state.localText}
         language={this.state.language}
-        searchValue={this.state.inputValue}
+        searchValue={this.state.searchValue}
         />
 
         {this.state.showSettings && (
@@ -116,15 +142,7 @@ class App extends Component {
           />
         )}
 
-        {this.state.showSearch && (
-          <Search 
-          showSearchHandler={this.showSearchHandler}
-          onInputChange={this.onInputChange}
-          inputValue={this.inputValue}
-          text={this.state.localText.layout}
-          onSearchFormSubmit={this.onSearchFormSubmit}
-          />
-        )}
+
 
         {this.state.width <= 576 ? (<div className={classes.bottomBar}>
           <div
