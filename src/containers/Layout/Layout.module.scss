@@ -1,0 +1,16 @@
+.bottomBar {
+  position: fixed;
+  top: 90%;
+  bottom: 0%;
+  left: 0%;
+  width: 100%;
+  background-color: yellow;
+  z-index: 20;
+
+  display: flex;
+  // justify-content: space-between;
+  & .setting {
+    height: 100%;
+    flex: 1;
+  }
+}

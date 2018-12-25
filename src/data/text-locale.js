@@ -2,6 +2,9 @@ const pl = {
   header: {
     title: 'Pogoda',
     search: 'Szukaj',
+  },  
+  layout: {
+    search: 'Szukaj',
   },
   current: {
     today: 'Dziś',
@@ -43,6 +46,9 @@ const pl = {
 const en = {
   header: {
     title: 'Weather',
+    
+  },
+  layout: {
     search: 'Search',
   },
   current: {
