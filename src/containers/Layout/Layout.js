@@ -26,10 +26,20 @@ class Layout extends Component {
   componentWillUnmount() {
     window.removeEventListener('resize', this.updateWindowDimensions);
   }
+
+  shouldComponentUpdate(nextProps) {
+    if (nextProps.inputValue !== this.props.inputValue) {
+      return false
+    } else {
+      return true
+    }
+  }
   
   updateWindowDimensions = () => {
     this.setState({ width: window.innerWidth, height: window.innerHeight });
   }
+
+
 
   showSettingsHandler = () => {
     this.setState({
@@ -48,6 +58,8 @@ class Layout extends Component {
       showSearch: false,
     })
   }
+
+
   render() {
     return (
       <Container>
