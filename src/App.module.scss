@@ -43,3 +43,11 @@
   width: 100%;
   background-color: #dd0055;
 }
+
+.footerContainer {
+  margin-bottom: calc(var(--screen-height) / 10);
+
+  @media only screen and (min-width: 577px) {
+    margin-bottom: 2rem;
+  } 
+}

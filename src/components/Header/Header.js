@@ -10,7 +10,7 @@ const Header = ({
   <div className={classes.container}>
     <h1 className={classes.header}>{text.title}</h1> 
     
-    <button onClick={onButtonClick}>Geolocation</button>
+    
   </div>
 )
 
@@ -25,4 +25,5 @@ Header.propTypes = {
       <input type="text" onChange={onInputChange} value={searchValue} />
       <button type="submit">{text.search}</button>
     </form>
+    <button onClick={onButtonClick}>Geolocation</button>
  */

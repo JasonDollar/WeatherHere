@@ -3,6 +3,8 @@
 }
 
 .Search {
+  display: flex;
+  width: 100%;
   position: fixed;
   top: 0;
   // bottom: 90%;
@@ -10,13 +12,14 @@
   right: 0;
   z-index: 23;
   background-color: rgba(1,1,1,0);
+  
   // flex-grow: 1;
   @media screen and (min-width: 577px) {
     position: static;
   }
   & .form {
     padding: 1.5rem 1.5rem;
-    width: 100%;
+    flex: 1;
     display: flex;
 
     & .input {
@@ -38,6 +41,7 @@
   right: 0;
   z-index: 22;
   background-color: rgba(1,1,1,.8);
+
   @media screen and (min-width: 577px) {
     display: none;
   }

@@ -11,6 +11,7 @@ import Weather from './containers/Weather/Weather'
 import Settings from './components/Settings/Settings'
 import Search from './components/Search/Search'
 import Header from './components/Header/Header'
+import Footer from './components/Footer/Footer'
 
 const Container = styled.div`
 color: #111;
@@ -25,7 +26,7 @@ class App extends Component {
     searchValue: '',
     showSettings: false,
     showSearch: false,
-    showWeather: true,
+    location: null,
   }
   componentDidMount() {
     this.updateWindowDimensions();
@@ -44,15 +45,34 @@ class App extends Component {
       showSearch: window.innerWidth <= 576 ? false : true 
     });
     document.documentElement.style.setProperty('--screen-width', `${window.innerWidth}px`)
+    document.documentElement.style.setProperty('--screen-height', `${window.innerHeight}px`)
   }
 
-
+  getUserLocation = () => {
+    // this.setState({isLoading: true})
+    
+    navigator.geolocation.getCurrentPosition(position => {
+      const {longitude, latitude} = position.coords
+      const location = {
+        lat: latitude,
+        long: longitude
+      }
+      localStorage.setItem('locationCoords', JSON.stringify(location))
+      this.setState({
+        location,
+        showSearch: this.state.width <= 576 ? false : true,
+      })
+    })
+      // this.getWeather(latitude, longitude, this.props.language)
+      // }, error => {
+      //   this.setState({geoForbidden: true})
+      // })  
+  }
 
   showSettingsHandler = () => {
     this.setState({
       showSettings: !this.state.showSettings,
       showSearch: false,
-      showWeather: false
     })
   }
 
@@ -85,25 +105,20 @@ class App extends Component {
   }
 
   onInputChange = e => {
-    // event used is onBlur
     const value = e.target.value
     this.setState({inputValue: value})
   }
 
   onSearchFormSubmit = (e) => {
+    const searchValue = this.state.inputValue
     // console.log(e)
     e.preventDefault();
     this.setState({
-      searchValue: this.state.inputValue,
-      showSearch: false,
+      searchValue: searchValue,
+      showSearch: this.state.width <= 576 ? false : true,
+      inputValue: ''
     })
-    // this.setState(prevState => ({
-    //   searchValue: prevState.inputValue,
-    //   // inputValue: ''
-    //   showSearch: false,
-    // }))
 
-    // this.onNameLocationSearch(this.state.searchValue)
   }
 
   render() {
@@ -121,18 +136,20 @@ class App extends Component {
               <Search 
               showSearchHandler={this.showSearchHandler}
               onInputChange={this.onInputChange}
-              inputValue={this.inputValue}
+              inputValue={this.state.inputValue}
               text={this.state.localText.layout}
               onSearchFormSubmit={this.onSearchFormSubmit}
+              getUserLocation={this.getUserLocation}
               />
           )}
           </div>
-        
         </div>
+
         <Weather 
-        text={this.state.localText}
-        language={this.state.language}
-        searchValue={this.state.searchValue}
+          text={this.state.localText}
+          language={this.state.language}
+          searchValue={this.state.searchValue}
+          location={this.state.location}
         />
 
         {this.state.showSettings && (
@@ -164,6 +181,9 @@ class App extends Component {
             Settings
           </div>
         </div>) : null}
+        <div className={`${classes.footerContainer} ${classes.container}`}>
+          <Footer />
+        </div>
 
       </Container>
     )

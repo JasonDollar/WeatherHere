@@ -9,6 +9,7 @@ body {
   /* min-height: 100vh; */
   font-size: var(--normal-text-font-size);
   background-color: #fefefe;
+  min-height: 100vh;
 }
 
 code {
@@ -26,6 +27,9 @@ code {
   --normal-text-font-size: 1.6rem;
   --color-primary: #dd0055;
   --screen-width: 100%;
+  --screen-height: 100vh;
+  --circle-dimension: 20rem;
+  --circle-dimension-small: 15rem;
 }
 
 *,

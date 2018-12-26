@@ -1,14 +1,21 @@
 .DataCircle {
 
   position: relative;
-  height: 20rem;
-  width: 20rem;
+  height: var(--circle-dimension-small);
+  width: var(--circle-dimension-small);
   border: 1px solid #ccc;
   border-radius: 50%;
   margin: 1rem auto;
 
+  @media only screen and (min-width: 576px) {
+    height: var(--circle-dimension);
+    width: var(--circle-dimension);
+    font-size: var(--normal-text-font-size);
+  }
+
   & .dataContainer {
-    font-size: var(--big-text-font-size);
+
+    font-size: var(--normal-text-font-size);
     position: absolute;
     top: 47%;
     left: 50%;
@@ -19,6 +26,10 @@
     text-align: center;
     z-index: 5;
 
+    @media only screen and (min-width: 576px) {
+
+      font-size: var(--big-text-font-size);
+    }
 
     & span {
       display: block;
@@ -43,11 +54,16 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
-    width: 16rem;
-    height: 16rem;
+    width: 12rem;
+    height: 12rem;
     background-color: #fff;
     border: 1px solid transparent;
     border-radius: 50%;
+
+    @media only screen and (min-width: 576px) {
+      width: 16rem;
+      height: 16rem;
+    }
   }
 
 }

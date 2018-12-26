@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 // import {pl, en} from '../../data/text-locale'
 import {DARK_URL, MAP_URL} from '../../data/url'
 import {DARK_API, MAP_API} from '../../data/api/api'
@@ -7,11 +7,11 @@ import styled from 'styled-components'
 
 import classes from './Weather.module.scss'
 
-import Header from '../../components/Header/Header'
+// import Header from '../../components/Header/Header'
 // import Options from './components/Options/Options'
 import Current from '../../components/Current/Current'
 import Daily from '../../components/Daily/Daily'
-import Footer from '../../components/Footer/Footer'
+// import Footer from '../../components/Footer/Footer'
 import Spinner from '../../components/Spinner/Spinner'
 import Hourly from '../../components/Hourly/Hourly'
 
@@ -61,33 +61,33 @@ class Weather extends Component {
   }
 
   componentDidUpdate(prevProps) {
-    if (prevProps.language !== this.props.language) {
-      this.getWeather(this.state.location.lat, this.state.location.long, this.props.language)
+    if (prevProps.language !== this.props.language || prevProps.location !== this.props.location) {
+      this.getWeather(this.props.location.lat, this.props.location.long, this.props.language)
     } 
     if (prevProps.searchValue !== this.props.searchValue) {
       this.onNameLocationSearch(this.props.searchValue)
     }
   }
   
-  getUserLocation = () => {
-    this.setState({isLoading: true})
+  // getUserLocation = () => {
+  //   this.setState({isLoading: true})
     
-      navigator.geolocation.getCurrentPosition(position => {
-        const {longitude, latitude} = position.coords
-        const location = {
-          lat: latitude,
-          long: longitude
-        }
-        localStorage.setItem('locationCoords', JSON.stringify(location))
-        this.setState({
-          location
-        })
+  //     navigator.geolocation.getCurrentPosition(position => {
+  //       const {longitude, latitude} = position.coords
+  //       const location = {
+  //         lat: latitude,
+  //         long: longitude
+  //       }
+  //       localStorage.setItem('locationCoords', JSON.stringify(location))
+  //       this.setState({
+  //         location
+  //       })
 
-      this.getWeather(latitude, longitude, this.props.language)
-      }, error => {
-        this.setState({geoForbidden: true})
-      })  
-  }
+  //     this.getWeather(latitude, longitude, this.props.language)
+  //     }, error => {
+  //       this.setState({geoForbidden: true})
+  //     })  
+  // }
 
   searchLocationName = (data) => {
     this.setState({
@@ -114,6 +114,7 @@ class Weather extends Component {
   }
 
   getWeather = (lat, long, lang) => {
+    this.setState({isLoading: true})
     // returns all places for given location 
     axios.post(`${MAP_URL}?latlng=${lat},${long}&key=${MAP_API}&language=${lang}`)
       .then(resp => resp.data)
@@ -187,21 +188,7 @@ class Weather extends Component {
   render() {
     return (
       <Container>
-        <div className={classes.headerBar}>
-          <div className={classes.container}>
-            <Header 
-            text={this.props.text.header} 
-            searchValue={this.state.searchValue} 
-            onInputChange={this.onInputChange}
-            onSearchFormSubmit={this.onSearchFormSubmit}
-            changeLanguage={this.changeLanguage}
-            onButtonClick={this.getUserLocation}
-            />
 
-
-          </div>
-        
-        </div>
         
         
         {
