@@ -10,7 +10,7 @@
   // bottom: 90%;
   left: 0;
   right: 0;
-  z-index: 23;
+  z-index: 200;
   background-color: rgba(1,1,1,0);
   
   // flex-grow: 1;
@@ -33,16 +33,3 @@
   }
 }
 
-.backdrop {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 22;
-  background-color: rgba(1,1,1,.8);
-
-  @media screen and (min-width: 577px) {
-    display: none;
-  }
-}

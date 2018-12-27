@@ -1,10 +1,16 @@
 .Settings {
   position: fixed;
   top: 0;
-  bottom: 90%;
+  bottom: 0;
   left: 0;
   right: 0;
-  z-index: 25;
+  z-index: 200;
   background-color: green;
+  @media only screen and (min-width: 576px) {
+    top: calc(var(--screen-height) / 2 - 250px);
+    bottom: calc(var(--screen-height) / 2 - 250px);
+    left: calc(var(--screen-width) / 2 - 350px);
+    right: calc(var(--screen-width) / 2 - 350px);
+  }
 }
 

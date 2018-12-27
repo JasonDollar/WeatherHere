@@ -23,10 +23,10 @@ const Container = styled.div`
 class Weather extends Component {
   
   state = {
-    location: {
-      lat: null,
-      long: null,
-    },
+    // location: {
+    //   lat: null,
+    //   long: null,
+    // },
     forecast: '',
     geoForbidden: false,
     locationShortName: '',
@@ -39,13 +39,24 @@ class Weather extends Component {
   
 
   componentDidMount() {
+    this.parseDataFromLocalStorage()
+  }
+
+  componentDidUpdate(prevProps) {
+    if (prevProps.language !== this.props.language || prevProps.location !== this.props.location) {
+      this.getWeather(this.props.location.lat, this.props.location.long, this.props.language)
+    } 
+    if (prevProps.searchValue !== this.props.searchValue) {
+      this.onNameLocationSearch(this.props.searchValue)
+    }
+  }
+
+  parseDataFromLocalStorage = () => {
     const locationShortName = localStorage.getItem('locationName')
     const location = JSON.parse(localStorage.getItem('locationCoords'))
     console.log(location)
     if (location) {
-      this.setState({
-        location,
-      })
+      this.props.setLocationCoordsToState(location)
       this.getWeather(location.lat, location.long, this.props.language)
     }
     else if (locationShortName) {
@@ -57,15 +68,6 @@ class Weather extends Component {
       this.setState({
         locationShortName: ''
       })
-    }
-  }
-
-  componentDidUpdate(prevProps) {
-    if (prevProps.language !== this.props.language || prevProps.location !== this.props.location) {
-      this.getWeather(this.props.location.lat, this.props.location.long, this.props.language)
-    } 
-    if (prevProps.searchValue !== this.props.searchValue) {
-      this.onNameLocationSearch(this.props.searchValue)
     }
   }
   

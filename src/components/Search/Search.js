@@ -1,12 +1,13 @@
 import React from 'react'
 
+import Backdrop from '../Backdrop/Backdrop'
 import classes from './Search.module.scss'
 
 const Search = ({ 
-  onSearchFormSubmit, onInputChange, inputValue, text, showSearchHandler, getUserLocation,
+  onSearchFormSubmit, onInputChange, inputValue, text, showSearchHandler, getUserLocation, showBackdrop, hideBackdrop, 
 }) => (
   <div className={classes.container}>
-    <div className={classes.backdrop} />
+    <Backdrop showBackdrop={showBackdrop} hideBackdrop={hideBackdrop} />
     <div className={classes.Search}>
       <form onSubmit={onSearchFormSubmit} className={classes.form}>
         <input type="text" onChange={onInputChange} value={inputValue} className={classes.input} />

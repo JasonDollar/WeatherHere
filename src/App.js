@@ -27,6 +27,8 @@ class App extends Component {
     showSettings: false,
     showSearch: false,
     location: null,
+    showBackdrop: false,
+    activeMenuBarClass: 'forecast',
   }
   componentDidMount() {
     this.updateWindowDimensions();
@@ -36,6 +38,13 @@ class App extends Component {
   componentWillUnmount() {
     window.removeEventListener('resize', this.updateWindowDimensions);
   }
+
+  setLocationCoordsToState = (location) => {
+    this.setState({
+      location,
+      showSearch: this.state.width <= 576 ? false : true,
+    })
+  } 
 
   
   updateWindowDimensions = () => {
@@ -58,10 +67,7 @@ class App extends Component {
         long: longitude
       }
       localStorage.setItem('locationCoords', JSON.stringify(location))
-      this.setState({
-        location,
-        showSearch: this.state.width <= 576 ? false : true,
-      })
+      this.setLocationCoordsToState(location)
     })
       // this.getWeather(latitude, longitude, this.props.language)
       // }, error => {
@@ -72,7 +78,9 @@ class App extends Component {
   showSettingsHandler = () => {
     this.setState({
       showSettings: !this.state.showSettings,
-      showSearch: false,
+      showSearch:  this.state.width <= 576 ? false : true,
+      showBackdrop: !this.state.showBackdrop,
+      activeMenuBarClass: this.state.activeMenuBarClass === ('forecast' || 'search')  ? 'settings' : 'forecast',
     })
   }
 
@@ -80,14 +88,20 @@ class App extends Component {
     this.setState({
       showSearch: !this.state.showSearch,
       showSettings: false,
+      showBackdrop: this.state.width <= 576 ? !this.state.showBackdrop : false,
+      activeMenuBarClass: this.state.activeMenuBarClass === ('forecast' || 'settings') ? 'search' : 'forecast',
     })
   }
   showForecastHandler = () => {
     this.setState({
       showSettings: false,
-      showSearch: false,
+      showSearch: this.state.width <= 576 ? false : true,
+      showBackdrop: false,
+      activeMenuBarClass: 'forecast',
     })
   }
+
+
 
   changeLanguage = (e) => {
     const value = e.target.value
@@ -124,7 +138,7 @@ class App extends Component {
   render() {
     return (
       <Container>
-      <div className={classes.headerBar}>
+        <div className={classes.headerBar}>
           <div className={classes.container}>
             <Header 
             text={this.state.localText.header} 
@@ -140,8 +154,16 @@ class App extends Component {
               text={this.state.localText.layout}
               onSearchFormSubmit={this.onSearchFormSubmit}
               getUserLocation={this.getUserLocation}
+              showBackdrop={this.state.showBackdrop}
+              hideBackdrop={this.showForecastHandler}
               />
-          )}
+            )}
+            <div
+              className={classes.settingDesktop} 
+              onClick={this.showSettingsHandler}
+            >
+              Settings
+            </div>
           </div>
         </div>
 
@@ -150,12 +172,16 @@ class App extends Component {
           language={this.state.language}
           searchValue={this.state.searchValue}
           location={this.state.location}
+          setLocationCoordsToState={this.setLocationCoordsToState}
         />
 
         {this.state.showSettings && (
           <Settings 
-            changeLanguage={this.props.changeLanguage}
+            changeLanguage={this.changeLanguage}
             showSettingsHandler={this.showSettingsHandler}
+            selectValue={this.state.language}
+            showBackdrop={this.state.showBackdrop}
+            hideBackdrop={this.showForecastHandler}
           />
         )}
 
@@ -163,19 +189,19 @@ class App extends Component {
 
         {this.state.width <= 576 ? (<div className={classes.bottomBar}>
           <div
-            className={classes.setting} 
+            className={this.state.activeMenuBarClass === 'search' ? `${classes.active} ${classes.setting}` : classes.setting} 
             onClick={this.showSearchHandler}
           >
             Search
           </div>
           <div 
-            className={classes.setting} 
+            className={this.state.activeMenuBarClass === 'forecast' ? `${classes.active} ${classes.setting}` : classes.setting} 
             onClick={this.showForecastHandler}
           >
             Forecast
           </div>
           <div
-            className={classes.setting} 
+            className={this.state.activeMenuBarClass === 'settings' ? `${classes.active} ${classes.setting}` : classes.setting} 
             onClick={this.showSettingsHandler}
           >
             Settings

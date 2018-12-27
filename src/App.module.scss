@@ -13,36 +13,48 @@
   left: 0%;
   width: var(--screen-width);
   background-color: yellow;
-  z-index: 40;
+  z-index: 250;
 
   display: flex;
   // justify-content: space-between;
   & .setting {
     height: 100%;
     flex: 1;
+
+    &.active {
+      background-color: aquamarine;
+    }
   }
 }
 
-.backdrop {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 22;
-  background-color: rgba(1,1,1,.8);
-}
+// .backdrop {
+//   position: fixed;
+//   top: 0;
+//   bottom: 0;
+//   left: 0;
+//   right: 0;
+//   z-index: 22;
+//   background-color: rgba(1,1,1,.8);
+// }
 
 .container {
   max-width: 1040px;
   margin: 0 auto;
   display: flex;
+
+  & .settingDesktop {
+    display: none;
+    @media only screen and (min-width: 577px) {
+      display: block;
+    }
+  }
 }
 
 .headerBar {
   width: 100%;
   background-color: #dd0055;
 }
+
 
 .footerContainer {
   margin-bottom: calc(var(--screen-height) / 10);
