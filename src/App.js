@@ -1,10 +1,6 @@
-import React, { Component, Fragment } from 'react'
+import React, { Component } from 'react'
 import {pl, en} from './data/text-locale'
 import styled from 'styled-components'
-// import {DARK_URL, MAP_URL} from './data/url'
-// import {DARK_API, MAP_API} from './data/api/api'
-// import axios from 'axios'
-
 
 import classes from './App.module.scss'
 import Weather from './containers/Weather/Weather'
@@ -29,6 +25,10 @@ class App extends Component {
     location: null,
     showBackdrop: false,
     activeMenuBarClass: 'forecast',
+    graphColor: {
+      primary: '#dd0055',
+      secondary: '#82ca9d'
+    }
   }
   componentDidMount() {
     this.updateWindowDimensions();
@@ -59,7 +59,6 @@ class App extends Component {
   }
 
   getUserLocation = () => {
-    //TODO gdy sie znajdzie lokalizacja to search wciaz ma klase active - zrobione, czeka na commit
     
     navigator.geolocation.getCurrentPosition(position => {
       const {longitude, latitude} = position.coords
@@ -118,7 +117,6 @@ class App extends Component {
   }
 
 
-
   changeLanguage = (e) => {
     const value = e.target.value
     if (value === 'pl') {
@@ -141,7 +139,6 @@ class App extends Component {
 
   onSearchFormSubmit = (e) => {
     const searchValue = this.state.inputValue
-    // console.log(e)
     e.preventDefault();
     this.setState({
       searchValue: searchValue,
@@ -189,6 +186,7 @@ class App extends Component {
           searchValue={this.state.searchValue}
           location={this.state.location}
           setLocationCoordsToState={this.setLocationCoordsToState}
+          graphColor={this.state.graphColor}
         />
 
         {this.state.showSettings && (

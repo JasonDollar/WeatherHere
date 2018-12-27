@@ -8,7 +8,9 @@ import CustomTooltip from '../CustomTooltip/CustomTooltip'
 
 import classes from './Hourly.module.scss'
 
-const Hourly = ({ hourly, hourlyText, timezone }) => { 
+const Hourly = ({
+  hourly, hourlyText, timezone, graphColor, 
+}) => { 
 
   const data = hourly.data
     .filter((item, index) => {
@@ -28,7 +30,6 @@ const Hourly = ({ hourly, hourlyText, timezone }) => {
       }
     })
 
-  const style = '#dd0055'
   return (
     <div className={classes.Hourly}>
       <p className={classes.Summary}>{hourly.summary}</p>
@@ -37,15 +38,15 @@ const Hourly = ({ hourly, hourlyText, timezone }) => {
           <LineChart data={data}>
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="time" />
-            <YAxis yAxisId="left" type="number" tick={{ stroke: style }} domain={['auto', 'auto']} />
+            <YAxis yAxisId="left" type="number" tick={{ stroke: graphColor.primary }} domain={['auto', 'auto']} />
             <YAxis yAxisId="right" orientation="right" type="number" domain={[0, 100]} />
             <Tooltip
               content={<CustomTooltip tempText={hourlyText} type="hourly" />} 
 
             />
             <Legend layout="vertical" />
-            <Line yAxisId="left" type="monotone" dataKey={hourlyText.temperature} stroke={style} activeDot={{ r: 8 }} />
-            <Line yAxisId="right" type="monotone" dataKey={hourlyText.precipProb} stroke="#82ca9d" />
+            <Line yAxisId="left" type="monotone" dataKey={hourlyText.temperature} stroke={graphColor.primary} activeDot={{ r: 8 }} />
+            <Line yAxisId="right" type="monotone" dataKey={hourlyText.precipProb} stroke={graphColor.secondary} />
           </LineChart>
         </ResponsiveContainer>
       </div>

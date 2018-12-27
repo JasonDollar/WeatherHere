@@ -7,11 +7,8 @@ import styled from 'styled-components'
 
 import classes from './Weather.module.scss'
 
-// import Header from '../../components/Header/Header'
-// import Options from './components/Options/Options'
 import Current from '../../components/Current/Current'
 import Daily from '../../components/Daily/Daily'
-// import Footer from '../../components/Footer/Footer'
 import Spinner from '../../components/Spinner/Spinner'
 import Hourly from '../../components/Hourly/Hourly'
 
@@ -23,18 +20,12 @@ const Container = styled.div`
 class Weather extends Component {
   
   state = {
-    // location: {
-    //   lat: null,
-    //   long: null,
-    // },
     forecast: '',
     geoForbidden: false,
     locationShortName: '',
     error: '',
     isLoading: true,
-    // language: 'pl', 
-    // localText: pl,
-    searchValue: '',
+    // searchValue: '',
   }
   
 
@@ -173,10 +164,10 @@ class Weather extends Component {
           long: data.lng
         }
         localStorage.setItem('locationCoords', JSON.stringify(location))
-        this.setState({
-          location,
-          searchValue: '',
-        })
+        // this.setState({
+        //   location,
+        //   searchValue: '',
+        // })
         this.getWeather(data.lat, data.lng, this.props.language)
       })
       .catch(error => this.setState({error: error.message}))
@@ -205,16 +196,19 @@ class Weather extends Component {
               dateText={this.props.text.date}
               timezone={this.state.forecast.timezone}
               locationShortName={this.state.locationShortName}
+              graphColor={this.props.graphColor}
             />
             <Daily 
               daily={this.state.forecast.daily}
               dateText={this.props.text.date}
               timezone={this.state.forecast.timezone}
+              graphColor={this.props.graphColor}
             />
             <Hourly 
               hourly={this.state.forecast.hourly}
               hourlyText={this.props.text.hourly}
               timezone={this.state.forecast.timezone}
+              graphColor={this.props.graphColor}
             />
             </div>
           )

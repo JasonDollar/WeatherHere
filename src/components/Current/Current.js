@@ -17,7 +17,7 @@ import classes from './Current.module.scss'
 
 
 const Current = ({
-  currently, daily, currentText, dateText, timezone, locationShortName,
+  currently, daily, currentText, dateText, timezone, locationShortName, graphColor,
 }) => {
   const now = moment().unix()
   const today = getTimeFromSeconds(now, timezone)
@@ -41,6 +41,7 @@ const Current = ({
       <CircleContainer 
         currently={currently}
         currentText={currentText}
+        graphColor={graphColor}
       />
 
 

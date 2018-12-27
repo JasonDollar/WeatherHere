@@ -8,7 +8,9 @@ import CustomTooltip from '../CustomTooltip/CustomTooltip'
 import { getTimeFromSeconds, formatNumber } from '../../data/utils'
 import classes from './Daily.module.scss'
 
-const Daily = ({ daily, dateText, timezone }) => {
+const Daily = ({
+  daily, dateText, timezone, graphColor, 
+}) => {
 
   const data = daily.data.map(({ time, temperatureHigh, temperatureLow }, index) => {
     const formattedHighTemperature = formatNumber(temperatureHigh)
@@ -24,8 +26,6 @@ const Daily = ({ daily, dateText, timezone }) => {
       [dateText.temperature]: [formattedHighTemperature, formattedLowTemperature],
     }
   })
-  
-  const style = '#dd0055'
 
   
   
@@ -45,7 +45,7 @@ const Daily = ({ daily, dateText, timezone }) => {
 
             />
             <Legend layout="horizontal" />
-            <Bar dataKey={dateText.temperature} fill={style} unit="°C" />
+            <Bar dataKey={dateText.temperature} fill={graphColor.primary} unit="°C" />
             
           </BarChart>
         </ResponsiveContainer>
