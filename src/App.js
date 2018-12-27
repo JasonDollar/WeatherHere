@@ -43,6 +43,7 @@ class App extends Component {
     this.setState({
       location,
       showSearch: this.state.width <= 576 ? false : true,
+      activeMenuBarClass: 'forecast',
     })
   } 
 
@@ -58,7 +59,7 @@ class App extends Component {
   }
 
   getUserLocation = () => {
-    // this.setState({isLoading: true})
+    //TODO gdy sie znajdzie lokalizacja to search wciaz ma klase active - zrobione, czeka na commit
     
     navigator.geolocation.getCurrentPosition(position => {
       const {longitude, latitude} = position.coords
@@ -76,20 +77,30 @@ class App extends Component {
   }
 
   showSettingsHandler = () => {
+    let backdropVisibility
+    if ((this.state.showBackdrop && !this.state.showSettings) || (!this.state.showBackdrop && !this.state.showSettings)) {
+      backdropVisibility = true
+    } else {
+      backdropVisibility = false
+    }
     this.setState({
       showSettings: !this.state.showSettings,
       showSearch:  this.state.width <= 576 ? false : true,
-      showBackdrop: !this.state.showBackdrop,
-      activeMenuBarClass: this.state.activeMenuBarClass === ('forecast' || 'search')  ? 'settings' : 'forecast',
+      showBackdrop: backdropVisibility,
     })
   }
 
   showSearchHandler = () => {
+    let backdropVisibility
+    if ((this.state.showBackdrop && !this.state.showSearch) || (!this.state.showBackdrop && !this.state.showSearch)) {
+      backdropVisibility = true
+    } else {
+      backdropVisibility = false
+    }
     this.setState({
       showSearch: !this.state.showSearch,
       showSettings: false,
-      showBackdrop: this.state.width <= 576 ? !this.state.showBackdrop : false,
-      activeMenuBarClass: this.state.activeMenuBarClass === ('forecast' || 'settings') ? 'search' : 'forecast',
+      showBackdrop: this.state.width <= 576 ? backdropVisibility : false,
     })
   }
   showForecastHandler = () => {
@@ -97,7 +108,12 @@ class App extends Component {
       showSettings: false,
       showSearch: this.state.width <= 576 ? false : true,
       showBackdrop: false,
-      activeMenuBarClass: 'forecast',
+      activeMenuBarClass: 'forecast'
+    })
+  }
+  setActiveMobileBarClass = (element) => {
+    this.setState({
+      activeMenuBarClass: this.state.activeMenuBarClass !== element ? element : 'forecast'
     })
   }
 
@@ -190,19 +206,28 @@ class App extends Component {
         {this.state.width <= 576 ? (<div className={classes.bottomBar}>
           <div
             className={this.state.activeMenuBarClass === 'search' ? `${classes.active} ${classes.setting}` : classes.setting} 
-            onClick={this.showSearchHandler}
+            onClick={() => {
+              this.showSearchHandler()
+              this.setActiveMobileBarClass('search')
+            }}
           >
             Search
           </div>
           <div 
             className={this.state.activeMenuBarClass === 'forecast' ? `${classes.active} ${classes.setting}` : classes.setting} 
-            onClick={this.showForecastHandler}
+            onClick={() => {
+              this.showForecastHandler()
+              this.setActiveMobileBarClass('forecast')
+            }}
           >
             Forecast
           </div>
           <div
             className={this.state.activeMenuBarClass === 'settings' ? `${classes.active} ${classes.setting}` : classes.setting} 
-            onClick={this.showSettingsHandler}
+            onClick={() => {
+              this.showSettingsHandler()
+              this.setActiveMobileBarClass('settings')
+            }}
           >
             Settings
           </div>
