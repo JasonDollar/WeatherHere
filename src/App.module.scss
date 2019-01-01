@@ -6,6 +6,11 @@
 //     width: 100%;
 //   }
 // }
+.App {
+  color: var(--color-text-primary);
+background-color: var(--color-back);
+}
+
 .bottomBar {
   position: fixed;
   top: 90%;
@@ -57,9 +62,10 @@
 
 
 .footerContainer {
-  margin-bottom: calc(var(--screen-height) / 10);
+  padding-bottom: calc(var(--screen-height) / 10);
+  // justify-content: center;
 
   @media only screen and (min-width: 577px) {
-    margin-bottom: 2rem;
+    padding-bottom: 2rem;
   } 
 }

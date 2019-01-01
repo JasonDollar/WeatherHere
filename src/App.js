@@ -143,14 +143,15 @@ class App extends Component {
     this.setState({
       searchValue: searchValue,
       showSearch: this.state.width <= 576 ? false : true,
-      inputValue: ''
+      inputValue: '',
+      activeMenuBarClass: 'forecast',
     })
 
   }
 
   render() {
     return (
-      <Container>
+      <div className={classes.App}>
         <div className={classes.headerBar}>
           <div className={classes.container}>
             <Header 
@@ -196,6 +197,7 @@ class App extends Component {
             selectValue={this.state.language}
             showBackdrop={this.state.showBackdrop}
             hideBackdrop={this.showForecastHandler}
+            
           />
         )}
 
@@ -234,7 +236,7 @@ class App extends Component {
           <Footer />
         </div>
 
-      </Container>
+      </div>
     )
   }
 }

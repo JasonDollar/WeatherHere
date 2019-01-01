@@ -5,6 +5,7 @@ import {
 import { getTimeFromSeconds, formatNumber } from '../../data/utils'
 
 import CustomTooltip from '../CustomTooltip/CustomTooltip'
+import Summary from '../Summary/Summary'
 
 import classes from './Hourly.module.scss'
 
@@ -32,7 +33,7 @@ const Hourly = ({
 
   return (
     <div className={classes.Hourly}>
-      <p className={classes.Summary}>{hourly.summary}</p>
+      <Summary>{hourly.summary}</Summary>
       <div className={classes.chartContainer}>
         <ResponsiveContainer width="100%" height={300}>
           <LineChart data={data}>

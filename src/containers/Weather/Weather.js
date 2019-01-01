@@ -11,6 +11,7 @@ import Current from '../../components/Current/Current'
 import Daily from '../../components/Daily/Daily'
 import Spinner from '../../components/Spinner/Spinner'
 import Hourly from '../../components/Hourly/Hourly'
+import Updated from '../../components/Updated/Updated'
 
 const Container = styled.div`
   color: #111;
@@ -25,6 +26,7 @@ class Weather extends Component {
     locationShortName: '',
     error: '',
     isLoading: true,
+    updateTime: null
     // searchValue: '',
   }
   
@@ -121,10 +123,12 @@ class Weather extends Component {
       mode: 'no-cors',
     })
       .then(resp => {
+        // console.log(resp.data)
         this.setState({
         forecast: resp.data,
         isLoading: false,
         error: '',
+        updateTime: Date.now(),
       })})
       .catch(error => this.setState({error: error.message}))
   }
@@ -210,6 +214,10 @@ class Weather extends Component {
               timezone={this.state.forecast.timezone}
               graphColor={this.props.graphColor}
             />
+            <Updated 
+            updateTime={this.state.updateTime}
+            updateText={this.props.text.update}
+          />
             </div>
           )
         }

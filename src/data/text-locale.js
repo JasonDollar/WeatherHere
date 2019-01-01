@@ -41,6 +41,7 @@ const pl = {
     temperature: 'Temperatura (°C)',
     temperatureShort: 'Temperatura',
   },
+  update: 'Ostatnia aktualizacja: ',
 }
 
 const en = {
@@ -86,6 +87,7 @@ const en = {
     temperature: 'Temperature (°C)',
     temperatureShort: 'Temperature',
   },
+  update: 'Last updated: ',
 }
 
 export { pl, en } 

@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Icon from '../../Icon/Icon'
+import Summary from '../../Summary/Summary'
 
 import { formatNumber, getTimeFromSeconds } from '../../../data/utils'
 import classes from './MainInfo.module.scss'
@@ -39,7 +40,7 @@ const MainInfo = ({
         </div>
       </div>
     </div>
-    <p className={classes.summary}>{currently.summary}</p>
+    <Summary>{currently.summary}</Summary>
   </div>
 
       

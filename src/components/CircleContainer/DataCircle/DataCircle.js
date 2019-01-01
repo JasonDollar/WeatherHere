@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 // import {
 //   PieChart, Pie, Sector, Cell, ResponsiveContainer, 
 // } from 'recharts'
-import Icon from '../../../Icon/Icon'
+import Icon from '../../Icon/Icon'
 
 import classes from './DataCircle.module.scss'
 
@@ -59,4 +59,9 @@ DataCircle.propTypes = {
   data: PropTypes.number.isRequired,
   unit: PropTypes.string.isRequired, 
   additionalData: PropTypes.number,
+  graphColor: PropTypes.objectOf(PropTypes.string).isRequired,
+}
+
+DataCircle.defaultProps = {
+  additionalData: null,
 }

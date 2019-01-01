@@ -1,7 +1,7 @@
 import React from 'react'
 import propTypes from 'prop-types'
 import classes from './Header.module.scss'
-
+ 
 // import Options from '../Options/Options'
 
 const Header = ({

@@ -4,6 +4,7 @@ import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer,
 } from 'recharts'
 import CustomTooltip from '../CustomTooltip/CustomTooltip'
+import Summary from '../Summary/Summary'
 
 import { getTimeFromSeconds, formatNumber } from '../../data/utils'
 import classes from './Daily.module.scss'
@@ -31,9 +32,7 @@ const Daily = ({
   
   return (
     <div className={classes.Daily}>
-      <div className={classes.Summary}>
-        {daily.summary}
-      </div>
+      <Summary>{daily.summary}</Summary>
       <div className={classes.chartContainer}> 
         <ResponsiveContainer height={300} width="95%">
           <BarChart maxBarSize={60} data={data}>

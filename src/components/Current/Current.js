@@ -8,7 +8,7 @@ import 'moment/locale/pl'
 
 import MainInfo from './MainInfo/MainInfo'
 import ListInfo from './ListInfo/ListInfo'
-import CircleContainer from './CircleContainer/CircleContainer'
+import CircleContainer from '../CircleContainer/CircleContainer'
 
 import { getTimeFromSeconds } from '../../data/utils'
 

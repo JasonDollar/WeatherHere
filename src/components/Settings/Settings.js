@@ -2,6 +2,7 @@ import React from 'react'
 
 // import Options from '../Options/Options'
 import Backdrop from '../Backdrop/Backdrop'
+import Updated from '../Updated/Updated'
 
 import classes from './Settings.module.scss'
 
@@ -16,6 +17,7 @@ const Settings = ({
         <option value="pl">Polski</option>
         <option value="en">English</option>
       </select>
+
     </div>
   </div>
   

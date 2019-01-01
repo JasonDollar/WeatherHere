@@ -1,0 +1,16 @@
+.Summary {
+  @media only screen and (min-width: 420px) {
+    // font-size: var(--small-head-font-size);
+    // flex-wrap: wrap;
+  }
+  @media only screen and (min-width: 768px) {
+    flex: 0 0 100%;
+    font-size: var(--small-head-font-size);
+    // flex-wrap: wrap;
+  }
+  font-size: var(--big-text-font-size);
+  margin: 1.5rem 2rem;
+  text-align: center;
+  // width: 100%;
+  flex: 1;
+}
