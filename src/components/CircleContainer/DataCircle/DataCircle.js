@@ -10,9 +10,10 @@ import classes from './DataCircle.module.scss'
 const DataCircle = ({
   type, data, unit, additionalData, 
 }) => {
-  const graphColorSecondary = getComputedStyle(document.documentElement).getPropertyValue('--color-secondary')
+  const graphColorSecondary = getComputedStyle(document.documentElement).getPropertyValue('--color-primary-offset')
+  const colorBackground = getComputedStyle(document.documentElement).getPropertyValue('--color-back')
   const style = { transform: `rotate(${additionalData - 90}deg)` }
-  const conic = { background: `conic-gradient(${graphColorSecondary}99 0 ${data}%, #fff ${data}% 100%)` }
+  const conic = { background: `conic-gradient(${graphColorSecondary}99 0 ${data}%, ${colorBackground} ${data}% 100%)` }
 
   return (
     <div className={classes.DataCircle} style={conic}>

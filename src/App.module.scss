@@ -13,7 +13,7 @@ background-color: var(--color-back);
 
 .bottomBar {
   position: fixed;
-  top: 93%;
+  top: calc(var(--screen-height) - 54px);
   bottom: 0%;
   left: 0%;
   width: var(--screen-width);
@@ -25,10 +25,31 @@ background-color: var(--color-back);
   & .setting {
     height: 100%;
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & p {
+      font-size: var(--small-text-font-size);
+      margin-bottom: .5rem;
+    }
+
+    & svg {
+      height: var(--normal-text-font-size);
+      width: var(--normal-text-font-size);
+      fill: var(--color-text-secondary);
+      transform: scale(1.5);
+      flex: 1
+    }
 
     &.active {
       background-color: aquamarine;
+      & svg {
+        fill: var(--color-text-primary);
+      }
     }
+
   }
 }
 
@@ -47,12 +68,7 @@ background-color: var(--color-back);
   margin: 0 auto;
   display: flex;
 
-  & .settingDesktop {
-    display: none;
-    @media only screen and (min-width: 577px) {
-      display: block;
-    }
-  }
+  
 }
 
 .headerBar {

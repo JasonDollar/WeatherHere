@@ -24,20 +24,34 @@ code {
   --small-head-font-size: 3.2rem;
   --big-text-font-size: 2.4rem;
   --normal-text-font-size: 1.6rem;
+  --small-text-font-size: 1.2rem;
   
   --color-text-primary: #222;
   --color-text-secondary: #bbb;
+  --color-text-transparent: #22222280;
   --color-primary: #dd0055;
-  --color-secondary: #f5689e;
+  --color-primary-offset: #f5689e;
   --color-anti-graph: #8884d8;
   --color-secondary-graph: #0c1052;
   --color-back: #fcfcfc;
 
   --screen-width: 100%;
-  --screen-height: 100vh;
+  /* --screen-height: 100vh; */
   --circle-dimension: 19rem;
   --circle-dimension-small: 15rem;
 }
+/* 
+0% = #00
+10% = #16
+20% = #32
+30% = #48
+40% = #64
+50% = #80
+60% = #96
+70% = #112
+80% = #128
+90% = #144 
+*/
 
 *,
 *::before,
@@ -52,3 +66,13 @@ code {
   margin: 0 auto;
 }
 
+
+
+/* textarea,
+input.text,
+input[type="text"],
+input[type="button"],
+input[type="submit"] {
+-webkit-appearance: none;
+border-radius: 0;
+} */

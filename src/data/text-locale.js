@@ -5,6 +5,9 @@ const pl = {
   },  
   layout: {
     search: 'Szukaj',
+    settings: 'Ustawienia',
+    forecast: 'Pogoda',
+    inputPlaceholder: 'Szukaj lokalizacji',
   },
   current: {
     today: 'Dziś',
@@ -51,6 +54,9 @@ const en = {
   },
   layout: {
     search: 'Search',
+    settings: 'Settings',
+    forecast: 'Forecast',
+    inputPlaceholder: 'Search for location',
   },
   current: {
     today: 'Today',

@@ -9,6 +9,7 @@ import Settings from './components/Settings/Settings'
 import Search from './components/Search/Search'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
+import Icon from './components/Icon/Icon'
 
 // const Container = styled.div`
 // color: #111;
@@ -26,7 +27,7 @@ class App extends Component {
     showBackdrop: false,
     location: null,
     activeMenuBarClass: 'forecast',
-
+    weatherIcon: 'clear-day',
   }
   componentDidMount() {
     this.setLayout()
@@ -43,7 +44,7 @@ class App extends Component {
     this.setState({ 
       width: window.innerWidth, 
       height: window.innerHeight,
-      showSearch: window.innerWidth <= 576 ? false : true 
+      showSearch: window.innerWidth <= 576 ? false : true, 
     });
     document.documentElement.style.setProperty('--screen-width', `${window.innerWidth}px`)
     document.documentElement.style.setProperty('--screen-height', `${window.innerHeight}px`)
@@ -57,17 +58,22 @@ class App extends Component {
     })
   } 
 
+  setWeatherIcon = (icon) => {
+    this.setState({
+      weatherIcon: icon,
+    })
+  }
+
   setLayout = (themeName = 'pink') => {
     const theme = layout[themeName]
     document.documentElement.style.setProperty('--color-primary', theme.primary)
-    document.documentElement.style.setProperty('--color-secondary', theme.secondary)
+    document.documentElement.style.setProperty('--color-primary-offset', theme.primaryOffset)
     document.documentElement.style.setProperty('--color-anti-graph', theme.antiGraph)
     document.documentElement.style.setProperty('--color-secondary-graph', theme.secondaryGraph)
     document.documentElement.style.setProperty('--color-back', theme.background)
     document.documentElement.style.setProperty('--color-text-primary', theme.text)
     document.documentElement.style.setProperty('--color-text-secondary', theme.textSecondary)
-
-
+    document.documentElement.style.setProperty('--color-text-transparent', theme.textTransparent)
   }
 
 
@@ -85,8 +91,9 @@ class App extends Component {
       localStorage.setItem('locationCoords', JSON.stringify(location))
       this.setLocationCoordsToState(location)
     })
-
   }
+
+  // disableScroll = () => { document.body.style.overflow = 'hidden' }
 
   showSettingsHandler = () => {
     let backdropVisibility
@@ -181,14 +188,11 @@ class App extends Component {
               getUserLocation={this.getUserLocation}
               showBackdrop={this.state.showBackdrop}
               hideBackdrop={this.showForecastHandler}
+              disableScroll={this.disableScroll}
+              onSettingIconClick={this.showSettingsHandler}
               />
             )}
-            <div
-              className={classes.settingDesktop} 
-              onClick={this.showSettingsHandler}
-            >
-              Settings
-            </div>
+
           </div>
         </div>
 
@@ -211,29 +215,29 @@ class App extends Component {
           />
         )}
 
-
+ 
 
         {this.state.width <= 576 ? (<div className={classes.bottomBar}>
           <div
             className={this.state.activeMenuBarClass === 'search' ? `${classes.active} ${classes.setting}` : classes.setting} 
-            onClick={this.showSearchHandler}
+            onClick={this.showSearchHandler} 
           >
-            Search
+            <Icon icon="search" viewBox="0 0 50 50" />
+            <p>{this.state.localText.layout.search}</p>
           </div>
           <div 
             className={this.state.activeMenuBarClass === 'forecast' ? `${classes.active} ${classes.setting}` : classes.setting} 
-            onClick={() => {
-              this.showForecastHandler()
-              this.setActiveMobileBarClass('forecast')
-            }}
+            onClick={this.showForecastHandler}
           >
-            Forecast
+            <Icon icon="sun" viewBox="0 0 50 50" />
+            <p>{this.state.localText.layout.forecast}</p>
           </div>
           <div
             className={this.state.activeMenuBarClass === 'settings' ? `${classes.active} ${classes.setting}` : classes.setting} 
             onClick={this.showSettingsHandler}
           >
-            Settings
+            <Icon icon="settings" viewBox="0 0 50 50" />
+            <p>{this.state.localText.layout.settings}</p>
           </div>
         </div>) : null}
 
