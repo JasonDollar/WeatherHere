@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import {DARK_URL, MAP_URL} from '../../data/url'
 import {DARK_API, MAP_API} from '../../data/api/api'
 import axios from 'axios'
-import styled from 'styled-components'
+// import styled from 'styled-components'
 
 import classes from './Weather.module.scss'
 
@@ -13,10 +13,10 @@ import Spinner from '../../components/Spinner/Spinner'
 import Hourly from '../../components/Hourly/Hourly'
 import Updated from '../../components/Updated/Updated'
 
-const Container = styled.div`
-  color: #111;
-  background-color: #fefefe;
-`
+// const Container = styled.div`
+//   color: #111;
+//   background-color: #fefefe;
+// `
 
 class Weather extends Component {
   
@@ -184,7 +184,7 @@ class Weather extends Component {
 
   render() {
     return (
-      <Container>
+      <div className={classes.container}>
 
         
         
@@ -200,19 +200,16 @@ class Weather extends Component {
               dateText={this.props.text.date}
               timezone={this.state.forecast.timezone}
               locationShortName={this.state.locationShortName}
-              graphColor={this.props.graphColor}
             />
             <Daily 
               daily={this.state.forecast.daily}
               dateText={this.props.text.date}
               timezone={this.state.forecast.timezone}
-              graphColor={this.props.graphColor}
             />
             <Hourly 
               hourly={this.state.forecast.hourly}
               hourlyText={this.props.text.hourly}
               timezone={this.state.forecast.timezone}
-              graphColor={this.props.graphColor}
             />
             <Updated 
             updateTime={this.state.updateTime}
@@ -222,7 +219,7 @@ class Weather extends Component {
           )
         }
 
-      </Container>
+      </div>
     );
   }
 }

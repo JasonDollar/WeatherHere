@@ -8,10 +8,11 @@ import Icon from '../../Icon/Icon'
 import classes from './DataCircle.module.scss'
 
 const DataCircle = ({
-  type, data, unit, additionalData, graphColor,
+  type, data, unit, additionalData, 
 }) => {
+  const graphColorSecondary = getComputedStyle(document.documentElement).getPropertyValue('--color-secondary')
   const style = { transform: `rotate(${additionalData - 90}deg)` }
-  const conic = { background: `conic-gradient(${graphColor.primary}99 0 ${data}%, #fff ${data}% 100%)` }
+  const conic = { background: `conic-gradient(${graphColorSecondary}99 0 ${data}%, #fff ${data}% 100%)` }
 
   return (
     <div className={classes.DataCircle} style={conic}>
@@ -59,7 +60,6 @@ DataCircle.propTypes = {
   data: PropTypes.number.isRequired,
   unit: PropTypes.string.isRequired, 
   additionalData: PropTypes.number,
-  graphColor: PropTypes.objectOf(PropTypes.string).isRequired,
 }
 
 DataCircle.defaultProps = {

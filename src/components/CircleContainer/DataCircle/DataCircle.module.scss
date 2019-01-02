@@ -3,14 +3,14 @@
   position: relative;
   height: var(--circle-dimension-small);
   width: var(--circle-dimension-small);
-  border: 1px solid #ccc;
+  border: 1px solid #aaaaaa55;
   border-radius: 50%;
   margin: 1rem auto;
 
   @media only screen and (min-width: 576px) {
     height: var(--circle-dimension);
     width: var(--circle-dimension);
-    font-size: var(--normal-text-font-size);
+    // font-size: var(--normal-text-font-size);
   }
 
   & .dataContainer {
@@ -44,7 +44,7 @@
       height: var(--head-font-size);
       width: var(--head-font-size);
       transform: scale(1.5);
-      fill: #1e3a6f;
+      fill: var(--color-secondary-graph);
     }
   }
 

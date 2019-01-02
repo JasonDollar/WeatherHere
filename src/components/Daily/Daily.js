@@ -10,7 +10,7 @@ import { getTimeFromSeconds, formatNumber } from '../../data/utils'
 import classes from './Daily.module.scss'
 
 const Daily = ({
-  daily, dateText, timezone, graphColor, 
+  daily, dateText, timezone, 
 }) => {
 
   const data = daily.data.map(({ time, temperatureHigh, temperatureLow }, index) => {
@@ -27,7 +27,8 @@ const Daily = ({
       [dateText.temperature]: [formattedHighTemperature, formattedLowTemperature],
     }
   })
-
+  const graphColorPrimary = getComputedStyle(document.documentElement).getPropertyValue('--color-primary')
+  const graphColorSecondary = getComputedStyle(document.documentElement).getPropertyValue('--color-anti-graph')
   
   
   return (
@@ -36,6 +37,12 @@ const Daily = ({
       <div className={classes.chartContainer}> 
         <ResponsiveContainer height={300} width="95%">
           <BarChart maxBarSize={60} data={data}>
+            <defs>
+              <linearGradient id="colorPrimary" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="35%" stopColor={graphColorPrimary} stopOpacity={0.9} />
+                <stop offset="95%" stopColor={graphColorSecondary} stopOpacity={0.9} />
+              </linearGradient>
+            </defs>
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="name" />
             <YAxis type="number" />
@@ -44,7 +51,7 @@ const Daily = ({
 
             />
             <Legend layout="horizontal" />
-            <Bar dataKey={dateText.temperature} fill={graphColor.primary} unit="°C" />
+            <Bar dataKey={dateText.temperature} fill="url(#colorPrimary)" unit="°C" />
             
           </BarChart>
         </ResponsiveContainer>

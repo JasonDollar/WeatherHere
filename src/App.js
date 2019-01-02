@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import {pl, en} from './data/text-locale'
-import styled from 'styled-components'
+import layout from './data/layouts'
+// import styled from 'styled-components'
 
 import classes from './App.module.scss'
 import Weather from './containers/Weather/Weather'
@@ -9,10 +10,10 @@ import Search from './components/Search/Search'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 
-const Container = styled.div`
-color: #111;
-background-color: #fefefe;
-`
+// const Container = styled.div`
+// color: #111;
+// background-color: #fefefe;
+// `
 
 class App extends Component {
   state = {
@@ -22,21 +23,30 @@ class App extends Component {
     searchValue: '',
     showSettings: false,
     showSearch: false,
-    location: null,
     showBackdrop: false,
+    location: null,
     activeMenuBarClass: 'forecast',
-    graphColor: {
-      primary: '#dd0055',
-      secondary: '#82ca9d'
-    }
+
   }
   componentDidMount() {
+    this.setLayout()
     this.updateWindowDimensions();
     window.addEventListener('resize', this.updateWindowDimensions);
+
   }
   
   componentWillUnmount() {
     window.removeEventListener('resize', this.updateWindowDimensions);
+  }
+
+  updateWindowDimensions = () => {
+    this.setState({ 
+      width: window.innerWidth, 
+      height: window.innerHeight,
+      showSearch: window.innerWidth <= 576 ? false : true 
+    });
+    document.documentElement.style.setProperty('--screen-width', `${window.innerWidth}px`)
+    document.documentElement.style.setProperty('--screen-height', `${window.innerHeight}px`)
   }
 
   setLocationCoordsToState = (location) => {
@@ -47,16 +57,22 @@ class App extends Component {
     })
   } 
 
-  
-  updateWindowDimensions = () => {
-    this.setState({ 
-      width: window.innerWidth, 
-      height: window.innerHeight,
-      showSearch: window.innerWidth <= 576 ? false : true 
-    });
-    document.documentElement.style.setProperty('--screen-width', `${window.innerWidth}px`)
-    document.documentElement.style.setProperty('--screen-height', `${window.innerHeight}px`)
+  setLayout = (themeName = 'pink') => {
+    const theme = layout[themeName]
+    document.documentElement.style.setProperty('--color-primary', theme.primary)
+    document.documentElement.style.setProperty('--color-secondary', theme.secondary)
+    document.documentElement.style.setProperty('--color-anti-graph', theme.antiGraph)
+    document.documentElement.style.setProperty('--color-secondary-graph', theme.secondaryGraph)
+    document.documentElement.style.setProperty('--color-back', theme.background)
+    document.documentElement.style.setProperty('--color-text-primary', theme.text)
+    document.documentElement.style.setProperty('--color-text-secondary', theme.textSecondary)
+
+
   }
+
+
+  
+
 
   getUserLocation = () => {
     
@@ -69,10 +85,7 @@ class App extends Component {
       localStorage.setItem('locationCoords', JSON.stringify(location))
       this.setLocationCoordsToState(location)
     })
-      // this.getWeather(latitude, longitude, this.props.language)
-      // }, error => {
-      //   this.setState({geoForbidden: true})
-      // })  
+
   }
 
   showSettingsHandler = () => {
@@ -86,6 +99,7 @@ class App extends Component {
       showSettings: !this.state.showSettings,
       showSearch:  this.state.width <= 576 ? false : true,
       showBackdrop: backdropVisibility,
+      activeMenuBarClass: this.state.activeMenuBarClass !== 'settings' ? 'settings' : 'forecast'
     })
   }
 
@@ -100,6 +114,7 @@ class App extends Component {
       showSearch: !this.state.showSearch,
       showSettings: false,
       showBackdrop: this.state.width <= 576 ? backdropVisibility : false,
+      activeMenuBarClass: this.state.activeMenuBarClass !== 'search' ? 'search' : 'forecast'
     })
   }
   showForecastHandler = () => {
@@ -110,11 +125,7 @@ class App extends Component {
       activeMenuBarClass: 'forecast'
     })
   }
-  setActiveMobileBarClass = (element) => {
-    this.setState({
-      activeMenuBarClass: this.state.activeMenuBarClass !== element ? element : 'forecast'
-    })
-  }
+
 
 
   changeLanguage = (e) => {
@@ -187,7 +198,6 @@ class App extends Component {
           searchValue={this.state.searchValue}
           location={this.state.location}
           setLocationCoordsToState={this.setLocationCoordsToState}
-          graphColor={this.state.graphColor}
         />
 
         {this.state.showSettings && (
@@ -206,10 +216,7 @@ class App extends Component {
         {this.state.width <= 576 ? (<div className={classes.bottomBar}>
           <div
             className={this.state.activeMenuBarClass === 'search' ? `${classes.active} ${classes.setting}` : classes.setting} 
-            onClick={() => {
-              this.showSearchHandler()
-              this.setActiveMobileBarClass('search')
-            }}
+            onClick={this.showSearchHandler}
           >
             Search
           </div>
@@ -224,14 +231,12 @@ class App extends Component {
           </div>
           <div
             className={this.state.activeMenuBarClass === 'settings' ? `${classes.active} ${classes.setting}` : classes.setting} 
-            onClick={() => {
-              this.showSettingsHandler()
-              this.setActiveMobileBarClass('settings')
-            }}
+            onClick={this.showSettingsHandler}
           >
             Settings
           </div>
         </div>) : null}
+
         <div className={`${classes.footerContainer} ${classes.container}`}>
           <Footer />
         </div>
