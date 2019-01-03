@@ -44,7 +44,7 @@ class App extends Component {
     this.setState({ 
       width: window.innerWidth, 
       height: window.innerHeight,
-      showSearch: window.innerWidth <= 576 ? false : true, 
+      showSearch: window.innerWidth <= 576 ? this.state.showSearch : true, 
     });
     document.documentElement.style.setProperty('--screen-width', `${window.innerWidth}px`)
     document.documentElement.style.setProperty('--screen-height', `${window.innerHeight}px`)
