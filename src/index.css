@@ -8,7 +8,7 @@ body {
   /* min-height: 100vh; */
   font-size: var(--normal-text-font-size);
   background: var(--color-back);
-  /* min-height: 100vh; */
+  min-height: 100vh;
 }
 
 code {
@@ -36,7 +36,7 @@ code {
   --color-back: #fcfcfc;
 
   --screen-width: 100%;
-  --screen-height: 100%;
+  /* --screen-height: 100vh; */
   --circle-dimension: 19rem;
   --circle-dimension-small: 15rem;
 }
@@ -65,10 +65,7 @@ code {
   max-width: 1040px;
   margin: 0 auto;
 }
-/* body:not(html) {
-  transform: translate3d(0, 0, 0);
-  -webkit-transform: translate3d(0, 0, 0);
-} */
+
 
 
 /* textarea,
