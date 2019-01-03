@@ -7,6 +7,7 @@ import classes from './App.module.scss'
 import Weather from './containers/Weather/Weather'
 import Settings from './components/Settings/Settings'
 import Search from './components/Search/Search'
+import SearchDesktop from './components/SearchDesktop/SearchDesktop'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 import Icon from './components/Icon/Icon'
@@ -24,6 +25,7 @@ class App extends Component {
     searchValue: '',
     showSettings: false,
     showSearch: false,
+    typeSearch: 'desktop',
     showBackdrop: false,
     location: null,
     activeMenuBarClass: 'forecast',
@@ -31,8 +33,8 @@ class App extends Component {
   }
   componentDidMount() {
     this.setLayout()
-    this.updateWindowDimensions();
     window.addEventListener('resize', this.updateWindowDimensions);
+    this.updateWindowDimensions();
 
   }
   
@@ -44,7 +46,10 @@ class App extends Component {
     this.setState({ 
       width: window.innerWidth, 
       height: window.innerHeight,
-      showSearch: window.innerWidth <= 576 ? false : true, 
+
+      //this line with adding its state key fixed dissapearing search component while scrolling on mobile
+      typeSearch: window.innerWidth <= 576 ? 'mobile' : 'desktop', 
+      showSearch: this.state.width <= 576 ? false : true,
     });
     document.documentElement.style.setProperty('--screen-width', `${window.innerWidth}px`)
     document.documentElement.style.setProperty('--screen-height', `${window.innerHeight}px`)
@@ -54,6 +59,7 @@ class App extends Component {
     this.setState({
       location,
       showSearch: this.state.width <= 576 ? false : true,
+      // typeSearch: this.state.width <= 576 ? 'mobile' : 'desktop',
       activeMenuBarClass: 'forecast',
     })
   } 
@@ -114,17 +120,22 @@ class App extends Component {
     let backdropVisibility
     if ((this.state.showBackdrop && !this.state.showSearch) || (!this.state.showBackdrop && !this.state.showSearch)) {
       backdropVisibility = true
+      // alert('true')
     } else {
       backdropVisibility = false
+      // alert('hejo')
     }
+    
     this.setState({
       showSearch: !this.state.showSearch,
       showSettings: false,
-      showBackdrop: this.state.width <= 576 ? backdropVisibility : false,
+      // showBackdrop: this.state.width <= 576 ? backdropVisibility : false,
+      showBackdrop: backdropVisibility,
       activeMenuBarClass: this.state.activeMenuBarClass !== 'search' ? 'search' : 'forecast'
     })
   }
   showForecastHandler = () => {
+    // alert('forecast')
     this.setState({
       showSettings: false,
       showSearch: this.state.width <= 576 ? false : true,
@@ -178,8 +189,8 @@ class App extends Component {
             />
 
 
-            {this.state.showSearch && (
-              <Search 
+            {(this.state.showSearch && this.state.typeSearch === 'desktop') && (
+              <SearchDesktop 
               showSearchHandler={this.showSearchHandler}
               onInputChange={this.onInputChange}
               inputValue={this.state.inputValue}
@@ -213,6 +224,20 @@ class App extends Component {
             hideBackdrop={this.showForecastHandler}
             
           />
+        )}
+        {(this.state.showSearch && this.state.typeSearch === 'mobile')  && (
+          <Search
+              showSearchHandler={this.showSearchHandler}
+              onInputChange={this.onInputChange}
+              inputValue={this.state.inputValue}
+              text={this.state.localText.layout}
+              onSearchFormSubmit={this.onSearchFormSubmit}
+              getUserLocation={this.getUserLocation}
+              showBackdrop={this.state.showBackdrop}
+              hideBackdrop={this.showForecastHandler}
+              disableScroll={this.disableScroll}
+              onSettingIconClick={this.showSettingsHandler}
+              />
         )}
 
  

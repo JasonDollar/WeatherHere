@@ -9,18 +9,20 @@
 .App {
   color: var(--color-text-primary);
 background-color: var(--color-back);
+
 }
 
 .bottomBar {
   position: fixed;
-  top: calc(var(--screen-height) - 54px);
+  // top: calc(var(--screen-height) - 54px);
+  top: calc(100% - 54px);
   bottom: 0%;
   left: 0%;
   width: var(--screen-width);
   background-color: yellow;
   z-index: 250;
-
   display: flex;
+  
   // justify-content: space-between;
   & .setting {
     height: 100%;
@@ -74,6 +76,7 @@ background-color: var(--color-back);
 .headerBar {
   width: 100%;
   background-color: var(--color-primary);
+
 }
 
 

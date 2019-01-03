@@ -6,7 +6,7 @@ import classes from './Search.module.scss'
 const Search = ({ 
   onSearchFormSubmit, onInputChange, inputValue, text, onSettingIconClick, getUserLocation, showBackdrop, hideBackdrop,
 }) => (
-  <div className={classes.container}>
+  <div>
     <Backdrop showBackdrop={showBackdrop} hideBackdrop={hideBackdrop} />
     <div className={classes.Search}>
       <form onSubmit={onSearchFormSubmit} className={classes.form}>
