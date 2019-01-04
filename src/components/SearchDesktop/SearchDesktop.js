@@ -1,15 +1,12 @@
 import React from 'react'
-import Backdrop from '../Backdrop/Backdrop'
 import Icon from '../Icon/Icon'
 // import Button from '../Button/Button'
-import classes from './Search.module.scss'
+import classes from './SearchDesktop.module.scss'
 
-const Search = ({ 
-  onSearchFormSubmit, onInputChange, inputValue, text, getUserLocation, showBackdrop, hideBackdrop,
+const SearchDesktop = ({ 
+  onSearchFormSubmit, onInputChange, inputValue, text, onSettingIconClick, getUserLocation,
 }) => (
-  <div className={classes.container}>
-    <Backdrop showBackdrop={showBackdrop} hideBackdrop={hideBackdrop} />
-    <div className={classes.Search}>
+  <div className={classes.Search}>
       <form onSubmit={onSearchFormSubmit} className={classes.form}>
         <input type="text" onChange={onInputChange} value={inputValue} className={classes.input} placeholder={text.inputPlaceholder} />
         <button className={`${classes.button} ${classes.formButton}`} type="submit">
@@ -19,9 +16,11 @@ const Search = ({
       <button className={`${classes.button} ${classes.buttonGeo}`} onClick={getUserLocation}>
         <Icon icon="gpsArrow" viewBox="0 0 51.636 51.636" />
       </button>
-
+      <button className={`${classes.button} ${classes.buttonSettings}`} onClick={onSettingIconClick}>
+        <Icon icon="settings" viewBox="0 0 50 50" />
+      </button>
     </div>
-  </div>
+
 )
 
-export default Search
+export default SearchDesktop

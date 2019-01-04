@@ -1,121 +1,91 @@
 .container {
   flex: 1;
-
-  overflow-y: hidden;
-
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .Search {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-content: flex-end;
-  width: 100%;
+  justify-content: center;
   position: fixed;
   top: 0;
-  // bottom: 100%;
   left: 0;
   right: 0;
   z-index: 200;
+  box-shadow: 2px 1px 10px -1px var(--color-text-primary);
+  border-radius: 7px;
+  margin: 2.5rem 0.5rem;
+  background-color: var(--color-text-primary);
+}
 
-  padding: 1.5rem 0 1.5rem 1.5rem;
-  margin-right: 1.5rem;
-  // background-color: rgba(1,1,1,0);
+.button {
 
-  // flex-grow: 1;
-  @media screen and (min-width: 577px) {
-    position: static;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
 
-  & .geoButton {
+.form {
+  flex: 8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 1rem;
+  position: relative;
+  box-shadow: 0px 0px 10px -3px var(--color-text-primary);
+
+  & .input {
+    line-height: normal;
+    box-sizing: inherit;
     flex: 1;
-    // width: 9.5rem;
-    // margin: 1.5rem 2rem 1.5rem 0rem;
-    background: none;
+    padding: 1rem 0 1rem 1.5rem;
     border: none;
-    cursor: pointer;
+    border-radius: 5px;
+    font-size: var(--big-text-font-size);
+    box-shadow: 2px 1px 10px -3px var(--color-text-primary);
 
-    & svg {
-      height: var(--normal-text-font-size);
-      width: var(--normal-text-font-size);
-      transform: scale(1.45) rotate(50deg) translateY(-5px);
-      fill: var(--color-text-secondary);
+    background: var(--color-back);
+    outline: none;
 
-      @media only screen and (min-width: 577px) {
-        fill: var(--color-text-primary);
-      }
+    &:focus {
+      border-bottom: 1px solid var(--color-text-secondary);
+    }
+
+    &::placeholder {
+      color: var(--color-text-transparent);
     }
   }
 
-  & .settingDesktop {
-    display: none;
-
-    @media only screen and (min-width: 577px) {
-      background: none;
-      border: none;
-      display: flex;
-      flex: 1;
-      // padding: 1.5rem 1.5rem;
-      // flex: 0 1 9.5rem;
-      align-items: center;
-      transform: translateY(-2px);
-      justify-content: center;
-      cursor: pointer;
-    }
+  & .formButton {
+    position: absolute;
+    right: 1px;
+    padding: .6rem .8rem .6rem 1rem;
+    background: var(--color-back);
+    z-index: 110;
+    border-left: 1px solid var(--color-text-secondary);
 
     & svg {
-      height: var(--normal-text-font-size);
-      width: var(--normal-text-font-size);
-      fill: var(--color-text-primary);
-      transform: scale(1.5);
+      height: var(--big-text-font-size);
+      width: var(--big-text-font-size);
+      fill: var(--color-primary-offset);
+      transform: scale(1.2);
     }
   }
+}
 
-  & .form {
-    flex: 8;
-    display: flex;
-    justify-content: space-between;
 
-    & .input {
-      margin: 1rem auto 1rem auto;
-      padding: .5rem .5rem;
-      padding-left: 1rem;
-      max-width: 500px;
-      flex: 1;
-      border: 1px solid transparent;
-      border-bottom: 1px solid var(--color-text-transparent);
-      border-radius: 0;
-      background: var(--color-primary);
-      outline: none;
+.buttonGeo {
+  padding: 1rem 1rem;
+  margin: 1rem auto;
 
-      &:focus {
-        border-bottom: 1px solid var(--color-text-secondary);
-      }
-
-      &::placeholder {
-        color: var(--color-text-transparent);
-      }
-    }
-
-    & .formButton {
-      // padding: 1rem .5rem;
-      // margin-right: 2rem;
-      background: none;
-      border: none;
-      flex: 0 1 9rem;
-
-      cursor: pointer;
-
-      & svg {
-        height: var(--normal-text-font-size);
-        width: var(--normal-text-font-size);
-        transform: scale(1.55);
-        fill: var(--color-text-secondary);
-
-        @media only screen and (min-width: 577px) {
-          fill: var(--color-text-primary);
-        }
-      }
-    }
+  & svg {
+    height: var(--big-text-font-size);
+    width: var(--big-text-font-size);
+    fill: var(--color-primary);
+    transform: scale(1.5);
   }
 }

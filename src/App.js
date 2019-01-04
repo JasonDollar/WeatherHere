@@ -7,6 +7,7 @@ import classes from './App.module.scss'
 import Weather from './containers/Weather/Weather'
 import Settings from './components/Settings/Settings'
 import Search from './components/Search/Search'
+import SearchDesktop from './components/SearchDesktop/SearchDesktop'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 import Icon from './components/Icon/Icon'
@@ -44,7 +45,8 @@ class App extends Component {
     this.setState({ 
       width: window.innerWidth, 
       height: window.innerHeight,
-      showSearch: window.innerWidth <= 576 ? this.state.showSearch : true, 
+      //fixed scrolling bug when component dissapeared on ios
+      showSearch: window.innerWidth <= 576 ? this.state.showSearch : false, 
     });
     document.documentElement.style.setProperty('--screen-width', `${window.innerWidth}px`)
     document.documentElement.style.setProperty('--screen-height', `${window.innerHeight}px`)
@@ -53,16 +55,16 @@ class App extends Component {
   setLocationCoordsToState = (location) => {
     this.setState({
       location,
-      showSearch: this.state.width <= 576 ? false : true,
       activeMenuBarClass: 'forecast',
+      showSearch: false,
     })
   } 
 
-  setWeatherIcon = (icon) => {
-    this.setState({
-      weatherIcon: icon,
-    })
-  }
+  // setWeatherIcon = (icon) => {
+  //   this.setState({
+  //     weatherIcon: icon,
+  //   })
+  // }
 
   setLayout = (themeName = 'pink') => {
     const theme = layout[themeName]
@@ -92,8 +94,6 @@ class App extends Component {
       this.setLocationCoordsToState(location)
     })
   }
-
-  // disableScroll = () => { document.body.style.overflow = 'hidden' }
 
   showSettingsHandler = () => {
     let backdropVisibility
@@ -127,12 +127,11 @@ class App extends Component {
   showForecastHandler = () => {
     this.setState({
       showSettings: false,
-      showSearch: this.state.width <= 576 ? false : true,
+      showSearch: false,
       showBackdrop: false,
       activeMenuBarClass: 'forecast'
     })
   }
-
 
 
   changeLanguage = (e) => {
@@ -160,7 +159,7 @@ class App extends Component {
     e.preventDefault();
     this.setState({
       searchValue: searchValue,
-      showSearch: this.state.width <= 576 ? false : true,
+      showSearch: false,
       inputValue: '',
       activeMenuBarClass: 'forecast',
     })
@@ -173,28 +172,32 @@ class App extends Component {
         <div className={classes.headerBar}>
           <div className={classes.container}>
             <Header 
-            text={this.state.localText.header} 
-            
+              text={this.state.localText.header} 
             />
-
-
-            {this.state.showSearch && (
-              <Search 
+            {this.state.width > 576 && <SearchDesktop 
               showSearchHandler={this.showSearchHandler}
               onInputChange={this.onInputChange}
               inputValue={this.state.inputValue}
               text={this.state.localText.layout}
               onSearchFormSubmit={this.onSearchFormSubmit}
               getUserLocation={this.getUserLocation}
-              showBackdrop={this.state.showBackdrop}
-              hideBackdrop={this.showForecastHandler}
-              disableScroll={this.disableScroll}
               onSettingIconClick={this.showSettingsHandler}
-              />
-            )}
+            />}
 
           </div>
         </div>
+        {this.state.showSearch && (
+          <Search 
+          showSearchHandler={this.showSearchHandler}
+          onInputChange={this.onInputChange}
+          inputValue={this.state.inputValue}
+          text={this.state.localText.layout}
+          onSearchFormSubmit={this.onSearchFormSubmit}
+          getUserLocation={this.getUserLocation}
+          showBackdrop={this.state.showBackdrop}
+          hideBackdrop={this.showForecastHandler}
+          />
+        )}
 
         <Weather 
           text={this.state.localText}

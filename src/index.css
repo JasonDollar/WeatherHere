@@ -27,6 +27,7 @@ code {
   --small-text-font-size: 1.2rem;
   
   --color-text-primary: #222;
+  --color-text-grey: #888;
   --color-text-secondary: #bbb;
   --color-text-transparent: #22222280;
   --color-primary: #dd0055;
@@ -34,6 +35,7 @@ code {
   --color-anti-graph: #8884d8;
   --color-secondary-graph: #0c1052;
   --color-back: #fcfcfc;
+  --color-border-transparent: #aaaaaa55;
 
   --screen-width: 100%;
   /* --screen-height: 100vh; */
