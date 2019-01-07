@@ -10,7 +10,7 @@ import Search from './components/Search/Search'
 import SearchDesktop from './components/SearchDesktop/SearchDesktop'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
-import Icon from './components/Icon/Icon'
+import MobileMenu from './components/MobileMenu/MobileMenu'
 
 // const Container = styled.div`
 // color: #111;
@@ -104,7 +104,7 @@ class App extends Component {
     }
     this.setState({
       showSettings: !this.state.showSettings,
-      showSearch:  this.state.width <= 576 ? false : true,
+      // showSearch:  this.state.width <= 576 ? false : true,
       showBackdrop: backdropVisibility,
       activeMenuBarClass: this.state.activeMenuBarClass !== 'settings' ? 'settings' : 'forecast'
     })
@@ -220,32 +220,18 @@ class App extends Component {
 
  
 
-        {this.state.width <= 576 ? (<div className={classes.bottomBar}>
-          <div
-            className={this.state.activeMenuBarClass === 'search' ? `${classes.active} ${classes.setting}` : classes.setting} 
-            onClick={this.showSearchHandler} 
-          >
-            <Icon icon="search" viewBox="0 0 50 50" />
-            <p>{this.state.localText.layout.search}</p>
-          </div>
-          <div 
-            className={this.state.activeMenuBarClass === 'forecast' ? `${classes.active} ${classes.setting}` : classes.setting} 
-            onClick={this.showForecastHandler}
-          >
-            <Icon icon="sun" viewBox="0 0 50 50" />
-            <p>{this.state.localText.layout.forecast}</p>
-          </div>
-          <div
-            className={this.state.activeMenuBarClass === 'settings' ? `${classes.active} ${classes.setting}` : classes.setting} 
-            onClick={this.showSettingsHandler}
-          >
-            <Icon icon="settings" viewBox="0 0 50 50" />
-            <p>{this.state.localText.layout.settings}</p>
-          </div>
-        </div>) : null}
+        {this.state.width <= 576 ? (
+          <MobileMenu 
+            text={this.state.localText.layout}
+            activeMenuClass={this.state.activeMenuBarClass}
+            showForecastHandler={this.showForecastHandler}
+            showSearchHandler={this.showSearchHandler}
+            showSettingsHandler={this.showSettingsHandler}
+          />
+        ) : null}
 
         <div className={`${classes.footerContainer} ${classes.container}`}>
-          <Footer />
+          
         </div>
 
       </div>

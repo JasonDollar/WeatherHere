@@ -12,6 +12,7 @@ import Daily from '../../components/Daily/Daily'
 import Spinner from '../../components/Spinner/Spinner'
 import Hourly from '../../components/Hourly/Hourly'
 import Updated from '../../components/Updated/Updated'
+import Footer from '../../components/Footer/Footer'
 
 // const Container = styled.div`
 //   color: #111;
@@ -192,29 +193,30 @@ class Weather extends Component {
           this.state.geoForbidden && !this.state.location ? <div>Not working</div> :
           (!this.state.forecast || this.state.isLoading ? <Spinner /> : 
             <div className={classes.container}>
-            <Current 
-              currently={this.state.forecast.currently}
-              currentText={this.props.text.current}
-              daily={this.state.forecast.daily}
-              units={this.state.forecast.flags.units}
-              dateText={this.props.text.date}
-              timezone={this.state.forecast.timezone}
-              locationShortName={this.state.locationShortName}
-            />
-            <Daily 
-              daily={this.state.forecast.daily}
-              dateText={this.props.text.date}
-              timezone={this.state.forecast.timezone}
-            />
-            <Hourly 
-              hourly={this.state.forecast.hourly}
-              hourlyText={this.props.text.hourly}
-              timezone={this.state.forecast.timezone}
-            />
-            <Updated 
-            updateTime={this.state.updateTime}
-            updateText={this.props.text.update}
-          />
+              <Current 
+                currently={this.state.forecast.currently}
+                currentText={this.props.text.current}
+                daily={this.state.forecast.daily}
+                units={this.state.forecast.flags.units}
+                dateText={this.props.text.date}
+                timezone={this.state.forecast.timezone}
+                locationShortName={this.state.locationShortName}
+              />
+              <Daily 
+                daily={this.state.forecast.daily}
+                dateText={this.props.text.date}
+                timezone={this.state.forecast.timezone}
+              />
+              <Hourly 
+                hourly={this.state.forecast.hourly}
+                hourlyText={this.props.text.hourly}
+                timezone={this.state.forecast.timezone}
+              />
+              <Updated 
+                updateTime={this.state.updateTime}
+                updateText={this.props.text.update}
+              />
+              <Footer />
             </div>
           )
         }
