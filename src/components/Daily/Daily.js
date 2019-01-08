@@ -29,6 +29,7 @@ const Daily = ({
   })
   const graphColorPrimary = getComputedStyle(document.documentElement).getPropertyValue('--color-primary')
   const graphColorSecondary = getComputedStyle(document.documentElement).getPropertyValue('--color-anti-graph')
+  const graphColorGrey = getComputedStyle(document.documentElement).getPropertyValue('--color-grey-graph')
   
   
   return (
@@ -44,8 +45,8 @@ const Daily = ({
               </linearGradient>
             </defs>
             <CartesianGrid strokeDasharray="3 3" />
-            <XAxis dataKey="name" />
-            <YAxis type="number" />
+            <XAxis dataKey="name" stroke={graphColorGrey} />
+            <YAxis type="number" stroke={graphColorGrey} />
             <Tooltip
               content={<CustomTooltip tempText={dateText} type="daily" />}
 

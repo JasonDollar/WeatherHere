@@ -33,6 +33,7 @@ const Hourly = ({
 
   const graphColorPrimary = getComputedStyle(document.documentElement).getPropertyValue('--color-primary')
   const graphColorSecondary = getComputedStyle(document.documentElement).getPropertyValue('--color-anti-graph')
+  const graphColorGrey = getComputedStyle(document.documentElement).getPropertyValue('--color-grey-graph')
 
   return (
     <div className={classes.Hourly}>
@@ -41,9 +42,9 @@ const Hourly = ({
         <ResponsiveContainer width="100%" height={300}>
           <LineChart data={data}>
             <CartesianGrid strokeDasharray="3 3" />
-            <XAxis dataKey="time" />
+            <XAxis dataKey="time" stroke={graphColorGrey} />
             <YAxis yAxisId="left" type="number" tick={{ stroke: graphColorPrimary }} domain={['auto', 'auto']} />
-            <YAxis yAxisId="right" orientation="right" type="number" domain={[0, 100]} />
+            <YAxis yAxisId="right" orientation="right" type="number" domain={[0, 100]} stroke={graphColorGrey} />
             <Tooltip
               content={<CustomTooltip tempText={hourlyText} type="hourly" />} 
             />

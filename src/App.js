@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-import {pl, en} from './data/text-locale'
-import layout from './data/layouts'
+// import {pl, en} from './data/text-locale'
+import language from './data/text-locale'
+import layouts from './data/layouts'
 // import styled from 'styled-components'
 
 import classes from './App.module.scss'
@@ -9,7 +10,7 @@ import Settings from './components/Settings/Settings'
 import Search from './components/Search/Search'
 import SearchDesktop from './components/SearchDesktop/SearchDesktop'
 import Header from './components/Header/Header'
-import Footer from './components/Footer/Footer'
+// import Footer from './components/Footer/Footer'
 import MobileMenu from './components/MobileMenu/MobileMenu'
 
 // const Container = styled.div`
@@ -20,7 +21,7 @@ import MobileMenu from './components/MobileMenu/MobileMenu'
 class App extends Component {
   state = {
     language: 'pl', 
-    localText: pl,
+    localText: language.pl,
     inputValue: '',
     searchValue: '',
     showSettings: false,
@@ -29,12 +30,13 @@ class App extends Component {
     location: null,
     activeMenuBarClass: 'forecast',
     weatherIcon: 'clear-day',
+    themeName: 'pinkDark'
   }
   componentDidMount() {
     this.setLayout()
     this.updateWindowDimensions();
     window.addEventListener('resize', this.updateWindowDimensions);
-
+    this.setLayout(this.state.themeName)
   }
   
   componentWillUnmount() {
@@ -65,18 +67,36 @@ class App extends Component {
   //     weatherIcon: icon,
   //   })
   // }
+  themeListHandler = e => {
+    const themeName = e.target.value
+    this.setState({
+      themeName
+    })
+    this.setLayout(themeName)
+  }
 
   setLayout = (themeName = 'pink') => {
-    const theme = layout[themeName]
+    const theme = layouts[themeName]
     document.documentElement.style.setProperty('--color-primary', theme.primary)
     document.documentElement.style.setProperty('--color-primary-offset', theme.primaryOffset)
+    document.documentElement.style.setProperty('--color-mobile-menu', theme.mobileMenu)
     document.documentElement.style.setProperty('--color-anti-graph', theme.antiGraph)
     document.documentElement.style.setProperty('--color-secondary-graph', theme.secondaryGraph)
     document.documentElement.style.setProperty('--color-back', theme.background)
+    document.documentElement.style.setProperty('--color-back2', theme.background2)
+    document.documentElement.style.setProperty('--color-back-mobile', theme.backgroundMobile)
     document.documentElement.style.setProperty('--color-text-primary', theme.text)
     document.documentElement.style.setProperty('--color-text-secondary', theme.textSecondary)
     document.documentElement.style.setProperty('--color-text-transparent', theme.textTransparent)
+    document.documentElement.style.setProperty('--color-border', theme.border)
+    document.documentElement.style.setProperty('--color-border-transparent', theme.borderTransparent)
+    document.documentElement.style.setProperty('--color-box-shadow', theme.boxShadow)
+    document.documentElement.style.setProperty('--color-grey-1', theme.grey1)
+    document.documentElement.style.setProperty('--color-grey-2', theme.grey2)
+    document.documentElement.style.setProperty('--color-grey-3', theme.grey3)
+    document.documentElement.style.setProperty('--color-grey-graph', theme.greyGraph)
   }
+
 
 
   
@@ -104,7 +124,7 @@ class App extends Component {
     }
     this.setState({
       showSettings: !this.state.showSettings,
-      // showSearch:  this.state.width <= 576 ? false : true,
+      showSearch:  false,
       showBackdrop: backdropVisibility,
       activeMenuBarClass: this.state.activeMenuBarClass !== 'settings' ? 'settings' : 'forecast'
     })
@@ -139,12 +159,12 @@ class App extends Component {
     if (value === 'pl') {
       this.setState({
         language: value,
-        localText: pl
+        localText: language.pl
       })
     } else if (value === 'en') {
       this.setState({
         language: value,
-        localText: en
+        localText: language.en
       })
     }
   }
@@ -211,10 +231,16 @@ class App extends Component {
           <Settings 
             changeLanguage={this.changeLanguage}
             showSettingsHandler={this.showSettingsHandler}
-            selectValue={this.state.language}
+            selectedLanguage={this.state.language}
             showBackdrop={this.state.showBackdrop}
             hideBackdrop={this.showForecastHandler}
-            
+            languageNames={Object.keys(language).map(item => ({
+              name: language[item].name,
+              id: language[item].id
+            }))}
+            themeName={this.state.themeName}
+            themeListHandler={this.themeListHandler}
+            text={this.state.localText.settings}
           />
         )}
 

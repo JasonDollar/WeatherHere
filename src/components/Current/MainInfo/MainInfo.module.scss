@@ -19,6 +19,8 @@
     width: var(--head-font-size);
     transform: scale(2) translateY(-5%);
     vertical-align: middle;
+    
+    fill: var(--color-text-primary);
     // overflow: hidden;
   }  
 }
@@ -106,6 +108,7 @@
         height: var(--big-text-font-size);
         width: var(--big-text-font-size);
         transform: scale(2.5) translateY(-5%);
+        fill: var(--color-text-primary);
       }
 
     }

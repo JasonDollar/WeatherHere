@@ -32,10 +32,20 @@ code {
   --color-text-transparent: #22222280;
   --color-primary: #dd0055;
   --color-primary-offset: #f5689e;
+  --color-mobile-menu: #dd0055;
   --color-anti-graph: #8884d8;
   --color-secondary-graph: #0c1052;
   --color-back: #fcfcfc;
+  --color-back2: #fcfcfc;
+  --color-back-mobile: #bbb;
+  --color-box-shadow: #222;
+  --color-border: #aaa;
   --color-border-transparent: #aaaaaa55;
+
+  --color-grey-1: #888;
+  --color-grey-2: #bbb;
+  --color-grey-3: #dfdfdf;
+  --color-grey-graph: #676767;
 
   --screen-width: 100%;
   /* --screen-height: 100vh; */

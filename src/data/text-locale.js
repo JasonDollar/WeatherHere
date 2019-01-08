@@ -1,4 +1,6 @@
 const pl = {
+  id: 'pl',
+  name: 'Polski',
   header: {
     title: 'Pogoda',
     search: 'Szukaj',
@@ -45,9 +47,16 @@ const pl = {
     temperatureShort: 'Temperatura',
   },
   update: 'Ostatnia aktualizacja: ',
+  settings: {
+    changeLang: 'Zmień język',
+    changeTheme: 'Zmień motyw',
+    changeUnits: 'Zmień jednostki',
+  },
 }
 
 const en = {
+  id: 'en',
+  name: 'English',
   header: {
     title: 'Weather',
     
@@ -94,6 +103,18 @@ const en = {
     temperatureShort: 'Temperature',
   },
   update: 'Last updated: ',
+  settings: {
+    changeLang: 'Change language',
+    changeTheme: 'Change theme',
+    changeUnits: 'Change Units',
+  },
 }
 
+
+
+const language = {
+  en,
+  pl,
+}
 export { pl, en } 
+export default language
