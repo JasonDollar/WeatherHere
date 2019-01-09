@@ -7,8 +7,10 @@
 }
 
 .element {
-  font-size: 2rem;
-  flex: 0 0 33.3333%;
+  font-size: var(--normal-text-font-size);
+
+  margin: 0 auto;
+  flex: 0 0 95%;
   padding: .5rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -18,15 +20,19 @@
     padding-left: 2px;
   }
 
-  @media only screen and (max-width: 960px) {
+
+  @media only screen and (min-width: 630px) {
     & {
+      margin: 0;
       flex: 0 0 50%;
+      font-size: var(--medium-text-font-size);
     }
   }
-  @media only screen and (max-width: 630px) {
+
+  @media only screen and (min-width: 960px) {
     & {
-      flex: 0 0 90%;
-      margin: 0 auto;
+
+      flex: 0 0 33.3333%;
     }
   }
 }

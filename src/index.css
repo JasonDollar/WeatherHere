@@ -23,6 +23,7 @@ code {
   --head-font-size: 3.8rem;
   --small-head-font-size: 3.2rem;
   --big-text-font-size: 2.4rem;
+  --medium-text-font-size: 2rem;
   --normal-text-font-size: 1.6rem;
   --small-text-font-size: 1.2rem;
   
@@ -41,6 +42,7 @@ code {
   --color-box-shadow: #222;
   --color-border: #aaa;
   --color-border-transparent: #aaaaaa55;
+  --color-border-transparenst: #75d1a6;
 
   --color-grey-1: #888;
   --color-grey-2: #bbb;

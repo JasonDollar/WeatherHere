@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 // import {pl, en} from './data/text-locale'
 import language from './data/text-locale'
 import layouts from './data/layouts'
-// import styled from 'styled-components'
 
 import classes from './App.module.scss'
 import Weather from './containers/Weather/Weather'
@@ -10,13 +9,9 @@ import Settings from './components/Settings/Settings'
 import Search from './components/Search/Search'
 import SearchDesktop from './components/SearchDesktop/SearchDesktop'
 import Header from './components/Header/Header'
-// import Footer from './components/Footer/Footer'
 import MobileMenu from './components/MobileMenu/MobileMenu'
 
-// const Container = styled.div`
-// color: #111;
-// background-color: #fefefe;
-// `
+
 
 class App extends Component {
   state = {
@@ -30,7 +25,7 @@ class App extends Component {
     location: null,
     activeMenuBarClass: 'forecast',
     weatherIcon: 'clear-day',
-    themeName: 'pinkDark'
+    themeName: 'pink'
   }
   componentDidMount() {
     this.setLayout()
@@ -103,7 +98,6 @@ class App extends Component {
 
 
   getUserLocation = () => {
-    
     navigator.geolocation.getCurrentPosition(position => {
       const {longitude, latitude} = position.coords
       const location = {
@@ -256,9 +250,7 @@ class App extends Component {
           />
         ) : null}
 
-        <div className={`${classes.footerContainer} ${classes.container}`}>
-          
-        </div>
+
 
       </div>
     )

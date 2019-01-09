@@ -15,7 +15,7 @@ const getTimeFromSeconds = (timestamp, timezone) => {
   return {
     month: moment.tz(timestampInMiliSec, timezone).format('D.M'),
     // day === week day
-    day: moment.tz(timestampInMiliSec, timezone).format('e'),
+    day: moment.tz(timestampInMiliSec, timezone).format('d'),
     hour: moment.tz(timestampInMiliSec, timezone).format('HH:mm'),
   } 
 }
