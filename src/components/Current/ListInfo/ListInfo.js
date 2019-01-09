@@ -64,7 +64,10 @@ const ListInfo = ({
     </div>
     <div className={classes.element}>
       <div>{currentText.ozone}</div>
-      <div>{formatNumber(currently.ozone)}</div>
+      <div>
+        {formatNumber(currently.ozone)}
+        <span>DU</span>
+      </div>
     </div>
 
   </div>

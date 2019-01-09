@@ -18,7 +18,7 @@ const layouts = {
     boxShadow: '#222',
     grey1: '#888',
     grey2: '#bbb',
-    grey3: '#dfdfdf',
+    grey3: '#e7e3e3',
     greyGraph: '#676767',
   },
   pinkDark: {
@@ -49,7 +49,7 @@ const layouts = {
     primary: '#f48042',
     primaryOffset: '#ef915f',
     mobileMenu: '#f48042',
-    antiGraph: '#5fecef',
+    antiGraph: '#50c25f',
     secondaryGraph: '#f48042',
     background: '#242424',
     background2: '#fcfcfc',
@@ -106,7 +106,7 @@ const layouts = {
     boxShadow: '#222',
     grey1: '#888',
     grey2: '#bbb',
-    grey3: '#dfdfdf',
+    grey3: '#e3e3e3',
     greyGraph: '#676767',
   },
   harvey: {
@@ -128,7 +128,7 @@ const layouts = {
     boxShadow: '#222',
     grey1: '#888',
     grey2: '#bbb',
-    grey3: '#dfdfdf',
+    grey3: '#e3e3e3',
     greyGraph: '#676767',
   },
 

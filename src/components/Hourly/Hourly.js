@@ -12,7 +12,7 @@ import classes from './Hourly.module.scss'
 const Hourly = ({
   hourly, hourlyText, timezone, units,
 }) => { 
-
+  let fullTempDisplay
   const data = hourly.data
     .filter((item, index) => {
       if (index === 0 || index % 3 === 0) {
@@ -22,8 +22,9 @@ const Hourly = ({
     })
     .map(item => {
       const time = getTimeFromSeconds(item.time, timezone)
+      fullTempDisplay = `${hourlyText.temperature} (${units !== 'us' ? '°C' : '°F'})`
       return {
-        [hourlyText.temperature]: formatNumber(item.temperature),
+        [fullTempDisplay]: formatNumber(item.temperature),
         [hourlyText.precipProb]: formatNumber(item.precipProbability * 100),
         summary: item.summary,
         
@@ -49,7 +50,7 @@ const Hourly = ({
               content={<CustomTooltip tempText={hourlyText} type="hourly" units={units} />} 
             />
             <Legend layout="vertical" />
-            <Line yAxisId="left" type="monotone" dataKey={hourlyText.temperature} stroke={graphColorPrimary} activeDot={{ r: 8 }} />
+            <Line yAxisId="left" type="monotone" dataKey={fullTempDisplay} stroke={graphColorPrimary} activeDot={{ r: 8 }} />
             <Line yAxisId="right" type="monotone" dataKey={hourlyText.precipProb} stroke={graphColorSecondary} />
           </LineChart>
         </ResponsiveContainer>

@@ -8,7 +8,7 @@ const Header = ({
   text, searchValue, onSearchFormSubmit, changeLanguage, onButtonClick, onInputChange,
 }) => (
   <div className={classes.container}>
-    <h1 className={classes.header}>{text.title}</h1> 
+    <h1 className={classes.header}>WeatherHere</h1> 
     
     
   </div>

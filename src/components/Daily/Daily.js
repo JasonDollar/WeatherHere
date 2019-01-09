@@ -12,7 +12,7 @@ import classes from './Daily.module.scss'
 const Daily = ({
   daily, dateText, timezone, units,
 }) => {
-
+  let fullTempDisplay
   const data = daily.data.map(({ time, temperatureHigh, temperatureLow }, index) => {
     const formattedHighTemperature = formatNumber(temperatureHigh)
     const formattedLowTemperature = formattedHighTemperature === formatNumber(temperatureLow) ? formatNumber(temperatureLow) - 0.1 : formatNumber(temperatureLow)
@@ -21,10 +21,11 @@ const Daily = ({
     if (index === 0) {
       dayName = dateText.today
     } else dayName = dateText.weekDayShort[day.day]
+    fullTempDisplay = `${dateText.temperature} (${units !== 'us' ? '°C' : '°F'})`
     return {
       name: dayName,
       // change temperature later to localized name
-      [dateText.temperature]: [formattedHighTemperature, formattedLowTemperature],
+      [fullTempDisplay]: [formattedHighTemperature, formattedLowTemperature],
     }
   })
   const graphColorPrimary = getComputedStyle(document.documentElement).getPropertyValue('--color-primary')
@@ -40,8 +41,8 @@ const Daily = ({
           <BarChart maxBarSize={60} data={data}>
             <defs>
               <linearGradient id="colorPrimary" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="35%" stopColor={graphColorPrimary} stopOpacity={0.98} />
-                <stop offset="95%" stopColor={graphColorSecondary} stopOpacity={0.9} />
+                <stop offset="35%" stopColor={graphColorPrimary} stopOpacity={1} />
+                <stop offset="95%" stopColor={graphColorSecondary} stopOpacity={0.98} />
               </linearGradient>
             </defs>
             <CartesianGrid strokeDasharray="3 3" />
@@ -52,7 +53,7 @@ const Daily = ({
 
             />
             <Legend layout="horizontal" />
-            <Bar dataKey={dateText.temperature} fill="url(#colorPrimary)" unit="°C" />
+            <Bar dataKey={fullTempDisplay} fill="url(#colorPrimary)" unit={units} />
             
           </BarChart>
         </ResponsiveContainer>

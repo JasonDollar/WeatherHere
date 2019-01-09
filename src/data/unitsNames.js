@@ -14,7 +14,7 @@ export const unitsNames = {
     precip: 'in/h',
     precipAcc: 'in',
     temperature: '°F',
-    wind: 'm/s',
+    wind: 'mi/h',
     pressure: 'hPa',
   },
   uk2: {
