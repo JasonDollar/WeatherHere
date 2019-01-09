@@ -10,7 +10,7 @@ import { getTimeFromSeconds, formatNumber } from '../../data/utils'
 import classes from './Daily.module.scss'
 
 const Daily = ({
-  daily, dateText, timezone, 
+  daily, dateText, timezone, units,
 }) => {
 
   const data = daily.data.map(({ time, temperatureHigh, temperatureLow }, index) => {
@@ -40,7 +40,7 @@ const Daily = ({
           <BarChart maxBarSize={60} data={data}>
             <defs>
               <linearGradient id="colorPrimary" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="35%" stopColor={graphColorPrimary} stopOpacity={0.9} />
+                <stop offset="35%" stopColor={graphColorPrimary} stopOpacity={0.98} />
                 <stop offset="95%" stopColor={graphColorSecondary} stopOpacity={0.9} />
               </linearGradient>
             </defs>
@@ -48,7 +48,7 @@ const Daily = ({
             <XAxis dataKey="name" stroke={graphColorGrey} />
             <YAxis type="number" stroke={graphColorGrey} />
             <Tooltip
-              content={<CustomTooltip tempText={dateText} type="daily" />}
+              content={<CustomTooltip tempText={dateText} type="daily" units={units} />}
 
             />
             <Legend layout="horizontal" />

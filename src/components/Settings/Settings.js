@@ -4,11 +4,20 @@ import React from 'react'
 import Icon from '../Icon/Icon'
 import Backdrop from '../Backdrop/Backdrop'
 import layouts from '../../data/layouts'
-
+import { unitsNames } from '../../data/unitsNames'
 import classes from './Settings.module.scss'
 
 const Settings = ({
-  changeLanguage, languageNames, selectedLanguage, showBackdrop, hideBackdrop, themeName, themeListHandler, text,
+  changeLanguage, 
+  languageNames, 
+  selectedLanguage, 
+  showBackdrop, 
+  hideBackdrop, 
+  themeName, 
+  themeListHandler, 
+  text, 
+  unitListHandler,
+  units,
 }) => {
   const selectLanguageMenu = languageNames.map(item => (
     <label 
@@ -50,6 +59,27 @@ const Settings = ({
         {layouts[item].name}
       </label>
     ))
+
+  const selectUnitMenu = Object.keys(unitsNames).map((item, index) => (
+    <label 
+      key={unitsNames[item].id}
+      className={unitsNames[item].id === units ? `${classes.label} ${classes.active}` : classes.label}
+    >
+      <input
+        type="radio"
+        name="units"
+        checked={unitsNames[item].id === units}
+        value={unitsNames[item].id}
+        onChange={unitListHandler}
+        className={classes.radio}
+      />
+      <span className={classes.radioButton} style={unitsNames[item].id === units ? { opacity: 1 } : { opacity: 0 }}>
+        <Icon icon="checkmark" viewBox="0 0 50 50" />
+      </span>
+      {text.units[index]}
+    </label>
+  ))
+    
   return (
     <div>
       <Backdrop showBackdrop={showBackdrop} hideBackdrop={hideBackdrop} />
@@ -65,6 +95,13 @@ const Settings = ({
           <p>{text.changeTheme}</p>
           <form className={classes.form}>
             {selectThemeMenu}
+
+          </form>
+        </div>
+        <div className={`${classes.menu} ${classes.menuUnits}`}>
+          <p>{text.changeUnits}</p>
+          <form className={classes.form}>
+            {selectUnitMenu}
 
           </form>
         </div>

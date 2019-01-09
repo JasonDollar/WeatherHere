@@ -1,7 +1,7 @@
 .Settings {
   position: fixed;
   top: 0;
-  bottom: 0;
+  bottom: 5.4rem;
   left: 0;
   right: 0;
   z-index: 200;
@@ -9,9 +9,10 @@
   flex-direction: column;
   background-color: var(--color-grey-3);
   overflow-y: scroll;
+  padding-bottom: 3rem;
   @media only screen and (min-width: 576px) {
-    top: calc(var(--screen-height) / 2 - 250px);
-    bottom: calc(var(--screen-height) / 2 - 250px);
+    top: calc(var(--screen-height) / 2 - 270px);
+    bottom: calc(var(--screen-height) / 2 - 270px);
     left: calc(var(--screen-width) / 2 - 190px);
     right: calc(var(--screen-width) / 2 - 190px);
     overflow: auto;
@@ -73,3 +74,8 @@
   // }
 }
 
+// .menuUnits::after {
+//   content: "";
+
+//   height: 3rem;
+// }

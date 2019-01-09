@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-// import {pl, en} from './data/text-locale'
 import language from './data/text-locale'
 import layouts from './data/layouts'
 
@@ -25,13 +24,14 @@ class App extends Component {
     location: null,
     activeMenuBarClass: 'forecast',
     weatherIcon: 'clear-day',
-    themeName: 'pink'
+    themeName: 'pink',
+    units: 'si',
   }
   componentDidMount() {
     this.setLayout()
     this.updateWindowDimensions();
     window.addEventListener('resize', this.updateWindowDimensions);
-    this.setLayout(this.state.themeName)
+    this.parseDataFromLocalStorage()
   }
   
   componentWillUnmount() {
@@ -57,21 +57,41 @@ class App extends Component {
     })
   } 
 
-  // setWeatherIcon = (icon) => {
-  //   this.setState({
-  //     weatherIcon: icon,
-  //   })
-  // }
+  parseDataFromLocalStorage = () => {
+    const themeName = localStorage.getItem('theme')
+    const units = localStorage.getItem('units')
+    if (themeName) {
+      this.setState({ themeName })
+      this.setLayout(themeName)
+    } else {
+      this.setLayout()
+      this.setState({ themeName: 'pink' })
+    }
+
+    if (units) {
+      this.setState({ units })
+    } else {
+      this.setState({ units: 'si'})
+    }
+  }
+
   themeListHandler = e => {
     const themeName = e.target.value
-    this.setState({
-      themeName
-    })
+    this.setState({ themeName })
     this.setLayout(themeName)
+    
+    localStorage.setItem('theme', themeName)
+  }
+
+  unitListHandler = e => {
+    const units = e.target.value
+    this.setState({ units })
+    localStorage.setItem('units', units)
   }
 
   setLayout = (themeName = 'pink') => {
-    const theme = layouts[themeName]
+    let theme = layouts[themeName]
+    
     document.documentElement.style.setProperty('--color-primary', theme.primary)
     document.documentElement.style.setProperty('--color-primary-offset', theme.primaryOffset)
     document.documentElement.style.setProperty('--color-mobile-menu', theme.mobileMenu)
@@ -91,10 +111,6 @@ class App extends Component {
     document.documentElement.style.setProperty('--color-grey-3', theme.grey3)
     document.documentElement.style.setProperty('--color-grey-graph', theme.greyGraph)
   }
-
-
-
-  
 
 
   getUserLocation = () => {
@@ -165,7 +181,7 @@ class App extends Component {
 
   onInputChange = e => {
     const value = e.target.value
-    this.setState({inputValue: value})
+    this.setState({ inputValue: value })
   }
 
   onSearchFormSubmit = (e) => {
@@ -177,7 +193,6 @@ class App extends Component {
       inputValue: '',
       activeMenuBarClass: 'forecast',
     })
-
   }
 
   render() {
@@ -219,6 +234,7 @@ class App extends Component {
           searchValue={this.state.searchValue}
           location={this.state.location}
           setLocationCoordsToState={this.setLocationCoordsToState}
+          units={this.state.units}
         />
 
         {this.state.showSettings && (
@@ -235,6 +251,8 @@ class App extends Component {
             themeName={this.state.themeName}
             themeListHandler={this.themeListHandler}
             text={this.state.localText.settings}
+            unitListHandler={this.unitListHandler}
+            units={this.state.units}
           />
         )}
 

@@ -1,20 +1,20 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-
+import { unitsNames } from '../../data/unitsNames'
 import classes from './CustomTooltip.module.scss'
 
 
 
 const CustomTooltip = ({
-  label, payload, tempText, type, 
+  label, payload, tempText, type, units,
 }) => {
   const longNameIndex = tempText.weekDay ? tempText.weekDayShort.findIndex(item => item === label) : null
   if (payload[0] && type === 'daily') {
     return ( 
       <div className={classes.Tooltip}>
         <p>{tempText.weekDay[longNameIndex] || tempText.today}</p>
-        <p>{`${tempText.temperatureMax}: ${payload[0].value[0]}°C`}</p>
-        <p>{`${tempText.temperatureMin}: ${payload[0].value[1]}°C`}</p>
+        <p>{`${tempText.temperatureMax}: ${payload[0].value[0]}${unitsNames[units].temperature}`}</p>
+        <p>{`${tempText.temperatureMin}: ${payload[0].value[1]}${unitsNames[units].temperature}`}</p>
       </div>
     ) 
   } 
@@ -23,7 +23,7 @@ const CustomTooltip = ({
       <div className={classes.Tooltip}>
         <p>{`${tempText.hour}: ${label}`}</p>
         <p>{payload[0].payload.summary}</p>
-        <p>{`${tempText.temperatureShort}: ${payload[0].value}°C`}</p>
+        <p>{`${tempText.temperatureShort}: ${payload[0].value}${unitsNames[units].temperature}`}</p>
         <p>{`${tempText.precipProbShort}: ${payload[1].value}%`}</p>
       </div>
     ) 

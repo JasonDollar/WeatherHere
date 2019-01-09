@@ -1,0 +1,38 @@
+export const unitsNames = {
+  si: {
+    id: 'si',
+    distance: 'km',
+    precip: 'mm/h',
+    precipAcc: 'cm',
+    temperature: '°C',
+    wind: 'm/s',
+    pressure: 'hPa',
+  },
+  us: {
+    id: 'us',
+    distance: 'mi',
+    precip: 'in/h',
+    precipAcc: 'in',
+    temperature: '°F',
+    wind: 'm/s',
+    pressure: 'hPa',
+  },
+  uk2: {
+    id: 'uk2',
+    distance: 'mi',
+    precip: 'mm/h',
+    precipAcc: 'cm',
+    temperature: '°C',
+    wind: 'mi/h',
+    pressure: 'hPa',
+  },
+  ca: {
+    id: 'ca',
+    distance: 'km',
+    precip: 'mm/h',
+    precipAcc: 'cm',
+    temperature: '°C',
+    wind: 'km/h',
+    pressure: 'hPa',
+  },
+}

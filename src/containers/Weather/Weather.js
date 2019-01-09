@@ -27,7 +27,7 @@ class Weather extends Component {
     locationShortName: '',
     error: '',
     isLoading: true,
-    updateTime: null
+    updateTime: null,
     // searchValue: '',
   }
   
@@ -37,12 +37,13 @@ class Weather extends Component {
   }
 
   componentDidUpdate(prevProps) {
-    if (prevProps.language !== this.props.language || prevProps.location !== this.props.location) {
-      this.getWeather(this.props.location.lat, this.props.location.long, this.props.language)
+    if (prevProps.language !== this.props.language || prevProps.location !== this.props.location || prevProps.units !== this.props.units) {
+      this.getWeather(this.props.location.lat, this.props.location.long, this.props.language, this.props.units)
     } 
     if (prevProps.searchValue !== this.props.searchValue) {
       this.onNameLocationSearch(this.props.searchValue)
     }
+ 
   }
 
   parseDataFromLocalStorage = () => {
@@ -51,7 +52,7 @@ class Weather extends Component {
     console.log(location)
     if (location) {
       this.props.setLocationCoordsToState(location)
-      this.getWeather(location.lat, location.long, this.props.language)
+      this.getWeather(location.lat, location.long, this.props.language, this.props.units)
     }
     else if (locationShortName) {
       this.setState({
@@ -109,7 +110,7 @@ class Weather extends Component {
     }
   }
 
-  getWeather = (lat, long, lang) => {
+  getWeather = (lat, long, lang, units) => {
     this.setState({isLoading: true})
     // returns all places for given location 
     axios.post(`${MAP_URL}?latlng=${lat},${long}&key=${MAP_API}&language=${lang}`)
@@ -119,7 +120,7 @@ class Weather extends Component {
       })
       .catch(error => this.setState({error: error.message}))
 
-    axios.get(`https://cors-anywhere.herokuapp.com/${DARK_URL}${DARK_API}/${lat},${long}?lang=${lang}&units=si`, {
+    axios.get(`https://cors-anywhere.herokuapp.com/${DARK_URL}${DARK_API}/${lat},${long}?lang=${lang}&units=${units}`, {
       method: 'HEAD',
       mode: 'no-cors',
     })
@@ -130,7 +131,9 @@ class Weather extends Component {
         isLoading: false,
         error: '',
         updateTime: Date.now(),
-      })})
+      })
+      
+    })
       .catch(error => this.setState({error: error.message}))
   }
 
@@ -173,7 +176,7 @@ class Weather extends Component {
         //   location,
         //   searchValue: '',
         // })
-        this.getWeather(data.lat, data.lng, this.props.language)
+        this.getWeather(data.lat, data.lng, this.props.language, this.props.units)
       })
       .catch(error => this.setState({error: error.message}))
   }
@@ -201,16 +204,19 @@ class Weather extends Component {
                 dateText={this.props.text.date}
                 timezone={this.state.forecast.timezone}
                 locationShortName={this.state.locationShortName}
+                
               />
               <Daily 
                 daily={this.state.forecast.daily}
                 dateText={this.props.text.date}
                 timezone={this.state.forecast.timezone}
+                units={this.state.forecast.flags.units}
               />
               <Hourly 
                 hourly={this.state.forecast.hourly}
                 hourlyText={this.props.text.hourly}
                 timezone={this.state.forecast.timezone}
+                units={this.state.forecast.flags.units}
               />
               <Updated 
                 updateTime={this.state.updateTime}

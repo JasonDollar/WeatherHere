@@ -51,6 +51,7 @@ const pl = {
     changeLang: 'Zmień język',
     changeTheme: 'Zmień motyw',
     changeUnits: 'Zmień jednostki',
+    units: ['SI', 'US', 'UK', 'CA'],
   },
 }
 
@@ -107,6 +108,7 @@ const en = {
     changeLang: 'Change language',
     changeTheme: 'Change theme',
     changeUnits: 'Change Units',
+    units: ['SI', 'US', 'UK', 'CA'],
   },
 }
 

@@ -10,7 +10,7 @@ import Summary from '../Summary/Summary'
 import classes from './Hourly.module.scss'
 
 const Hourly = ({
-  hourly, hourlyText, timezone, graphColor, 
+  hourly, hourlyText, timezone, units,
 }) => { 
 
   const data = hourly.data
@@ -46,7 +46,7 @@ const Hourly = ({
             <YAxis yAxisId="left" type="number" tick={{ stroke: graphColorPrimary }} domain={['auto', 'auto']} />
             <YAxis yAxisId="right" orientation="right" type="number" domain={[0, 100]} stroke={graphColorGrey} />
             <Tooltip
-              content={<CustomTooltip tempText={hourlyText} type="hourly" />} 
+              content={<CustomTooltip tempText={hourlyText} type="hourly" units={units} />} 
             />
             <Legend layout="vertical" />
             <Line yAxisId="left" type="monotone" dataKey={hourlyText.temperature} stroke={graphColorPrimary} activeDot={{ r: 8 }} />

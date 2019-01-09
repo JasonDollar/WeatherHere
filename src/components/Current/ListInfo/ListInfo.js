@@ -1,52 +1,54 @@
 import React from 'react'
 
 import { formatNumber } from '../../../data/utils'
-
+import { unitsNames } from '../../../data/unitsNames'
 import classes from './ListInfo.module.scss'
 
-const ListInfo = ({ currentText, currently, moonphase }) => (
+const ListInfo = ({
+  currentText, currently, moonphase, units, 
+}) => (
   <div className={classes.Current}>
   
     <div className={classes.element}>
       <div>{currentText.appTemp}</div>
       <div>
         {formatNumber(currently.apparentTemperature)}
-        <span>°C</span>
+        <span>{unitsNames[units].temperature}</span>
       </div>
     </div>
     <div className={classes.element}>
       <div>{currentText.dewPoint}</div>
       <div>
         {formatNumber(currently.dewPoint)}
-        <span>°C</span>
+        <span>{unitsNames[units].temperature}</span>
       </div>
     </div>
     <div className={classes.element}>
       <div>{currentText.pressure}</div>
       <div>
         {formatNumber(currently.pressure)} 
-        <span>hPa</span>
+        <span>{unitsNames[units].pressure}</span>
       </div>
     </div>
     <div className={classes.element}>
       <div>{currentText.windGust}</div>
       <div>
         {formatNumber(currently.windGust)} 
-        <span>m/s</span>
+        <span>{unitsNames[units].wind}</span>
       </div>
     </div>
     <div className={classes.element}>
       <div>{currentText.precipInt}</div>
       <div>
         {formatNumber(currently.precipIntensity)} 
-        <span>mm/h</span>
+        <span>{unitsNames[units].precip}</span>
       </div>
     </div>
     <div className={classes.element}>
       <div>{currentText.visibility}</div>
       <div>
         {formatNumber(currently.visibility)}
-        <span>km</span>
+        <span>{unitsNames[units].distance}</span>
       </div>
     </div>
     <div className={classes.element}>

@@ -2,13 +2,14 @@ import React from 'react'
 
 import Icon from '../../Icon/Icon'
 import Summary from '../../Summary/Summary'
+import { unitsNames } from '../../../data/unitsNames'
 
 import { formatNumber, getTimeFromSeconds } from '../../../data/utils'
 import classes from './MainInfo.module.scss'
 
 
 const MainInfo = ({
-  locationShortName, currentText, currently, dateText, today, timezone, sunPositionTime,
+  locationShortName, currentText, currently, dateText, today, timezone, sunPositionTime, units,
 }) => (
   <div className={classes.MainInfo}>
     <div className={classes.weather}>
@@ -19,7 +20,7 @@ const MainInfo = ({
       <div className={classes.temperature}>
         {/*<Icon icon="temp" viewBox="0 0 100 100" />*/}
         {formatNumber(currently.temperature)}
-        <span>°C</span>
+        <span>{unitsNames[units].temperature}</span>
       </div>
       
     </div>
