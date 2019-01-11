@@ -10,20 +10,9 @@
 
 .chartContainer {
   overflow: hidden;
-
-}
-
-@media only screen and (max-width: 576px) {
-  .chartContainer {
-    // margin: 0 0 0 -2.5rem;
-    overflow-y: hidden;
+  @media only screen and (max-width: 576px) {
+    margin: 0 -2.9rem 0 -3.5rem;
+    font-size: calc(var(--normal-text-font-size) - 3px);
   }
-
 }
- 
-// ul[class^="recharts-default-legend"] {
-//   display: flex;
-//   flex-direction: column;
-//   margin-top: 1rem 0 0 1.5rem !important;
-// }
-//recharts-default-legend
+

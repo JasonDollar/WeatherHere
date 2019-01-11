@@ -12,8 +12,16 @@ import classes from './Daily.module.scss'
 const Daily = ({
   daily, dateText, timezone, units,
 }) => {
+  const graphColorPrimary = getComputedStyle(document.documentElement).getPropertyValue('--color-primary')
+  const graphColorSecondary = getComputedStyle(document.documentElement).getPropertyValue('--color-anti-graph')
+  const graphColorGrey = getComputedStyle(document.documentElement).getPropertyValue('--color-grey-graph')
+  const windowWidth = getComputedStyle(document.documentElement).getPropertyValue('--screen-width')
+    .split('')
+    .filter(item => !isNaN(item))
+    .join('')
+    console.log(windowWidth)
   let fullTempDisplay
-  const data = daily.data.map(({ time, temperatureHigh, temperatureLow }, index) => {
+  const data = daily.data.map(({ time, temperatureHigh, temperatureLow, summary }, index) => {
     const formattedHighTemperature = formatNumber(temperatureHigh)
     const formattedLowTemperature = formattedHighTemperature === formatNumber(temperatureLow) ? formatNumber(temperatureLow - 0.1) : formatNumber(temperatureLow)
     const day = getTimeFromSeconds(time, timezone)
@@ -26,11 +34,10 @@ const Daily = ({
       name: dayName,
       // change temperature later to localized name
       [fullTempDisplay]: [formattedHighTemperature, formattedLowTemperature],
+      summary: summary
     }
   })
-  const graphColorPrimary = getComputedStyle(document.documentElement).getPropertyValue('--color-primary')
-  const graphColorSecondary = getComputedStyle(document.documentElement).getPropertyValue('--color-anti-graph')
-  const graphColorGrey = getComputedStyle(document.documentElement).getPropertyValue('--color-grey-graph')
+
   
   
   return (
@@ -49,7 +56,7 @@ const Daily = ({
             <XAxis dataKey="name" stroke={graphColorGrey} />
             <YAxis type="number" stroke={graphColorGrey} />
             <Tooltip
-              content={<CustomTooltip tempText={dateText} type="daily" units={units} />}
+              content={<CustomTooltip tempText={dateText} type="daily" units={units} windowWidth={windowWidth} />}
 
             />
             <Legend layout="horizontal" />

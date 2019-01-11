@@ -50,7 +50,7 @@ const Current = ({
       <ListInfo 
         currentText={currentText}
         currently={currently}
-        moonphase={Math.floor(daily.data[0].moonPhase * 100)}
+        moonphase={daily.data[0].moonPhase}
         units={units}
       />
       
@@ -83,7 +83,10 @@ Current.propTypes = {
     windSpeed: PropTypes.number,
   }),
 
-  currentText: PropTypes.objectOf(PropTypes.string),
+  currentText: PropTypes.objectOf(PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.arrayOf(PropTypes.string),
+  ])),
 
   locale: PropTypes.string,
 
@@ -142,33 +145,3 @@ Current.propTypes = {
     weekDay: PropTypes.arrayOf(PropTypes.string),
   }),
 }
-
-/*
-time
-summary
-
-precipPropability
-precipIntensity
-temperature
-apparentTemperature
-dewPoint
-humidity
-pressure
-windSpeed
-windGust
-windBearing (kierunek)
-cloudCover
-visibility
-uvIndex
-
-
-sunriseTime
-sunsetTime
-moonPhase
-uvIndex
-ozone
-precipType
-summary
-
-
-*/

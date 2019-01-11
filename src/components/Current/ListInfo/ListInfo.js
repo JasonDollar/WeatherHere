@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { formatNumber } from '../../../data/utils'
+import { formatNumber, formatMoonPhase } from '../../../data/utils'
 import { unitsNames } from '../../../data/unitsNames'
 import classes from './ListInfo.module.scss'
 
@@ -58,8 +58,7 @@ const ListInfo = ({
     <div className={classes.element}>
       <div>{currentText.moonphase}</div>
       <div>
-        {moonphase}
-        <span>%</span>
+        {formatMoonPhase(moonphase, currentText.moon)}
       </div>
     </div>
     <div className={classes.element}>

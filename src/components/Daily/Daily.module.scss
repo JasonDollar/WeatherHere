@@ -11,14 +11,11 @@
 }
 
 .chartContainer {
-  overflow-y: hidden;
+  overflow: hidden;
   // background-color: var(--color-back);
-}
-
-@media only screen and (max-width: 576px) {
-  .chartContainer {
-    overflow-y: hidden;
-    // margin: 0 1rem 0 -3rem;
+  @media only screen and (max-width: 576px) {
+    margin: 0 -1.2rem 0 -3.6rem;
+    font-size: calc(var(--normal-text-font-size) - 3px);
   }
-
 }
+

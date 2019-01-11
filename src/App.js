@@ -60,6 +60,7 @@ class App extends Component {
   parseDataFromLocalStorage = () => {
     const themeName = localStorage.getItem('theme')
     const units = localStorage.getItem('units')
+    const languageLs = localStorage.getItem('language')
     if (themeName) {
       this.setState({ themeName })
       this.setLayout(themeName)
@@ -72,6 +73,12 @@ class App extends Component {
       this.setState({ units })
     } else {
       this.setState({ units: 'si'})
+    }
+    if (languageLs) {
+      this.setState({language: languageLs, localText: language[languageLs]})
+      document.documentElement.lang = languageLs
+    } else {
+      document.documentElement.lang = this.state.language
     }
   }
 
@@ -177,7 +184,7 @@ class App extends Component {
         localText: language.en
       })
     }
-    document.documentElement.lang = value
+    localStorage.setItem('language', value)
   }
 
   onInputChange = e => {
