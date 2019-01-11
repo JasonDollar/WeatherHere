@@ -9,6 +9,8 @@ const pl = {
     search: 'Szukaj',
     settings: 'Ustawienia',
     forecast: 'Pogoda',
+    geo: 'Geo',
+    geoFull: 'Geolokalizacja',
     inputPlaceholder: 'Szukaj lokalizacji',
   },
   current: {
@@ -47,6 +49,7 @@ const pl = {
     temperatureShort: 'Temperatura',
   },
   update: 'Ostatnia aktualizacja: ',
+  
   settings: {
     changeLang: 'Zmień język',
     changeTheme: 'Zmień motyw',
@@ -66,6 +69,8 @@ const en = {
     search: 'Search',
     settings: 'Settings',
     forecast: 'Forecast',
+    geo: 'Geo',
+    geoFull: 'Geolocalisation',
     inputPlaceholder: 'Search for location',
   },
   current: {

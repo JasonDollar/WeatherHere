@@ -15,7 +15,7 @@ const Daily = ({
   let fullTempDisplay
   const data = daily.data.map(({ time, temperatureHigh, temperatureLow }, index) => {
     const formattedHighTemperature = formatNumber(temperatureHigh)
-    const formattedLowTemperature = formattedHighTemperature === formatNumber(temperatureLow) ? formatNumber(temperatureLow) - 0.1 : formatNumber(temperatureLow)
+    const formattedLowTemperature = formattedHighTemperature === formatNumber(temperatureLow) ? formatNumber(temperatureLow - 0.1) : formatNumber(temperatureLow)
     const day = getTimeFromSeconds(time, timezone)
     let dayName
     if (index === 0) {

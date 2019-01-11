@@ -20,13 +20,16 @@
 }
 
 .button {
-
+  flex-direction: column;
   display: flex;
   justify-content: center;
   align-items: center;
   background: none;
   border: 1px solid transparent;
   cursor: pointer;
+  & span {
+    color: var(--color-grey-1);
+  }
 }
 
 .form {
@@ -62,11 +65,13 @@
 
   & .formButton {
     position: absolute;
+    
     right: 1px;
     padding: .6rem .8rem .6rem 1rem;
     background: var(--color-back2);
     z-index: 110;
     border-left: 1px solid var(--color-text-secondary);
+    font-size: 10px;
 
     & svg {
       height: var(--big-text-font-size);
@@ -87,5 +92,9 @@
     width: var(--big-text-font-size);
     fill: var(--color-primary);
     transform: scale(1.5);
+  }
+
+  & span {
+    padding-top: 1rem;
   }
 }

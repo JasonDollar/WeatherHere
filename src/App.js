@@ -177,6 +177,7 @@ class App extends Component {
         localText: language.en
       })
     }
+    document.documentElement.lang = value
   }
 
   onInputChange = e => {

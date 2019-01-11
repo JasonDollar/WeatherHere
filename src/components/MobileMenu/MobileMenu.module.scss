@@ -6,9 +6,9 @@
   left: 0;
   right: 0;
   // width: var(--screen-width);
-  background-color: var(--color-back-mobile);
+  
   z-index: 250;
-  color: var(--color-text-grey);
+  
   display: flex;
   border-top: 1px solid var(--color-border);
   // box-shadow: 0 0 0 2px yellow;
@@ -26,12 +26,16 @@
     
   }
   & .setting {
+    color: var(--color-text-grey);
+    background-color: var(--color-back-mobile);
     height: 100%;
+    border: none;
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 
     & p {
       font-size: var(--small-text-font-size);
