@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import moment from 'moment-timezone'
-import 'moment/locale/en-gb'
-import 'moment/locale/pl'
-// import 'moment-timezone'
+import moment from 'moment'
+// import 'moment/locale/en-gb'
+// import 'moment/locale/pl'
+import 'moment-timezone'
 
 
 import MainInfo from './MainInfo/MainInfo'

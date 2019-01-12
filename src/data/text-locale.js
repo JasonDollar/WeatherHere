@@ -54,6 +54,7 @@ const pl = {
     changeUnits: 'Zmień jednostki',
     units: ['SI', 'US', 'UK', 'CA'],
   },
+  welcome: 'Szukaj lokalizacji'
 }
 
 const en = {
@@ -110,6 +111,7 @@ const en = {
     changeUnits: 'Change Units',
     units: ['SI', 'US', 'UK', 'CA'],
   },
+  welcome: 'Szukaj lokalizacji',
 }
 
 

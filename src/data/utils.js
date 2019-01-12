@@ -41,6 +41,8 @@ const formatMoonPhase = (phase, text) => {
     return text[7]
   } else if (phase > 0.98) {
     return text[0]
+  } else {
+    return `-`
   }
 }
 

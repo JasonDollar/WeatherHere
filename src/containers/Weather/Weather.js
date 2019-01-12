@@ -11,6 +11,7 @@ import Spinner from '../../components/Spinner/Spinner'
 import Hourly from '../../components/Hourly/Hourly'
 import Updated from '../../components/Updated/Updated'
 import Footer from '../../components/Footer/Footer'
+import ScreenMessage from '../../components/ScreenMessage/ScreenMessage'
 
 
 class Weather extends Component {
@@ -29,10 +30,13 @@ class Weather extends Component {
   }
 
   componentDidUpdate(prevProps) {
-    if (prevProps.language !== this.props.language || prevProps.location !== this.props.location || prevProps.units !== this.props.units) {
+    if ((prevProps.language !== this.props.language && prevProps.language !== '')
+      || (prevProps.location !== this.props.location && this.props.location !== false) 
+      || (prevProps.units !== this.props.units)) {
       this.getWeather(this.props.location.lat, this.props.location.long, this.props.language, this.props.units)
     } 
-    if (prevProps.searchValue !== this.props.searchValue) {
+    if (prevProps.searchValue !== this.props.searchValue && this.props.searchValue !== '') {
+      console.log(2)
       this.onNameLocationSearch(this.props.searchValue)
     }
  
@@ -41,8 +45,8 @@ class Weather extends Component {
   parseDataFromLocalStorage = () => {
     const locationShortName = localStorage.getItem('locationName')
     const location = JSON.parse(localStorage.getItem('locationCoords'))
-    console.log(location)
     if (location) {
+      //required to initialize app and search saved location
       this.props.setLocationCoordsToState(location)
       this.getWeather(location.lat, location.long, this.props.language, this.props.units)
     }
@@ -97,7 +101,6 @@ class Weather extends Component {
       mode: 'no-cors',
     })
       .then(resp => {
-        // console.log(resp.data)
         this.setState({
         forecast: resp.data,
         isLoading: false,
@@ -120,28 +123,28 @@ class Weather extends Component {
           lat: data.lat,
           long: data.lng
         }
+        this.props.setLocationCoordsToState(location)
         localStorage.setItem('locationCoords', JSON.stringify(location))
-        // this.setState({
-        //   location,
-        //   searchValue: '',
-        // })
         this.getWeather(data.lat, data.lng, this.props.language, this.props.units)
       })
       .catch(error => this.setState({error: error.message}))
   }
 
-  // onSearchFormSubmit = (e) => {
-  //   e.preventDefault();
-  //   this.onNameLocationSearch(this.state.searchValue)
-  // }
+
 
   render() {
-    return (
-      <div className={classes.container}>
-        {
-          this.state.geoForbidden && !this.state.location ? <div>Not working</div> :
-          (!this.state.forecast || this.state.isLoading || !this.props.language ? <Spinner /> : 
-            <div className={classes.container}>
+    let component 
+    if (this.state.error) {
+      component = <ScreenMessage>{this.state.error}</ScreenMessage>
+    } else if (!this.state.locationShortName && !this.state.location) {
+      component =  <ScreenMessage>{this.props.text.welcome}</ScreenMessage>
+    } else if (this.state.geoForbidden && !this.state.location) {
+      component =  <ScreenMessage>Not working</ScreenMessage>
+    } else if (!this.state.forecast || this.state.isLoading || !this.props.language) {
+      component = <Spinner />
+    } else {
+      component = (
+        <div className={classes.container}>
               <Current 
                 currently={this.state.forecast.currently}
                 currentText={this.props.text.current}
@@ -170,8 +173,11 @@ class Weather extends Component {
               />
               <Footer />
             </div>
-          )
-        }
+      )
+    }
+    return (
+      <div className={classes.container}>
+        { component }
       </div>
     );
   }

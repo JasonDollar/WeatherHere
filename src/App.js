@@ -21,7 +21,7 @@ class App extends Component {
     showSettings: false,
     showSearch: false,
     showBackdrop: false,
-    location: null,
+    location: '',
     activeMenuBarClass: 'forecast',
     weatherIcon: 'clear-day',
     themeName: 'pink',
@@ -68,12 +68,10 @@ class App extends Component {
       this.setLayout()
       this.setState({ themeName: 'pink' })
     }
-
     if (units) {
+
       this.setState({ units })
-    } else {
-      this.setState({ units: 'si'})
-    }
+    } 
     if (languageLs) {
       this.setState({language: languageLs, localText: language[languageLs]})
       document.documentElement.lang = languageLs

@@ -1,6 +1,6 @@
 
 
-import { getTimeFromSeconds, formatNumber } from '../../data/utils'
+import { getTimeFromSeconds, formatNumber, formatMoonPhase } from '../../data/utils'
 
 describe('formatNumber test', () => {
   test('should return integer', () => {
@@ -74,3 +74,12 @@ describe('getTimeFromSeconds test', () => {
     expect(result).toEqual(expected)
   })
 })
+
+
+describe('formatMoonPhase func test', () => {
+  test('should return `-` when no proper value provided', () => {
+    const result = formatMoonPhase()
+    const result2 = formatMoonPhase('randString')
+    expect(result && result2).toBe('-')
+  })  
+}) 
