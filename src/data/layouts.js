@@ -18,7 +18,7 @@ const layouts = {
     boxShadow: '#222',
     grey1: '#888',
     grey2: '#bbb',
-    grey3: '#e7e3e3',
+    grey3: '#eae9e9',
     greyGraph: '#676767',
   },
   pinkDark: {
@@ -106,7 +106,7 @@ const layouts = {
     boxShadow: '#222',
     grey1: '#888',
     grey2: '#bbb',
-    grey3: '#e3e3e9',
+    grey3: '#e7e7ec',
     greyGraph: '#676767',
   },
   harvey: {
@@ -128,7 +128,7 @@ const layouts = {
     boxShadow: '#222',
     grey1: '#888',
     grey2: '#bbb',
-    grey3: '#e3e6e3',
+    grey3: '#e7eae7',
     greyGraph: '#676767',
   },
 

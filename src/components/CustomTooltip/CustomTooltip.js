@@ -6,7 +6,7 @@ import classes from './CustomTooltip.module.scss'
 
 
 const CustomTooltip = ({
-  label, payload, tempText, type, units,windowWidth
+  label, payload, tempText, type, units, windowWidth
 }) => {
   
   const longNameIndex = tempText.weekDay ? tempText.weekDayShort.findIndex(item => item === label) : null
@@ -64,7 +64,6 @@ CustomTooltip.propTypes = {
       PropTypes.arrayOf(PropTypes.number),
       PropTypes.number,
     ]),
-    
   })),
 
   tempText: PropTypes.shape({
@@ -75,9 +74,13 @@ CustomTooltip.propTypes = {
     weekDay: PropTypes.arrayOf(PropTypes.string),
     hour: PropTypes.string,
     precipProp: PropTypes.string,
-  }),
+  }).isRequired,
 
   type: PropTypes.string.isRequired,
+
+  label: PropTypes.string,
+  units: PropTypes.string,
+  windowWidth: PropTypes.number,
 }
 
 

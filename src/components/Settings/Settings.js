@@ -1,6 +1,5 @@
 import React from 'react'
-
-// import Options from '../Options/Options'
+import PropTypes from 'prop-types';
 import Icon from '../Icon/Icon'
 import Backdrop from '../Backdrop/Backdrop'
 import layouts from '../../data/layouts'
@@ -112,8 +111,16 @@ const Settings = ({
 }
 
 export default Settings
-/*
-<select name="lang" id="lang" onChange={changeLanguage} value={selectedLanguage}>
-          <option value="pl">Polski</option>
-          <option value="en">English</option>
-        </select> */
+
+Settings.propTypes = {
+  changeLanguage: PropTypes.func.isRequired,
+  languageNames: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.string)),
+  selectedLanguage: PropTypes.string.isRequired,
+  showBackdrop: PropTypes.bool.isRequired, 
+  hideBackdrop: PropTypes.func.isRequired,
+  themeName: PropTypes.string.isRequired, 
+  themeListHandler: PropTypes.func.isRequired,
+  text: PropTypes.object, 
+  unitListHandler: PropTypes.func.isRequired,
+  units: PropTypes.string.isRequired,
+}

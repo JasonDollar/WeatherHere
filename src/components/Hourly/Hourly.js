@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 import { 
   ResponsiveContainer, LineChart, XAxis, Line, YAxis, CartesianGrid, Tooltip, Legend,
 } from 'recharts'
@@ -62,3 +63,33 @@ const Hourly = ({
 
 export default Hourly
 
+Hourly.propTypes = {
+  hourly: PropTypes.shape({
+    summary: PropTypes.string,
+    icon: PropTypes.string,
+    data: PropTypes.arrayOf(
+      PropTypes.shape({
+        time: PropTypes.number,
+        summary: PropTypes.string,
+        icon: PropTypes.string,
+        precipIntensity: PropTypes.number,
+        precipProbability: PropTypes.number,
+        temperature: PropTypes.number,
+        apparentTemperature: PropTypes.number,
+        dewPoint: PropTypes.number,
+        humidity: PropTypes.number,
+        pressure: PropTypes.number,
+        windSpeed: PropTypes.number,
+        windGust: PropTypes.number,
+        windBearing: PropTypes.number,
+        cloudCover: PropTypes.number,
+        uvIndex: PropTypes.number,
+        visibility: PropTypes.number,
+        ozone: PropTypes.number,
+      })
+    )
+  }).isRequired,
+  hourlyText: PropTypes.objectOf(PropTypes.string).isRequired,
+  timezone: PropTypes.string.isRequired,
+  units: PropTypes.string.isRequired,
+}

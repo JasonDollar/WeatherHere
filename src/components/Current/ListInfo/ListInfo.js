@@ -1,5 +1,5 @@
 import React from 'react'
-
+import PropTypes from 'prop-types';
 import { formatNumber, formatMoonPhase } from '../../../data/utils'
 import { unitsNames } from '../../../data/unitsNames'
 import classes from './ListInfo.module.scss'
@@ -73,3 +73,16 @@ const ListInfo = ({
 )
 
 export default ListInfo
+
+ListInfo.propTypes = {
+  currentText: PropTypes.objectOf(PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.arrayOf(PropTypes.string),
+  ])).isRequired,
+  currently: PropTypes.objectOf(PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number,
+  ])).isRequired,
+  moonphase: PropTypes.number.isRequired,
+  units: PropTypes.string.isRequired,
+}

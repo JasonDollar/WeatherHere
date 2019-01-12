@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 import moment from 'moment-timezone'
 import classes from './Updated.module.scss'
 
@@ -9,3 +10,8 @@ const Updated = ({ updateTime, updateText }) => (
   )
 
 export default Updated
+
+Updated.propTypes = {
+  updateTime: PropTypes.number.isRequired, 
+  updateText: PropTypes.string.isRequired,
+}

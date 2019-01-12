@@ -1,10 +1,7 @@
 const pl = {
   id: 'pl',
   name: 'Polski',
-  header: {
-    title: 'Pogoda',
-    search: 'Szukaj',
-  },  
+
   layout: {
     search: 'Szukaj',
     settings: 'Ustawienia',
@@ -62,16 +59,12 @@ const pl = {
 const en = {
   id: 'en',
   name: 'English',
-  header: {
-    title: 'Weather',
-    
-  },
   layout: {
     search: 'Search',
     settings: 'Settings',
     forecast: 'Forecast',
     geo: 'Geo',
-    geoFull: 'Geolocalisation',
+    geoFull: 'Geolocalization',
     inputPlaceholder: 'Search for location',
   },
   current: {

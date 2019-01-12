@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
-// import {pl, en} from '../../data/text-locale'
+import PropTypes from 'prop-types';
 import {DARK_URL, MAP_URL} from '../../data/url'
 import {DARK_API, MAP_API} from '../../data/api/api'
 import axios from 'axios'
-// import styled from 'styled-components'
-
 import classes from './Weather.module.scss'
 
 import Current from '../../components/Current/Current'
@@ -14,10 +12,6 @@ import Hourly from '../../components/Hourly/Hourly'
 import Updated from '../../components/Updated/Updated'
 import Footer from '../../components/Footer/Footer'
 
-// const Container = styled.div`
-//   color: #111;
-//   background-color: #fefefe;
-// `
 
 class Weather extends Component {
   
@@ -28,9 +22,7 @@ class Weather extends Component {
     error: '',
     isLoading: true,
     updateTime: null,
-    // searchValue: '',
   }
-  
 
   componentDidMount() {
     this.parseDataFromLocalStorage()
@@ -65,26 +57,6 @@ class Weather extends Component {
       })
     }
   }
-  
-  // getUserLocation = () => {
-  //   this.setState({isLoading: true})
-    
-  //     navigator.geolocation.getCurrentPosition(position => {
-  //       const {longitude, latitude} = position.coords
-  //       const location = {
-  //         lat: latitude,
-  //         long: longitude
-  //       }
-  //       localStorage.setItem('locationCoords', JSON.stringify(location))
-  //       this.setState({
-  //         location
-  //       })
-
-  //     this.getWeather(latitude, longitude, this.props.language)
-  //     }, error => {
-  //       this.setState({geoForbidden: true})
-  //     })  
-  // }
 
   searchLocationName = (data) => {
     this.setState({
@@ -137,29 +109,6 @@ class Weather extends Component {
       .catch(error => this.setState({error: error.message}))
   }
 
-
-  // changeLanguage = (e) => {
-  //   const value = e.target.value
-  //   if (value === 'pl') {
-  //     this.setState({
-  //       language: value,
-  //       localText: pl
-  //     })
-  //   } else if (value === 'en') {
-  //     this.setState({
-  //       language: value,
-  //       localText: en
-  //     })
-  //   }
-  //   const {lat, long} = this.state.location
-  //   this.getWeather(lat, long, value)
-  // }
-
-  // onInputChange = e => {
-  //   const value = e.target.value
-  //   this.setState({searchValue: value})
-  // }
-
   onNameLocationSearch = (location) => {
     axios.post(`${MAP_URL}?address=${location}&key=${MAP_API}`)
       .then(resp => {
@@ -189,12 +138,9 @@ class Weather extends Component {
   render() {
     return (
       <div className={classes.container}>
-
-        
-        
         {
           this.state.geoForbidden && !this.state.location ? <div>Not working</div> :
-          (!this.state.forecast || this.state.isLoading ? <Spinner /> : 
+          (!this.state.forecast || this.state.isLoading || !this.props.language ? <Spinner /> : 
             <div className={classes.container}>
               <Current 
                 currently={this.state.forecast.currently}
@@ -226,10 +172,33 @@ class Weather extends Component {
             </div>
           )
         }
-
       </div>
     );
   }
 }
 
 export default Weather;
+
+Weather.propTypes = {
+  text: PropTypes.objectOf(PropTypes.shape({
+    current: PropTypes.objectOf(PropTypes.string),
+    date: PropTypes.objectOf(PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.arrayOf(PropTypes.string),
+    ])),
+    hourly: PropTypes.string,
+    id: PropTypes.string,
+    layout: PropTypes.string,
+    name: PropTypes.string,
+    settings: PropTypes.objectOf(PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.arrayOf(PropTypes.string),
+    ])),
+    update: PropTypes.string,
+  })).isRequired,
+  language: PropTypes.string.isRequired,
+  searchValue: PropTypes.string.isRequired,
+  location: PropTypes.objectOf(PropTypes.number),
+  setLocationCoordsToState: PropTypes.func.isRequired,
+  units: PropTypes.string.isRequired,
+}

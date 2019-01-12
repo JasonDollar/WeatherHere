@@ -19,7 +19,6 @@ const Daily = ({
     .split('')
     .filter(item => !isNaN(item))
     .join('')
-    console.log(windowWidth)
   let fullTempDisplay
   const data = daily.data.map(({ time, temperatureHigh, temperatureLow, summary }, index) => {
     const formattedHighTemperature = formatNumber(temperatureHigh)
@@ -56,7 +55,7 @@ const Daily = ({
             <XAxis dataKey="name" stroke={graphColorGrey} />
             <YAxis type="number" stroke={graphColorGrey} />
             <Tooltip
-              content={<CustomTooltip tempText={dateText} type="daily" units={units} windowWidth={windowWidth} />}
+              content={<CustomTooltip tempText={dateText} type="daily" units={units} windowWidth={parseInt(windowWidth)} />}
 
             />
             <Legend layout="horizontal" />
@@ -111,7 +110,7 @@ Daily.propTypes = {
     windGust: PropTypes.number,
     windGustTime: PropTypes.number,
     windSpeed: PropTypes.number,
-  }),
+  }).isRequired,
 
   timezone: PropTypes.string.isRequired,
 
@@ -121,47 +120,7 @@ Daily.propTypes = {
     temperature: PropTypes.string.isRequired,
     temperatureMax: PropTypes.string.isRequired,
     temperatureMin: PropTypes.string.isRequired,
-  }),
+  }).isRequired,
+
+  units: PropTypes.string.isRequired,
 }
-
-
-/*
-apparentTemperatureHigh: -8.77
-apparentTemperatureHighTime: 1543582800
-apparentTemperatureLow: -15.57
-apparentTemperatureLowTime: 1543640400
-apparentTemperatureMax: -8.77
-apparentTemperatureMaxTime: 1543582800
-apparentTemperatureMin: -13.37
-apparentTemperatureMinTime: 1543615200
-cloudCover: 0.04
-dewPoint: -12.43
-humidity: 0.54
-icon: "wind"
-moonPhase: 0.76
-ozone: 285.51
-precipIntensity: 0
-precipIntensityMax: 0.0025
-precipIntensityMaxTime: 1543579200
-precipProbability: 0
-pressure: 1026.8
-summary: "Breezy in the morning."
-sunriseTime: 1543559352
-sunsetTime: 1543588381
-temperatureHigh: -1.95
-temperatureHighTime: 1543579200
-temperatureLow: -8.79
-temperatureLowTime: 1543640400
-temperatureMax: -1.95
-temperatureMaxTime: 1543579200
-temperatureMin: -6.21
-temperatureMinTime: 1543615200
-time: 1543532400
-uvIndex: 1
-uvIndexTime: 1543572000
-visibility: 16.09
-windBearing: 145
-windGust: 15.09
-windGustTime: 1543561200
-windSpeed: 7.16
-*/

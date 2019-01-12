@@ -1,6 +1,6 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 import Icon from '../Icon/Icon'
-// import Button from '../Button/Button'
 import classes from './SearchDesktop.module.scss'
 
 const SearchDesktop = ({ 
@@ -30,3 +30,11 @@ const SearchDesktop = ({
 )
 
 export default SearchDesktop
+
+SearchDesktop.propTypes = {
+  onSearchFormSubmit: PropTypes.func.isRequired, 
+  onInputChange: PropTypes.func.isRequired, 
+  inputValue: PropTypes.string.isRequired, 
+  text: PropTypes.objectOf(PropTypes.string), 
+  getUserLocation: PropTypes.func.isRequired, 
+}

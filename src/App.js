@@ -14,7 +14,7 @@ import MobileMenu from './components/MobileMenu/MobileMenu'
 
 class App extends Component {
   state = {
-    language: 'pl', 
+    language: '', 
     localText: language.pl,
     inputValue: '',
     searchValue: '',
@@ -78,7 +78,8 @@ class App extends Component {
       this.setState({language: languageLs, localText: language[languageLs]})
       document.documentElement.lang = languageLs
     } else {
-      document.documentElement.lang = this.state.language
+      this.setState({language: 'pl', localText: language.pl})
+      document.documentElement.lang = 'pl'
     }
   }
 
@@ -208,9 +209,7 @@ class App extends Component {
       <div className={classes.App}>
         <div className={classes.headerBar}>
           <div className={classes.container}>
-            <Header 
-              text={this.state.localText.header} 
-            />
+            <Header />
             {this.state.width > 576 && <SearchDesktop 
               showSearchHandler={this.showSearchHandler}
               onInputChange={this.onInputChange}

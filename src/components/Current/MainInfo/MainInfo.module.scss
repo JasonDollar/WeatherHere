@@ -21,7 +21,6 @@
     vertical-align: middle;
     
     fill: var(--color-text-primary);
-    // overflow: hidden;
   }  
 }
 
@@ -41,7 +40,6 @@
   
   @media only screen and (min-width: 768px) {
     flex: 1 1 48%;
-    // flex-wrap: wrap;
   }
   & .city {
     font-size: var(--head-font-size);
@@ -55,7 +53,6 @@
     }
     @media only screen and (min-width: 576px) {
       flex: 0 1 40%;
-      // flex-wrap: wrap;
     }
   }
   & .temperature {
@@ -83,7 +80,6 @@
   margin: .5rem 2rem;
   @media only screen and (min-width: 768px) {
     flex: 1 0 45%;
-    // flex-wrap: wrap;
   }
   & .date {
     display: flex;

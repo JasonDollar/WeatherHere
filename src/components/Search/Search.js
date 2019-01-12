@@ -1,7 +1,7 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 import Backdrop from '../Backdrop/Backdrop'
 import Icon from '../Icon/Icon'
-// import Button from '../Button/Button'
 import classes from './Search.module.scss'
 
 const Search = ({ 
@@ -28,4 +28,12 @@ const Search = ({
 
 export default Search
 
-
+Search.propTypes = {
+  onSearchFormSubmit: PropTypes.func.isRequired, 
+  onInputChange: PropTypes.func.isRequired, 
+  inputValue: PropTypes.string.isRequired, 
+  text: PropTypes.objectOf(PropTypes.string), 
+  getUserLocation: PropTypes.func.isRequired, 
+  showBackdrop: PropTypes.bool.isRequired, 
+  hideBackdrop: PropTypes.func.isRequired,
+}

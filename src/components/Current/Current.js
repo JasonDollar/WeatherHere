@@ -17,7 +17,7 @@ import classes from './Current.module.scss'
 
 
 const Current = ({
-  currently, daily, currentText, dateText, timezone, locationShortName, graphColor, units,
+  currently, daily, currentText, dateText, timezone, locationShortName, units,
 }) => {
   const now = moment().unix()
   const today = getTimeFromSeconds(now, timezone)
@@ -42,7 +42,6 @@ const Current = ({
       <CircleContainer 
         currently={currently}
         currentText={currentText}
-        graphColor={graphColor}
         units={units}
       />
 
@@ -81,14 +80,13 @@ Current.propTypes = {
     windBearing: PropTypes.number,
     windGust: PropTypes.number,
     windSpeed: PropTypes.number,
-  }),
+  }).isRequired,
 
   currentText: PropTypes.objectOf(PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.arrayOf(PropTypes.string),
-  ])),
+  ])).isRequired,
 
-  locale: PropTypes.string,
 
   daily: PropTypes.shape({
     icon: PropTypes.string,
@@ -135,13 +133,15 @@ Current.propTypes = {
       windGustTime: PropTypes.number,
       windSpeed: PropTypes.number,
     })),
-  }),
+  }).isRequired,
 
-  timezone: PropTypes.string,
+  timezone: PropTypes.string.isRequired,
 
-  locationShortName: PropTypes.string,
+  locationShortName: PropTypes.string.isRequired,
 
   dateText: PropTypes.shape({
     weekDay: PropTypes.arrayOf(PropTypes.string),
-  }),
+  }).isRequired,
+
+  units: PropTypes.string.isRequired,
 }

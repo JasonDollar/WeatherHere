@@ -1,5 +1,5 @@
 import React from 'react'
-
+import PropTypes from 'prop-types';
 import Icon from '../../Icon/Icon'
 import Summary from '../../Summary/Summary'
 import { unitsNames } from '../../../data/unitsNames'
@@ -49,3 +49,23 @@ const MainInfo = ({
 )
 
 export default MainInfo
+
+MainInfo.propTypes = {
+  currentText: PropTypes.objectOf(PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.arrayOf(PropTypes.string),
+  ])).isRequired,
+  currently: PropTypes.objectOf(PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number,
+  ])).isRequired,
+  locationShortName: PropTypes.string.isRequired,
+  dateText: PropTypes.objectOf(PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.arrayOf(PropTypes.string),
+  ])).isRequired,
+  today: PropTypes.object.isRequired,
+  timezone: PropTypes.string.isRequired, 
+  sunPositionTime: PropTypes.objectOf(PropTypes.number).isRequired, 
+  units: PropTypes.string.isRequired,
+}

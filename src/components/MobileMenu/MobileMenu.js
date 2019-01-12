@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 import Icon from '../Icon/Icon'
 
 import classes from './MobileMenu.module.scss'
@@ -32,3 +33,11 @@ const MobileMenu = ({
 )
 
 export default MobileMenu
+
+MobileMenu.propTypes = {
+  text: PropTypes.objectOf(PropTypes.string).isRequired, 
+  showForecastHandler: PropTypes.func.isRequired, 
+  showSearchHandler: PropTypes.func.isRequired, 
+  showSettingsHandler: PropTypes.func.isRequired, 
+  activeMenuClass: PropTypes.string,
+}
