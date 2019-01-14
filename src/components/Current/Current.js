@@ -1,10 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import moment from 'moment'
-// import 'moment/locale/en-gb'
-// import 'moment/locale/pl'
-import 'moment-timezone'
-
 
 import MainInfo from './MainInfo/MainInfo'
 import ListInfo from './ListInfo/ListInfo'
@@ -14,12 +9,10 @@ import { getTimeFromSeconds } from '../../data/utils'
 
 import classes from './Current.module.scss'
 
-
-
 const Current = ({
   currently, daily, currentText, dateText, timezone, locationShortName, units,
 }) => {
-  const now = moment().unix()
+  const now = Date.now() / 1000 // need to convert to seconds
   const today = getTimeFromSeconds(now, timezone)
   const sunPositionTime = {
     sunrise: daily.data[0].sunriseTime,

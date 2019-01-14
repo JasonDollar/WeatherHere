@@ -1,6 +1,7 @@
 export const unitsNames = {
   si: {
     id: 'si',
+    name: 'SI',
     distance: 'km',
     precip: 'mm/h',
     precipAcc: 'cm',
@@ -10,6 +11,7 @@ export const unitsNames = {
   },
   us: {
     id: 'us',
+    name: 'US',
     distance: 'mi',
     precip: 'in/h',
     precipAcc: 'in',
@@ -19,6 +21,7 @@ export const unitsNames = {
   },
   uk2: {
     id: 'uk2',
+    name: 'UK',
     distance: 'mi',
     precip: 'mm/h',
     precipAcc: 'cm',
@@ -28,6 +31,7 @@ export const unitsNames = {
   },
   ca: {
     id: 'ca',
+    name: 'CA',
     distance: 'km',
     precip: 'mm/h',
     precipAcc: 'cm',

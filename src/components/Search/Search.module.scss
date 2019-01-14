@@ -1,7 +1,7 @@
-.container {
+/* .container {
   flex: 1;
   overflow: hidden;
-}
+} */
 
 .Search {
   display: flex;
@@ -17,6 +17,8 @@
   border-radius: 7px;
   margin: 2.5rem 0.5rem;
   background-color: var(--color-grey-3);
+  overflow: hidden;
+  transition: .2s all;
 }
 
 .button {

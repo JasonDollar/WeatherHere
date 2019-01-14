@@ -14,7 +14,7 @@ import MobileMenu from './components/MobileMenu/MobileMenu'
 
 class App extends Component {
   state = {
-    language: '', 
+    language: 'pl', 
     localText: language.pl,
     inputValue: '',
     searchValue: '',
@@ -23,7 +23,6 @@ class App extends Component {
     showBackdrop: false,
     location: '',
     activeMenuBarClass: 'forecast',
-    weatherIcon: 'clear-day',
     themeName: 'pink',
     units: 'si',
   }
@@ -76,7 +75,6 @@ class App extends Component {
       this.setState({language: languageLs, localText: language[languageLs]})
       document.documentElement.lang = languageLs
     } else {
-      this.setState({language: 'pl', localText: language.pl})
       document.documentElement.lang = 'pl'
     }
   }
@@ -220,8 +218,9 @@ class App extends Component {
 
           </div>
         </div>
-        {this.state.showSearch && (
-          <Search 
+        {this.state.width <= 576 && (
+          <Search    
+          showSearch={this.state.showSearch}
           showSearchHandler={this.showSearchHandler}
           onInputChange={this.onInputChange}
           inputValue={this.state.inputValue}
@@ -242,8 +241,9 @@ class App extends Component {
           units={this.state.units}
         />
 
-        {this.state.showSettings && (
+        
           <Settings 
+            showSettings={this.state.showSettings}
             changeLanguage={this.changeLanguage}
             showSettingsHandler={this.showSettingsHandler}
             selectedLanguage={this.state.language}
@@ -259,7 +259,7 @@ class App extends Component {
             unitListHandler={this.unitListHandler}
             units={this.state.units}
           />
-        )}
+        
 
  
 

@@ -30,13 +30,12 @@ class Weather extends Component {
   }
 
   componentDidUpdate(prevProps) {
-    if ((prevProps.language !== this.props.language && prevProps.language !== '')
-      || (prevProps.location !== this.props.location && this.props.location !== false) 
+    if ((prevProps.language !== this.props.language)
+      || (prevProps.location !== this.props.location) 
       || (prevProps.units !== this.props.units)) {
       this.getWeather(this.props.location.lat, this.props.location.long, this.props.language, this.props.units)
     } 
     if (prevProps.searchValue !== this.props.searchValue && this.props.searchValue !== '') {
-      console.log(2)
       this.onNameLocationSearch(this.props.searchValue)
     }
  
@@ -48,7 +47,7 @@ class Weather extends Component {
     if (location) {
       //required to initialize app and search saved location
       this.props.setLocationCoordsToState(location)
-      this.getWeather(location.lat, location.long, this.props.language, this.props.units)
+      // this.getWeather(location.lat, location.long, this.props.language, this.props.units)
     }
     else if (locationShortName) {
       this.setState({
@@ -67,13 +66,16 @@ class Weather extends Component {
       locationShortName: '',
     })
     let shortName = ''
+    let longName = ''
 
     const placeNames = data.results
+    console.log(placeNames[0].formatted_address)
 
     for(let i = 0; i < placeNames.length; i++) {
       for(let j = 0; j < placeNames[i].address_components.length; j++) {
         if (placeNames[i].address_components[j].types.includes("locality")) {
           shortName = placeNames[i].address_components[j].short_name
+          longName = placeNames[i].address_components[j].long_name
           break
         }
       }
@@ -81,13 +83,13 @@ class Weather extends Component {
     if (shortName) {
       localStorage.setItem('locationName', shortName)
       this.setState({
-        locationShortName: shortName,
+        locationShortName: shortName.length < 5 ? longName : shortName,
       }) 
     }
   }
 
   getWeather = (lat, long, lang, units) => {
-    this.setState({isLoading: true})
+    this.setState({isLoading: true, error: ''})
     // returns all places for given location 
     axios.post(`${MAP_URL}?latlng=${lat},${long}&key=${MAP_API}&language=${lang}`)
       .then(resp => resp.data)
@@ -113,9 +115,10 @@ class Weather extends Component {
   }
 
   onNameLocationSearch = (location) => {
+    // this.getWeather with reset isLoading to false
+    this.setState({error: '', isLoading: true}) 
     axios.post(`${MAP_URL}?address=${location}&key=${MAP_API}`)
       .then(resp => {
-        this.setState({isLoading: true})
         return resp.data.results[0].geometry.location
       })
       .then(data => {
@@ -125,7 +128,7 @@ class Weather extends Component {
         }
         this.props.setLocationCoordsToState(location)
         localStorage.setItem('locationCoords', JSON.stringify(location))
-        this.getWeather(data.lat, data.lng, this.props.language, this.props.units)
+        // this.getWeather(data.lat, data.lng, this.props.language, this.props.units)
       })
       .catch(error => this.setState({error: error.message}))
   }
@@ -193,7 +196,10 @@ Weather.propTypes = {
       PropTypes.arrayOf(PropTypes.string),
     ])),
     hourly: PropTypes.string,
-    id: PropTypes.string,
+    id: PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.object,
+    ]),
     layout: PropTypes.string,
     name: PropTypes.string,
     settings: PropTypes.objectOf(PropTypes.oneOfType([
@@ -204,7 +210,10 @@ Weather.propTypes = {
   })).isRequired,
   language: PropTypes.string.isRequired,
   searchValue: PropTypes.string.isRequired,
-  location: PropTypes.objectOf(PropTypes.number),
+  location: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.objectOf(PropTypes.number),
+  ]),
   setLocationCoordsToState: PropTypes.func.isRequired,
   units: PropTypes.string.isRequired,
 }

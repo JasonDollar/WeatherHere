@@ -8,7 +8,7 @@ const getTimeFromSeconds = (timestamp, timezone) => {
       // day === week day
       day: moment(timestampInMiliSec).format('e'),
       
-      hour: moment.tz(timestampInMiliSec, timezone).format('HH:mm'),
+      hour: moment(timestampInMiliSec, timezone).format('HH:mm'),
       
     } 
   }
@@ -25,25 +25,25 @@ const formatNumber = number => Math.floor(number * 10) / 10
 const formatMoonPhase = (phase, text) => {
   if (phase <= 0.01) {
     return text[0]
-  } else if (phase > 0.01 && phase <= 0.24) {
+  } if (phase > 0.01 && phase <= 0.24) {
     return text[1]
-  } else if (phase > 0.24 && phase <= 0.26) {
+  } if (phase > 0.24 && phase <= 0.26) {
     return text[2]
-  } else if (phase > 0.26 && phase <= 0.48) {
+  } if (phase > 0.26 && phase <= 0.48) {
     return text[3]
-  } else if (phase > 0.48 && phase <= 0.52) {
+  } if (phase > 0.48 && phase <= 0.52) {
     return text[4]
-  } else if (phase > 0.52 && phase <= 0.74) {
+  } if (phase > 0.52 && phase <= 0.74) {
     return text[5]
-  } else if (phase > 0.74 && phase <= 0.76) {
+  } if (phase > 0.74 && phase <= 0.76) {
     return text[6]
   } else if (phase > 0.76 && phase <= 0.98) {
     return text[7]
   } else if (phase > 0.98) {
     return text[0]
-  } else {
-    return `-`
-  }
+  } 
+  return `-`
+  
 }
 
 

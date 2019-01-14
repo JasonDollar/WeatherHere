@@ -1,0 +1,4660 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Settings component tests Renders Setting components correctly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Settings
+    changeLanguage={[MockFunction]}
+    hideBackdrop={[MockFunction]}
+    languageNames={
+      Array [
+        Object {
+          "id": "pl",
+          "name": "Polski",
+        },
+      ]
+    }
+    selectedLanguage="pl"
+    showBackdrop={true}
+    showSettingsHandler={[MockFunction]}
+    text={
+      Object {
+        "changeLang": "Zmień język",
+        "changeTheme": "Zmień motyw",
+        "changeUnits": "Zmień jednostki",
+        "units": Array [
+          "SI",
+          "US",
+          "UK",
+          "CA",
+        ],
+      }
+    }
+    themeListHandler={[MockFunction]}
+    themeName="Pink"
+    unitListHandler={[MockFunction]}
+    units="si"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Backdrop
+          hideBackdrop={[MockFunction]}
+          showBackdrop={true}
+        />,
+        <div
+          className="Settings"
+        >
+          <div
+            className="menu"
+          >
+            <p>
+              Zmień język
+            </p>
+            <form
+              className="form language"
+            >
+              <label
+                className="label active"
+              >
+                <input
+                  checked={true}
+                  className="radio"
+                  name="language"
+                  onChange={[MockFunction]}
+                  type="radio"
+                  value="pl"
+                />
+                <span
+                  className="radioButton"
+                  style={
+                    Object {
+                      "opacity": 1,
+                    }
+                  }
+                >
+                  <Icon
+                    icon="checkmark"
+                    viewBox="0 0 50 50"
+                  />
+                </span>
+                Polski
+              </label>
+            </form>
+          </div>
+          <div
+            className="menu"
+          >
+            <p>
+              Zmień motyw
+            </p>
+            <form
+              className="form theme"
+            >
+              <label
+                className="label"
+              >
+                <input
+                  checked={false}
+                  className="radio"
+                  name="theme"
+                  onChange={[MockFunction]}
+                  type="radio"
+                  value="pink"
+                />
+                <span
+                  className="radioButton"
+                  style={
+                    Object {
+                      "opacity": 0,
+                    }
+                  }
+                >
+                  <Icon
+                    icon="checkmark"
+                    viewBox="0 0 50 50"
+                  />
+                </span>
+                Pink
+              </label>
+              <label
+                className="label"
+              >
+                <input
+                  checked={false}
+                  className="radio"
+                  name="theme"
+                  onChange={[MockFunction]}
+                  type="radio"
+                  value="pinkDark"
+                />
+                <span
+                  className="radioButton"
+                  style={
+                    Object {
+                      "opacity": 0,
+                    }
+                  }
+                >
+                  <Icon
+                    icon="checkmark"
+                    viewBox="0 0 50 50"
+                  />
+                </span>
+                Pink Dark
+              </label>
+              <label
+                className="label"
+              >
+                <input
+                  checked={false}
+                  className="radio"
+                  name="theme"
+                  onChange={[MockFunction]}
+                  type="radio"
+                  value="pumpkin"
+                />
+                <span
+                  className="radioButton"
+                  style={
+                    Object {
+                      "opacity": 0,
+                    }
+                  }
+                >
+                  <Icon
+                    icon="checkmark"
+                    viewBox="0 0 50 50"
+                  />
+                </span>
+                Pumpkin Dark
+              </label>
+              <label
+                className="label"
+              >
+                <input
+                  checked={false}
+                  className="radio"
+                  name="theme"
+                  onChange={[MockFunction]}
+                  type="radio"
+                  value="evening"
+                />
+                <span
+                  className="radioButton"
+                  style={
+                    Object {
+                      "opacity": 0,
+                    }
+                  }
+                >
+                  <Icon
+                    icon="checkmark"
+                    viewBox="0 0 50 50"
+                  />
+                </span>
+                Evening Dark
+              </label>
+              <label
+                className="label"
+              >
+                <input
+                  checked={false}
+                  className="radio"
+                  name="theme"
+                  onChange={[MockFunction]}
+                  type="radio"
+                  value="sky"
+                />
+                <span
+                  className="radioButton"
+                  style={
+                    Object {
+                      "opacity": 0,
+                    }
+                  }
+                >
+                  <Icon
+                    icon="checkmark"
+                    viewBox="0 0 50 50"
+                  />
+                </span>
+                Cool Sky
+              </label>
+              <label
+                className="label"
+              >
+                <input
+                  checked={false}
+                  className="radio"
+                  name="theme"
+                  onChange={[MockFunction]}
+                  type="radio"
+                  value="harvey"
+                />
+                <span
+                  className="radioButton"
+                  style={
+                    Object {
+                      "opacity": 0,
+                    }
+                  }
+                >
+                  <Icon
+                    icon="checkmark"
+                    viewBox="0 0 50 50"
+                  />
+                </span>
+                Harvey
+              </label>
+            </form>
+          </div>
+          <div
+            className="menu menuUnits"
+          >
+            <p>
+              Zmień jednostki
+            </p>
+            <form
+              className="form units"
+            >
+              <label
+                className="label active"
+              >
+                <input
+                  checked={true}
+                  className="radio"
+                  name="units"
+                  onChange={[MockFunction]}
+                  type="radio"
+                  value="si"
+                />
+                <span
+                  className="radioButton"
+                  style={
+                    Object {
+                      "opacity": 1,
+                    }
+                  }
+                >
+                  <Icon
+                    icon="checkmark"
+                    viewBox="0 0 50 50"
+                  />
+                </span>
+                SI
+              </label>
+              <label
+                className="label"
+              >
+                <input
+                  checked={false}
+                  className="radio"
+                  name="units"
+                  onChange={[MockFunction]}
+                  type="radio"
+                  value="us"
+                />
+                <span
+                  className="radioButton"
+                  style={
+                    Object {
+                      "opacity": 0,
+                    }
+                  }
+                >
+                  <Icon
+                    icon="checkmark"
+                    viewBox="0 0 50 50"
+                  />
+                </span>
+                US
+              </label>
+              <label
+                className="label"
+              >
+                <input
+                  checked={false}
+                  className="radio"
+                  name="units"
+                  onChange={[MockFunction]}
+                  type="radio"
+                  value="uk2"
+                />
+                <span
+                  className="radioButton"
+                  style={
+                    Object {
+                      "opacity": 0,
+                    }
+                  }
+                >
+                  <Icon
+                    icon="checkmark"
+                    viewBox="0 0 50 50"
+                  />
+                </span>
+                UK
+              </label>
+              <label
+                className="label"
+              >
+                <input
+                  checked={false}
+                  className="radio"
+                  name="units"
+                  onChange={[MockFunction]}
+                  type="radio"
+                  value="ca"
+                />
+                <span
+                  className="radioButton"
+                  style={
+                    Object {
+                      "opacity": 0,
+                    }
+                  }
+                >
+                  <Icon
+                    icon="checkmark"
+                    viewBox="0 0 50 50"
+                  />
+                </span>
+                CA
+              </label>
+            </form>
+          </div>
+        </div>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "hideBackdrop": [MockFunction],
+          "showBackdrop": true,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="menu"
+            >
+              <p>
+                Zmień język
+              </p>
+              <form
+                className="form language"
+              >
+                <label
+                  className="label active"
+                >
+                  <input
+                    checked={true}
+                    className="radio"
+                    name="language"
+                    onChange={[MockFunction]}
+                    type="radio"
+                    value="pl"
+                  />
+                  <span
+                    className="radioButton"
+                    style={
+                      Object {
+                        "opacity": 1,
+                      }
+                    }
+                  >
+                    <Icon
+                      icon="checkmark"
+                      viewBox="0 0 50 50"
+                    />
+                  </span>
+                  Polski
+                </label>
+              </form>
+            </div>,
+            <div
+              className="menu"
+            >
+              <p>
+                Zmień motyw
+              </p>
+              <form
+                className="form theme"
+              >
+                <label
+                  className="label"
+                >
+                  <input
+                    checked={false}
+                    className="radio"
+                    name="theme"
+                    onChange={[MockFunction]}
+                    type="radio"
+                    value="pink"
+                  />
+                  <span
+                    className="radioButton"
+                    style={
+                      Object {
+                        "opacity": 0,
+                      }
+                    }
+                  >
+                    <Icon
+                      icon="checkmark"
+                      viewBox="0 0 50 50"
+                    />
+                  </span>
+                  Pink
+                </label>
+                <label
+                  className="label"
+                >
+                  <input
+                    checked={false}
+                    className="radio"
+                    name="theme"
+                    onChange={[MockFunction]}
+                    type="radio"
+                    value="pinkDark"
+                  />
+                  <span
+                    className="radioButton"
+                    style={
+                      Object {
+                        "opacity": 0,
+                      }
+                    }
+                  >
+                    <Icon
+                      icon="checkmark"
+                      viewBox="0 0 50 50"
+                    />
+                  </span>
+                  Pink Dark
+                </label>
+                <label
+                  className="label"
+                >
+                  <input
+                    checked={false}
+                    className="radio"
+                    name="theme"
+                    onChange={[MockFunction]}
+                    type="radio"
+                    value="pumpkin"
+                  />
+                  <span
+                    className="radioButton"
+                    style={
+                      Object {
+                        "opacity": 0,
+                      }
+                    }
+                  >
+                    <Icon
+                      icon="checkmark"
+                      viewBox="0 0 50 50"
+                    />
+                  </span>
+                  Pumpkin Dark
+                </label>
+                <label
+                  className="label"
+                >
+                  <input
+                    checked={false}
+                    className="radio"
+                    name="theme"
+                    onChange={[MockFunction]}
+                    type="radio"
+                    value="evening"
+                  />
+                  <span
+                    className="radioButton"
+                    style={
+                      Object {
+                        "opacity": 0,
+                      }
+                    }
+                  >
+                    <Icon
+                      icon="checkmark"
+                      viewBox="0 0 50 50"
+                    />
+                  </span>
+                  Evening Dark
+                </label>
+                <label
+                  className="label"
+                >
+                  <input
+                    checked={false}
+                    className="radio"
+                    name="theme"
+                    onChange={[MockFunction]}
+                    type="radio"
+                    value="sky"
+                  />
+                  <span
+                    className="radioButton"
+                    style={
+                      Object {
+                        "opacity": 0,
+                      }
+                    }
+                  >
+                    <Icon
+                      icon="checkmark"
+                      viewBox="0 0 50 50"
+                    />
+                  </span>
+                  Cool Sky
+                </label>
+                <label
+                  className="label"
+                >
+                  <input
+                    checked={false}
+                    className="radio"
+                    name="theme"
+                    onChange={[MockFunction]}
+                    type="radio"
+                    value="harvey"
+                  />
+                  <span
+                    className="radioButton"
+                    style={
+                      Object {
+                        "opacity": 0,
+                      }
+                    }
+                  >
+                    <Icon
+                      icon="checkmark"
+                      viewBox="0 0 50 50"
+                    />
+                  </span>
+                  Harvey
+                </label>
+              </form>
+            </div>,
+            <div
+              className="menu menuUnits"
+            >
+              <p>
+                Zmień jednostki
+              </p>
+              <form
+                className="form units"
+              >
+                <label
+                  className="label active"
+                >
+                  <input
+                    checked={true}
+                    className="radio"
+                    name="units"
+                    onChange={[MockFunction]}
+                    type="radio"
+                    value="si"
+                  />
+                  <span
+                    className="radioButton"
+                    style={
+                      Object {
+                        "opacity": 1,
+                      }
+                    }
+                  >
+                    <Icon
+                      icon="checkmark"
+                      viewBox="0 0 50 50"
+                    />
+                  </span>
+                  SI
+                </label>
+                <label
+                  className="label"
+                >
+                  <input
+                    checked={false}
+                    className="radio"
+                    name="units"
+                    onChange={[MockFunction]}
+                    type="radio"
+                    value="us"
+                  />
+                  <span
+                    className="radioButton"
+                    style={
+                      Object {
+                        "opacity": 0,
+                      }
+                    }
+                  >
+                    <Icon
+                      icon="checkmark"
+                      viewBox="0 0 50 50"
+                    />
+                  </span>
+                  US
+                </label>
+                <label
+                  className="label"
+                >
+                  <input
+                    checked={false}
+                    className="radio"
+                    name="units"
+                    onChange={[MockFunction]}
+                    type="radio"
+                    value="uk2"
+                  />
+                  <span
+                    className="radioButton"
+                    style={
+                      Object {
+                        "opacity": 0,
+                      }
+                    }
+                  >
+                    <Icon
+                      icon="checkmark"
+                      viewBox="0 0 50 50"
+                    />
+                  </span>
+                  UK
+                </label>
+                <label
+                  className="label"
+                >
+                  <input
+                    checked={false}
+                    className="radio"
+                    name="units"
+                    onChange={[MockFunction]}
+                    type="radio"
+                    value="ca"
+                  />
+                  <span
+                    className="radioButton"
+                    style={
+                      Object {
+                        "opacity": 0,
+                      }
+                    }
+                  >
+                    <Icon
+                      icon="checkmark"
+                      viewBox="0 0 50 50"
+                    />
+                  </span>
+                  CA
+                </label>
+              </form>
+            </div>,
+          ],
+          "className": "Settings",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <p>
+                  Zmień język
+                </p>,
+                <form
+                  className="form language"
+                >
+                  <label
+                    className="label active"
+                  >
+                    <input
+                      checked={true}
+                      className="radio"
+                      name="language"
+                      onChange={[MockFunction]}
+                      type="radio"
+                      value="pl"
+                    />
+                    <span
+                      className="radioButton"
+                      style={
+                        Object {
+                          "opacity": 1,
+                        }
+                      }
+                    >
+                      <Icon
+                        icon="checkmark"
+                        viewBox="0 0 50 50"
+                      />
+                    </span>
+                    Polski
+                  </label>
+                </form>,
+              ],
+              "className": "menu",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Zmień język",
+                },
+                "ref": null,
+                "rendered": "Zmień język",
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <label
+                      className="label active"
+                    >
+                      <input
+                        checked={true}
+                        className="radio"
+                        name="language"
+                        onChange={[MockFunction]}
+                        type="radio"
+                        value="pl"
+                      />
+                      <span
+                        className="radioButton"
+                        style={
+                          Object {
+                            "opacity": 1,
+                          }
+                        }
+                      >
+                        <Icon
+                          icon="checkmark"
+                          viewBox="0 0 50 50"
+                        />
+                      </span>
+                      Polski
+                    </label>,
+                  ],
+                  "className": "form language",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": "pl",
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <input
+                          checked={true}
+                          className="radio"
+                          name="language"
+                          onChange={[MockFunction]}
+                          type="radio"
+                          value="pl"
+                        />,
+                        <span
+                          className="radioButton"
+                          style={
+                            Object {
+                              "opacity": 1,
+                            }
+                          }
+                        >
+                          <Icon
+                            icon="checkmark"
+                            viewBox="0 0 50 50"
+                          />
+                        </span>,
+                        "Polski",
+                      ],
+                      "className": "label active",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "checked": true,
+                          "className": "radio",
+                          "name": "language",
+                          "onChange": [MockFunction],
+                          "type": "radio",
+                          "value": "pl",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "input",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": <Icon
+                            icon="checkmark"
+                            viewBox="0 0 50 50"
+                          />,
+                          "className": "radioButton",
+                          "style": Object {
+                            "opacity": 1,
+                          },
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "function",
+                          "props": Object {
+                            "icon": "checkmark",
+                            "viewBox": "0 0 50 50",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": [Function],
+                        },
+                        "type": "span",
+                      },
+                      "Polski",
+                    ],
+                    "type": "label",
+                  },
+                ],
+                "type": "form",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <p>
+                  Zmień motyw
+                </p>,
+                <form
+                  className="form theme"
+                >
+                  <label
+                    className="label"
+                  >
+                    <input
+                      checked={false}
+                      className="radio"
+                      name="theme"
+                      onChange={[MockFunction]}
+                      type="radio"
+                      value="pink"
+                    />
+                    <span
+                      className="radioButton"
+                      style={
+                        Object {
+                          "opacity": 0,
+                        }
+                      }
+                    >
+                      <Icon
+                        icon="checkmark"
+                        viewBox="0 0 50 50"
+                      />
+                    </span>
+                    Pink
+                  </label>
+                  <label
+                    className="label"
+                  >
+                    <input
+                      checked={false}
+                      className="radio"
+                      name="theme"
+                      onChange={[MockFunction]}
+                      type="radio"
+                      value="pinkDark"
+                    />
+                    <span
+                      className="radioButton"
+                      style={
+                        Object {
+                          "opacity": 0,
+                        }
+                      }
+                    >
+                      <Icon
+                        icon="checkmark"
+                        viewBox="0 0 50 50"
+                      />
+                    </span>
+                    Pink Dark
+                  </label>
+                  <label
+                    className="label"
+                  >
+                    <input
+                      checked={false}
+                      className="radio"
+                      name="theme"
+                      onChange={[MockFunction]}
+                      type="radio"
+                      value="pumpkin"
+                    />
+                    <span
+                      className="radioButton"
+                      style={
+                        Object {
+                          "opacity": 0,
+                        }
+                      }
+                    >
+                      <Icon
+                        icon="checkmark"
+                        viewBox="0 0 50 50"
+                      />
+                    </span>
+                    Pumpkin Dark
+                  </label>
+                  <label
+                    className="label"
+                  >
+                    <input
+                      checked={false}
+                      className="radio"
+                      name="theme"
+                      onChange={[MockFunction]}
+                      type="radio"
+                      value="evening"
+                    />
+                    <span
+                      className="radioButton"
+                      style={
+                        Object {
+                          "opacity": 0,
+                        }
+                      }
+                    >
+                      <Icon
+                        icon="checkmark"
+                        viewBox="0 0 50 50"
+                      />
+                    </span>
+                    Evening Dark
+                  </label>
+                  <label
+                    className="label"
+                  >
+                    <input
+                      checked={false}
+                      className="radio"
+                      name="theme"
+                      onChange={[MockFunction]}
+                      type="radio"
+                      value="sky"
+                    />
+                    <span
+                      className="radioButton"
+                      style={
+                        Object {
+                          "opacity": 0,
+                        }
+                      }
+                    >
+                      <Icon
+                        icon="checkmark"
+                        viewBox="0 0 50 50"
+                      />
+                    </span>
+                    Cool Sky
+                  </label>
+                  <label
+                    className="label"
+                  >
+                    <input
+                      checked={false}
+                      className="radio"
+                      name="theme"
+                      onChange={[MockFunction]}
+                      type="radio"
+                      value="harvey"
+                    />
+                    <span
+                      className="radioButton"
+                      style={
+                        Object {
+                          "opacity": 0,
+                        }
+                      }
+                    >
+                      <Icon
+                        icon="checkmark"
+                        viewBox="0 0 50 50"
+                      />
+                    </span>
+                    Harvey
+                  </label>
+                </form>,
+              ],
+              "className": "menu",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Zmień motyw",
+                },
+                "ref": null,
+                "rendered": "Zmień motyw",
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <label
+                      className="label"
+                    >
+                      <input
+                        checked={false}
+                        className="radio"
+                        name="theme"
+                        onChange={[MockFunction]}
+                        type="radio"
+                        value="pink"
+                      />
+                      <span
+                        className="radioButton"
+                        style={
+                          Object {
+                            "opacity": 0,
+                          }
+                        }
+                      >
+                        <Icon
+                          icon="checkmark"
+                          viewBox="0 0 50 50"
+                        />
+                      </span>
+                      Pink
+                    </label>,
+                    <label
+                      className="label"
+                    >
+                      <input
+                        checked={false}
+                        className="radio"
+                        name="theme"
+                        onChange={[MockFunction]}
+                        type="radio"
+                        value="pinkDark"
+                      />
+                      <span
+                        className="radioButton"
+                        style={
+                          Object {
+                            "opacity": 0,
+                          }
+                        }
+                      >
+                        <Icon
+                          icon="checkmark"
+                          viewBox="0 0 50 50"
+                        />
+                      </span>
+                      Pink Dark
+                    </label>,
+                    <label
+                      className="label"
+                    >
+                      <input
+                        checked={false}
+                        className="radio"
+                        name="theme"
+                        onChange={[MockFunction]}
+                        type="radio"
+                        value="pumpkin"
+                      />
+                      <span
+                        className="radioButton"
+                        style={
+                          Object {
+                            "opacity": 0,
+                          }
+                        }
+                      >
+                        <Icon
+                          icon="checkmark"
+                          viewBox="0 0 50 50"
+                        />
+                      </span>
+                      Pumpkin Dark
+                    </label>,
+                    <label
+                      className="label"
+                    >
+                      <input
+                        checked={false}
+                        className="radio"
+                        name="theme"
+                        onChange={[MockFunction]}
+                        type="radio"
+                        value="evening"
+                      />
+                      <span
+                        className="radioButton"
+                        style={
+                          Object {
+                            "opacity": 0,
+                          }
+                        }
+                      >
+                        <Icon
+                          icon="checkmark"
+                          viewBox="0 0 50 50"
+                        />
+                      </span>
+                      Evening Dark
+                    </label>,
+                    <label
+                      className="label"
+                    >
+                      <input
+                        checked={false}
+                        className="radio"
+                        name="theme"
+                        onChange={[MockFunction]}
+                        type="radio"
+                        value="sky"
+                      />
+                      <span
+                        className="radioButton"
+                        style={
+                          Object {
+                            "opacity": 0,
+                          }
+                        }
+                      >
+                        <Icon
+                          icon="checkmark"
+                          viewBox="0 0 50 50"
+                        />
+                      </span>
+                      Cool Sky
+                    </label>,
+                    <label
+                      className="label"
+                    >
+                      <input
+                        checked={false}
+                        className="radio"
+                        name="theme"
+                        onChange={[MockFunction]}
+                        type="radio"
+                        value="harvey"
+                      />
+                      <span
+                        className="radioButton"
+                        style={
+                          Object {
+                            "opacity": 0,
+                          }
+                        }
+                      >
+                        <Icon
+                          icon="checkmark"
+                          viewBox="0 0 50 50"
+                        />
+                      </span>
+                      Harvey
+                    </label>,
+                  ],
+                  "className": "form theme",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": "Pink",
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <input
+                          checked={false}
+                          className="radio"
+                          name="theme"
+                          onChange={[MockFunction]}
+                          type="radio"
+                          value="pink"
+                        />,
+                        <span
+                          className="radioButton"
+                          style={
+                            Object {
+                              "opacity": 0,
+                            }
+                          }
+                        >
+                          <Icon
+                            icon="checkmark"
+                            viewBox="0 0 50 50"
+                          />
+                        </span>,
+                        "Pink",
+                      ],
+                      "className": "label",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "checked": false,
+                          "className": "radio",
+                          "name": "theme",
+                          "onChange": [MockFunction],
+                          "type": "radio",
+                          "value": "pink",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "input",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": <Icon
+                            icon="checkmark"
+                            viewBox="0 0 50 50"
+                          />,
+                          "className": "radioButton",
+                          "style": Object {
+                            "opacity": 0,
+                          },
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "function",
+                          "props": Object {
+                            "icon": "checkmark",
+                            "viewBox": "0 0 50 50",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": [Function],
+                        },
+                        "type": "span",
+                      },
+                      "Pink",
+                    ],
+                    "type": "label",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "Pink Dark",
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <input
+                          checked={false}
+                          className="radio"
+                          name="theme"
+                          onChange={[MockFunction]}
+                          type="radio"
+                          value="pinkDark"
+                        />,
+                        <span
+                          className="radioButton"
+                          style={
+                            Object {
+                              "opacity": 0,
+                            }
+                          }
+                        >
+                          <Icon
+                            icon="checkmark"
+                            viewBox="0 0 50 50"
+                          />
+                        </span>,
+                        "Pink Dark",
+                      ],
+                      "className": "label",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "checked": false,
+                          "className": "radio",
+                          "name": "theme",
+                          "onChange": [MockFunction],
+                          "type": "radio",
+                          "value": "pinkDark",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "input",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": <Icon
+                            icon="checkmark"
+                            viewBox="0 0 50 50"
+                          />,
+                          "className": "radioButton",
+                          "style": Object {
+                            "opacity": 0,
+                          },
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "function",
+                          "props": Object {
+                            "icon": "checkmark",
+                            "viewBox": "0 0 50 50",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": [Function],
+                        },
+                        "type": "span",
+                      },
+                      "Pink Dark",
+                    ],
+                    "type": "label",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "Pumpkin Dark",
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <input
+                          checked={false}
+                          className="radio"
+                          name="theme"
+                          onChange={[MockFunction]}
+                          type="radio"
+                          value="pumpkin"
+                        />,
+                        <span
+                          className="radioButton"
+                          style={
+                            Object {
+                              "opacity": 0,
+                            }
+                          }
+                        >
+                          <Icon
+                            icon="checkmark"
+                            viewBox="0 0 50 50"
+                          />
+                        </span>,
+                        "Pumpkin Dark",
+                      ],
+                      "className": "label",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "checked": false,
+                          "className": "radio",
+                          "name": "theme",
+                          "onChange": [MockFunction],
+                          "type": "radio",
+                          "value": "pumpkin",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "input",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": <Icon
+                            icon="checkmark"
+                            viewBox="0 0 50 50"
+                          />,
+                          "className": "radioButton",
+                          "style": Object {
+                            "opacity": 0,
+                          },
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "function",
+                          "props": Object {
+                            "icon": "checkmark",
+                            "viewBox": "0 0 50 50",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": [Function],
+                        },
+                        "type": "span",
+                      },
+                      "Pumpkin Dark",
+                    ],
+                    "type": "label",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "Evening Dark",
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <input
+                          checked={false}
+                          className="radio"
+                          name="theme"
+                          onChange={[MockFunction]}
+                          type="radio"
+                          value="evening"
+                        />,
+                        <span
+                          className="radioButton"
+                          style={
+                            Object {
+                              "opacity": 0,
+                            }
+                          }
+                        >
+                          <Icon
+                            icon="checkmark"
+                            viewBox="0 0 50 50"
+                          />
+                        </span>,
+                        "Evening Dark",
+                      ],
+                      "className": "label",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "checked": false,
+                          "className": "radio",
+                          "name": "theme",
+                          "onChange": [MockFunction],
+                          "type": "radio",
+                          "value": "evening",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "input",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": <Icon
+                            icon="checkmark"
+                            viewBox="0 0 50 50"
+                          />,
+                          "className": "radioButton",
+                          "style": Object {
+                            "opacity": 0,
+                          },
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "function",
+                          "props": Object {
+                            "icon": "checkmark",
+                            "viewBox": "0 0 50 50",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": [Function],
+                        },
+                        "type": "span",
+                      },
+                      "Evening Dark",
+                    ],
+                    "type": "label",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "Cool Sky",
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <input
+                          checked={false}
+                          className="radio"
+                          name="theme"
+                          onChange={[MockFunction]}
+                          type="radio"
+                          value="sky"
+                        />,
+                        <span
+                          className="radioButton"
+                          style={
+                            Object {
+                              "opacity": 0,
+                            }
+                          }
+                        >
+                          <Icon
+                            icon="checkmark"
+                            viewBox="0 0 50 50"
+                          />
+                        </span>,
+                        "Cool Sky",
+                      ],
+                      "className": "label",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "checked": false,
+                          "className": "radio",
+                          "name": "theme",
+                          "onChange": [MockFunction],
+                          "type": "radio",
+                          "value": "sky",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "input",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": <Icon
+                            icon="checkmark"
+                            viewBox="0 0 50 50"
+                          />,
+                          "className": "radioButton",
+                          "style": Object {
+                            "opacity": 0,
+                          },
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "function",
+                          "props": Object {
+                            "icon": "checkmark",
+                            "viewBox": "0 0 50 50",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": [Function],
+                        },
+                        "type": "span",
+                      },
+                      "Cool Sky",
+                    ],
+                    "type": "label",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "Harvey",
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <input
+                          checked={false}
+                          className="radio"
+                          name="theme"
+                          onChange={[MockFunction]}
+                          type="radio"
+                          value="harvey"
+                        />,
+                        <span
+                          className="radioButton"
+                          style={
+                            Object {
+                              "opacity": 0,
+                            }
+                          }
+                        >
+                          <Icon
+                            icon="checkmark"
+                            viewBox="0 0 50 50"
+                          />
+                        </span>,
+                        "Harvey",
+                      ],
+                      "className": "label",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "checked": false,
+                          "className": "radio",
+                          "name": "theme",
+                          "onChange": [MockFunction],
+                          "type": "radio",
+                          "value": "harvey",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "input",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": <Icon
+                            icon="checkmark"
+                            viewBox="0 0 50 50"
+                          />,
+                          "className": "radioButton",
+                          "style": Object {
+                            "opacity": 0,
+                          },
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "function",
+                          "props": Object {
+                            "icon": "checkmark",
+                            "viewBox": "0 0 50 50",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": [Function],
+                        },
+                        "type": "span",
+                      },
+                      "Harvey",
+                    ],
+                    "type": "label",
+                  },
+                ],
+                "type": "form",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <p>
+                  Zmień jednostki
+                </p>,
+                <form
+                  className="form units"
+                >
+                  <label
+                    className="label active"
+                  >
+                    <input
+                      checked={true}
+                      className="radio"
+                      name="units"
+                      onChange={[MockFunction]}
+                      type="radio"
+                      value="si"
+                    />
+                    <span
+                      className="radioButton"
+                      style={
+                        Object {
+                          "opacity": 1,
+                        }
+                      }
+                    >
+                      <Icon
+                        icon="checkmark"
+                        viewBox="0 0 50 50"
+                      />
+                    </span>
+                    SI
+                  </label>
+                  <label
+                    className="label"
+                  >
+                    <input
+                      checked={false}
+                      className="radio"
+                      name="units"
+                      onChange={[MockFunction]}
+                      type="radio"
+                      value="us"
+                    />
+                    <span
+                      className="radioButton"
+                      style={
+                        Object {
+                          "opacity": 0,
+                        }
+                      }
+                    >
+                      <Icon
+                        icon="checkmark"
+                        viewBox="0 0 50 50"
+                      />
+                    </span>
+                    US
+                  </label>
+                  <label
+                    className="label"
+                  >
+                    <input
+                      checked={false}
+                      className="radio"
+                      name="units"
+                      onChange={[MockFunction]}
+                      type="radio"
+                      value="uk2"
+                    />
+                    <span
+                      className="radioButton"
+                      style={
+                        Object {
+                          "opacity": 0,
+                        }
+                      }
+                    >
+                      <Icon
+                        icon="checkmark"
+                        viewBox="0 0 50 50"
+                      />
+                    </span>
+                    UK
+                  </label>
+                  <label
+                    className="label"
+                  >
+                    <input
+                      checked={false}
+                      className="radio"
+                      name="units"
+                      onChange={[MockFunction]}
+                      type="radio"
+                      value="ca"
+                    />
+                    <span
+                      className="radioButton"
+                      style={
+                        Object {
+                          "opacity": 0,
+                        }
+                      }
+                    >
+                      <Icon
+                        icon="checkmark"
+                        viewBox="0 0 50 50"
+                      />
+                    </span>
+                    CA
+                  </label>
+                </form>,
+              ],
+              "className": "menu menuUnits",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Zmień jednostki",
+                },
+                "ref": null,
+                "rendered": "Zmień jednostki",
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <label
+                      className="label active"
+                    >
+                      <input
+                        checked={true}
+                        className="radio"
+                        name="units"
+                        onChange={[MockFunction]}
+                        type="radio"
+                        value="si"
+                      />
+                      <span
+                        className="radioButton"
+                        style={
+                          Object {
+                            "opacity": 1,
+                          }
+                        }
+                      >
+                        <Icon
+                          icon="checkmark"
+                          viewBox="0 0 50 50"
+                        />
+                      </span>
+                      SI
+                    </label>,
+                    <label
+                      className="label"
+                    >
+                      <input
+                        checked={false}
+                        className="radio"
+                        name="units"
+                        onChange={[MockFunction]}
+                        type="radio"
+                        value="us"
+                      />
+                      <span
+                        className="radioButton"
+                        style={
+                          Object {
+                            "opacity": 0,
+                          }
+                        }
+                      >
+                        <Icon
+                          icon="checkmark"
+                          viewBox="0 0 50 50"
+                        />
+                      </span>
+                      US
+                    </label>,
+                    <label
+                      className="label"
+                    >
+                      <input
+                        checked={false}
+                        className="radio"
+                        name="units"
+                        onChange={[MockFunction]}
+                        type="radio"
+                        value="uk2"
+                      />
+                      <span
+                        className="radioButton"
+                        style={
+                          Object {
+                            "opacity": 0,
+                          }
+                        }
+                      >
+                        <Icon
+                          icon="checkmark"
+                          viewBox="0 0 50 50"
+                        />
+                      </span>
+                      UK
+                    </label>,
+                    <label
+                      className="label"
+                    >
+                      <input
+                        checked={false}
+                        className="radio"
+                        name="units"
+                        onChange={[MockFunction]}
+                        type="radio"
+                        value="ca"
+                      />
+                      <span
+                        className="radioButton"
+                        style={
+                          Object {
+                            "opacity": 0,
+                          }
+                        }
+                      >
+                        <Icon
+                          icon="checkmark"
+                          viewBox="0 0 50 50"
+                        />
+                      </span>
+                      CA
+                    </label>,
+                  ],
+                  "className": "form units",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": "si",
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <input
+                          checked={true}
+                          className="radio"
+                          name="units"
+                          onChange={[MockFunction]}
+                          type="radio"
+                          value="si"
+                        />,
+                        <span
+                          className="radioButton"
+                          style={
+                            Object {
+                              "opacity": 1,
+                            }
+                          }
+                        >
+                          <Icon
+                            icon="checkmark"
+                            viewBox="0 0 50 50"
+                          />
+                        </span>,
+                        "SI",
+                      ],
+                      "className": "label active",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "checked": true,
+                          "className": "radio",
+                          "name": "units",
+                          "onChange": [MockFunction],
+                          "type": "radio",
+                          "value": "si",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "input",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": <Icon
+                            icon="checkmark"
+                            viewBox="0 0 50 50"
+                          />,
+                          "className": "radioButton",
+                          "style": Object {
+                            "opacity": 1,
+                          },
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "function",
+                          "props": Object {
+                            "icon": "checkmark",
+                            "viewBox": "0 0 50 50",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": [Function],
+                        },
+                        "type": "span",
+                      },
+                      "SI",
+                    ],
+                    "type": "label",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "us",
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <input
+                          checked={false}
+                          className="radio"
+                          name="units"
+                          onChange={[MockFunction]}
+                          type="radio"
+                          value="us"
+                        />,
+                        <span
+                          className="radioButton"
+                          style={
+                            Object {
+                              "opacity": 0,
+                            }
+                          }
+                        >
+                          <Icon
+                            icon="checkmark"
+                            viewBox="0 0 50 50"
+                          />
+                        </span>,
+                        "US",
+                      ],
+                      "className": "label",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "checked": false,
+                          "className": "radio",
+                          "name": "units",
+                          "onChange": [MockFunction],
+                          "type": "radio",
+                          "value": "us",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "input",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": <Icon
+                            icon="checkmark"
+                            viewBox="0 0 50 50"
+                          />,
+                          "className": "radioButton",
+                          "style": Object {
+                            "opacity": 0,
+                          },
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "function",
+                          "props": Object {
+                            "icon": "checkmark",
+                            "viewBox": "0 0 50 50",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": [Function],
+                        },
+                        "type": "span",
+                      },
+                      "US",
+                    ],
+                    "type": "label",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "uk2",
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <input
+                          checked={false}
+                          className="radio"
+                          name="units"
+                          onChange={[MockFunction]}
+                          type="radio"
+                          value="uk2"
+                        />,
+                        <span
+                          className="radioButton"
+                          style={
+                            Object {
+                              "opacity": 0,
+                            }
+                          }
+                        >
+                          <Icon
+                            icon="checkmark"
+                            viewBox="0 0 50 50"
+                          />
+                        </span>,
+                        "UK",
+                      ],
+                      "className": "label",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "checked": false,
+                          "className": "radio",
+                          "name": "units",
+                          "onChange": [MockFunction],
+                          "type": "radio",
+                          "value": "uk2",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "input",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": <Icon
+                            icon="checkmark"
+                            viewBox="0 0 50 50"
+                          />,
+                          "className": "radioButton",
+                          "style": Object {
+                            "opacity": 0,
+                          },
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "function",
+                          "props": Object {
+                            "icon": "checkmark",
+                            "viewBox": "0 0 50 50",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": [Function],
+                        },
+                        "type": "span",
+                      },
+                      "UK",
+                    ],
+                    "type": "label",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "ca",
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <input
+                          checked={false}
+                          className="radio"
+                          name="units"
+                          onChange={[MockFunction]}
+                          type="radio"
+                          value="ca"
+                        />,
+                        <span
+                          className="radioButton"
+                          style={
+                            Object {
+                              "opacity": 0,
+                            }
+                          }
+                        >
+                          <Icon
+                            icon="checkmark"
+                            viewBox="0 0 50 50"
+                          />
+                        </span>,
+                        "CA",
+                      ],
+                      "className": "label",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "checked": false,
+                          "className": "radio",
+                          "name": "units",
+                          "onChange": [MockFunction],
+                          "type": "radio",
+                          "value": "ca",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "input",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": <Icon
+                            icon="checkmark"
+                            viewBox="0 0 50 50"
+                          />,
+                          "className": "radioButton",
+                          "style": Object {
+                            "opacity": 0,
+                          },
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "function",
+                          "props": Object {
+                            "icon": "checkmark",
+                            "viewBox": "0 0 50 50",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": [Function],
+                        },
+                        "type": "span",
+                      },
+                      "CA",
+                    ],
+                    "type": "label",
+                  },
+                ],
+                "type": "form",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Backdrop
+            hideBackdrop={[MockFunction]}
+            showBackdrop={true}
+          />,
+          <div
+            className="Settings"
+          >
+            <div
+              className="menu"
+            >
+              <p>
+                Zmień język
+              </p>
+              <form
+                className="form language"
+              >
+                <label
+                  className="label active"
+                >
+                  <input
+                    checked={true}
+                    className="radio"
+                    name="language"
+                    onChange={[MockFunction]}
+                    type="radio"
+                    value="pl"
+                  />
+                  <span
+                    className="radioButton"
+                    style={
+                      Object {
+                        "opacity": 1,
+                      }
+                    }
+                  >
+                    <Icon
+                      icon="checkmark"
+                      viewBox="0 0 50 50"
+                    />
+                  </span>
+                  Polski
+                </label>
+              </form>
+            </div>
+            <div
+              className="menu"
+            >
+              <p>
+                Zmień motyw
+              </p>
+              <form
+                className="form theme"
+              >
+                <label
+                  className="label"
+                >
+                  <input
+                    checked={false}
+                    className="radio"
+                    name="theme"
+                    onChange={[MockFunction]}
+                    type="radio"
+                    value="pink"
+                  />
+                  <span
+                    className="radioButton"
+                    style={
+                      Object {
+                        "opacity": 0,
+                      }
+                    }
+                  >
+                    <Icon
+                      icon="checkmark"
+                      viewBox="0 0 50 50"
+                    />
+                  </span>
+                  Pink
+                </label>
+                <label
+                  className="label"
+                >
+                  <input
+                    checked={false}
+                    className="radio"
+                    name="theme"
+                    onChange={[MockFunction]}
+                    type="radio"
+                    value="pinkDark"
+                  />
+                  <span
+                    className="radioButton"
+                    style={
+                      Object {
+                        "opacity": 0,
+                      }
+                    }
+                  >
+                    <Icon
+                      icon="checkmark"
+                      viewBox="0 0 50 50"
+                    />
+                  </span>
+                  Pink Dark
+                </label>
+                <label
+                  className="label"
+                >
+                  <input
+                    checked={false}
+                    className="radio"
+                    name="theme"
+                    onChange={[MockFunction]}
+                    type="radio"
+                    value="pumpkin"
+                  />
+                  <span
+                    className="radioButton"
+                    style={
+                      Object {
+                        "opacity": 0,
+                      }
+                    }
+                  >
+                    <Icon
+                      icon="checkmark"
+                      viewBox="0 0 50 50"
+                    />
+                  </span>
+                  Pumpkin Dark
+                </label>
+                <label
+                  className="label"
+                >
+                  <input
+                    checked={false}
+                    className="radio"
+                    name="theme"
+                    onChange={[MockFunction]}
+                    type="radio"
+                    value="evening"
+                  />
+                  <span
+                    className="radioButton"
+                    style={
+                      Object {
+                        "opacity": 0,
+                      }
+                    }
+                  >
+                    <Icon
+                      icon="checkmark"
+                      viewBox="0 0 50 50"
+                    />
+                  </span>
+                  Evening Dark
+                </label>
+                <label
+                  className="label"
+                >
+                  <input
+                    checked={false}
+                    className="radio"
+                    name="theme"
+                    onChange={[MockFunction]}
+                    type="radio"
+                    value="sky"
+                  />
+                  <span
+                    className="radioButton"
+                    style={
+                      Object {
+                        "opacity": 0,
+                      }
+                    }
+                  >
+                    <Icon
+                      icon="checkmark"
+                      viewBox="0 0 50 50"
+                    />
+                  </span>
+                  Cool Sky
+                </label>
+                <label
+                  className="label"
+                >
+                  <input
+                    checked={false}
+                    className="radio"
+                    name="theme"
+                    onChange={[MockFunction]}
+                    type="radio"
+                    value="harvey"
+                  />
+                  <span
+                    className="radioButton"
+                    style={
+                      Object {
+                        "opacity": 0,
+                      }
+                    }
+                  >
+                    <Icon
+                      icon="checkmark"
+                      viewBox="0 0 50 50"
+                    />
+                  </span>
+                  Harvey
+                </label>
+              </form>
+            </div>
+            <div
+              className="menu menuUnits"
+            >
+              <p>
+                Zmień jednostki
+              </p>
+              <form
+                className="form units"
+              >
+                <label
+                  className="label active"
+                >
+                  <input
+                    checked={true}
+                    className="radio"
+                    name="units"
+                    onChange={[MockFunction]}
+                    type="radio"
+                    value="si"
+                  />
+                  <span
+                    className="radioButton"
+                    style={
+                      Object {
+                        "opacity": 1,
+                      }
+                    }
+                  >
+                    <Icon
+                      icon="checkmark"
+                      viewBox="0 0 50 50"
+                    />
+                  </span>
+                  SI
+                </label>
+                <label
+                  className="label"
+                >
+                  <input
+                    checked={false}
+                    className="radio"
+                    name="units"
+                    onChange={[MockFunction]}
+                    type="radio"
+                    value="us"
+                  />
+                  <span
+                    className="radioButton"
+                    style={
+                      Object {
+                        "opacity": 0,
+                      }
+                    }
+                  >
+                    <Icon
+                      icon="checkmark"
+                      viewBox="0 0 50 50"
+                    />
+                  </span>
+                  US
+                </label>
+                <label
+                  className="label"
+                >
+                  <input
+                    checked={false}
+                    className="radio"
+                    name="units"
+                    onChange={[MockFunction]}
+                    type="radio"
+                    value="uk2"
+                  />
+                  <span
+                    className="radioButton"
+                    style={
+                      Object {
+                        "opacity": 0,
+                      }
+                    }
+                  >
+                    <Icon
+                      icon="checkmark"
+                      viewBox="0 0 50 50"
+                    />
+                  </span>
+                  UK
+                </label>
+                <label
+                  className="label"
+                >
+                  <input
+                    checked={false}
+                    className="radio"
+                    name="units"
+                    onChange={[MockFunction]}
+                    type="radio"
+                    value="ca"
+                  />
+                  <span
+                    className="radioButton"
+                    style={
+                      Object {
+                        "opacity": 0,
+                      }
+                    }
+                  >
+                    <Icon
+                      icon="checkmark"
+                      viewBox="0 0 50 50"
+                    />
+                  </span>
+                  CA
+                </label>
+              </form>
+            </div>
+          </div>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "hideBackdrop": [MockFunction],
+            "showBackdrop": true,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="menu"
+              >
+                <p>
+                  Zmień język
+                </p>
+                <form
+                  className="form language"
+                >
+                  <label
+                    className="label active"
+                  >
+                    <input
+                      checked={true}
+                      className="radio"
+                      name="language"
+                      onChange={[MockFunction]}
+                      type="radio"
+                      value="pl"
+                    />
+                    <span
+                      className="radioButton"
+                      style={
+                        Object {
+                          "opacity": 1,
+                        }
+                      }
+                    >
+                      <Icon
+                        icon="checkmark"
+                        viewBox="0 0 50 50"
+                      />
+                    </span>
+                    Polski
+                  </label>
+                </form>
+              </div>,
+              <div
+                className="menu"
+              >
+                <p>
+                  Zmień motyw
+                </p>
+                <form
+                  className="form theme"
+                >
+                  <label
+                    className="label"
+                  >
+                    <input
+                      checked={false}
+                      className="radio"
+                      name="theme"
+                      onChange={[MockFunction]}
+                      type="radio"
+                      value="pink"
+                    />
+                    <span
+                      className="radioButton"
+                      style={
+                        Object {
+                          "opacity": 0,
+                        }
+                      }
+                    >
+                      <Icon
+                        icon="checkmark"
+                        viewBox="0 0 50 50"
+                      />
+                    </span>
+                    Pink
+                  </label>
+                  <label
+                    className="label"
+                  >
+                    <input
+                      checked={false}
+                      className="radio"
+                      name="theme"
+                      onChange={[MockFunction]}
+                      type="radio"
+                      value="pinkDark"
+                    />
+                    <span
+                      className="radioButton"
+                      style={
+                        Object {
+                          "opacity": 0,
+                        }
+                      }
+                    >
+                      <Icon
+                        icon="checkmark"
+                        viewBox="0 0 50 50"
+                      />
+                    </span>
+                    Pink Dark
+                  </label>
+                  <label
+                    className="label"
+                  >
+                    <input
+                      checked={false}
+                      className="radio"
+                      name="theme"
+                      onChange={[MockFunction]}
+                      type="radio"
+                      value="pumpkin"
+                    />
+                    <span
+                      className="radioButton"
+                      style={
+                        Object {
+                          "opacity": 0,
+                        }
+                      }
+                    >
+                      <Icon
+                        icon="checkmark"
+                        viewBox="0 0 50 50"
+                      />
+                    </span>
+                    Pumpkin Dark
+                  </label>
+                  <label
+                    className="label"
+                  >
+                    <input
+                      checked={false}
+                      className="radio"
+                      name="theme"
+                      onChange={[MockFunction]}
+                      type="radio"
+                      value="evening"
+                    />
+                    <span
+                      className="radioButton"
+                      style={
+                        Object {
+                          "opacity": 0,
+                        }
+                      }
+                    >
+                      <Icon
+                        icon="checkmark"
+                        viewBox="0 0 50 50"
+                      />
+                    </span>
+                    Evening Dark
+                  </label>
+                  <label
+                    className="label"
+                  >
+                    <input
+                      checked={false}
+                      className="radio"
+                      name="theme"
+                      onChange={[MockFunction]}
+                      type="radio"
+                      value="sky"
+                    />
+                    <span
+                      className="radioButton"
+                      style={
+                        Object {
+                          "opacity": 0,
+                        }
+                      }
+                    >
+                      <Icon
+                        icon="checkmark"
+                        viewBox="0 0 50 50"
+                      />
+                    </span>
+                    Cool Sky
+                  </label>
+                  <label
+                    className="label"
+                  >
+                    <input
+                      checked={false}
+                      className="radio"
+                      name="theme"
+                      onChange={[MockFunction]}
+                      type="radio"
+                      value="harvey"
+                    />
+                    <span
+                      className="radioButton"
+                      style={
+                        Object {
+                          "opacity": 0,
+                        }
+                      }
+                    >
+                      <Icon
+                        icon="checkmark"
+                        viewBox="0 0 50 50"
+                      />
+                    </span>
+                    Harvey
+                  </label>
+                </form>
+              </div>,
+              <div
+                className="menu menuUnits"
+              >
+                <p>
+                  Zmień jednostki
+                </p>
+                <form
+                  className="form units"
+                >
+                  <label
+                    className="label active"
+                  >
+                    <input
+                      checked={true}
+                      className="radio"
+                      name="units"
+                      onChange={[MockFunction]}
+                      type="radio"
+                      value="si"
+                    />
+                    <span
+                      className="radioButton"
+                      style={
+                        Object {
+                          "opacity": 1,
+                        }
+                      }
+                    >
+                      <Icon
+                        icon="checkmark"
+                        viewBox="0 0 50 50"
+                      />
+                    </span>
+                    SI
+                  </label>
+                  <label
+                    className="label"
+                  >
+                    <input
+                      checked={false}
+                      className="radio"
+                      name="units"
+                      onChange={[MockFunction]}
+                      type="radio"
+                      value="us"
+                    />
+                    <span
+                      className="radioButton"
+                      style={
+                        Object {
+                          "opacity": 0,
+                        }
+                      }
+                    >
+                      <Icon
+                        icon="checkmark"
+                        viewBox="0 0 50 50"
+                      />
+                    </span>
+                    US
+                  </label>
+                  <label
+                    className="label"
+                  >
+                    <input
+                      checked={false}
+                      className="radio"
+                      name="units"
+                      onChange={[MockFunction]}
+                      type="radio"
+                      value="uk2"
+                    />
+                    <span
+                      className="radioButton"
+                      style={
+                        Object {
+                          "opacity": 0,
+                        }
+                      }
+                    >
+                      <Icon
+                        icon="checkmark"
+                        viewBox="0 0 50 50"
+                      />
+                    </span>
+                    UK
+                  </label>
+                  <label
+                    className="label"
+                  >
+                    <input
+                      checked={false}
+                      className="radio"
+                      name="units"
+                      onChange={[MockFunction]}
+                      type="radio"
+                      value="ca"
+                    />
+                    <span
+                      className="radioButton"
+                      style={
+                        Object {
+                          "opacity": 0,
+                        }
+                      }
+                    >
+                      <Icon
+                        icon="checkmark"
+                        viewBox="0 0 50 50"
+                      />
+                    </span>
+                    CA
+                  </label>
+                </form>
+              </div>,
+            ],
+            "className": "Settings",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <p>
+                    Zmień język
+                  </p>,
+                  <form
+                    className="form language"
+                  >
+                    <label
+                      className="label active"
+                    >
+                      <input
+                        checked={true}
+                        className="radio"
+                        name="language"
+                        onChange={[MockFunction]}
+                        type="radio"
+                        value="pl"
+                      />
+                      <span
+                        className="radioButton"
+                        style={
+                          Object {
+                            "opacity": 1,
+                          }
+                        }
+                      >
+                        <Icon
+                          icon="checkmark"
+                          viewBox="0 0 50 50"
+                        />
+                      </span>
+                      Polski
+                    </label>
+                  </form>,
+                ],
+                "className": "menu",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Zmień język",
+                  },
+                  "ref": null,
+                  "rendered": "Zmień język",
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <label
+                        className="label active"
+                      >
+                        <input
+                          checked={true}
+                          className="radio"
+                          name="language"
+                          onChange={[MockFunction]}
+                          type="radio"
+                          value="pl"
+                        />
+                        <span
+                          className="radioButton"
+                          style={
+                            Object {
+                              "opacity": 1,
+                            }
+                          }
+                        >
+                          <Icon
+                            icon="checkmark"
+                            viewBox="0 0 50 50"
+                          />
+                        </span>
+                        Polski
+                      </label>,
+                    ],
+                    "className": "form language",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": "pl",
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <input
+                            checked={true}
+                            className="radio"
+                            name="language"
+                            onChange={[MockFunction]}
+                            type="radio"
+                            value="pl"
+                          />,
+                          <span
+                            className="radioButton"
+                            style={
+                              Object {
+                                "opacity": 1,
+                              }
+                            }
+                          >
+                            <Icon
+                              icon="checkmark"
+                              viewBox="0 0 50 50"
+                            />
+                          </span>,
+                          "Polski",
+                        ],
+                        "className": "label active",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "checked": true,
+                            "className": "radio",
+                            "name": "language",
+                            "onChange": [MockFunction],
+                            "type": "radio",
+                            "value": "pl",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": "input",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": <Icon
+                              icon="checkmark"
+                              viewBox="0 0 50 50"
+                            />,
+                            "className": "radioButton",
+                            "style": Object {
+                              "opacity": 1,
+                            },
+                          },
+                          "ref": null,
+                          "rendered": Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "function",
+                            "props": Object {
+                              "icon": "checkmark",
+                              "viewBox": "0 0 50 50",
+                            },
+                            "ref": null,
+                            "rendered": null,
+                            "type": [Function],
+                          },
+                          "type": "span",
+                        },
+                        "Polski",
+                      ],
+                      "type": "label",
+                    },
+                  ],
+                  "type": "form",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <p>
+                    Zmień motyw
+                  </p>,
+                  <form
+                    className="form theme"
+                  >
+                    <label
+                      className="label"
+                    >
+                      <input
+                        checked={false}
+                        className="radio"
+                        name="theme"
+                        onChange={[MockFunction]}
+                        type="radio"
+                        value="pink"
+                      />
+                      <span
+                        className="radioButton"
+                        style={
+                          Object {
+                            "opacity": 0,
+                          }
+                        }
+                      >
+                        <Icon
+                          icon="checkmark"
+                          viewBox="0 0 50 50"
+                        />
+                      </span>
+                      Pink
+                    </label>
+                    <label
+                      className="label"
+                    >
+                      <input
+                        checked={false}
+                        className="radio"
+                        name="theme"
+                        onChange={[MockFunction]}
+                        type="radio"
+                        value="pinkDark"
+                      />
+                      <span
+                        className="radioButton"
+                        style={
+                          Object {
+                            "opacity": 0,
+                          }
+                        }
+                      >
+                        <Icon
+                          icon="checkmark"
+                          viewBox="0 0 50 50"
+                        />
+                      </span>
+                      Pink Dark
+                    </label>
+                    <label
+                      className="label"
+                    >
+                      <input
+                        checked={false}
+                        className="radio"
+                        name="theme"
+                        onChange={[MockFunction]}
+                        type="radio"
+                        value="pumpkin"
+                      />
+                      <span
+                        className="radioButton"
+                        style={
+                          Object {
+                            "opacity": 0,
+                          }
+                        }
+                      >
+                        <Icon
+                          icon="checkmark"
+                          viewBox="0 0 50 50"
+                        />
+                      </span>
+                      Pumpkin Dark
+                    </label>
+                    <label
+                      className="label"
+                    >
+                      <input
+                        checked={false}
+                        className="radio"
+                        name="theme"
+                        onChange={[MockFunction]}
+                        type="radio"
+                        value="evening"
+                      />
+                      <span
+                        className="radioButton"
+                        style={
+                          Object {
+                            "opacity": 0,
+                          }
+                        }
+                      >
+                        <Icon
+                          icon="checkmark"
+                          viewBox="0 0 50 50"
+                        />
+                      </span>
+                      Evening Dark
+                    </label>
+                    <label
+                      className="label"
+                    >
+                      <input
+                        checked={false}
+                        className="radio"
+                        name="theme"
+                        onChange={[MockFunction]}
+                        type="radio"
+                        value="sky"
+                      />
+                      <span
+                        className="radioButton"
+                        style={
+                          Object {
+                            "opacity": 0,
+                          }
+                        }
+                      >
+                        <Icon
+                          icon="checkmark"
+                          viewBox="0 0 50 50"
+                        />
+                      </span>
+                      Cool Sky
+                    </label>
+                    <label
+                      className="label"
+                    >
+                      <input
+                        checked={false}
+                        className="radio"
+                        name="theme"
+                        onChange={[MockFunction]}
+                        type="radio"
+                        value="harvey"
+                      />
+                      <span
+                        className="radioButton"
+                        style={
+                          Object {
+                            "opacity": 0,
+                          }
+                        }
+                      >
+                        <Icon
+                          icon="checkmark"
+                          viewBox="0 0 50 50"
+                        />
+                      </span>
+                      Harvey
+                    </label>
+                  </form>,
+                ],
+                "className": "menu",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Zmień motyw",
+                  },
+                  "ref": null,
+                  "rendered": "Zmień motyw",
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <label
+                        className="label"
+                      >
+                        <input
+                          checked={false}
+                          className="radio"
+                          name="theme"
+                          onChange={[MockFunction]}
+                          type="radio"
+                          value="pink"
+                        />
+                        <span
+                          className="radioButton"
+                          style={
+                            Object {
+                              "opacity": 0,
+                            }
+                          }
+                        >
+                          <Icon
+                            icon="checkmark"
+                            viewBox="0 0 50 50"
+                          />
+                        </span>
+                        Pink
+                      </label>,
+                      <label
+                        className="label"
+                      >
+                        <input
+                          checked={false}
+                          className="radio"
+                          name="theme"
+                          onChange={[MockFunction]}
+                          type="radio"
+                          value="pinkDark"
+                        />
+                        <span
+                          className="radioButton"
+                          style={
+                            Object {
+                              "opacity": 0,
+                            }
+                          }
+                        >
+                          <Icon
+                            icon="checkmark"
+                            viewBox="0 0 50 50"
+                          />
+                        </span>
+                        Pink Dark
+                      </label>,
+                      <label
+                        className="label"
+                      >
+                        <input
+                          checked={false}
+                          className="radio"
+                          name="theme"
+                          onChange={[MockFunction]}
+                          type="radio"
+                          value="pumpkin"
+                        />
+                        <span
+                          className="radioButton"
+                          style={
+                            Object {
+                              "opacity": 0,
+                            }
+                          }
+                        >
+                          <Icon
+                            icon="checkmark"
+                            viewBox="0 0 50 50"
+                          />
+                        </span>
+                        Pumpkin Dark
+                      </label>,
+                      <label
+                        className="label"
+                      >
+                        <input
+                          checked={false}
+                          className="radio"
+                          name="theme"
+                          onChange={[MockFunction]}
+                          type="radio"
+                          value="evening"
+                        />
+                        <span
+                          className="radioButton"
+                          style={
+                            Object {
+                              "opacity": 0,
+                            }
+                          }
+                        >
+                          <Icon
+                            icon="checkmark"
+                            viewBox="0 0 50 50"
+                          />
+                        </span>
+                        Evening Dark
+                      </label>,
+                      <label
+                        className="label"
+                      >
+                        <input
+                          checked={false}
+                          className="radio"
+                          name="theme"
+                          onChange={[MockFunction]}
+                          type="radio"
+                          value="sky"
+                        />
+                        <span
+                          className="radioButton"
+                          style={
+                            Object {
+                              "opacity": 0,
+                            }
+                          }
+                        >
+                          <Icon
+                            icon="checkmark"
+                            viewBox="0 0 50 50"
+                          />
+                        </span>
+                        Cool Sky
+                      </label>,
+                      <label
+                        className="label"
+                      >
+                        <input
+                          checked={false}
+                          className="radio"
+                          name="theme"
+                          onChange={[MockFunction]}
+                          type="radio"
+                          value="harvey"
+                        />
+                        <span
+                          className="radioButton"
+                          style={
+                            Object {
+                              "opacity": 0,
+                            }
+                          }
+                        >
+                          <Icon
+                            icon="checkmark"
+                            viewBox="0 0 50 50"
+                          />
+                        </span>
+                        Harvey
+                      </label>,
+                    ],
+                    "className": "form theme",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": "Pink",
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <input
+                            checked={false}
+                            className="radio"
+                            name="theme"
+                            onChange={[MockFunction]}
+                            type="radio"
+                            value="pink"
+                          />,
+                          <span
+                            className="radioButton"
+                            style={
+                              Object {
+                                "opacity": 0,
+                              }
+                            }
+                          >
+                            <Icon
+                              icon="checkmark"
+                              viewBox="0 0 50 50"
+                            />
+                          </span>,
+                          "Pink",
+                        ],
+                        "className": "label",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "checked": false,
+                            "className": "radio",
+                            "name": "theme",
+                            "onChange": [MockFunction],
+                            "type": "radio",
+                            "value": "pink",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": "input",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": <Icon
+                              icon="checkmark"
+                              viewBox="0 0 50 50"
+                            />,
+                            "className": "radioButton",
+                            "style": Object {
+                              "opacity": 0,
+                            },
+                          },
+                          "ref": null,
+                          "rendered": Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "function",
+                            "props": Object {
+                              "icon": "checkmark",
+                              "viewBox": "0 0 50 50",
+                            },
+                            "ref": null,
+                            "rendered": null,
+                            "type": [Function],
+                          },
+                          "type": "span",
+                        },
+                        "Pink",
+                      ],
+                      "type": "label",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "Pink Dark",
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <input
+                            checked={false}
+                            className="radio"
+                            name="theme"
+                            onChange={[MockFunction]}
+                            type="radio"
+                            value="pinkDark"
+                          />,
+                          <span
+                            className="radioButton"
+                            style={
+                              Object {
+                                "opacity": 0,
+                              }
+                            }
+                          >
+                            <Icon
+                              icon="checkmark"
+                              viewBox="0 0 50 50"
+                            />
+                          </span>,
+                          "Pink Dark",
+                        ],
+                        "className": "label",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "checked": false,
+                            "className": "radio",
+                            "name": "theme",
+                            "onChange": [MockFunction],
+                            "type": "radio",
+                            "value": "pinkDark",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": "input",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": <Icon
+                              icon="checkmark"
+                              viewBox="0 0 50 50"
+                            />,
+                            "className": "radioButton",
+                            "style": Object {
+                              "opacity": 0,
+                            },
+                          },
+                          "ref": null,
+                          "rendered": Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "function",
+                            "props": Object {
+                              "icon": "checkmark",
+                              "viewBox": "0 0 50 50",
+                            },
+                            "ref": null,
+                            "rendered": null,
+                            "type": [Function],
+                          },
+                          "type": "span",
+                        },
+                        "Pink Dark",
+                      ],
+                      "type": "label",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "Pumpkin Dark",
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <input
+                            checked={false}
+                            className="radio"
+                            name="theme"
+                            onChange={[MockFunction]}
+                            type="radio"
+                            value="pumpkin"
+                          />,
+                          <span
+                            className="radioButton"
+                            style={
+                              Object {
+                                "opacity": 0,
+                              }
+                            }
+                          >
+                            <Icon
+                              icon="checkmark"
+                              viewBox="0 0 50 50"
+                            />
+                          </span>,
+                          "Pumpkin Dark",
+                        ],
+                        "className": "label",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "checked": false,
+                            "className": "radio",
+                            "name": "theme",
+                            "onChange": [MockFunction],
+                            "type": "radio",
+                            "value": "pumpkin",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": "input",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": <Icon
+                              icon="checkmark"
+                              viewBox="0 0 50 50"
+                            />,
+                            "className": "radioButton",
+                            "style": Object {
+                              "opacity": 0,
+                            },
+                          },
+                          "ref": null,
+                          "rendered": Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "function",
+                            "props": Object {
+                              "icon": "checkmark",
+                              "viewBox": "0 0 50 50",
+                            },
+                            "ref": null,
+                            "rendered": null,
+                            "type": [Function],
+                          },
+                          "type": "span",
+                        },
+                        "Pumpkin Dark",
+                      ],
+                      "type": "label",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "Evening Dark",
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <input
+                            checked={false}
+                            className="radio"
+                            name="theme"
+                            onChange={[MockFunction]}
+                            type="radio"
+                            value="evening"
+                          />,
+                          <span
+                            className="radioButton"
+                            style={
+                              Object {
+                                "opacity": 0,
+                              }
+                            }
+                          >
+                            <Icon
+                              icon="checkmark"
+                              viewBox="0 0 50 50"
+                            />
+                          </span>,
+                          "Evening Dark",
+                        ],
+                        "className": "label",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "checked": false,
+                            "className": "radio",
+                            "name": "theme",
+                            "onChange": [MockFunction],
+                            "type": "radio",
+                            "value": "evening",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": "input",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": <Icon
+                              icon="checkmark"
+                              viewBox="0 0 50 50"
+                            />,
+                            "className": "radioButton",
+                            "style": Object {
+                              "opacity": 0,
+                            },
+                          },
+                          "ref": null,
+                          "rendered": Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "function",
+                            "props": Object {
+                              "icon": "checkmark",
+                              "viewBox": "0 0 50 50",
+                            },
+                            "ref": null,
+                            "rendered": null,
+                            "type": [Function],
+                          },
+                          "type": "span",
+                        },
+                        "Evening Dark",
+                      ],
+                      "type": "label",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "Cool Sky",
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <input
+                            checked={false}
+                            className="radio"
+                            name="theme"
+                            onChange={[MockFunction]}
+                            type="radio"
+                            value="sky"
+                          />,
+                          <span
+                            className="radioButton"
+                            style={
+                              Object {
+                                "opacity": 0,
+                              }
+                            }
+                          >
+                            <Icon
+                              icon="checkmark"
+                              viewBox="0 0 50 50"
+                            />
+                          </span>,
+                          "Cool Sky",
+                        ],
+                        "className": "label",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "checked": false,
+                            "className": "radio",
+                            "name": "theme",
+                            "onChange": [MockFunction],
+                            "type": "radio",
+                            "value": "sky",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": "input",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": <Icon
+                              icon="checkmark"
+                              viewBox="0 0 50 50"
+                            />,
+                            "className": "radioButton",
+                            "style": Object {
+                              "opacity": 0,
+                            },
+                          },
+                          "ref": null,
+                          "rendered": Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "function",
+                            "props": Object {
+                              "icon": "checkmark",
+                              "viewBox": "0 0 50 50",
+                            },
+                            "ref": null,
+                            "rendered": null,
+                            "type": [Function],
+                          },
+                          "type": "span",
+                        },
+                        "Cool Sky",
+                      ],
+                      "type": "label",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "Harvey",
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <input
+                            checked={false}
+                            className="radio"
+                            name="theme"
+                            onChange={[MockFunction]}
+                            type="radio"
+                            value="harvey"
+                          />,
+                          <span
+                            className="radioButton"
+                            style={
+                              Object {
+                                "opacity": 0,
+                              }
+                            }
+                          >
+                            <Icon
+                              icon="checkmark"
+                              viewBox="0 0 50 50"
+                            />
+                          </span>,
+                          "Harvey",
+                        ],
+                        "className": "label",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "checked": false,
+                            "className": "radio",
+                            "name": "theme",
+                            "onChange": [MockFunction],
+                            "type": "radio",
+                            "value": "harvey",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": "input",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": <Icon
+                              icon="checkmark"
+                              viewBox="0 0 50 50"
+                            />,
+                            "className": "radioButton",
+                            "style": Object {
+                              "opacity": 0,
+                            },
+                          },
+                          "ref": null,
+                          "rendered": Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "function",
+                            "props": Object {
+                              "icon": "checkmark",
+                              "viewBox": "0 0 50 50",
+                            },
+                            "ref": null,
+                            "rendered": null,
+                            "type": [Function],
+                          },
+                          "type": "span",
+                        },
+                        "Harvey",
+                      ],
+                      "type": "label",
+                    },
+                  ],
+                  "type": "form",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <p>
+                    Zmień jednostki
+                  </p>,
+                  <form
+                    className="form units"
+                  >
+                    <label
+                      className="label active"
+                    >
+                      <input
+                        checked={true}
+                        className="radio"
+                        name="units"
+                        onChange={[MockFunction]}
+                        type="radio"
+                        value="si"
+                      />
+                      <span
+                        className="radioButton"
+                        style={
+                          Object {
+                            "opacity": 1,
+                          }
+                        }
+                      >
+                        <Icon
+                          icon="checkmark"
+                          viewBox="0 0 50 50"
+                        />
+                      </span>
+                      SI
+                    </label>
+                    <label
+                      className="label"
+                    >
+                      <input
+                        checked={false}
+                        className="radio"
+                        name="units"
+                        onChange={[MockFunction]}
+                        type="radio"
+                        value="us"
+                      />
+                      <span
+                        className="radioButton"
+                        style={
+                          Object {
+                            "opacity": 0,
+                          }
+                        }
+                      >
+                        <Icon
+                          icon="checkmark"
+                          viewBox="0 0 50 50"
+                        />
+                      </span>
+                      US
+                    </label>
+                    <label
+                      className="label"
+                    >
+                      <input
+                        checked={false}
+                        className="radio"
+                        name="units"
+                        onChange={[MockFunction]}
+                        type="radio"
+                        value="uk2"
+                      />
+                      <span
+                        className="radioButton"
+                        style={
+                          Object {
+                            "opacity": 0,
+                          }
+                        }
+                      >
+                        <Icon
+                          icon="checkmark"
+                          viewBox="0 0 50 50"
+                        />
+                      </span>
+                      UK
+                    </label>
+                    <label
+                      className="label"
+                    >
+                      <input
+                        checked={false}
+                        className="radio"
+                        name="units"
+                        onChange={[MockFunction]}
+                        type="radio"
+                        value="ca"
+                      />
+                      <span
+                        className="radioButton"
+                        style={
+                          Object {
+                            "opacity": 0,
+                          }
+                        }
+                      >
+                        <Icon
+                          icon="checkmark"
+                          viewBox="0 0 50 50"
+                        />
+                      </span>
+                      CA
+                    </label>
+                  </form>,
+                ],
+                "className": "menu menuUnits",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Zmień jednostki",
+                  },
+                  "ref": null,
+                  "rendered": "Zmień jednostki",
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <label
+                        className="label active"
+                      >
+                        <input
+                          checked={true}
+                          className="radio"
+                          name="units"
+                          onChange={[MockFunction]}
+                          type="radio"
+                          value="si"
+                        />
+                        <span
+                          className="radioButton"
+                          style={
+                            Object {
+                              "opacity": 1,
+                            }
+                          }
+                        >
+                          <Icon
+                            icon="checkmark"
+                            viewBox="0 0 50 50"
+                          />
+                        </span>
+                        SI
+                      </label>,
+                      <label
+                        className="label"
+                      >
+                        <input
+                          checked={false}
+                          className="radio"
+                          name="units"
+                          onChange={[MockFunction]}
+                          type="radio"
+                          value="us"
+                        />
+                        <span
+                          className="radioButton"
+                          style={
+                            Object {
+                              "opacity": 0,
+                            }
+                          }
+                        >
+                          <Icon
+                            icon="checkmark"
+                            viewBox="0 0 50 50"
+                          />
+                        </span>
+                        US
+                      </label>,
+                      <label
+                        className="label"
+                      >
+                        <input
+                          checked={false}
+                          className="radio"
+                          name="units"
+                          onChange={[MockFunction]}
+                          type="radio"
+                          value="uk2"
+                        />
+                        <span
+                          className="radioButton"
+                          style={
+                            Object {
+                              "opacity": 0,
+                            }
+                          }
+                        >
+                          <Icon
+                            icon="checkmark"
+                            viewBox="0 0 50 50"
+                          />
+                        </span>
+                        UK
+                      </label>,
+                      <label
+                        className="label"
+                      >
+                        <input
+                          checked={false}
+                          className="radio"
+                          name="units"
+                          onChange={[MockFunction]}
+                          type="radio"
+                          value="ca"
+                        />
+                        <span
+                          className="radioButton"
+                          style={
+                            Object {
+                              "opacity": 0,
+                            }
+                          }
+                        >
+                          <Icon
+                            icon="checkmark"
+                            viewBox="0 0 50 50"
+                          />
+                        </span>
+                        CA
+                      </label>,
+                    ],
+                    "className": "form units",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": "si",
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <input
+                            checked={true}
+                            className="radio"
+                            name="units"
+                            onChange={[MockFunction]}
+                            type="radio"
+                            value="si"
+                          />,
+                          <span
+                            className="radioButton"
+                            style={
+                              Object {
+                                "opacity": 1,
+                              }
+                            }
+                          >
+                            <Icon
+                              icon="checkmark"
+                              viewBox="0 0 50 50"
+                            />
+                          </span>,
+                          "SI",
+                        ],
+                        "className": "label active",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "checked": true,
+                            "className": "radio",
+                            "name": "units",
+                            "onChange": [MockFunction],
+                            "type": "radio",
+                            "value": "si",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": "input",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": <Icon
+                              icon="checkmark"
+                              viewBox="0 0 50 50"
+                            />,
+                            "className": "radioButton",
+                            "style": Object {
+                              "opacity": 1,
+                            },
+                          },
+                          "ref": null,
+                          "rendered": Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "function",
+                            "props": Object {
+                              "icon": "checkmark",
+                              "viewBox": "0 0 50 50",
+                            },
+                            "ref": null,
+                            "rendered": null,
+                            "type": [Function],
+                          },
+                          "type": "span",
+                        },
+                        "SI",
+                      ],
+                      "type": "label",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "us",
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <input
+                            checked={false}
+                            className="radio"
+                            name="units"
+                            onChange={[MockFunction]}
+                            type="radio"
+                            value="us"
+                          />,
+                          <span
+                            className="radioButton"
+                            style={
+                              Object {
+                                "opacity": 0,
+                              }
+                            }
+                          >
+                            <Icon
+                              icon="checkmark"
+                              viewBox="0 0 50 50"
+                            />
+                          </span>,
+                          "US",
+                        ],
+                        "className": "label",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "checked": false,
+                            "className": "radio",
+                            "name": "units",
+                            "onChange": [MockFunction],
+                            "type": "radio",
+                            "value": "us",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": "input",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": <Icon
+                              icon="checkmark"
+                              viewBox="0 0 50 50"
+                            />,
+                            "className": "radioButton",
+                            "style": Object {
+                              "opacity": 0,
+                            },
+                          },
+                          "ref": null,
+                          "rendered": Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "function",
+                            "props": Object {
+                              "icon": "checkmark",
+                              "viewBox": "0 0 50 50",
+                            },
+                            "ref": null,
+                            "rendered": null,
+                            "type": [Function],
+                          },
+                          "type": "span",
+                        },
+                        "US",
+                      ],
+                      "type": "label",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "uk2",
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <input
+                            checked={false}
+                            className="radio"
+                            name="units"
+                            onChange={[MockFunction]}
+                            type="radio"
+                            value="uk2"
+                          />,
+                          <span
+                            className="radioButton"
+                            style={
+                              Object {
+                                "opacity": 0,
+                              }
+                            }
+                          >
+                            <Icon
+                              icon="checkmark"
+                              viewBox="0 0 50 50"
+                            />
+                          </span>,
+                          "UK",
+                        ],
+                        "className": "label",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "checked": false,
+                            "className": "radio",
+                            "name": "units",
+                            "onChange": [MockFunction],
+                            "type": "radio",
+                            "value": "uk2",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": "input",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": <Icon
+                              icon="checkmark"
+                              viewBox="0 0 50 50"
+                            />,
+                            "className": "radioButton",
+                            "style": Object {
+                              "opacity": 0,
+                            },
+                          },
+                          "ref": null,
+                          "rendered": Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "function",
+                            "props": Object {
+                              "icon": "checkmark",
+                              "viewBox": "0 0 50 50",
+                            },
+                            "ref": null,
+                            "rendered": null,
+                            "type": [Function],
+                          },
+                          "type": "span",
+                        },
+                        "UK",
+                      ],
+                      "type": "label",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "ca",
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <input
+                            checked={false}
+                            className="radio"
+                            name="units"
+                            onChange={[MockFunction]}
+                            type="radio"
+                            value="ca"
+                          />,
+                          <span
+                            className="radioButton"
+                            style={
+                              Object {
+                                "opacity": 0,
+                              }
+                            }
+                          >
+                            <Icon
+                              icon="checkmark"
+                              viewBox="0 0 50 50"
+                            />
+                          </span>,
+                          "CA",
+                        ],
+                        "className": "label",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "checked": false,
+                            "className": "radio",
+                            "name": "units",
+                            "onChange": [MockFunction],
+                            "type": "radio",
+                            "value": "ca",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": "input",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": <Icon
+                              icon="checkmark"
+                              viewBox="0 0 50 50"
+                            />,
+                            "className": "radioButton",
+                            "style": Object {
+                              "opacity": 0,
+                            },
+                          },
+                          "ref": null,
+                          "rendered": Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "function",
+                            "props": Object {
+                              "icon": "checkmark",
+                              "viewBox": "0 0 50 50",
+                            },
+                            "ref": null,
+                            "rendered": null,
+                            "type": [Function],
+                          },
+                          "type": "span",
+                        },
+                        "CA",
+                      ],
+                      "type": "label",
+                    },
+                  ],
+                  "type": "form",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

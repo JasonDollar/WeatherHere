@@ -1,7 +1,7 @@
 
 
 import { getTimeFromSeconds, formatNumber, formatMoonPhase } from '../../data/utils'
-
+jest.unmock('moment-timezone')
 describe('formatNumber test', () => {
   test('should return integer', () => {
     const result = formatNumber(10.000)
