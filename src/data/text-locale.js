@@ -30,6 +30,8 @@ const pl = {
     ozone: 'Ozon',
     windGust: 'Wiatr w porywach',
     location: 'Nieznana lokacja',
+    icon: 'Ikona pogody',
+
   },
   date: {
     weekDay: ['Niedziela', 'Poniedziałek', 'Wtorek', 'Środa', 'Czwartek', 'Piątek', 'Sobota', 'Dziś'],
@@ -53,8 +55,10 @@ const pl = {
     changeTheme: 'Zmień motyw',
     changeUnits: 'Zmień jednostki',
     units: ['SI', 'US', 'UK', 'CA'],
+    iconName: 'Znak wyboru (fajka)',
   },
-  welcome: 'Szukaj lokalizacji'
+  welcome: 'Szukaj lokalizacji',
+
 }
 
 const en = {
@@ -88,6 +92,7 @@ const en = {
     ozone: 'Ozone',
     windGust: 'Wind gust',
     location: 'Unknown location',
+    icon: 'Weather\'s icon',
   },
   date: {
     weekDay: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
@@ -110,8 +115,9 @@ const en = {
     changeTheme: 'Change theme',
     changeUnits: 'Change Units',
     units: ['SI', 'US', 'UK', 'CA'],
+    iconName: 'Tick icon',
   },
-  welcome: 'Szukaj lokalizacji',
+  welcome: 'Search location',
 }
 
 

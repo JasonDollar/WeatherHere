@@ -53,6 +53,7 @@ class App extends Component {
       location,
       activeMenuBarClass: 'forecast',
       showSearch: false,
+      showBackdrop: false,
     })
   } 
 
@@ -190,11 +191,12 @@ class App extends Component {
   }
 
   onSearchFormSubmit = (e) => {
-    const searchValue = this.state.inputValue
     e.preventDefault();
+    const searchValue = this.state.inputValue
     this.setState({
       searchValue: searchValue,
       showSearch: false,
+      showBackdrop: false,
       inputValue: '',
       activeMenuBarClass: 'forecast',
     })
@@ -242,23 +244,23 @@ class App extends Component {
         />
 
         
-          <Settings 
-            showSettings={this.state.showSettings}
-            changeLanguage={this.changeLanguage}
-            showSettingsHandler={this.showSettingsHandler}
-            selectedLanguage={this.state.language}
-            showBackdrop={this.state.showBackdrop}
-            hideBackdrop={this.showForecastHandler}
-            languageNames={Object.keys(language).map(item => ({
-              name: language[item].name,
-              id: language[item].id
-            }))}
-            themeName={this.state.themeName}
-            themeListHandler={this.themeListHandler}
-            text={this.state.localText.settings}
-            unitListHandler={this.unitListHandler}
-            units={this.state.units}
-          />
+        <Settings 
+          showSettings={this.state.showSettings}
+          changeLanguage={this.changeLanguage}
+          showSettingsHandler={this.showSettingsHandler}
+          selectedLanguage={this.state.language}
+          showBackdrop={this.state.showBackdrop}
+          hideBackdrop={this.showForecastHandler}
+          languageNames={Object.keys(language).map(item => ({
+            name: language[item].name,
+            id: language[item].id
+          }))}
+          themeName={this.state.themeName}
+          themeListHandler={this.themeListHandler}
+          text={this.state.localText.settings}
+          unitListHandler={this.unitListHandler}
+          units={this.state.units}
+        />
         
 
  

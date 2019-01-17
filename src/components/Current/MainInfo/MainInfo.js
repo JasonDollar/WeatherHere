@@ -1,5 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'
 import Icon from '../../Icon/Icon'
 import Summary from '../../Summary/Summary'
 import { unitsNames } from '../../../data/unitsNames'
@@ -51,10 +51,27 @@ const MainInfo = ({
 export default MainInfo
 
 MainInfo.propTypes = {
-  currentText: PropTypes.objectOf(PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.arrayOf(PropTypes.string),
-  ])).isRequired,
+  currentText: PropTypes.shape({
+    today: PropTypes.string,
+    humidity: PropTypes.string,
+    wind: PropTypes.string,
+    precipProb: PropTypes.string,
+    precipType: PropTypes.string,
+    precipInt: PropTypes.string,
+    appTemp: PropTypes.string,
+    dewPoint: PropTypes.string,
+    pressure: PropTypes.string,
+    cloudCov: PropTypes.string,
+    visibility: PropTypes.string,
+    uvIndex: PropTypes.string,
+    sunrise: PropTypes.string,
+    sunset: PropTypes.string,
+    moonphase: PropTypes.string,
+    moon: PropTypes.arrayOf(PropTypes.string),
+    ozone: PropTypes.string,
+    windGust: PropTypes.string,
+    location: PropTypes.string,
+  }).isRequired,
   currently: PropTypes.objectOf(PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.number,

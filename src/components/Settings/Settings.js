@@ -128,7 +128,13 @@ Settings.propTypes = {
   hideBackdrop: PropTypes.func.isRequired,
   themeName: PropTypes.string.isRequired, 
   themeListHandler: PropTypes.func.isRequired,
-  text: PropTypes.object, 
+  text: PropTypes.shape({
+    changeLang: PropTypes.string,
+    changeTheme: PropTypes.string,
+    changeUnits: PropTypes.string,
+    units: PropTypes.arrayOf(PropTypes.string),
+    iconName: PropTypes.string,
+  }).isRequired, 
   unitListHandler: PropTypes.func.isRequired,
   units: PropTypes.string.isRequired,
 }

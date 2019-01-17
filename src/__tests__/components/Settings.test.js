@@ -6,8 +6,9 @@ import Settings from '../../components/Settings/Settings'
 
 configure({ adapter: new Adapter() })
 let changeLanguage; let showSettingsHandler; let selectedLanguage 
-let showBackdrop; let hideBackdrop; let languageNames; let theme 
-let themeListHandler; let text; let unitListHandler; let units; let wrapper
+let showBackdrop; let hideBackdrop; let languageNames 
+let theme; let themeListHandler; let text 
+let unitListHandler; let units; let wrapper
 beforeEach(() => {
   changeLanguage = jest.fn()
   showSettingsHandler = jest.fn()

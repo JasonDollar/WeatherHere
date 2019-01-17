@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import {DARK_URL, MAP_URL} from '../../data/url'
 import {DARK_API, MAP_API} from '../../data/api/api'
@@ -32,10 +32,13 @@ class Weather extends Component {
   componentDidUpdate(prevProps) {
     if ((prevProps.language !== this.props.language)
       || (prevProps.location !== this.props.location) 
-      || (prevProps.units !== this.props.units)) {
+      || (prevProps.units !== this.props.units)) 
+    {
+      this.setState({isLoading: true, error: ''})
       this.getWeather(this.props.location.lat, this.props.location.long, this.props.language, this.props.units)
     } 
     if (prevProps.searchValue !== this.props.searchValue && this.props.searchValue !== '') {
+      this.setState({error: '', isLoading: true}) 
       this.onNameLocationSearch(this.props.searchValue)
     }
  
@@ -89,10 +92,9 @@ class Weather extends Component {
   }
 
   getWeather = (lat, long, lang, units) => {
-    this.setState({isLoading: true, error: ''})
-    // returns all places for given location 
+    // returns all places names for given location 
     axios.post(`${MAP_URL}?latlng=${lat},${long}&key=${MAP_API}&language=${lang}`)
-      .then(resp => resp.data)
+      .then(res => res.data)
       .then(data => {
         this.searchLocationName(data)
       })
@@ -102,9 +104,9 @@ class Weather extends Component {
       method: 'HEAD',
       mode: 'no-cors',
     })
-      .then(resp => {
+      .then(res => {
         this.setState({
-        forecast: resp.data,
+        forecast: res.data,
         isLoading: false,
         error: '',
         updateTime: Date.now(),
@@ -115,11 +117,9 @@ class Weather extends Component {
   }
 
   onNameLocationSearch = (location) => {
-    // this.getWeather with reset isLoading to false
-    this.setState({error: '', isLoading: true}) 
     axios.post(`${MAP_URL}?address=${location}&key=${MAP_API}`)
-      .then(resp => {
-        return resp.data.results[0].geometry.location
+      .then(res => {
+        return res.data.results[0].geometry.location
       })
       .then(data => {
         const location = {
@@ -128,7 +128,6 @@ class Weather extends Component {
         }
         this.props.setLocationCoordsToState(location)
         localStorage.setItem('locationCoords', JSON.stringify(location))
-        // this.getWeather(data.lat, data.lng, this.props.language, this.props.units)
       })
       .catch(error => this.setState({error: error.message}))
   }
@@ -147,41 +146,41 @@ class Weather extends Component {
       component = <Spinner />
     } else {
       component = (
-        <div className={classes.container}>
-              <Current 
-                currently={this.state.forecast.currently}
-                currentText={this.props.text.current}
-                daily={this.state.forecast.daily}
-                units={this.state.forecast.flags.units}
-                dateText={this.props.text.date}
-                timezone={this.state.forecast.timezone}
-                locationShortName={this.state.locationShortName}
-                
-              />
-              <Daily 
-                daily={this.state.forecast.daily}
-                dateText={this.props.text.date}
-                timezone={this.state.forecast.timezone}
-                units={this.state.forecast.flags.units}
-              />
-              <Hourly 
-                hourly={this.state.forecast.hourly}
-                hourlyText={this.props.text.hourly}
-                timezone={this.state.forecast.timezone}
-                units={this.state.forecast.flags.units}
-              />
-              <Updated 
-                updateTime={this.state.updateTime}
-                updateText={this.props.text.update}
-              />
-              <Footer />
-            </div>
+        <Fragment>
+          <Current 
+            currently={this.state.forecast.currently}
+            currentText={this.props.text.current}
+            daily={this.state.forecast.daily}
+            units={this.state.forecast.flags.units}
+            dateText={this.props.text.date}
+            timezone={this.state.forecast.timezone}
+            locationShortName={this.state.locationShortName}
+            
+          />
+          <Daily 
+            daily={this.state.forecast.daily}
+            dateText={this.props.text.date}
+            timezone={this.state.forecast.timezone}
+            units={this.state.forecast.flags.units}
+          />
+          <Hourly 
+            hourly={this.state.forecast.hourly}
+            hourlyText={this.props.text.hourly}
+            timezone={this.state.forecast.timezone}
+            units={this.state.forecast.flags.units}
+          />
+          <Updated 
+            updateTime={this.state.updateTime}
+            updateText={this.props.text.update}
+          />
+          <Footer />
+        </Fragment>
       )
     }
     return (
-      <div className={classes.container}>
+      <main className={classes.container}>
         { component }
-      </div>
+      </main>
     );
   }
 }
