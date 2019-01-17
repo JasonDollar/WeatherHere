@@ -1,13 +1,11 @@
 import weatherData from './random'
 import languageText from './text-locale' 
+import { unitsNames } from './unitsNames'
 // import layouts from './layouts'
 
 export const appTestData = {
   weather: weatherData,
-  units: {
-    id: 'si',
-    name: 'SI',
-  },
+  units: unitsNames,
   language: 'pl',
   text: languageText,
   languageNames: [{ id: 'pl', name: 'Polski' }],
@@ -16,5 +14,10 @@ export const appTestData = {
   theme: {
     name: 'Pink',
     id: 'pink',
+  },
+  today: {
+    day: '1',
+    month: '1.1',
+    hour: '11:11',
   },
 }

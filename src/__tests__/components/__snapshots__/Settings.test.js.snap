@@ -16,12 +16,14 @@ ShallowWrapper {
     }
     selectedLanguage="pl"
     showBackdrop={true}
+    showSettings={true}
     showSettingsHandler={[MockFunction]}
     text={
       Object {
         "changeLang": "Zmień język",
         "changeTheme": "Zmień motyw",
         "changeUnits": "Zmień jednostki",
+        "iconName": "Znak wyboru (fajka)",
         "units": Array [
           "SI",
           "US",
@@ -46,7 +48,7 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "host",
+    "nodeType": "function",
     "props": Object {
       "children": Array [
         <Backdrop
@@ -55,6 +57,12 @@ ShallowWrapper {
         />,
         <div
           className="Settings"
+          style={
+            Object {
+              "opacity": "1",
+              "transform": "translateY(0)",
+            }
+          }
         >
           <div
             className="menu"
@@ -719,6 +727,10 @@ ShallowWrapper {
             </div>,
           ],
           "className": "Settings",
+          "style": Object {
+            "opacity": "1",
+            "transform": "translateY(0)",
+          },
         },
         "ref": null,
         "rendered": Array [
@@ -2338,13 +2350,13 @@ ShallowWrapper {
         "type": "div",
       },
     ],
-    "type": "div",
+    "type": Symbol(react.fragment),
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "host",
+      "nodeType": "function",
       "props": Object {
         "children": Array [
           <Backdrop
@@ -2353,6 +2365,12 @@ ShallowWrapper {
           />,
           <div
             className="Settings"
+            style={
+              Object {
+                "opacity": "1",
+                "transform": "translateY(0)",
+              }
+            }
           >
             <div
               className="menu"
@@ -3017,6 +3035,10 @@ ShallowWrapper {
               </div>,
             ],
             "className": "Settings",
+            "style": Object {
+              "opacity": "1",
+              "transform": "translateY(0)",
+            },
           },
           "ref": null,
           "rendered": Array [
@@ -4636,7 +4658,7 @@ ShallowWrapper {
           "type": "div",
         },
       ],
-      "type": "div",
+      "type": Symbol(react.fragment),
     },
   ],
   Symbol(enzyme.__options__): Object {

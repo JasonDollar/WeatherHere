@@ -1,10 +1,8 @@
 import React from 'react'
-import { shallow, configure } from 'enzyme'
-import Adapter from 'enzyme-adapter-react-16'
+import { shallow } from 'enzyme'
 import { appTestData as data } from '../../data/fixtures'
 import Settings from '../../components/Settings/Settings'
 
-configure({ adapter: new Adapter() })
 let changeLanguage; let showSettingsHandler; let selectedLanguage 
 let showBackdrop; let hideBackdrop; let languageNames 
 let theme; let themeListHandler; let text 
@@ -20,7 +18,7 @@ beforeEach(() => {
   themeListHandler = jest.fn()
   text = data.text.pl.settings
   unitListHandler = jest.fn()
-  units = data.units
+  units = data.units.si
   wrapper = shallow(
     <Settings 
       showSettings={true}

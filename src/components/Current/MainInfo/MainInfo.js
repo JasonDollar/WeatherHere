@@ -26,7 +26,10 @@ const MainInfo = ({
     </div>
     <div className={classes.timeInfo}>
       <div className={classes.date}>
-        <span className="hidden">{currentText.date}</span>
+        <span className="hidden">
+          {currentText.date}
+          {' '}
+        </span>
         {dateText.weekDay[today.day]} 
         {' '}
         {today.month}

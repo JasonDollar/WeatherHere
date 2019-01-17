@@ -8,8 +8,10 @@ ShallowWrapper {
       Object {
         "appTemp": "Temperatura odczuwalna",
         "cloudCov": "Zachmurzenie",
+        "date": "Data",
         "dewPoint": "Punkt rosy",
         "humidity": "Wilgotność",
+        "icon": "Ikona pogody",
         "location": "Nieznana lokacja",
         "moon": Array [
           "Nów",
@@ -27,6 +29,7 @@ ShallowWrapper {
         "precipProb": "Opady",
         "precipType": "Rodzaj opadu",
         "pressure": "Ciśnienie",
+        "sun": "Słońce",
         "sunrise": "Wschód słońca",
         "sunset": "Zachód słońca",
         "today": "Dziś",
@@ -422,12 +425,7 @@ ShallowWrapper {
     }
     locationShortName="Plock"
     timezone="Europe/Warsaw"
-    units={
-      Object {
-        "id": "si",
-        "name": "SI",
-      }
-    }
+    units="si"
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -448,8 +446,10 @@ ShallowWrapper {
             Object {
               "appTemp": "Temperatura odczuwalna",
               "cloudCov": "Zachmurzenie",
+              "date": "Data",
               "dewPoint": "Punkt rosy",
               "humidity": "Wilgotność",
+              "icon": "Ikona pogody",
               "location": "Nieznana lokacja",
               "moon": Array [
                 "Nów",
@@ -467,6 +467,7 @@ ShallowWrapper {
               "precipProb": "Opady",
               "precipType": "Rodzaj opadu",
               "pressure": "Ciśnienie",
+              "sun": "Słońce",
               "sunrise": "Wschód słońca",
               "sunset": "Zachód słońca",
               "today": "Dziś",
@@ -540,20 +541,17 @@ ShallowWrapper {
               "month": "1.1",
             }
           }
-          units={
-            Object {
-              "id": "si",
-              "name": "SI",
-            }
-          }
+          units="si"
         />,
         <CircleContainer
           currentText={
             Object {
               "appTemp": "Temperatura odczuwalna",
               "cloudCov": "Zachmurzenie",
+              "date": "Data",
               "dewPoint": "Punkt rosy",
               "humidity": "Wilgotność",
+              "icon": "Ikona pogody",
               "location": "Nieznana lokacja",
               "moon": Array [
                 "Nów",
@@ -571,6 +569,7 @@ ShallowWrapper {
               "precipProb": "Opady",
               "precipType": "Rodzaj opadu",
               "pressure": "Ciśnienie",
+              "sun": "Słońce",
               "sunrise": "Wschód słońca",
               "sunset": "Zachód słońca",
               "today": "Dziś",
@@ -602,20 +601,17 @@ ShallowWrapper {
               "windSpeed": 5.76,
             }
           }
-          units={
-            Object {
-              "id": "si",
-              "name": "SI",
-            }
-          }
+          units="si"
         />,
         <ListInfo
           currentText={
             Object {
               "appTemp": "Temperatura odczuwalna",
               "cloudCov": "Zachmurzenie",
+              "date": "Data",
               "dewPoint": "Punkt rosy",
               "humidity": "Wilgotność",
+              "icon": "Ikona pogody",
               "location": "Nieznana lokacja",
               "moon": Array [
                 "Nów",
@@ -633,6 +629,7 @@ ShallowWrapper {
               "precipProb": "Opady",
               "precipType": "Rodzaj opadu",
               "pressure": "Ciśnienie",
+              "sun": "Słońce",
               "sunrise": "Wschód słońca",
               "sunset": "Zachód słońca",
               "today": "Dziś",
@@ -665,12 +662,7 @@ ShallowWrapper {
             }
           }
           moonphase={0.67}
-          units={
-            Object {
-              "id": "si",
-              "name": "SI",
-            }
-          }
+          units="si"
         />,
       ],
       "className": "Current",
@@ -685,8 +677,10 @@ ShallowWrapper {
           "currentText": Object {
             "appTemp": "Temperatura odczuwalna",
             "cloudCov": "Zachmurzenie",
+            "date": "Data",
             "dewPoint": "Punkt rosy",
             "humidity": "Wilgotność",
+            "icon": "Ikona pogody",
             "location": "Nieznana lokacja",
             "moon": Array [
               "Nów",
@@ -704,6 +698,7 @@ ShallowWrapper {
             "precipProb": "Opady",
             "precipType": "Rodzaj opadu",
             "pressure": "Ciśnienie",
+            "sun": "Słońce",
             "sunrise": "Wschód słońca",
             "sunset": "Zachód słońca",
             "today": "Dziś",
@@ -768,10 +763,7 @@ ShallowWrapper {
             "hour": "01:16",
             "month": "1.1",
           },
-          "units": Object {
-            "id": "si",
-            "name": "SI",
-          },
+          "units": "si",
         },
         "ref": null,
         "rendered": null,
@@ -785,8 +777,10 @@ ShallowWrapper {
           "currentText": Object {
             "appTemp": "Temperatura odczuwalna",
             "cloudCov": "Zachmurzenie",
+            "date": "Data",
             "dewPoint": "Punkt rosy",
             "humidity": "Wilgotność",
+            "icon": "Ikona pogody",
             "location": "Nieznana lokacja",
             "moon": Array [
               "Nów",
@@ -804,6 +798,7 @@ ShallowWrapper {
             "precipProb": "Opady",
             "precipType": "Rodzaj opadu",
             "pressure": "Ciśnienie",
+            "sun": "Słońce",
             "sunrise": "Wschód słońca",
             "sunset": "Zachód słońca",
             "today": "Dziś",
@@ -832,10 +827,7 @@ ShallowWrapper {
             "windGust": 10.76,
             "windSpeed": 5.76,
           },
-          "units": Object {
-            "id": "si",
-            "name": "SI",
-          },
+          "units": "si",
         },
         "ref": null,
         "rendered": null,
@@ -849,8 +841,10 @@ ShallowWrapper {
           "currentText": Object {
             "appTemp": "Temperatura odczuwalna",
             "cloudCov": "Zachmurzenie",
+            "date": "Data",
             "dewPoint": "Punkt rosy",
             "humidity": "Wilgotność",
+            "icon": "Ikona pogody",
             "location": "Nieznana lokacja",
             "moon": Array [
               "Nów",
@@ -868,6 +862,7 @@ ShallowWrapper {
             "precipProb": "Opady",
             "precipType": "Rodzaj opadu",
             "pressure": "Ciśnienie",
+            "sun": "Słońce",
             "sunrise": "Wschód słońca",
             "sunset": "Zachód słońca",
             "today": "Dziś",
@@ -897,10 +892,7 @@ ShallowWrapper {
             "windSpeed": 5.76,
           },
           "moonphase": 0.67,
-          "units": Object {
-            "id": "si",
-            "name": "SI",
-          },
+          "units": "si",
         },
         "ref": null,
         "rendered": null,
@@ -921,8 +913,10 @@ ShallowWrapper {
               Object {
                 "appTemp": "Temperatura odczuwalna",
                 "cloudCov": "Zachmurzenie",
+                "date": "Data",
                 "dewPoint": "Punkt rosy",
                 "humidity": "Wilgotność",
+                "icon": "Ikona pogody",
                 "location": "Nieznana lokacja",
                 "moon": Array [
                   "Nów",
@@ -940,6 +934,7 @@ ShallowWrapper {
                 "precipProb": "Opady",
                 "precipType": "Rodzaj opadu",
                 "pressure": "Ciśnienie",
+                "sun": "Słońce",
                 "sunrise": "Wschód słońca",
                 "sunset": "Zachód słońca",
                 "today": "Dziś",
@@ -1013,20 +1008,17 @@ ShallowWrapper {
                 "month": "1.1",
               }
             }
-            units={
-              Object {
-                "id": "si",
-                "name": "SI",
-              }
-            }
+            units="si"
           />,
           <CircleContainer
             currentText={
               Object {
                 "appTemp": "Temperatura odczuwalna",
                 "cloudCov": "Zachmurzenie",
+                "date": "Data",
                 "dewPoint": "Punkt rosy",
                 "humidity": "Wilgotność",
+                "icon": "Ikona pogody",
                 "location": "Nieznana lokacja",
                 "moon": Array [
                   "Nów",
@@ -1044,6 +1036,7 @@ ShallowWrapper {
                 "precipProb": "Opady",
                 "precipType": "Rodzaj opadu",
                 "pressure": "Ciśnienie",
+                "sun": "Słońce",
                 "sunrise": "Wschód słońca",
                 "sunset": "Zachód słońca",
                 "today": "Dziś",
@@ -1075,20 +1068,17 @@ ShallowWrapper {
                 "windSpeed": 5.76,
               }
             }
-            units={
-              Object {
-                "id": "si",
-                "name": "SI",
-              }
-            }
+            units="si"
           />,
           <ListInfo
             currentText={
               Object {
                 "appTemp": "Temperatura odczuwalna",
                 "cloudCov": "Zachmurzenie",
+                "date": "Data",
                 "dewPoint": "Punkt rosy",
                 "humidity": "Wilgotność",
+                "icon": "Ikona pogody",
                 "location": "Nieznana lokacja",
                 "moon": Array [
                   "Nów",
@@ -1106,6 +1096,7 @@ ShallowWrapper {
                 "precipProb": "Opady",
                 "precipType": "Rodzaj opadu",
                 "pressure": "Ciśnienie",
+                "sun": "Słońce",
                 "sunrise": "Wschód słońca",
                 "sunset": "Zachód słońca",
                 "today": "Dziś",
@@ -1138,12 +1129,7 @@ ShallowWrapper {
               }
             }
             moonphase={0.67}
-            units={
-              Object {
-                "id": "si",
-                "name": "SI",
-              }
-            }
+            units="si"
           />,
         ],
         "className": "Current",
@@ -1158,8 +1144,10 @@ ShallowWrapper {
             "currentText": Object {
               "appTemp": "Temperatura odczuwalna",
               "cloudCov": "Zachmurzenie",
+              "date": "Data",
               "dewPoint": "Punkt rosy",
               "humidity": "Wilgotność",
+              "icon": "Ikona pogody",
               "location": "Nieznana lokacja",
               "moon": Array [
                 "Nów",
@@ -1177,6 +1165,7 @@ ShallowWrapper {
               "precipProb": "Opady",
               "precipType": "Rodzaj opadu",
               "pressure": "Ciśnienie",
+              "sun": "Słońce",
               "sunrise": "Wschód słońca",
               "sunset": "Zachód słońca",
               "today": "Dziś",
@@ -1241,10 +1230,7 @@ ShallowWrapper {
               "hour": "01:16",
               "month": "1.1",
             },
-            "units": Object {
-              "id": "si",
-              "name": "SI",
-            },
+            "units": "si",
           },
           "ref": null,
           "rendered": null,
@@ -1258,8 +1244,10 @@ ShallowWrapper {
             "currentText": Object {
               "appTemp": "Temperatura odczuwalna",
               "cloudCov": "Zachmurzenie",
+              "date": "Data",
               "dewPoint": "Punkt rosy",
               "humidity": "Wilgotność",
+              "icon": "Ikona pogody",
               "location": "Nieznana lokacja",
               "moon": Array [
                 "Nów",
@@ -1277,6 +1265,7 @@ ShallowWrapper {
               "precipProb": "Opady",
               "precipType": "Rodzaj opadu",
               "pressure": "Ciśnienie",
+              "sun": "Słońce",
               "sunrise": "Wschód słońca",
               "sunset": "Zachód słońca",
               "today": "Dziś",
@@ -1305,10 +1294,7 @@ ShallowWrapper {
               "windGust": 10.76,
               "windSpeed": 5.76,
             },
-            "units": Object {
-              "id": "si",
-              "name": "SI",
-            },
+            "units": "si",
           },
           "ref": null,
           "rendered": null,
@@ -1322,8 +1308,10 @@ ShallowWrapper {
             "currentText": Object {
               "appTemp": "Temperatura odczuwalna",
               "cloudCov": "Zachmurzenie",
+              "date": "Data",
               "dewPoint": "Punkt rosy",
               "humidity": "Wilgotność",
+              "icon": "Ikona pogody",
               "location": "Nieznana lokacja",
               "moon": Array [
                 "Nów",
@@ -1341,6 +1329,7 @@ ShallowWrapper {
               "precipProb": "Opady",
               "precipType": "Rodzaj opadu",
               "pressure": "Ciśnienie",
+              "sun": "Słońce",
               "sunrise": "Wschód słońca",
               "sunset": "Zachód słońca",
               "today": "Dziś",
@@ -1370,10 +1359,7 @@ ShallowWrapper {
               "windSpeed": 5.76,
             },
             "moonphase": 0.67,
-            "units": Object {
-              "id": "si",
-              "name": "SI",
-            },
+            "units": "si",
           },
           "ref": null,
           "rendered": null,
