@@ -1,5 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'
 import DataCircle from './DataCircle/DataCircle'
 import { formatNumber } from '../../data/utils'
 import { unitsNames } from '../../data/unitsNames'
@@ -23,13 +23,47 @@ const CircleContainer = ({
 export default CircleContainer
 
 CircleContainer.propTypes = {
-  currently: PropTypes.objectOf(PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.number
-  ])).isRequired,
-  currentText: PropTypes.objectOf(PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.array
-  ])).isRequired,
+  currently: PropTypes.shape({
+    apparentTemperature: PropTypes.number,
+    cloudCover: PropTypes.number,
+    dewPoint: PropTypes.number,
+    humidity: PropTypes.number,
+    icon: PropTypes.string,
+    ozone: PropTypes.number,
+    precipIntensity: PropTypes.number,
+    precipProbability: PropTypes.number,
+    pressure: PropTypes.number,
+    summary: PropTypes.string,
+    temperature: PropTypes.number,
+    time: PropTypes.number,
+    uvIndex: PropTypes.number,
+    visibility: PropTypes.number,
+    windBearing: PropTypes.number,
+    windGust: PropTypes.number,
+    windSpeed: PropTypes.number,
+  }).isRequired,
+
+  currentText: PropTypes.shape({
+    today: PropTypes.string,
+    humidity: PropTypes.string,
+    wind: PropTypes.string,
+    precipProb: PropTypes.string,
+    precipType: PropTypes.string,
+    precipInt: PropTypes.string,
+    appTemp: PropTypes.string,
+    dewPoint: PropTypes.string,
+    pressure: PropTypes.string,
+    cloudCov: PropTypes.string,
+    visibility: PropTypes.string,
+    uvIndex: PropTypes.string,
+    sunrise: PropTypes.string,
+    sunset: PropTypes.string,
+    moonphase: PropTypes.string,
+    moon: PropTypes.arrayOf(PropTypes.string),
+    ozone: PropTypes.string,
+    windGust: PropTypes.string,
+    location: PropTypes.string,
+    icon: PropTypes.string,
+  }).isRequired,
   units: PropTypes.string.isRequired,
 }

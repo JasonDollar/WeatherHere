@@ -32,23 +32,8 @@ const DataCircle = ({
         </span>
       </div>
       
-      {/*additionalData !== null ? <div className={classes.arrow} style={style2} /> : null*/}
     </div>
   ) 
-  // return (
-  //   <ResponsiveContainer heigh="100%" width="100%">
-  //     <PieChart height={300} width={300}>
-  //       <Pie
-  //         data={wholeData}
-  //         cx="50%"
-  //         cy="50%"
-  //         outerRadius={80} 
-  //         fill="#8884d8"
-  //       />
-        
-  //     </PieChart>
-  //   </ResponsiveContainer>
-  // )
 }
 
 export default DataCircle

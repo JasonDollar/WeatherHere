@@ -80,6 +80,13 @@ code {
   margin: 0 auto;
 }
 
+.hidden
+{position:absolute;
+left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;}
 
 
 /* textarea,

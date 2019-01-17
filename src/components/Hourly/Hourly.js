@@ -1,5 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'
 import { 
   ResponsiveContainer, LineChart, XAxis, Line, YAxis, CartesianGrid, Tooltip, Legend,
 } from 'recharts'
@@ -86,10 +86,16 @@ Hourly.propTypes = {
         uvIndex: PropTypes.number,
         visibility: PropTypes.number,
         ozone: PropTypes.number,
-      })
-    )
+      }),
+    ),
   }).isRequired,
-  hourlyText: PropTypes.objectOf(PropTypes.string).isRequired,
+  hourlyText: PropTypes.shape({
+    hour: PropTypes.string,
+    precipProb: PropTypes.string,
+    precipProbShort: PropTypes.string,
+    temperature: PropTypes.string,
+    temperatureShort: PropTypes.string,
+  }).isRequired,
   timezone: PropTypes.string.isRequired,
   units: PropTypes.string.isRequired,
 }

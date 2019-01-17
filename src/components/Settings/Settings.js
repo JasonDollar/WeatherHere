@@ -122,7 +122,10 @@ export default Settings
 Settings.propTypes = {
   showSettings: PropTypes.bool.isRequired,
   changeLanguage: PropTypes.func.isRequired,
-  languageNames: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.string)),
+  languageNames: PropTypes.arrayOf(PropTypes.shape({
+    name: PropTypes.string,
+    id: PropTypes.string,
+  })),
   selectedLanguage: PropTypes.string.isRequired,
   showBackdrop: PropTypes.bool.isRequired, 
   hideBackdrop: PropTypes.func.isRequired,
@@ -134,6 +137,7 @@ Settings.propTypes = {
     changeUnits: PropTypes.string,
     units: PropTypes.arrayOf(PropTypes.string),
     iconName: PropTypes.string,
+    icon: PropTypes.string,
   }).isRequired, 
   unitListHandler: PropTypes.func.isRequired,
   units: PropTypes.string.isRequired,

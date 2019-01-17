@@ -1,5 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'
 import { formatNumber, formatMoonPhase } from '../../../data/utils'
 import { unitsNames } from '../../../data/unitsNames'
 import classes from './ListInfo.module.scss'
@@ -75,14 +75,51 @@ const ListInfo = ({
 export default ListInfo
 
 ListInfo.propTypes = {
-  currentText: PropTypes.objectOf(PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.arrayOf(PropTypes.string),
-  ])).isRequired,
-  currently: PropTypes.objectOf(PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.number,
-  ])).isRequired,
+  currentText: PropTypes.shape({
+    today: PropTypes.string,
+    date: PropTypes.string,
+    humidity: PropTypes.string,
+    wind: PropTypes.string,
+    precipProb: PropTypes.string,
+    precipType: PropTypes.string,
+    precipInt: PropTypes.string,
+    appTemp: PropTypes.string,
+    dewPoint: PropTypes.string,
+    pressure: PropTypes.string,
+    cloudCov: PropTypes.string,
+    visibility: PropTypes.string,
+    uvIndex: PropTypes.string,
+    sun: PropTypes.string,
+    sunrise: PropTypes.string,
+    sunset: PropTypes.string,
+    moonphase: PropTypes.string,
+    moon: PropTypes.arrayOf(PropTypes.string),
+    ozone: PropTypes.string,
+    windGust: PropTypes.string,
+    location: PropTypes.string,
+    icon: PropTypes.string,
+  }).isRequired,
+
+  currently: PropTypes.shape({
+    apparentTemperature: PropTypes.number,
+    cloudCover: PropTypes.number,
+    dewPoint: PropTypes.number,
+    humidity: PropTypes.number,
+    icon: PropTypes.string,
+    ozone: PropTypes.number,
+    precipIntensity: PropTypes.number,
+    precipProbability: PropTypes.number,
+    pressure: PropTypes.number,
+    summary: PropTypes.string,
+    temperature: PropTypes.number,
+    time: PropTypes.number,
+    uvIndex: PropTypes.number,
+    visibility: PropTypes.number,
+    windBearing: PropTypes.number,
+    windGust: PropTypes.number,
+    windSpeed: PropTypes.number,
+  }).isRequired,
+
   moonphase: PropTypes.number.isRequired,
   units: PropTypes.string.isRequired,
 }
