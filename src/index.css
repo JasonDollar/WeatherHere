@@ -42,7 +42,7 @@ code {
   --color-box-shadow: #222;
   --color-border: #aaa;
   --color-border-transparent: #aaaaaa55;
-  --color-border-transparenst: #e2773e;
+  --color-border-transparenst: #e61c1c;
 
   --color-grey-1: #888;
   --color-grey-2: #bbb;
@@ -53,6 +53,20 @@ code {
   /* --screen-height: 100vh; */
   --circle-dimension: 19rem;
   --circle-dimension-small: 15rem;
+
+  --s-right-color1: yellow;
+  --s-left-color1: green;
+  --s-right-color2: yellow;
+  --s-left-color2: green;
+  --s-right-color3: yellow;
+  --s-left-color3: green;
+
+  --s-right-rotate1: 3deg;
+  --s-left-rotate1: 0deg;
+  --s-right-rotate2: 3deg;
+  --s-left-rotate2: 0deg;
+  --s-right-rotate3: 3deg;
+  --s-left-rotate3: 0deg;
 }
 /* 
 0% = #00

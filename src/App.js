@@ -95,7 +95,11 @@ class App extends Component {
   }
 
   setLayout = (themeName = 'pink') => {
+    
     let theme = layouts[themeName]
+    if (theme === undefined) {
+      theme = 'Pink'
+    }
     
     document.documentElement.style.setProperty('--color-primary', theme.primary)
     document.documentElement.style.setProperty('--color-primary-offset', theme.primaryOffset)
@@ -114,6 +118,7 @@ class App extends Component {
     document.documentElement.style.setProperty('--color-grey-1', theme.grey1)
     document.documentElement.style.setProperty('--color-grey-2', theme.grey2)
     document.documentElement.style.setProperty('--color-grey-3', theme.grey3)
+    document.documentElement.style.setProperty('--color-grey-4', theme.grey4)
     document.documentElement.style.setProperty('--color-grey-graph', theme.greyGraph)
   }
 

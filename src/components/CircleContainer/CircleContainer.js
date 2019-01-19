@@ -12,10 +12,10 @@ const CircleContainer = ({
 }) => (
   <div className={classes.circleContainer}>
     <ul>
-      <li><DataCircle type={currentText.humidity} unit="%" data={formatNumber(currently.humidity * 100)} /></li>
-      <li><DataCircle type={currentText.wind} unit={unitsNames[units].wind} data={formatNumber(currently.windSpeed)} additionalData={currently.windBearing} /></li>
-      <li><DataCircle type={currentText.precipProb} unit="%" data={formatNumber(currently.precipProbability * 100)} /></li>
-      <li><DataCircle type={currentText.cloudCov} unit="%" data={formatNumber(currently.cloudCover * 100)} /></li>
+      <li><DataCircle type={currentText.humidity} unit="%" data={formatNumber(currently.humidity * 100)} text={currentText} /></li>
+      <li><DataCircle type={currentText.wind} unit={unitsNames[units].wind} data={formatNumber(currently.windSpeed)} additionalData={currently.windBearing} text={currentText} /></li>
+      <li><DataCircle type={currentText.precipProb} unit="%" data={formatNumber(currently.precipProbability * 100)} text={currentText} /></li>
+      <li><DataCircle type={currentText.cloudCov} unit="%" data={formatNumber(currently.cloudCover * 100)} text={currentText} /></li>
     </ul>
   </div>
 )
