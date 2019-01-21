@@ -27,7 +27,6 @@ class App extends Component {
     units: 'si',
   }
   componentDidMount() {
-    this.setLayout()
     this.updateWindowDimensions();
     window.addEventListener('resize', this.updateWindowDimensions);
     this.parseDataFromLocalStorage()
@@ -48,14 +47,7 @@ class App extends Component {
     document.documentElement.style.setProperty('--screen-height', `${window.innerHeight}px`)
   }
 
-  setLocationCoordsToState = (location) => {
-    this.setState({
-      location,
-      activeMenuBarClass: 'forecast',
-      showSearch: false,
-      showBackdrop: false,
-    })
-  } 
+
 
   parseDataFromLocalStorage = () => {
     const themeName = localStorage.getItem('theme')
@@ -65,8 +57,8 @@ class App extends Component {
       this.setState({ themeName })
       this.setLayout(themeName)
     } else {
-      this.setLayout()
-      this.setState({ themeName: 'pink' })
+      this.setLayout('sky')
+      this.setState({ themeName: 'sky' })
     }
     if (units) {
 
@@ -94,12 +86,12 @@ class App extends Component {
     localStorage.setItem('units', units)
   }
 
-  setLayout = (themeName = 'pink') => {
+  setLayout = (themeName) => {
     
     let theme = layouts[themeName]
-    if (theme === undefined) {
-      theme = 'Pink'
-    }
+    // if (theme === undefined) {
+    //   theme = 'sky'
+    // }
     
     document.documentElement.style.setProperty('--color-primary', theme.primary)
     document.documentElement.style.setProperty('--color-primary-offset', theme.primaryOffset)
@@ -122,6 +114,14 @@ class App extends Component {
     document.documentElement.style.setProperty('--color-grey-graph', theme.greyGraph)
   }
 
+  setLocationCoordsToState = (location) => {
+    this.setState({
+      location,
+      activeMenuBarClass: 'forecast',
+      showSearch: false,
+      showBackdrop: false,
+    })
+  } 
 
   getUserLocation = () => {
     navigator.geolocation.getCurrentPosition(position => {
@@ -134,6 +134,7 @@ class App extends Component {
       this.setLocationCoordsToState(location)
     })
   }
+
 
   showSettingsHandler = () => {
     let backdropVisibility
@@ -174,7 +175,7 @@ class App extends Component {
   }
 
 
-  changeLanguage = (e) => {
+  changeLanguageHandler = (e) => {
     const value = e.target.value
     if (value === 'pl') {
       this.setState({
@@ -251,7 +252,7 @@ class App extends Component {
         
         <Settings 
           showSettings={this.state.showSettings}
-          changeLanguage={this.changeLanguage}
+          changeLanguage={this.changeLanguageHandler}
           showSettingsHandler={this.showSettingsHandler}
           selectedLanguage={this.state.language}
           showBackdrop={this.state.showBackdrop}

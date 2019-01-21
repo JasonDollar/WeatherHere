@@ -18,11 +18,11 @@ class Weather extends Component {
   
   state = {
     forecast: '',
-    geoForbidden: false,
     locationShortName: '',
     error: '',
     isLoading: true,
     updateTime: null,
+    address: '',
   }
 
   componentDidMount() {
@@ -34,7 +34,7 @@ class Weather extends Component {
       || (prevProps.location !== this.props.location) 
       || (prevProps.units !== this.props.units)) 
     {
-      this.setState({isLoading: true, error: ''})
+      this.setState({error: '', isLoading: true})
       this.getWeather(this.props.location.lat, this.props.location.long, this.props.language, this.props.units)
     } 
     if (prevProps.searchValue !== this.props.searchValue && this.props.searchValue !== '') {
@@ -72,20 +72,20 @@ class Weather extends Component {
     let longName = ''
 
     const placeNames = data.results
-    console.log(placeNames[0].formatted_address)
+    
+    console.log(placeNames[0])
 
-    for(let i = 0; i < placeNames.length; i++) {
-      for(let j = 0; j < placeNames[i].address_components.length; j++) {
-        if (placeNames[i].address_components[j].types.includes("locality")) {
-          shortName = placeNames[i].address_components[j].short_name
-          longName = placeNames[i].address_components[j].long_name
+    for(let i = 0; i < placeNames[0].address_components.length; i++) {
+        if (placeNames[0].address_components[i].types.includes("locality")) {
+          shortName = placeNames[0].address_components[i].short_name
+          longName = placeNames[0].address_components[i].long_name
           break
-        }
       }
     }
     if (shortName) {
       localStorage.setItem('locationName', shortName)
       this.setState({
+        address: placeNames[0].formatted_address,
         locationShortName: shortName.length < 5 ? longName : shortName,
       }) 
     }
@@ -172,6 +172,7 @@ class Weather extends Component {
           <Updated 
             updateTime={this.state.updateTime}
             updateText={this.props.text.update}
+            address={this.state.address}
           />
           <Footer />
         </Fragment>
@@ -195,10 +196,7 @@ Weather.propTypes = {
       PropTypes.arrayOf(PropTypes.string),
     ])),
     hourly: PropTypes.string,
-    id: PropTypes.oneOfType([
-      PropTypes.string,
-      PropTypes.object,
-    ]),
+    id: PropTypes.string,
     layout: PropTypes.string,
     name: PropTypes.string,
     settings: PropTypes.objectOf(PropTypes.oneOfType([
@@ -215,4 +213,5 @@ Weather.propTypes = {
   ]),
   setLocationCoordsToState: PropTypes.func.isRequired,
   units: PropTypes.string.isRequired,
+
 }

@@ -41,11 +41,7 @@ const DataCircle = ({
     colorCSSLeft = '--s-left-color3'
     elementName = 'cloudCov'
   }
-  const circleData = parseInt(data)
-  console.table(data, rotateCSSVarRight,
-    rotateCSSVarLeft,
-    colorCSSRight,
-    colorCSSLeft)
+
   // change of css variables to imitate conic-gradient
   if (data <= 0) {
     document.documentElement.style.setProperty(colorCSSRight, colorGrey)
@@ -110,35 +106,13 @@ DataCircle.propTypes = {
   data: PropTypes.number.isRequired,
   unit: PropTypes.string.isRequired, 
   additionalData: PropTypes.number,
+  text: PropTypes.objectOf(PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.arrayOf(PropTypes.string),
+  ])).isRequired,
 }
 
 DataCircle.defaultProps = {
   additionalData: null,
 }
 
-// if (datat <= 0) {
-//   document.documentElement.style.setProperty('--s-right-color', colorGrey)
-//   document.documentElement.style.setProperty('--s-right-rotate', '0deg')
-//   document.documentElement.style.setProperty('--s-left-color', colorGrey)
-//   document.documentElement.style.setProperty('--s-left-rotate', '0deg')
-// } else if (datat < 50) {
-//   document.documentElement.style.setProperty('--s-right-color', colorGrey)
-//   document.documentElement.style.setProperty('--s-right-rotate', `${parseInt(datat * 3.6)}deg`)
-//   document.documentElement.style.setProperty('--s-left-color', colorGrey)
-//   document.documentElement.style.setProperty('--s-left-rotate', '0deg')
-// } else if (datat === 50) {
-//   document.documentElement.style.setProperty('--s-right-rotate', '0deg')
-//   document.documentElement.style.setProperty('--s-right-color', graphColorSecondary)
-//   document.documentElement.style.setProperty('--s-left-rotate', '0deg')
-//   document.documentElement.style.setProperty('--s-left-color', colorGrey)
-// } else if (datat > 50) {
-//   document.documentElement.style.setProperty('--s-right-rotate', '0deg')
-//   document.documentElement.style.setProperty('--s-right-color', graphColorSecondary)
-//   document.documentElement.style.setProperty('--s-left-rotate', `${parseInt(datat * 3.6) - 180}deg`)
-//   document.documentElement.style.setProperty('--s-left-color', colorGrey)
-// } else if (data >= 100) {
-//   document.documentElement.style.setProperty('--s-right-rotate', '0deg')
-//   document.documentElement.style.setProperty('--s-right-color', graphColorSecondary)
-//   document.documentElement.style.setProperty('--s-left-rotate', '0deg')
-//   document.documentElement.style.setProperty('--s-left-color', graphColorSecondary)
-// }
