@@ -7,7 +7,6 @@ import CircleContainer from '../CircleContainer/CircleContainer'
 
 import { getTimeFromSeconds } from '../../data/utils'
 
-import classes from './Current.module.scss'
 
 const Current = ({
   currently, daily, currentText, dateText, timezone, locationShortName, units,
@@ -20,7 +19,7 @@ const Current = ({
   }
 
   return (
-    <div className={classes.Current}>
+    <React.Fragment>
       <MainInfo 
         locationShortName={locationShortName}
         currentText={currentText}
@@ -46,7 +45,7 @@ const Current = ({
         units={units}
       />
       
-    </div>
+    </React.Fragment>
   )
 }
 

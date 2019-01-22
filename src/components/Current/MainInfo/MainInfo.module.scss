@@ -32,7 +32,6 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  // margin: 0 auto;
   flex: 1;
   @media only screen and (min-width: 420px) {
     flex-wrap: nowrap;
@@ -51,7 +50,7 @@
       font-size: var(--big-head-font-size);
       flex: 0 1 40%;
     }
-    @media only screen and (min-width: 576px) {
+    @media only screen and (min-width: 577px) {
       flex: 0 1 40%;
     }
   }

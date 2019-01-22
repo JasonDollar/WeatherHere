@@ -5,10 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* min-height: 100vh; */
   font-size: var(--normal-text-font-size);
   background: var(--color-back);
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 code {
@@ -42,7 +41,7 @@ code {
   --color-box-shadow: #222;
   --color-border: #aaa;
   --color-border-transparent: #aaaaaa55;
-  --color-border-transparenst: #f8468a;
+  --color-test: #86263b;
 
   --color-grey-1: #888;
   --color-grey-2: #bbb;

@@ -1,7 +1,7 @@
 .Settings {
   position: fixed;
   top: 0;
-  bottom: 5.4rem;
+  bottom: 5.5rem;
   left: 0;
   right: 0;
   z-index: 200;
@@ -11,9 +11,9 @@
   overflow-y: scroll;
   padding-bottom: 3rem;
   transition: .2s all;
-  @media only screen and (min-width: 576px) {
-    top: calc(var(--screen-height) / 2 - 270px);
-    bottom: calc(var(--screen-height) / 2 - 270px);
+  @media only screen and (min-width: 577px) {
+    top: calc(var(--screen-height) / 2 - 280px);
+    bottom: calc(var(--screen-height) / 2 - 280px);
     left: calc(var(--screen-width) / 2 - 190px);
     right: calc(var(--screen-width) / 2 - 190px);
     overflow: auto;
@@ -28,8 +28,6 @@
   & p {
     margin: 1rem 2rem;
   }
-
-
 }
 
 .form {
@@ -52,15 +50,12 @@
       fill: var(--color-primary);
     }
   }
-  // & .radio:checked ~ & .radioButton {
-  //   opacity: 1;
-  // }
+
   & .label {
     position: relative;
-    font-size: calc(var(--big-text-font-size) - 4px);
+    font-size: var(--medium-text-font-size);
     padding: 1rem 2rem;
     border-top: 1px solid var(--color-border);
-    // background-color: white;
     
     &:last-child {
       border-bottom: 1px solid var(--color-border);
@@ -70,13 +65,6 @@
     background-color: var(--color-grey-2);
   }
   
-  // & input {
-  //   
-  // }
+
 }
 
-// .menuUnits::after {
-//   content: "";
-
-//   height: 3rem;
-// }

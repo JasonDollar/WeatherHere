@@ -17,3 +17,7 @@ Updated.propTypes = {
   updateText: PropTypes.string.isRequired,
   address: PropTypes.string,
 }
+
+Updated.defaultProps = {
+  address: '',
+}

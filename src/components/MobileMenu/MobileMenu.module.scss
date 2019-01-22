@@ -1,12 +1,10 @@
 .MobileMenu {
   position: fixed;
-  // top: calc(var(--screen-height) - 54px);
   height: 5.4rem;
   bottom: 0;
   left: 0;
   right: 0;
-  // width: var(--screen-width);
-  
+  overflow: hidden;
   z-index: 250;
   
   display: flex;
@@ -36,6 +34,7 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    outline-color: var(--color-border-transparent);
 
     & span {
       font-size: var(--small-text-font-size);
@@ -51,7 +50,6 @@
     }
 
     &.active {
-      // background-color: var(--color-primary);
       color: var(--color-mobile-menu);
       & svg {
         fill: var(--color-mobile-menu);

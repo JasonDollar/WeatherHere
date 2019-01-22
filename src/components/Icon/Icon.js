@@ -17,3 +17,7 @@ Icon.propTypes = {
   viewBox: PropTypes.string.isRequired,
   title: PropTypes.string,
 }
+
+Icon.defaultProps = {
+  title: 'icon',
+}

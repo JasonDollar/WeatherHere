@@ -36,7 +36,7 @@ beforeEach(() => {
     />,
   )
 })
-
+// added Footer 
 describe('Settings component tests', () => {
   test('Renders Setting components correctly', () => {
     

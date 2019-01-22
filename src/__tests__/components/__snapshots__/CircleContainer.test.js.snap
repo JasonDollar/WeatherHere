@@ -81,6 +81,41 @@ ShallowWrapper {
           <DataCircle
             additionalData={null}
             data={94}
+            text={
+              Object {
+                "appTemp": "Temperatura odczuwalna",
+                "cloudCov": "Zachmurzenie",
+                "date": "Data",
+                "dewPoint": "Punkt rosy",
+                "humidity": "Wilgotność",
+                "icon": "Ikona pogody",
+                "location": "Nieznana lokacja",
+                "moon": Array [
+                  "Nów",
+                  "Wschodzący sierp",
+                  "Pierwsza kwadra",
+                  "Wschodzący księżyc",
+                  "Pełnia",
+                  "Ubywający księżyc",
+                  "Trzecia kwadra",
+                  "Ubywający sierp",
+                ],
+                "moonphase": "Faza księżyca",
+                "ozone": "Ozon",
+                "precipInt": "Intensywność opadu",
+                "precipProb": "Opady",
+                "precipType": "Rodzaj opadu",
+                "pressure": "Ciśnienie",
+                "sun": "Słońce",
+                "sunrise": "Wschód słońca",
+                "sunset": "Zachód słońca",
+                "today": "Dziś",
+                "uvIndex": "Indeks UV",
+                "visibility": "Widoczność",
+                "wind": "Wiatr",
+                "windGust": "Wiatr w porywach",
+              }
+            }
             type="Wilgotność"
             unit="%"
           />
@@ -89,6 +124,41 @@ ShallowWrapper {
           <DataCircle
             additionalData={99}
             data={5.7}
+            text={
+              Object {
+                "appTemp": "Temperatura odczuwalna",
+                "cloudCov": "Zachmurzenie",
+                "date": "Data",
+                "dewPoint": "Punkt rosy",
+                "humidity": "Wilgotność",
+                "icon": "Ikona pogody",
+                "location": "Nieznana lokacja",
+                "moon": Array [
+                  "Nów",
+                  "Wschodzący sierp",
+                  "Pierwsza kwadra",
+                  "Wschodzący księżyc",
+                  "Pełnia",
+                  "Ubywający księżyc",
+                  "Trzecia kwadra",
+                  "Ubywający sierp",
+                ],
+                "moonphase": "Faza księżyca",
+                "ozone": "Ozon",
+                "precipInt": "Intensywność opadu",
+                "precipProb": "Opady",
+                "precipType": "Rodzaj opadu",
+                "pressure": "Ciśnienie",
+                "sun": "Słońce",
+                "sunrise": "Wschód słońca",
+                "sunset": "Zachód słońca",
+                "today": "Dziś",
+                "uvIndex": "Indeks UV",
+                "visibility": "Widoczność",
+                "wind": "Wiatr",
+                "windGust": "Wiatr w porywach",
+              }
+            }
             type="Wiatr"
             unit="m/s"
           />
@@ -97,6 +167,41 @@ ShallowWrapper {
           <DataCircle
             additionalData={null}
             data={1}
+            text={
+              Object {
+                "appTemp": "Temperatura odczuwalna",
+                "cloudCov": "Zachmurzenie",
+                "date": "Data",
+                "dewPoint": "Punkt rosy",
+                "humidity": "Wilgotność",
+                "icon": "Ikona pogody",
+                "location": "Nieznana lokacja",
+                "moon": Array [
+                  "Nów",
+                  "Wschodzący sierp",
+                  "Pierwsza kwadra",
+                  "Wschodzący księżyc",
+                  "Pełnia",
+                  "Ubywający księżyc",
+                  "Trzecia kwadra",
+                  "Ubywający sierp",
+                ],
+                "moonphase": "Faza księżyca",
+                "ozone": "Ozon",
+                "precipInt": "Intensywność opadu",
+                "precipProb": "Opady",
+                "precipType": "Rodzaj opadu",
+                "pressure": "Ciśnienie",
+                "sun": "Słońce",
+                "sunrise": "Wschód słońca",
+                "sunset": "Zachód słońca",
+                "today": "Dziś",
+                "uvIndex": "Indeks UV",
+                "visibility": "Widoczność",
+                "wind": "Wiatr",
+                "windGust": "Wiatr w porywach",
+              }
+            }
             type="Opady"
             unit="%"
           />
@@ -105,6 +210,41 @@ ShallowWrapper {
           <DataCircle
             additionalData={null}
             data={92}
+            text={
+              Object {
+                "appTemp": "Temperatura odczuwalna",
+                "cloudCov": "Zachmurzenie",
+                "date": "Data",
+                "dewPoint": "Punkt rosy",
+                "humidity": "Wilgotność",
+                "icon": "Ikona pogody",
+                "location": "Nieznana lokacja",
+                "moon": Array [
+                  "Nów",
+                  "Wschodzący sierp",
+                  "Pierwsza kwadra",
+                  "Wschodzący księżyc",
+                  "Pełnia",
+                  "Ubywający księżyc",
+                  "Trzecia kwadra",
+                  "Ubywający sierp",
+                ],
+                "moonphase": "Faza księżyca",
+                "ozone": "Ozon",
+                "precipInt": "Intensywność opadu",
+                "precipProb": "Opady",
+                "precipType": "Rodzaj opadu",
+                "pressure": "Ciśnienie",
+                "sun": "Słońce",
+                "sunrise": "Wschód słońca",
+                "sunset": "Zachód słońca",
+                "today": "Dziś",
+                "uvIndex": "Indeks UV",
+                "visibility": "Widoczność",
+                "wind": "Wiatr",
+                "windGust": "Wiatr w porywach",
+              }
+            }
             type="Zachmurzenie"
             unit="%"
           />
@@ -123,6 +263,41 @@ ShallowWrapper {
             <DataCircle
               additionalData={null}
               data={94}
+              text={
+                Object {
+                  "appTemp": "Temperatura odczuwalna",
+                  "cloudCov": "Zachmurzenie",
+                  "date": "Data",
+                  "dewPoint": "Punkt rosy",
+                  "humidity": "Wilgotność",
+                  "icon": "Ikona pogody",
+                  "location": "Nieznana lokacja",
+                  "moon": Array [
+                    "Nów",
+                    "Wschodzący sierp",
+                    "Pierwsza kwadra",
+                    "Wschodzący księżyc",
+                    "Pełnia",
+                    "Ubywający księżyc",
+                    "Trzecia kwadra",
+                    "Ubywający sierp",
+                  ],
+                  "moonphase": "Faza księżyca",
+                  "ozone": "Ozon",
+                  "precipInt": "Intensywność opadu",
+                  "precipProb": "Opady",
+                  "precipType": "Rodzaj opadu",
+                  "pressure": "Ciśnienie",
+                  "sun": "Słońce",
+                  "sunrise": "Wschód słońca",
+                  "sunset": "Zachód słońca",
+                  "today": "Dziś",
+                  "uvIndex": "Indeks UV",
+                  "visibility": "Widoczność",
+                  "wind": "Wiatr",
+                  "windGust": "Wiatr w porywach",
+                }
+              }
               type="Wilgotność"
               unit="%"
             />
@@ -131,6 +306,41 @@ ShallowWrapper {
             <DataCircle
               additionalData={99}
               data={5.7}
+              text={
+                Object {
+                  "appTemp": "Temperatura odczuwalna",
+                  "cloudCov": "Zachmurzenie",
+                  "date": "Data",
+                  "dewPoint": "Punkt rosy",
+                  "humidity": "Wilgotność",
+                  "icon": "Ikona pogody",
+                  "location": "Nieznana lokacja",
+                  "moon": Array [
+                    "Nów",
+                    "Wschodzący sierp",
+                    "Pierwsza kwadra",
+                    "Wschodzący księżyc",
+                    "Pełnia",
+                    "Ubywający księżyc",
+                    "Trzecia kwadra",
+                    "Ubywający sierp",
+                  ],
+                  "moonphase": "Faza księżyca",
+                  "ozone": "Ozon",
+                  "precipInt": "Intensywność opadu",
+                  "precipProb": "Opady",
+                  "precipType": "Rodzaj opadu",
+                  "pressure": "Ciśnienie",
+                  "sun": "Słońce",
+                  "sunrise": "Wschód słońca",
+                  "sunset": "Zachód słońca",
+                  "today": "Dziś",
+                  "uvIndex": "Indeks UV",
+                  "visibility": "Widoczność",
+                  "wind": "Wiatr",
+                  "windGust": "Wiatr w porywach",
+                }
+              }
               type="Wiatr"
               unit="m/s"
             />
@@ -139,6 +349,41 @@ ShallowWrapper {
             <DataCircle
               additionalData={null}
               data={1}
+              text={
+                Object {
+                  "appTemp": "Temperatura odczuwalna",
+                  "cloudCov": "Zachmurzenie",
+                  "date": "Data",
+                  "dewPoint": "Punkt rosy",
+                  "humidity": "Wilgotność",
+                  "icon": "Ikona pogody",
+                  "location": "Nieznana lokacja",
+                  "moon": Array [
+                    "Nów",
+                    "Wschodzący sierp",
+                    "Pierwsza kwadra",
+                    "Wschodzący księżyc",
+                    "Pełnia",
+                    "Ubywający księżyc",
+                    "Trzecia kwadra",
+                    "Ubywający sierp",
+                  ],
+                  "moonphase": "Faza księżyca",
+                  "ozone": "Ozon",
+                  "precipInt": "Intensywność opadu",
+                  "precipProb": "Opady",
+                  "precipType": "Rodzaj opadu",
+                  "pressure": "Ciśnienie",
+                  "sun": "Słońce",
+                  "sunrise": "Wschód słońca",
+                  "sunset": "Zachód słońca",
+                  "today": "Dziś",
+                  "uvIndex": "Indeks UV",
+                  "visibility": "Widoczność",
+                  "wind": "Wiatr",
+                  "windGust": "Wiatr w porywach",
+                }
+              }
               type="Opady"
               unit="%"
             />
@@ -147,6 +392,41 @@ ShallowWrapper {
             <DataCircle
               additionalData={null}
               data={92}
+              text={
+                Object {
+                  "appTemp": "Temperatura odczuwalna",
+                  "cloudCov": "Zachmurzenie",
+                  "date": "Data",
+                  "dewPoint": "Punkt rosy",
+                  "humidity": "Wilgotność",
+                  "icon": "Ikona pogody",
+                  "location": "Nieznana lokacja",
+                  "moon": Array [
+                    "Nów",
+                    "Wschodzący sierp",
+                    "Pierwsza kwadra",
+                    "Wschodzący księżyc",
+                    "Pełnia",
+                    "Ubywający księżyc",
+                    "Trzecia kwadra",
+                    "Ubywający sierp",
+                  ],
+                  "moonphase": "Faza księżyca",
+                  "ozone": "Ozon",
+                  "precipInt": "Intensywność opadu",
+                  "precipProb": "Opady",
+                  "precipType": "Rodzaj opadu",
+                  "pressure": "Ciśnienie",
+                  "sun": "Słońce",
+                  "sunrise": "Wschód słońca",
+                  "sunset": "Zachód słońca",
+                  "today": "Dziś",
+                  "uvIndex": "Indeks UV",
+                  "visibility": "Widoczność",
+                  "wind": "Wiatr",
+                  "windGust": "Wiatr w porywach",
+                }
+              }
               type="Zachmurzenie"
               unit="%"
             />
@@ -163,6 +443,41 @@ ShallowWrapper {
             "children": <DataCircle
               additionalData={null}
               data={94}
+              text={
+                Object {
+                  "appTemp": "Temperatura odczuwalna",
+                  "cloudCov": "Zachmurzenie",
+                  "date": "Data",
+                  "dewPoint": "Punkt rosy",
+                  "humidity": "Wilgotność",
+                  "icon": "Ikona pogody",
+                  "location": "Nieznana lokacja",
+                  "moon": Array [
+                    "Nów",
+                    "Wschodzący sierp",
+                    "Pierwsza kwadra",
+                    "Wschodzący księżyc",
+                    "Pełnia",
+                    "Ubywający księżyc",
+                    "Trzecia kwadra",
+                    "Ubywający sierp",
+                  ],
+                  "moonphase": "Faza księżyca",
+                  "ozone": "Ozon",
+                  "precipInt": "Intensywność opadu",
+                  "precipProb": "Opady",
+                  "precipType": "Rodzaj opadu",
+                  "pressure": "Ciśnienie",
+                  "sun": "Słońce",
+                  "sunrise": "Wschód słońca",
+                  "sunset": "Zachód słońca",
+                  "today": "Dziś",
+                  "uvIndex": "Indeks UV",
+                  "visibility": "Widoczność",
+                  "wind": "Wiatr",
+                  "windGust": "Wiatr w porywach",
+                }
+              }
               type="Wilgotność"
               unit="%"
             />,
@@ -175,6 +490,39 @@ ShallowWrapper {
             "props": Object {
               "additionalData": null,
               "data": 94,
+              "text": Object {
+                "appTemp": "Temperatura odczuwalna",
+                "cloudCov": "Zachmurzenie",
+                "date": "Data",
+                "dewPoint": "Punkt rosy",
+                "humidity": "Wilgotność",
+                "icon": "Ikona pogody",
+                "location": "Nieznana lokacja",
+                "moon": Array [
+                  "Nów",
+                  "Wschodzący sierp",
+                  "Pierwsza kwadra",
+                  "Wschodzący księżyc",
+                  "Pełnia",
+                  "Ubywający księżyc",
+                  "Trzecia kwadra",
+                  "Ubywający sierp",
+                ],
+                "moonphase": "Faza księżyca",
+                "ozone": "Ozon",
+                "precipInt": "Intensywność opadu",
+                "precipProb": "Opady",
+                "precipType": "Rodzaj opadu",
+                "pressure": "Ciśnienie",
+                "sun": "Słońce",
+                "sunrise": "Wschód słońca",
+                "sunset": "Zachód słońca",
+                "today": "Dziś",
+                "uvIndex": "Indeks UV",
+                "visibility": "Widoczność",
+                "wind": "Wiatr",
+                "windGust": "Wiatr w porywach",
+              },
               "type": "Wilgotność",
               "unit": "%",
             },
@@ -192,6 +540,41 @@ ShallowWrapper {
             "children": <DataCircle
               additionalData={99}
               data={5.7}
+              text={
+                Object {
+                  "appTemp": "Temperatura odczuwalna",
+                  "cloudCov": "Zachmurzenie",
+                  "date": "Data",
+                  "dewPoint": "Punkt rosy",
+                  "humidity": "Wilgotność",
+                  "icon": "Ikona pogody",
+                  "location": "Nieznana lokacja",
+                  "moon": Array [
+                    "Nów",
+                    "Wschodzący sierp",
+                    "Pierwsza kwadra",
+                    "Wschodzący księżyc",
+                    "Pełnia",
+                    "Ubywający księżyc",
+                    "Trzecia kwadra",
+                    "Ubywający sierp",
+                  ],
+                  "moonphase": "Faza księżyca",
+                  "ozone": "Ozon",
+                  "precipInt": "Intensywność opadu",
+                  "precipProb": "Opady",
+                  "precipType": "Rodzaj opadu",
+                  "pressure": "Ciśnienie",
+                  "sun": "Słońce",
+                  "sunrise": "Wschód słońca",
+                  "sunset": "Zachód słońca",
+                  "today": "Dziś",
+                  "uvIndex": "Indeks UV",
+                  "visibility": "Widoczność",
+                  "wind": "Wiatr",
+                  "windGust": "Wiatr w porywach",
+                }
+              }
               type="Wiatr"
               unit="m/s"
             />,
@@ -204,6 +587,39 @@ ShallowWrapper {
             "props": Object {
               "additionalData": 99,
               "data": 5.7,
+              "text": Object {
+                "appTemp": "Temperatura odczuwalna",
+                "cloudCov": "Zachmurzenie",
+                "date": "Data",
+                "dewPoint": "Punkt rosy",
+                "humidity": "Wilgotność",
+                "icon": "Ikona pogody",
+                "location": "Nieznana lokacja",
+                "moon": Array [
+                  "Nów",
+                  "Wschodzący sierp",
+                  "Pierwsza kwadra",
+                  "Wschodzący księżyc",
+                  "Pełnia",
+                  "Ubywający księżyc",
+                  "Trzecia kwadra",
+                  "Ubywający sierp",
+                ],
+                "moonphase": "Faza księżyca",
+                "ozone": "Ozon",
+                "precipInt": "Intensywność opadu",
+                "precipProb": "Opady",
+                "precipType": "Rodzaj opadu",
+                "pressure": "Ciśnienie",
+                "sun": "Słońce",
+                "sunrise": "Wschód słońca",
+                "sunset": "Zachód słońca",
+                "today": "Dziś",
+                "uvIndex": "Indeks UV",
+                "visibility": "Widoczność",
+                "wind": "Wiatr",
+                "windGust": "Wiatr w porywach",
+              },
               "type": "Wiatr",
               "unit": "m/s",
             },
@@ -221,6 +637,41 @@ ShallowWrapper {
             "children": <DataCircle
               additionalData={null}
               data={1}
+              text={
+                Object {
+                  "appTemp": "Temperatura odczuwalna",
+                  "cloudCov": "Zachmurzenie",
+                  "date": "Data",
+                  "dewPoint": "Punkt rosy",
+                  "humidity": "Wilgotność",
+                  "icon": "Ikona pogody",
+                  "location": "Nieznana lokacja",
+                  "moon": Array [
+                    "Nów",
+                    "Wschodzący sierp",
+                    "Pierwsza kwadra",
+                    "Wschodzący księżyc",
+                    "Pełnia",
+                    "Ubywający księżyc",
+                    "Trzecia kwadra",
+                    "Ubywający sierp",
+                  ],
+                  "moonphase": "Faza księżyca",
+                  "ozone": "Ozon",
+                  "precipInt": "Intensywność opadu",
+                  "precipProb": "Opady",
+                  "precipType": "Rodzaj opadu",
+                  "pressure": "Ciśnienie",
+                  "sun": "Słońce",
+                  "sunrise": "Wschód słońca",
+                  "sunset": "Zachód słońca",
+                  "today": "Dziś",
+                  "uvIndex": "Indeks UV",
+                  "visibility": "Widoczność",
+                  "wind": "Wiatr",
+                  "windGust": "Wiatr w porywach",
+                }
+              }
               type="Opady"
               unit="%"
             />,
@@ -233,6 +684,39 @@ ShallowWrapper {
             "props": Object {
               "additionalData": null,
               "data": 1,
+              "text": Object {
+                "appTemp": "Temperatura odczuwalna",
+                "cloudCov": "Zachmurzenie",
+                "date": "Data",
+                "dewPoint": "Punkt rosy",
+                "humidity": "Wilgotność",
+                "icon": "Ikona pogody",
+                "location": "Nieznana lokacja",
+                "moon": Array [
+                  "Nów",
+                  "Wschodzący sierp",
+                  "Pierwsza kwadra",
+                  "Wschodzący księżyc",
+                  "Pełnia",
+                  "Ubywający księżyc",
+                  "Trzecia kwadra",
+                  "Ubywający sierp",
+                ],
+                "moonphase": "Faza księżyca",
+                "ozone": "Ozon",
+                "precipInt": "Intensywność opadu",
+                "precipProb": "Opady",
+                "precipType": "Rodzaj opadu",
+                "pressure": "Ciśnienie",
+                "sun": "Słońce",
+                "sunrise": "Wschód słońca",
+                "sunset": "Zachód słońca",
+                "today": "Dziś",
+                "uvIndex": "Indeks UV",
+                "visibility": "Widoczność",
+                "wind": "Wiatr",
+                "windGust": "Wiatr w porywach",
+              },
               "type": "Opady",
               "unit": "%",
             },
@@ -250,6 +734,41 @@ ShallowWrapper {
             "children": <DataCircle
               additionalData={null}
               data={92}
+              text={
+                Object {
+                  "appTemp": "Temperatura odczuwalna",
+                  "cloudCov": "Zachmurzenie",
+                  "date": "Data",
+                  "dewPoint": "Punkt rosy",
+                  "humidity": "Wilgotność",
+                  "icon": "Ikona pogody",
+                  "location": "Nieznana lokacja",
+                  "moon": Array [
+                    "Nów",
+                    "Wschodzący sierp",
+                    "Pierwsza kwadra",
+                    "Wschodzący księżyc",
+                    "Pełnia",
+                    "Ubywający księżyc",
+                    "Trzecia kwadra",
+                    "Ubywający sierp",
+                  ],
+                  "moonphase": "Faza księżyca",
+                  "ozone": "Ozon",
+                  "precipInt": "Intensywność opadu",
+                  "precipProb": "Opady",
+                  "precipType": "Rodzaj opadu",
+                  "pressure": "Ciśnienie",
+                  "sun": "Słońce",
+                  "sunrise": "Wschód słońca",
+                  "sunset": "Zachód słońca",
+                  "today": "Dziś",
+                  "uvIndex": "Indeks UV",
+                  "visibility": "Widoczność",
+                  "wind": "Wiatr",
+                  "windGust": "Wiatr w porywach",
+                }
+              }
               type="Zachmurzenie"
               unit="%"
             />,
@@ -262,6 +781,39 @@ ShallowWrapper {
             "props": Object {
               "additionalData": null,
               "data": 92,
+              "text": Object {
+                "appTemp": "Temperatura odczuwalna",
+                "cloudCov": "Zachmurzenie",
+                "date": "Data",
+                "dewPoint": "Punkt rosy",
+                "humidity": "Wilgotność",
+                "icon": "Ikona pogody",
+                "location": "Nieznana lokacja",
+                "moon": Array [
+                  "Nów",
+                  "Wschodzący sierp",
+                  "Pierwsza kwadra",
+                  "Wschodzący księżyc",
+                  "Pełnia",
+                  "Ubywający księżyc",
+                  "Trzecia kwadra",
+                  "Ubywający sierp",
+                ],
+                "moonphase": "Faza księżyca",
+                "ozone": "Ozon",
+                "precipInt": "Intensywność opadu",
+                "precipProb": "Opady",
+                "precipType": "Rodzaj opadu",
+                "pressure": "Ciśnienie",
+                "sun": "Słońce",
+                "sunrise": "Wschód słońca",
+                "sunset": "Zachód słońca",
+                "today": "Dziś",
+                "uvIndex": "Indeks UV",
+                "visibility": "Widoczność",
+                "wind": "Wiatr",
+                "windGust": "Wiatr w porywach",
+              },
               "type": "Zachmurzenie",
               "unit": "%",
             },
@@ -287,6 +839,41 @@ ShallowWrapper {
             <DataCircle
               additionalData={null}
               data={94}
+              text={
+                Object {
+                  "appTemp": "Temperatura odczuwalna",
+                  "cloudCov": "Zachmurzenie",
+                  "date": "Data",
+                  "dewPoint": "Punkt rosy",
+                  "humidity": "Wilgotność",
+                  "icon": "Ikona pogody",
+                  "location": "Nieznana lokacja",
+                  "moon": Array [
+                    "Nów",
+                    "Wschodzący sierp",
+                    "Pierwsza kwadra",
+                    "Wschodzący księżyc",
+                    "Pełnia",
+                    "Ubywający księżyc",
+                    "Trzecia kwadra",
+                    "Ubywający sierp",
+                  ],
+                  "moonphase": "Faza księżyca",
+                  "ozone": "Ozon",
+                  "precipInt": "Intensywność opadu",
+                  "precipProb": "Opady",
+                  "precipType": "Rodzaj opadu",
+                  "pressure": "Ciśnienie",
+                  "sun": "Słońce",
+                  "sunrise": "Wschód słońca",
+                  "sunset": "Zachód słońca",
+                  "today": "Dziś",
+                  "uvIndex": "Indeks UV",
+                  "visibility": "Widoczność",
+                  "wind": "Wiatr",
+                  "windGust": "Wiatr w porywach",
+                }
+              }
               type="Wilgotność"
               unit="%"
             />
@@ -295,6 +882,41 @@ ShallowWrapper {
             <DataCircle
               additionalData={99}
               data={5.7}
+              text={
+                Object {
+                  "appTemp": "Temperatura odczuwalna",
+                  "cloudCov": "Zachmurzenie",
+                  "date": "Data",
+                  "dewPoint": "Punkt rosy",
+                  "humidity": "Wilgotność",
+                  "icon": "Ikona pogody",
+                  "location": "Nieznana lokacja",
+                  "moon": Array [
+                    "Nów",
+                    "Wschodzący sierp",
+                    "Pierwsza kwadra",
+                    "Wschodzący księżyc",
+                    "Pełnia",
+                    "Ubywający księżyc",
+                    "Trzecia kwadra",
+                    "Ubywający sierp",
+                  ],
+                  "moonphase": "Faza księżyca",
+                  "ozone": "Ozon",
+                  "precipInt": "Intensywność opadu",
+                  "precipProb": "Opady",
+                  "precipType": "Rodzaj opadu",
+                  "pressure": "Ciśnienie",
+                  "sun": "Słońce",
+                  "sunrise": "Wschód słońca",
+                  "sunset": "Zachód słońca",
+                  "today": "Dziś",
+                  "uvIndex": "Indeks UV",
+                  "visibility": "Widoczność",
+                  "wind": "Wiatr",
+                  "windGust": "Wiatr w porywach",
+                }
+              }
               type="Wiatr"
               unit="m/s"
             />
@@ -303,6 +925,41 @@ ShallowWrapper {
             <DataCircle
               additionalData={null}
               data={1}
+              text={
+                Object {
+                  "appTemp": "Temperatura odczuwalna",
+                  "cloudCov": "Zachmurzenie",
+                  "date": "Data",
+                  "dewPoint": "Punkt rosy",
+                  "humidity": "Wilgotność",
+                  "icon": "Ikona pogody",
+                  "location": "Nieznana lokacja",
+                  "moon": Array [
+                    "Nów",
+                    "Wschodzący sierp",
+                    "Pierwsza kwadra",
+                    "Wschodzący księżyc",
+                    "Pełnia",
+                    "Ubywający księżyc",
+                    "Trzecia kwadra",
+                    "Ubywający sierp",
+                  ],
+                  "moonphase": "Faza księżyca",
+                  "ozone": "Ozon",
+                  "precipInt": "Intensywność opadu",
+                  "precipProb": "Opady",
+                  "precipType": "Rodzaj opadu",
+                  "pressure": "Ciśnienie",
+                  "sun": "Słońce",
+                  "sunrise": "Wschód słońca",
+                  "sunset": "Zachód słońca",
+                  "today": "Dziś",
+                  "uvIndex": "Indeks UV",
+                  "visibility": "Widoczność",
+                  "wind": "Wiatr",
+                  "windGust": "Wiatr w porywach",
+                }
+              }
               type="Opady"
               unit="%"
             />
@@ -311,6 +968,41 @@ ShallowWrapper {
             <DataCircle
               additionalData={null}
               data={92}
+              text={
+                Object {
+                  "appTemp": "Temperatura odczuwalna",
+                  "cloudCov": "Zachmurzenie",
+                  "date": "Data",
+                  "dewPoint": "Punkt rosy",
+                  "humidity": "Wilgotność",
+                  "icon": "Ikona pogody",
+                  "location": "Nieznana lokacja",
+                  "moon": Array [
+                    "Nów",
+                    "Wschodzący sierp",
+                    "Pierwsza kwadra",
+                    "Wschodzący księżyc",
+                    "Pełnia",
+                    "Ubywający księżyc",
+                    "Trzecia kwadra",
+                    "Ubywający sierp",
+                  ],
+                  "moonphase": "Faza księżyca",
+                  "ozone": "Ozon",
+                  "precipInt": "Intensywność opadu",
+                  "precipProb": "Opady",
+                  "precipType": "Rodzaj opadu",
+                  "pressure": "Ciśnienie",
+                  "sun": "Słońce",
+                  "sunrise": "Wschód słońca",
+                  "sunset": "Zachód słońca",
+                  "today": "Dziś",
+                  "uvIndex": "Indeks UV",
+                  "visibility": "Widoczność",
+                  "wind": "Wiatr",
+                  "windGust": "Wiatr w porywach",
+                }
+              }
               type="Zachmurzenie"
               unit="%"
             />
@@ -329,6 +1021,41 @@ ShallowWrapper {
               <DataCircle
                 additionalData={null}
                 data={94}
+                text={
+                  Object {
+                    "appTemp": "Temperatura odczuwalna",
+                    "cloudCov": "Zachmurzenie",
+                    "date": "Data",
+                    "dewPoint": "Punkt rosy",
+                    "humidity": "Wilgotność",
+                    "icon": "Ikona pogody",
+                    "location": "Nieznana lokacja",
+                    "moon": Array [
+                      "Nów",
+                      "Wschodzący sierp",
+                      "Pierwsza kwadra",
+                      "Wschodzący księżyc",
+                      "Pełnia",
+                      "Ubywający księżyc",
+                      "Trzecia kwadra",
+                      "Ubywający sierp",
+                    ],
+                    "moonphase": "Faza księżyca",
+                    "ozone": "Ozon",
+                    "precipInt": "Intensywność opadu",
+                    "precipProb": "Opady",
+                    "precipType": "Rodzaj opadu",
+                    "pressure": "Ciśnienie",
+                    "sun": "Słońce",
+                    "sunrise": "Wschód słońca",
+                    "sunset": "Zachód słońca",
+                    "today": "Dziś",
+                    "uvIndex": "Indeks UV",
+                    "visibility": "Widoczność",
+                    "wind": "Wiatr",
+                    "windGust": "Wiatr w porywach",
+                  }
+                }
                 type="Wilgotność"
                 unit="%"
               />
@@ -337,6 +1064,41 @@ ShallowWrapper {
               <DataCircle
                 additionalData={99}
                 data={5.7}
+                text={
+                  Object {
+                    "appTemp": "Temperatura odczuwalna",
+                    "cloudCov": "Zachmurzenie",
+                    "date": "Data",
+                    "dewPoint": "Punkt rosy",
+                    "humidity": "Wilgotność",
+                    "icon": "Ikona pogody",
+                    "location": "Nieznana lokacja",
+                    "moon": Array [
+                      "Nów",
+                      "Wschodzący sierp",
+                      "Pierwsza kwadra",
+                      "Wschodzący księżyc",
+                      "Pełnia",
+                      "Ubywający księżyc",
+                      "Trzecia kwadra",
+                      "Ubywający sierp",
+                    ],
+                    "moonphase": "Faza księżyca",
+                    "ozone": "Ozon",
+                    "precipInt": "Intensywność opadu",
+                    "precipProb": "Opady",
+                    "precipType": "Rodzaj opadu",
+                    "pressure": "Ciśnienie",
+                    "sun": "Słońce",
+                    "sunrise": "Wschód słońca",
+                    "sunset": "Zachód słońca",
+                    "today": "Dziś",
+                    "uvIndex": "Indeks UV",
+                    "visibility": "Widoczność",
+                    "wind": "Wiatr",
+                    "windGust": "Wiatr w porywach",
+                  }
+                }
                 type="Wiatr"
                 unit="m/s"
               />
@@ -345,6 +1107,41 @@ ShallowWrapper {
               <DataCircle
                 additionalData={null}
                 data={1}
+                text={
+                  Object {
+                    "appTemp": "Temperatura odczuwalna",
+                    "cloudCov": "Zachmurzenie",
+                    "date": "Data",
+                    "dewPoint": "Punkt rosy",
+                    "humidity": "Wilgotność",
+                    "icon": "Ikona pogody",
+                    "location": "Nieznana lokacja",
+                    "moon": Array [
+                      "Nów",
+                      "Wschodzący sierp",
+                      "Pierwsza kwadra",
+                      "Wschodzący księżyc",
+                      "Pełnia",
+                      "Ubywający księżyc",
+                      "Trzecia kwadra",
+                      "Ubywający sierp",
+                    ],
+                    "moonphase": "Faza księżyca",
+                    "ozone": "Ozon",
+                    "precipInt": "Intensywność opadu",
+                    "precipProb": "Opady",
+                    "precipType": "Rodzaj opadu",
+                    "pressure": "Ciśnienie",
+                    "sun": "Słońce",
+                    "sunrise": "Wschód słońca",
+                    "sunset": "Zachód słońca",
+                    "today": "Dziś",
+                    "uvIndex": "Indeks UV",
+                    "visibility": "Widoczność",
+                    "wind": "Wiatr",
+                    "windGust": "Wiatr w porywach",
+                  }
+                }
                 type="Opady"
                 unit="%"
               />
@@ -353,6 +1150,41 @@ ShallowWrapper {
               <DataCircle
                 additionalData={null}
                 data={92}
+                text={
+                  Object {
+                    "appTemp": "Temperatura odczuwalna",
+                    "cloudCov": "Zachmurzenie",
+                    "date": "Data",
+                    "dewPoint": "Punkt rosy",
+                    "humidity": "Wilgotność",
+                    "icon": "Ikona pogody",
+                    "location": "Nieznana lokacja",
+                    "moon": Array [
+                      "Nów",
+                      "Wschodzący sierp",
+                      "Pierwsza kwadra",
+                      "Wschodzący księżyc",
+                      "Pełnia",
+                      "Ubywający księżyc",
+                      "Trzecia kwadra",
+                      "Ubywający sierp",
+                    ],
+                    "moonphase": "Faza księżyca",
+                    "ozone": "Ozon",
+                    "precipInt": "Intensywność opadu",
+                    "precipProb": "Opady",
+                    "precipType": "Rodzaj opadu",
+                    "pressure": "Ciśnienie",
+                    "sun": "Słońce",
+                    "sunrise": "Wschód słońca",
+                    "sunset": "Zachód słońca",
+                    "today": "Dziś",
+                    "uvIndex": "Indeks UV",
+                    "visibility": "Widoczność",
+                    "wind": "Wiatr",
+                    "windGust": "Wiatr w porywach",
+                  }
+                }
                 type="Zachmurzenie"
                 unit="%"
               />
@@ -369,6 +1201,41 @@ ShallowWrapper {
               "children": <DataCircle
                 additionalData={null}
                 data={94}
+                text={
+                  Object {
+                    "appTemp": "Temperatura odczuwalna",
+                    "cloudCov": "Zachmurzenie",
+                    "date": "Data",
+                    "dewPoint": "Punkt rosy",
+                    "humidity": "Wilgotność",
+                    "icon": "Ikona pogody",
+                    "location": "Nieznana lokacja",
+                    "moon": Array [
+                      "Nów",
+                      "Wschodzący sierp",
+                      "Pierwsza kwadra",
+                      "Wschodzący księżyc",
+                      "Pełnia",
+                      "Ubywający księżyc",
+                      "Trzecia kwadra",
+                      "Ubywający sierp",
+                    ],
+                    "moonphase": "Faza księżyca",
+                    "ozone": "Ozon",
+                    "precipInt": "Intensywność opadu",
+                    "precipProb": "Opady",
+                    "precipType": "Rodzaj opadu",
+                    "pressure": "Ciśnienie",
+                    "sun": "Słońce",
+                    "sunrise": "Wschód słońca",
+                    "sunset": "Zachód słońca",
+                    "today": "Dziś",
+                    "uvIndex": "Indeks UV",
+                    "visibility": "Widoczność",
+                    "wind": "Wiatr",
+                    "windGust": "Wiatr w porywach",
+                  }
+                }
                 type="Wilgotność"
                 unit="%"
               />,
@@ -381,6 +1248,39 @@ ShallowWrapper {
               "props": Object {
                 "additionalData": null,
                 "data": 94,
+                "text": Object {
+                  "appTemp": "Temperatura odczuwalna",
+                  "cloudCov": "Zachmurzenie",
+                  "date": "Data",
+                  "dewPoint": "Punkt rosy",
+                  "humidity": "Wilgotność",
+                  "icon": "Ikona pogody",
+                  "location": "Nieznana lokacja",
+                  "moon": Array [
+                    "Nów",
+                    "Wschodzący sierp",
+                    "Pierwsza kwadra",
+                    "Wschodzący księżyc",
+                    "Pełnia",
+                    "Ubywający księżyc",
+                    "Trzecia kwadra",
+                    "Ubywający sierp",
+                  ],
+                  "moonphase": "Faza księżyca",
+                  "ozone": "Ozon",
+                  "precipInt": "Intensywność opadu",
+                  "precipProb": "Opady",
+                  "precipType": "Rodzaj opadu",
+                  "pressure": "Ciśnienie",
+                  "sun": "Słońce",
+                  "sunrise": "Wschód słońca",
+                  "sunset": "Zachód słońca",
+                  "today": "Dziś",
+                  "uvIndex": "Indeks UV",
+                  "visibility": "Widoczność",
+                  "wind": "Wiatr",
+                  "windGust": "Wiatr w porywach",
+                },
                 "type": "Wilgotność",
                 "unit": "%",
               },
@@ -398,6 +1298,41 @@ ShallowWrapper {
               "children": <DataCircle
                 additionalData={99}
                 data={5.7}
+                text={
+                  Object {
+                    "appTemp": "Temperatura odczuwalna",
+                    "cloudCov": "Zachmurzenie",
+                    "date": "Data",
+                    "dewPoint": "Punkt rosy",
+                    "humidity": "Wilgotność",
+                    "icon": "Ikona pogody",
+                    "location": "Nieznana lokacja",
+                    "moon": Array [
+                      "Nów",
+                      "Wschodzący sierp",
+                      "Pierwsza kwadra",
+                      "Wschodzący księżyc",
+                      "Pełnia",
+                      "Ubywający księżyc",
+                      "Trzecia kwadra",
+                      "Ubywający sierp",
+                    ],
+                    "moonphase": "Faza księżyca",
+                    "ozone": "Ozon",
+                    "precipInt": "Intensywność opadu",
+                    "precipProb": "Opady",
+                    "precipType": "Rodzaj opadu",
+                    "pressure": "Ciśnienie",
+                    "sun": "Słońce",
+                    "sunrise": "Wschód słońca",
+                    "sunset": "Zachód słońca",
+                    "today": "Dziś",
+                    "uvIndex": "Indeks UV",
+                    "visibility": "Widoczność",
+                    "wind": "Wiatr",
+                    "windGust": "Wiatr w porywach",
+                  }
+                }
                 type="Wiatr"
                 unit="m/s"
               />,
@@ -410,6 +1345,39 @@ ShallowWrapper {
               "props": Object {
                 "additionalData": 99,
                 "data": 5.7,
+                "text": Object {
+                  "appTemp": "Temperatura odczuwalna",
+                  "cloudCov": "Zachmurzenie",
+                  "date": "Data",
+                  "dewPoint": "Punkt rosy",
+                  "humidity": "Wilgotność",
+                  "icon": "Ikona pogody",
+                  "location": "Nieznana lokacja",
+                  "moon": Array [
+                    "Nów",
+                    "Wschodzący sierp",
+                    "Pierwsza kwadra",
+                    "Wschodzący księżyc",
+                    "Pełnia",
+                    "Ubywający księżyc",
+                    "Trzecia kwadra",
+                    "Ubywający sierp",
+                  ],
+                  "moonphase": "Faza księżyca",
+                  "ozone": "Ozon",
+                  "precipInt": "Intensywność opadu",
+                  "precipProb": "Opady",
+                  "precipType": "Rodzaj opadu",
+                  "pressure": "Ciśnienie",
+                  "sun": "Słońce",
+                  "sunrise": "Wschód słońca",
+                  "sunset": "Zachód słońca",
+                  "today": "Dziś",
+                  "uvIndex": "Indeks UV",
+                  "visibility": "Widoczność",
+                  "wind": "Wiatr",
+                  "windGust": "Wiatr w porywach",
+                },
                 "type": "Wiatr",
                 "unit": "m/s",
               },
@@ -427,6 +1395,41 @@ ShallowWrapper {
               "children": <DataCircle
                 additionalData={null}
                 data={1}
+                text={
+                  Object {
+                    "appTemp": "Temperatura odczuwalna",
+                    "cloudCov": "Zachmurzenie",
+                    "date": "Data",
+                    "dewPoint": "Punkt rosy",
+                    "humidity": "Wilgotność",
+                    "icon": "Ikona pogody",
+                    "location": "Nieznana lokacja",
+                    "moon": Array [
+                      "Nów",
+                      "Wschodzący sierp",
+                      "Pierwsza kwadra",
+                      "Wschodzący księżyc",
+                      "Pełnia",
+                      "Ubywający księżyc",
+                      "Trzecia kwadra",
+                      "Ubywający sierp",
+                    ],
+                    "moonphase": "Faza księżyca",
+                    "ozone": "Ozon",
+                    "precipInt": "Intensywność opadu",
+                    "precipProb": "Opady",
+                    "precipType": "Rodzaj opadu",
+                    "pressure": "Ciśnienie",
+                    "sun": "Słońce",
+                    "sunrise": "Wschód słońca",
+                    "sunset": "Zachód słońca",
+                    "today": "Dziś",
+                    "uvIndex": "Indeks UV",
+                    "visibility": "Widoczność",
+                    "wind": "Wiatr",
+                    "windGust": "Wiatr w porywach",
+                  }
+                }
                 type="Opady"
                 unit="%"
               />,
@@ -439,6 +1442,39 @@ ShallowWrapper {
               "props": Object {
                 "additionalData": null,
                 "data": 1,
+                "text": Object {
+                  "appTemp": "Temperatura odczuwalna",
+                  "cloudCov": "Zachmurzenie",
+                  "date": "Data",
+                  "dewPoint": "Punkt rosy",
+                  "humidity": "Wilgotność",
+                  "icon": "Ikona pogody",
+                  "location": "Nieznana lokacja",
+                  "moon": Array [
+                    "Nów",
+                    "Wschodzący sierp",
+                    "Pierwsza kwadra",
+                    "Wschodzący księżyc",
+                    "Pełnia",
+                    "Ubywający księżyc",
+                    "Trzecia kwadra",
+                    "Ubywający sierp",
+                  ],
+                  "moonphase": "Faza księżyca",
+                  "ozone": "Ozon",
+                  "precipInt": "Intensywność opadu",
+                  "precipProb": "Opady",
+                  "precipType": "Rodzaj opadu",
+                  "pressure": "Ciśnienie",
+                  "sun": "Słońce",
+                  "sunrise": "Wschód słońca",
+                  "sunset": "Zachód słońca",
+                  "today": "Dziś",
+                  "uvIndex": "Indeks UV",
+                  "visibility": "Widoczność",
+                  "wind": "Wiatr",
+                  "windGust": "Wiatr w porywach",
+                },
                 "type": "Opady",
                 "unit": "%",
               },
@@ -456,6 +1492,41 @@ ShallowWrapper {
               "children": <DataCircle
                 additionalData={null}
                 data={92}
+                text={
+                  Object {
+                    "appTemp": "Temperatura odczuwalna",
+                    "cloudCov": "Zachmurzenie",
+                    "date": "Data",
+                    "dewPoint": "Punkt rosy",
+                    "humidity": "Wilgotność",
+                    "icon": "Ikona pogody",
+                    "location": "Nieznana lokacja",
+                    "moon": Array [
+                      "Nów",
+                      "Wschodzący sierp",
+                      "Pierwsza kwadra",
+                      "Wschodzący księżyc",
+                      "Pełnia",
+                      "Ubywający księżyc",
+                      "Trzecia kwadra",
+                      "Ubywający sierp",
+                    ],
+                    "moonphase": "Faza księżyca",
+                    "ozone": "Ozon",
+                    "precipInt": "Intensywność opadu",
+                    "precipProb": "Opady",
+                    "precipType": "Rodzaj opadu",
+                    "pressure": "Ciśnienie",
+                    "sun": "Słońce",
+                    "sunrise": "Wschód słońca",
+                    "sunset": "Zachód słońca",
+                    "today": "Dziś",
+                    "uvIndex": "Indeks UV",
+                    "visibility": "Widoczność",
+                    "wind": "Wiatr",
+                    "windGust": "Wiatr w porywach",
+                  }
+                }
                 type="Zachmurzenie"
                 unit="%"
               />,
@@ -468,6 +1539,39 @@ ShallowWrapper {
               "props": Object {
                 "additionalData": null,
                 "data": 92,
+                "text": Object {
+                  "appTemp": "Temperatura odczuwalna",
+                  "cloudCov": "Zachmurzenie",
+                  "date": "Data",
+                  "dewPoint": "Punkt rosy",
+                  "humidity": "Wilgotność",
+                  "icon": "Ikona pogody",
+                  "location": "Nieznana lokacja",
+                  "moon": Array [
+                    "Nów",
+                    "Wschodzący sierp",
+                    "Pierwsza kwadra",
+                    "Wschodzący księżyc",
+                    "Pełnia",
+                    "Ubywający księżyc",
+                    "Trzecia kwadra",
+                    "Ubywający sierp",
+                  ],
+                  "moonphase": "Faza księżyca",
+                  "ozone": "Ozon",
+                  "precipInt": "Intensywność opadu",
+                  "precipProb": "Opady",
+                  "precipType": "Rodzaj opadu",
+                  "pressure": "Ciśnienie",
+                  "sun": "Słońce",
+                  "sunrise": "Wschód słońca",
+                  "sunset": "Zachód słońca",
+                  "today": "Dziś",
+                  "uvIndex": "Indeks UV",
+                  "visibility": "Widoczność",
+                  "wind": "Wiatr",
+                  "windGust": "Wiatr w porywach",
+                },
                 "type": "Zachmurzenie",
                 "unit": "%",
               },

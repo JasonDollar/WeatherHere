@@ -75,10 +75,12 @@ ShallowWrapper {
             >
               <label
                 className="label active"
+                htmlFor="pl"
               >
                 <input
                   checked={true}
                   className="radio"
+                  id="pl"
                   name="language"
                   onChange={[MockFunction]}
                   type="radio"
@@ -94,6 +96,7 @@ ShallowWrapper {
                 >
                   <Icon
                     icon="checkmark"
+                    title="icon"
                     viewBox="0 0 50 50"
                   />
                 </span>
@@ -112,10 +115,12 @@ ShallowWrapper {
             >
               <label
                 className="label"
+                htmlFor="pink"
               >
                 <input
                   checked={false}
                   className="radio"
+                  id="pink"
                   name="theme"
                   onChange={[MockFunction]}
                   type="radio"
@@ -131,6 +136,7 @@ ShallowWrapper {
                 >
                   <Icon
                     icon="checkmark"
+                    title="icon"
                     viewBox="0 0 50 50"
                   />
                 </span>
@@ -138,10 +144,12 @@ ShallowWrapper {
               </label>
               <label
                 className="label"
+                htmlFor="pinkDark"
               >
                 <input
                   checked={false}
                   className="radio"
+                  id="pinkDark"
                   name="theme"
                   onChange={[MockFunction]}
                   type="radio"
@@ -157,6 +165,7 @@ ShallowWrapper {
                 >
                   <Icon
                     icon="checkmark"
+                    title="icon"
                     viewBox="0 0 50 50"
                   />
                 </span>
@@ -164,10 +173,12 @@ ShallowWrapper {
               </label>
               <label
                 className="label"
+                htmlFor="pumpkin"
               >
                 <input
                   checked={false}
                   className="radio"
+                  id="pumpkin"
                   name="theme"
                   onChange={[MockFunction]}
                   type="radio"
@@ -183,6 +194,7 @@ ShallowWrapper {
                 >
                   <Icon
                     icon="checkmark"
+                    title="icon"
                     viewBox="0 0 50 50"
                   />
                 </span>
@@ -190,10 +202,12 @@ ShallowWrapper {
               </label>
               <label
                 className="label"
+                htmlFor="evening"
               >
                 <input
                   checked={false}
                   className="radio"
+                  id="evening"
                   name="theme"
                   onChange={[MockFunction]}
                   type="radio"
@@ -209,6 +223,7 @@ ShallowWrapper {
                 >
                   <Icon
                     icon="checkmark"
+                    title="icon"
                     viewBox="0 0 50 50"
                   />
                 </span>
@@ -216,10 +231,12 @@ ShallowWrapper {
               </label>
               <label
                 className="label"
+                htmlFor="sky"
               >
                 <input
                   checked={false}
                   className="radio"
+                  id="sky"
                   name="theme"
                   onChange={[MockFunction]}
                   type="radio"
@@ -235,6 +252,7 @@ ShallowWrapper {
                 >
                   <Icon
                     icon="checkmark"
+                    title="icon"
                     viewBox="0 0 50 50"
                   />
                 </span>
@@ -242,10 +260,12 @@ ShallowWrapper {
               </label>
               <label
                 className="label"
+                htmlFor="harvey"
               >
                 <input
                   checked={false}
                   className="radio"
+                  id="harvey"
                   name="theme"
                   onChange={[MockFunction]}
                   type="radio"
@@ -261,10 +281,98 @@ ShallowWrapper {
                 >
                   <Icon
                     icon="checkmark"
+                    title="icon"
                     viewBox="0 0 50 50"
                   />
                 </span>
                 Harvey
+              </label>
+              <label
+                className="label"
+                htmlFor="spring"
+              >
+                <input
+                  checked={false}
+                  className="radio"
+                  id="spring"
+                  name="theme"
+                  onChange={[MockFunction]}
+                  type="radio"
+                  value="spring"
+                />
+                <span
+                  className="radioButton"
+                  style={
+                    Object {
+                      "opacity": 0,
+                    }
+                  }
+                >
+                  <Icon
+                    icon="checkmark"
+                    title="icon"
+                    viewBox="0 0 50 50"
+                  />
+                </span>
+                Spring
+              </label>
+              <label
+                className="label"
+                htmlFor="lime"
+              >
+                <input
+                  checked={false}
+                  className="radio"
+                  id="lime"
+                  name="theme"
+                  onChange={[MockFunction]}
+                  type="radio"
+                  value="lime"
+                />
+                <span
+                  className="radioButton"
+                  style={
+                    Object {
+                      "opacity": 0,
+                    }
+                  }
+                >
+                  <Icon
+                    icon="checkmark"
+                    title="icon"
+                    viewBox="0 0 50 50"
+                  />
+                </span>
+                Lime Dark
+              </label>
+              <label
+                className="label"
+                htmlFor="vampire"
+              >
+                <input
+                  checked={false}
+                  className="radio"
+                  id="vampire"
+                  name="theme"
+                  onChange={[MockFunction]}
+                  type="radio"
+                  value="vampire"
+                />
+                <span
+                  className="radioButton"
+                  style={
+                    Object {
+                      "opacity": 0,
+                    }
+                  }
+                >
+                  <Icon
+                    icon="checkmark"
+                    title="icon"
+                    viewBox="0 0 50 50"
+                  />
+                </span>
+                Vampire Dark
               </label>
             </form>
           </div>
@@ -279,10 +387,12 @@ ShallowWrapper {
             >
               <label
                 className="label active"
+                htmlFor="si"
               >
                 <input
                   checked={true}
                   className="radio"
+                  id="si"
                   name="units"
                   onChange={[MockFunction]}
                   type="radio"
@@ -298,6 +408,7 @@ ShallowWrapper {
                 >
                   <Icon
                     icon="checkmark"
+                    title="icon"
                     viewBox="0 0 50 50"
                   />
                 </span>
@@ -305,10 +416,12 @@ ShallowWrapper {
               </label>
               <label
                 className="label"
+                htmlFor="us"
               >
                 <input
                   checked={false}
                   className="radio"
+                  id="us"
                   name="units"
                   onChange={[MockFunction]}
                   type="radio"
@@ -324,6 +437,7 @@ ShallowWrapper {
                 >
                   <Icon
                     icon="checkmark"
+                    title="icon"
                     viewBox="0 0 50 50"
                   />
                 </span>
@@ -331,10 +445,12 @@ ShallowWrapper {
               </label>
               <label
                 className="label"
+                htmlFor="uk2"
               >
                 <input
                   checked={false}
                   className="radio"
+                  id="uk2"
                   name="units"
                   onChange={[MockFunction]}
                   type="radio"
@@ -350,6 +466,7 @@ ShallowWrapper {
                 >
                   <Icon
                     icon="checkmark"
+                    title="icon"
                     viewBox="0 0 50 50"
                   />
                 </span>
@@ -357,10 +474,12 @@ ShallowWrapper {
               </label>
               <label
                 className="label"
+                htmlFor="ca"
               >
                 <input
                   checked={false}
                   className="radio"
+                  id="ca"
                   name="units"
                   onChange={[MockFunction]}
                   type="radio"
@@ -376,6 +495,7 @@ ShallowWrapper {
                 >
                   <Icon
                     icon="checkmark"
+                    title="icon"
                     viewBox="0 0 50 50"
                   />
                 </span>
@@ -383,6 +503,7 @@ ShallowWrapper {
               </label>
             </form>
           </div>
+          <Footer />
         </div>,
       ],
     },
@@ -417,10 +538,12 @@ ShallowWrapper {
               >
                 <label
                   className="label active"
+                  htmlFor="pl"
                 >
                   <input
                     checked={true}
                     className="radio"
+                    id="pl"
                     name="language"
                     onChange={[MockFunction]}
                     type="radio"
@@ -436,6 +559,7 @@ ShallowWrapper {
                   >
                     <Icon
                       icon="checkmark"
+                      title="icon"
                       viewBox="0 0 50 50"
                     />
                   </span>
@@ -454,10 +578,12 @@ ShallowWrapper {
               >
                 <label
                   className="label"
+                  htmlFor="pink"
                 >
                   <input
                     checked={false}
                     className="radio"
+                    id="pink"
                     name="theme"
                     onChange={[MockFunction]}
                     type="radio"
@@ -473,6 +599,7 @@ ShallowWrapper {
                   >
                     <Icon
                       icon="checkmark"
+                      title="icon"
                       viewBox="0 0 50 50"
                     />
                   </span>
@@ -480,10 +607,12 @@ ShallowWrapper {
                 </label>
                 <label
                   className="label"
+                  htmlFor="pinkDark"
                 >
                   <input
                     checked={false}
                     className="radio"
+                    id="pinkDark"
                     name="theme"
                     onChange={[MockFunction]}
                     type="radio"
@@ -499,6 +628,7 @@ ShallowWrapper {
                   >
                     <Icon
                       icon="checkmark"
+                      title="icon"
                       viewBox="0 0 50 50"
                     />
                   </span>
@@ -506,10 +636,12 @@ ShallowWrapper {
                 </label>
                 <label
                   className="label"
+                  htmlFor="pumpkin"
                 >
                   <input
                     checked={false}
                     className="radio"
+                    id="pumpkin"
                     name="theme"
                     onChange={[MockFunction]}
                     type="radio"
@@ -525,6 +657,7 @@ ShallowWrapper {
                   >
                     <Icon
                       icon="checkmark"
+                      title="icon"
                       viewBox="0 0 50 50"
                     />
                   </span>
@@ -532,10 +665,12 @@ ShallowWrapper {
                 </label>
                 <label
                   className="label"
+                  htmlFor="evening"
                 >
                   <input
                     checked={false}
                     className="radio"
+                    id="evening"
                     name="theme"
                     onChange={[MockFunction]}
                     type="radio"
@@ -551,6 +686,7 @@ ShallowWrapper {
                   >
                     <Icon
                       icon="checkmark"
+                      title="icon"
                       viewBox="0 0 50 50"
                     />
                   </span>
@@ -558,10 +694,12 @@ ShallowWrapper {
                 </label>
                 <label
                   className="label"
+                  htmlFor="sky"
                 >
                   <input
                     checked={false}
                     className="radio"
+                    id="sky"
                     name="theme"
                     onChange={[MockFunction]}
                     type="radio"
@@ -577,6 +715,7 @@ ShallowWrapper {
                   >
                     <Icon
                       icon="checkmark"
+                      title="icon"
                       viewBox="0 0 50 50"
                     />
                   </span>
@@ -584,10 +723,12 @@ ShallowWrapper {
                 </label>
                 <label
                   className="label"
+                  htmlFor="harvey"
                 >
                   <input
                     checked={false}
                     className="radio"
+                    id="harvey"
                     name="theme"
                     onChange={[MockFunction]}
                     type="radio"
@@ -603,10 +744,98 @@ ShallowWrapper {
                   >
                     <Icon
                       icon="checkmark"
+                      title="icon"
                       viewBox="0 0 50 50"
                     />
                   </span>
                   Harvey
+                </label>
+                <label
+                  className="label"
+                  htmlFor="spring"
+                >
+                  <input
+                    checked={false}
+                    className="radio"
+                    id="spring"
+                    name="theme"
+                    onChange={[MockFunction]}
+                    type="radio"
+                    value="spring"
+                  />
+                  <span
+                    className="radioButton"
+                    style={
+                      Object {
+                        "opacity": 0,
+                      }
+                    }
+                  >
+                    <Icon
+                      icon="checkmark"
+                      title="icon"
+                      viewBox="0 0 50 50"
+                    />
+                  </span>
+                  Spring
+                </label>
+                <label
+                  className="label"
+                  htmlFor="lime"
+                >
+                  <input
+                    checked={false}
+                    className="radio"
+                    id="lime"
+                    name="theme"
+                    onChange={[MockFunction]}
+                    type="radio"
+                    value="lime"
+                  />
+                  <span
+                    className="radioButton"
+                    style={
+                      Object {
+                        "opacity": 0,
+                      }
+                    }
+                  >
+                    <Icon
+                      icon="checkmark"
+                      title="icon"
+                      viewBox="0 0 50 50"
+                    />
+                  </span>
+                  Lime Dark
+                </label>
+                <label
+                  className="label"
+                  htmlFor="vampire"
+                >
+                  <input
+                    checked={false}
+                    className="radio"
+                    id="vampire"
+                    name="theme"
+                    onChange={[MockFunction]}
+                    type="radio"
+                    value="vampire"
+                  />
+                  <span
+                    className="radioButton"
+                    style={
+                      Object {
+                        "opacity": 0,
+                      }
+                    }
+                  >
+                    <Icon
+                      icon="checkmark"
+                      title="icon"
+                      viewBox="0 0 50 50"
+                    />
+                  </span>
+                  Vampire Dark
                 </label>
               </form>
             </div>,
@@ -621,10 +850,12 @@ ShallowWrapper {
               >
                 <label
                   className="label active"
+                  htmlFor="si"
                 >
                   <input
                     checked={true}
                     className="radio"
+                    id="si"
                     name="units"
                     onChange={[MockFunction]}
                     type="radio"
@@ -640,6 +871,7 @@ ShallowWrapper {
                   >
                     <Icon
                       icon="checkmark"
+                      title="icon"
                       viewBox="0 0 50 50"
                     />
                   </span>
@@ -647,10 +879,12 @@ ShallowWrapper {
                 </label>
                 <label
                   className="label"
+                  htmlFor="us"
                 >
                   <input
                     checked={false}
                     className="radio"
+                    id="us"
                     name="units"
                     onChange={[MockFunction]}
                     type="radio"
@@ -666,6 +900,7 @@ ShallowWrapper {
                   >
                     <Icon
                       icon="checkmark"
+                      title="icon"
                       viewBox="0 0 50 50"
                     />
                   </span>
@@ -673,10 +908,12 @@ ShallowWrapper {
                 </label>
                 <label
                   className="label"
+                  htmlFor="uk2"
                 >
                   <input
                     checked={false}
                     className="radio"
+                    id="uk2"
                     name="units"
                     onChange={[MockFunction]}
                     type="radio"
@@ -692,6 +929,7 @@ ShallowWrapper {
                   >
                     <Icon
                       icon="checkmark"
+                      title="icon"
                       viewBox="0 0 50 50"
                     />
                   </span>
@@ -699,10 +937,12 @@ ShallowWrapper {
                 </label>
                 <label
                   className="label"
+                  htmlFor="ca"
                 >
                   <input
                     checked={false}
                     className="radio"
+                    id="ca"
                     name="units"
                     onChange={[MockFunction]}
                     type="radio"
@@ -718,6 +958,7 @@ ShallowWrapper {
                   >
                     <Icon
                       icon="checkmark"
+                      title="icon"
                       viewBox="0 0 50 50"
                     />
                   </span>
@@ -725,6 +966,7 @@ ShallowWrapper {
                 </label>
               </form>
             </div>,
+            <Footer />,
           ],
           "className": "Settings",
           "style": Object {
@@ -748,10 +990,12 @@ ShallowWrapper {
                 >
                   <label
                     className="label active"
+                    htmlFor="pl"
                   >
                     <input
                       checked={true}
                       className="radio"
+                      id="pl"
                       name="language"
                       onChange={[MockFunction]}
                       type="radio"
@@ -767,6 +1011,7 @@ ShallowWrapper {
                     >
                       <Icon
                         icon="checkmark"
+                        title="icon"
                         viewBox="0 0 50 50"
                       />
                     </span>
@@ -797,10 +1042,12 @@ ShallowWrapper {
                   "children": Array [
                     <label
                       className="label active"
+                      htmlFor="pl"
                     >
                       <input
                         checked={true}
                         className="radio"
+                        id="pl"
                         name="language"
                         onChange={[MockFunction]}
                         type="radio"
@@ -816,6 +1063,7 @@ ShallowWrapper {
                       >
                         <Icon
                           icon="checkmark"
+                          title="icon"
                           viewBox="0 0 50 50"
                         />
                       </span>
@@ -835,6 +1083,7 @@ ShallowWrapper {
                         <input
                           checked={true}
                           className="radio"
+                          id="pl"
                           name="language"
                           onChange={[MockFunction]}
                           type="radio"
@@ -850,12 +1099,14 @@ ShallowWrapper {
                         >
                           <Icon
                             icon="checkmark"
+                            title="icon"
                             viewBox="0 0 50 50"
                           />
                         </span>,
                         "Polski",
                       ],
                       "className": "label active",
+                      "htmlFor": "pl",
                     },
                     "ref": null,
                     "rendered": Array [
@@ -866,6 +1117,7 @@ ShallowWrapper {
                         "props": Object {
                           "checked": true,
                           "className": "radio",
+                          "id": "pl",
                           "name": "language",
                           "onChange": [MockFunction],
                           "type": "radio",
@@ -882,6 +1134,7 @@ ShallowWrapper {
                         "props": Object {
                           "children": <Icon
                             icon="checkmark"
+                            title="icon"
                             viewBox="0 0 50 50"
                           />,
                           "className": "radioButton",
@@ -896,6 +1149,7 @@ ShallowWrapper {
                           "nodeType": "function",
                           "props": Object {
                             "icon": "checkmark",
+                            "title": "icon",
                             "viewBox": "0 0 50 50",
                           },
                           "ref": null,
@@ -928,10 +1182,12 @@ ShallowWrapper {
                 >
                   <label
                     className="label"
+                    htmlFor="pink"
                   >
                     <input
                       checked={false}
                       className="radio"
+                      id="pink"
                       name="theme"
                       onChange={[MockFunction]}
                       type="radio"
@@ -947,6 +1203,7 @@ ShallowWrapper {
                     >
                       <Icon
                         icon="checkmark"
+                        title="icon"
                         viewBox="0 0 50 50"
                       />
                     </span>
@@ -954,10 +1211,12 @@ ShallowWrapper {
                   </label>
                   <label
                     className="label"
+                    htmlFor="pinkDark"
                   >
                     <input
                       checked={false}
                       className="radio"
+                      id="pinkDark"
                       name="theme"
                       onChange={[MockFunction]}
                       type="radio"
@@ -973,6 +1232,7 @@ ShallowWrapper {
                     >
                       <Icon
                         icon="checkmark"
+                        title="icon"
                         viewBox="0 0 50 50"
                       />
                     </span>
@@ -980,10 +1240,12 @@ ShallowWrapper {
                   </label>
                   <label
                     className="label"
+                    htmlFor="pumpkin"
                   >
                     <input
                       checked={false}
                       className="radio"
+                      id="pumpkin"
                       name="theme"
                       onChange={[MockFunction]}
                       type="radio"
@@ -999,6 +1261,7 @@ ShallowWrapper {
                     >
                       <Icon
                         icon="checkmark"
+                        title="icon"
                         viewBox="0 0 50 50"
                       />
                     </span>
@@ -1006,10 +1269,12 @@ ShallowWrapper {
                   </label>
                   <label
                     className="label"
+                    htmlFor="evening"
                   >
                     <input
                       checked={false}
                       className="radio"
+                      id="evening"
                       name="theme"
                       onChange={[MockFunction]}
                       type="radio"
@@ -1025,6 +1290,7 @@ ShallowWrapper {
                     >
                       <Icon
                         icon="checkmark"
+                        title="icon"
                         viewBox="0 0 50 50"
                       />
                     </span>
@@ -1032,10 +1298,12 @@ ShallowWrapper {
                   </label>
                   <label
                     className="label"
+                    htmlFor="sky"
                   >
                     <input
                       checked={false}
                       className="radio"
+                      id="sky"
                       name="theme"
                       onChange={[MockFunction]}
                       type="radio"
@@ -1051,6 +1319,7 @@ ShallowWrapper {
                     >
                       <Icon
                         icon="checkmark"
+                        title="icon"
                         viewBox="0 0 50 50"
                       />
                     </span>
@@ -1058,10 +1327,12 @@ ShallowWrapper {
                   </label>
                   <label
                     className="label"
+                    htmlFor="harvey"
                   >
                     <input
                       checked={false}
                       className="radio"
+                      id="harvey"
                       name="theme"
                       onChange={[MockFunction]}
                       type="radio"
@@ -1077,10 +1348,98 @@ ShallowWrapper {
                     >
                       <Icon
                         icon="checkmark"
+                        title="icon"
                         viewBox="0 0 50 50"
                       />
                     </span>
                     Harvey
+                  </label>
+                  <label
+                    className="label"
+                    htmlFor="spring"
+                  >
+                    <input
+                      checked={false}
+                      className="radio"
+                      id="spring"
+                      name="theme"
+                      onChange={[MockFunction]}
+                      type="radio"
+                      value="spring"
+                    />
+                    <span
+                      className="radioButton"
+                      style={
+                        Object {
+                          "opacity": 0,
+                        }
+                      }
+                    >
+                      <Icon
+                        icon="checkmark"
+                        title="icon"
+                        viewBox="0 0 50 50"
+                      />
+                    </span>
+                    Spring
+                  </label>
+                  <label
+                    className="label"
+                    htmlFor="lime"
+                  >
+                    <input
+                      checked={false}
+                      className="radio"
+                      id="lime"
+                      name="theme"
+                      onChange={[MockFunction]}
+                      type="radio"
+                      value="lime"
+                    />
+                    <span
+                      className="radioButton"
+                      style={
+                        Object {
+                          "opacity": 0,
+                        }
+                      }
+                    >
+                      <Icon
+                        icon="checkmark"
+                        title="icon"
+                        viewBox="0 0 50 50"
+                      />
+                    </span>
+                    Lime Dark
+                  </label>
+                  <label
+                    className="label"
+                    htmlFor="vampire"
+                  >
+                    <input
+                      checked={false}
+                      className="radio"
+                      id="vampire"
+                      name="theme"
+                      onChange={[MockFunction]}
+                      type="radio"
+                      value="vampire"
+                    />
+                    <span
+                      className="radioButton"
+                      style={
+                        Object {
+                          "opacity": 0,
+                        }
+                      }
+                    >
+                      <Icon
+                        icon="checkmark"
+                        title="icon"
+                        viewBox="0 0 50 50"
+                      />
+                    </span>
+                    Vampire Dark
                   </label>
                 </form>,
               ],
@@ -1107,10 +1466,12 @@ ShallowWrapper {
                   "children": Array [
                     <label
                       className="label"
+                      htmlFor="pink"
                     >
                       <input
                         checked={false}
                         className="radio"
+                        id="pink"
                         name="theme"
                         onChange={[MockFunction]}
                         type="radio"
@@ -1126,6 +1487,7 @@ ShallowWrapper {
                       >
                         <Icon
                           icon="checkmark"
+                          title="icon"
                           viewBox="0 0 50 50"
                         />
                       </span>
@@ -1133,10 +1495,12 @@ ShallowWrapper {
                     </label>,
                     <label
                       className="label"
+                      htmlFor="pinkDark"
                     >
                       <input
                         checked={false}
                         className="radio"
+                        id="pinkDark"
                         name="theme"
                         onChange={[MockFunction]}
                         type="radio"
@@ -1152,6 +1516,7 @@ ShallowWrapper {
                       >
                         <Icon
                           icon="checkmark"
+                          title="icon"
                           viewBox="0 0 50 50"
                         />
                       </span>
@@ -1159,10 +1524,12 @@ ShallowWrapper {
                     </label>,
                     <label
                       className="label"
+                      htmlFor="pumpkin"
                     >
                       <input
                         checked={false}
                         className="radio"
+                        id="pumpkin"
                         name="theme"
                         onChange={[MockFunction]}
                         type="radio"
@@ -1178,6 +1545,7 @@ ShallowWrapper {
                       >
                         <Icon
                           icon="checkmark"
+                          title="icon"
                           viewBox="0 0 50 50"
                         />
                       </span>
@@ -1185,10 +1553,12 @@ ShallowWrapper {
                     </label>,
                     <label
                       className="label"
+                      htmlFor="evening"
                     >
                       <input
                         checked={false}
                         className="radio"
+                        id="evening"
                         name="theme"
                         onChange={[MockFunction]}
                         type="radio"
@@ -1204,6 +1574,7 @@ ShallowWrapper {
                       >
                         <Icon
                           icon="checkmark"
+                          title="icon"
                           viewBox="0 0 50 50"
                         />
                       </span>
@@ -1211,10 +1582,12 @@ ShallowWrapper {
                     </label>,
                     <label
                       className="label"
+                      htmlFor="sky"
                     >
                       <input
                         checked={false}
                         className="radio"
+                        id="sky"
                         name="theme"
                         onChange={[MockFunction]}
                         type="radio"
@@ -1230,6 +1603,7 @@ ShallowWrapper {
                       >
                         <Icon
                           icon="checkmark"
+                          title="icon"
                           viewBox="0 0 50 50"
                         />
                       </span>
@@ -1237,10 +1611,12 @@ ShallowWrapper {
                     </label>,
                     <label
                       className="label"
+                      htmlFor="harvey"
                     >
                       <input
                         checked={false}
                         className="radio"
+                        id="harvey"
                         name="theme"
                         onChange={[MockFunction]}
                         type="radio"
@@ -1256,10 +1632,98 @@ ShallowWrapper {
                       >
                         <Icon
                           icon="checkmark"
+                          title="icon"
                           viewBox="0 0 50 50"
                         />
                       </span>
                       Harvey
+                    </label>,
+                    <label
+                      className="label"
+                      htmlFor="spring"
+                    >
+                      <input
+                        checked={false}
+                        className="radio"
+                        id="spring"
+                        name="theme"
+                        onChange={[MockFunction]}
+                        type="radio"
+                        value="spring"
+                      />
+                      <span
+                        className="radioButton"
+                        style={
+                          Object {
+                            "opacity": 0,
+                          }
+                        }
+                      >
+                        <Icon
+                          icon="checkmark"
+                          title="icon"
+                          viewBox="0 0 50 50"
+                        />
+                      </span>
+                      Spring
+                    </label>,
+                    <label
+                      className="label"
+                      htmlFor="lime"
+                    >
+                      <input
+                        checked={false}
+                        className="radio"
+                        id="lime"
+                        name="theme"
+                        onChange={[MockFunction]}
+                        type="radio"
+                        value="lime"
+                      />
+                      <span
+                        className="radioButton"
+                        style={
+                          Object {
+                            "opacity": 0,
+                          }
+                        }
+                      >
+                        <Icon
+                          icon="checkmark"
+                          title="icon"
+                          viewBox="0 0 50 50"
+                        />
+                      </span>
+                      Lime Dark
+                    </label>,
+                    <label
+                      className="label"
+                      htmlFor="vampire"
+                    >
+                      <input
+                        checked={false}
+                        className="radio"
+                        id="vampire"
+                        name="theme"
+                        onChange={[MockFunction]}
+                        type="radio"
+                        value="vampire"
+                      />
+                      <span
+                        className="radioButton"
+                        style={
+                          Object {
+                            "opacity": 0,
+                          }
+                        }
+                      >
+                        <Icon
+                          icon="checkmark"
+                          title="icon"
+                          viewBox="0 0 50 50"
+                        />
+                      </span>
+                      Vampire Dark
                     </label>,
                   ],
                   "className": "form theme",
@@ -1275,6 +1739,7 @@ ShallowWrapper {
                         <input
                           checked={false}
                           className="radio"
+                          id="pink"
                           name="theme"
                           onChange={[MockFunction]}
                           type="radio"
@@ -1290,12 +1755,14 @@ ShallowWrapper {
                         >
                           <Icon
                             icon="checkmark"
+                            title="icon"
                             viewBox="0 0 50 50"
                           />
                         </span>,
                         "Pink",
                       ],
                       "className": "label",
+                      "htmlFor": "pink",
                     },
                     "ref": null,
                     "rendered": Array [
@@ -1306,6 +1773,7 @@ ShallowWrapper {
                         "props": Object {
                           "checked": false,
                           "className": "radio",
+                          "id": "pink",
                           "name": "theme",
                           "onChange": [MockFunction],
                           "type": "radio",
@@ -1322,6 +1790,7 @@ ShallowWrapper {
                         "props": Object {
                           "children": <Icon
                             icon="checkmark"
+                            title="icon"
                             viewBox="0 0 50 50"
                           />,
                           "className": "radioButton",
@@ -1336,6 +1805,7 @@ ShallowWrapper {
                           "nodeType": "function",
                           "props": Object {
                             "icon": "checkmark",
+                            "title": "icon",
                             "viewBox": "0 0 50 50",
                           },
                           "ref": null,
@@ -1357,6 +1827,7 @@ ShallowWrapper {
                         <input
                           checked={false}
                           className="radio"
+                          id="pinkDark"
                           name="theme"
                           onChange={[MockFunction]}
                           type="radio"
@@ -1372,12 +1843,14 @@ ShallowWrapper {
                         >
                           <Icon
                             icon="checkmark"
+                            title="icon"
                             viewBox="0 0 50 50"
                           />
                         </span>,
                         "Pink Dark",
                       ],
                       "className": "label",
+                      "htmlFor": "pinkDark",
                     },
                     "ref": null,
                     "rendered": Array [
@@ -1388,6 +1861,7 @@ ShallowWrapper {
                         "props": Object {
                           "checked": false,
                           "className": "radio",
+                          "id": "pinkDark",
                           "name": "theme",
                           "onChange": [MockFunction],
                           "type": "radio",
@@ -1404,6 +1878,7 @@ ShallowWrapper {
                         "props": Object {
                           "children": <Icon
                             icon="checkmark"
+                            title="icon"
                             viewBox="0 0 50 50"
                           />,
                           "className": "radioButton",
@@ -1418,6 +1893,7 @@ ShallowWrapper {
                           "nodeType": "function",
                           "props": Object {
                             "icon": "checkmark",
+                            "title": "icon",
                             "viewBox": "0 0 50 50",
                           },
                           "ref": null,
@@ -1439,6 +1915,7 @@ ShallowWrapper {
                         <input
                           checked={false}
                           className="radio"
+                          id="pumpkin"
                           name="theme"
                           onChange={[MockFunction]}
                           type="radio"
@@ -1454,12 +1931,14 @@ ShallowWrapper {
                         >
                           <Icon
                             icon="checkmark"
+                            title="icon"
                             viewBox="0 0 50 50"
                           />
                         </span>,
                         "Pumpkin Dark",
                       ],
                       "className": "label",
+                      "htmlFor": "pumpkin",
                     },
                     "ref": null,
                     "rendered": Array [
@@ -1470,6 +1949,7 @@ ShallowWrapper {
                         "props": Object {
                           "checked": false,
                           "className": "radio",
+                          "id": "pumpkin",
                           "name": "theme",
                           "onChange": [MockFunction],
                           "type": "radio",
@@ -1486,6 +1966,7 @@ ShallowWrapper {
                         "props": Object {
                           "children": <Icon
                             icon="checkmark"
+                            title="icon"
                             viewBox="0 0 50 50"
                           />,
                           "className": "radioButton",
@@ -1500,6 +1981,7 @@ ShallowWrapper {
                           "nodeType": "function",
                           "props": Object {
                             "icon": "checkmark",
+                            "title": "icon",
                             "viewBox": "0 0 50 50",
                           },
                           "ref": null,
@@ -1521,6 +2003,7 @@ ShallowWrapper {
                         <input
                           checked={false}
                           className="radio"
+                          id="evening"
                           name="theme"
                           onChange={[MockFunction]}
                           type="radio"
@@ -1536,12 +2019,14 @@ ShallowWrapper {
                         >
                           <Icon
                             icon="checkmark"
+                            title="icon"
                             viewBox="0 0 50 50"
                           />
                         </span>,
                         "Evening Dark",
                       ],
                       "className": "label",
+                      "htmlFor": "evening",
                     },
                     "ref": null,
                     "rendered": Array [
@@ -1552,6 +2037,7 @@ ShallowWrapper {
                         "props": Object {
                           "checked": false,
                           "className": "radio",
+                          "id": "evening",
                           "name": "theme",
                           "onChange": [MockFunction],
                           "type": "radio",
@@ -1568,6 +2054,7 @@ ShallowWrapper {
                         "props": Object {
                           "children": <Icon
                             icon="checkmark"
+                            title="icon"
                             viewBox="0 0 50 50"
                           />,
                           "className": "radioButton",
@@ -1582,6 +2069,7 @@ ShallowWrapper {
                           "nodeType": "function",
                           "props": Object {
                             "icon": "checkmark",
+                            "title": "icon",
                             "viewBox": "0 0 50 50",
                           },
                           "ref": null,
@@ -1603,6 +2091,7 @@ ShallowWrapper {
                         <input
                           checked={false}
                           className="radio"
+                          id="sky"
                           name="theme"
                           onChange={[MockFunction]}
                           type="radio"
@@ -1618,12 +2107,14 @@ ShallowWrapper {
                         >
                           <Icon
                             icon="checkmark"
+                            title="icon"
                             viewBox="0 0 50 50"
                           />
                         </span>,
                         "Cool Sky",
                       ],
                       "className": "label",
+                      "htmlFor": "sky",
                     },
                     "ref": null,
                     "rendered": Array [
@@ -1634,6 +2125,7 @@ ShallowWrapper {
                         "props": Object {
                           "checked": false,
                           "className": "radio",
+                          "id": "sky",
                           "name": "theme",
                           "onChange": [MockFunction],
                           "type": "radio",
@@ -1650,6 +2142,7 @@ ShallowWrapper {
                         "props": Object {
                           "children": <Icon
                             icon="checkmark"
+                            title="icon"
                             viewBox="0 0 50 50"
                           />,
                           "className": "radioButton",
@@ -1664,6 +2157,7 @@ ShallowWrapper {
                           "nodeType": "function",
                           "props": Object {
                             "icon": "checkmark",
+                            "title": "icon",
                             "viewBox": "0 0 50 50",
                           },
                           "ref": null,
@@ -1685,6 +2179,7 @@ ShallowWrapper {
                         <input
                           checked={false}
                           className="radio"
+                          id="harvey"
                           name="theme"
                           onChange={[MockFunction]}
                           type="radio"
@@ -1700,12 +2195,14 @@ ShallowWrapper {
                         >
                           <Icon
                             icon="checkmark"
+                            title="icon"
                             viewBox="0 0 50 50"
                           />
                         </span>,
                         "Harvey",
                       ],
                       "className": "label",
+                      "htmlFor": "harvey",
                     },
                     "ref": null,
                     "rendered": Array [
@@ -1716,6 +2213,7 @@ ShallowWrapper {
                         "props": Object {
                           "checked": false,
                           "className": "radio",
+                          "id": "harvey",
                           "name": "theme",
                           "onChange": [MockFunction],
                           "type": "radio",
@@ -1732,6 +2230,7 @@ ShallowWrapper {
                         "props": Object {
                           "children": <Icon
                             icon="checkmark"
+                            title="icon"
                             viewBox="0 0 50 50"
                           />,
                           "className": "radioButton",
@@ -1746,6 +2245,7 @@ ShallowWrapper {
                           "nodeType": "function",
                           "props": Object {
                             "icon": "checkmark",
+                            "title": "icon",
                             "viewBox": "0 0 50 50",
                           },
                           "ref": null,
@@ -1755,6 +2255,270 @@ ShallowWrapper {
                         "type": "span",
                       },
                       "Harvey",
+                    ],
+                    "type": "label",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "Spring",
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <input
+                          checked={false}
+                          className="radio"
+                          id="spring"
+                          name="theme"
+                          onChange={[MockFunction]}
+                          type="radio"
+                          value="spring"
+                        />,
+                        <span
+                          className="radioButton"
+                          style={
+                            Object {
+                              "opacity": 0,
+                            }
+                          }
+                        >
+                          <Icon
+                            icon="checkmark"
+                            title="icon"
+                            viewBox="0 0 50 50"
+                          />
+                        </span>,
+                        "Spring",
+                      ],
+                      "className": "label",
+                      "htmlFor": "spring",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "checked": false,
+                          "className": "radio",
+                          "id": "spring",
+                          "name": "theme",
+                          "onChange": [MockFunction],
+                          "type": "radio",
+                          "value": "spring",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "input",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": <Icon
+                            icon="checkmark"
+                            title="icon"
+                            viewBox="0 0 50 50"
+                          />,
+                          "className": "radioButton",
+                          "style": Object {
+                            "opacity": 0,
+                          },
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "function",
+                          "props": Object {
+                            "icon": "checkmark",
+                            "title": "icon",
+                            "viewBox": "0 0 50 50",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": [Function],
+                        },
+                        "type": "span",
+                      },
+                      "Spring",
+                    ],
+                    "type": "label",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "Lime Dark",
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <input
+                          checked={false}
+                          className="radio"
+                          id="lime"
+                          name="theme"
+                          onChange={[MockFunction]}
+                          type="radio"
+                          value="lime"
+                        />,
+                        <span
+                          className="radioButton"
+                          style={
+                            Object {
+                              "opacity": 0,
+                            }
+                          }
+                        >
+                          <Icon
+                            icon="checkmark"
+                            title="icon"
+                            viewBox="0 0 50 50"
+                          />
+                        </span>,
+                        "Lime Dark",
+                      ],
+                      "className": "label",
+                      "htmlFor": "lime",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "checked": false,
+                          "className": "radio",
+                          "id": "lime",
+                          "name": "theme",
+                          "onChange": [MockFunction],
+                          "type": "radio",
+                          "value": "lime",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "input",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": <Icon
+                            icon="checkmark"
+                            title="icon"
+                            viewBox="0 0 50 50"
+                          />,
+                          "className": "radioButton",
+                          "style": Object {
+                            "opacity": 0,
+                          },
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "function",
+                          "props": Object {
+                            "icon": "checkmark",
+                            "title": "icon",
+                            "viewBox": "0 0 50 50",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": [Function],
+                        },
+                        "type": "span",
+                      },
+                      "Lime Dark",
+                    ],
+                    "type": "label",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "Vampire Dark",
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <input
+                          checked={false}
+                          className="radio"
+                          id="vampire"
+                          name="theme"
+                          onChange={[MockFunction]}
+                          type="radio"
+                          value="vampire"
+                        />,
+                        <span
+                          className="radioButton"
+                          style={
+                            Object {
+                              "opacity": 0,
+                            }
+                          }
+                        >
+                          <Icon
+                            icon="checkmark"
+                            title="icon"
+                            viewBox="0 0 50 50"
+                          />
+                        </span>,
+                        "Vampire Dark",
+                      ],
+                      "className": "label",
+                      "htmlFor": "vampire",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "checked": false,
+                          "className": "radio",
+                          "id": "vampire",
+                          "name": "theme",
+                          "onChange": [MockFunction],
+                          "type": "radio",
+                          "value": "vampire",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "input",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": <Icon
+                            icon="checkmark"
+                            title="icon"
+                            viewBox="0 0 50 50"
+                          />,
+                          "className": "radioButton",
+                          "style": Object {
+                            "opacity": 0,
+                          },
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "function",
+                          "props": Object {
+                            "icon": "checkmark",
+                            "title": "icon",
+                            "viewBox": "0 0 50 50",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": [Function],
+                        },
+                        "type": "span",
+                      },
+                      "Vampire Dark",
                     ],
                     "type": "label",
                   },
@@ -1778,10 +2542,12 @@ ShallowWrapper {
                 >
                   <label
                     className="label active"
+                    htmlFor="si"
                   >
                     <input
                       checked={true}
                       className="radio"
+                      id="si"
                       name="units"
                       onChange={[MockFunction]}
                       type="radio"
@@ -1797,6 +2563,7 @@ ShallowWrapper {
                     >
                       <Icon
                         icon="checkmark"
+                        title="icon"
                         viewBox="0 0 50 50"
                       />
                     </span>
@@ -1804,10 +2571,12 @@ ShallowWrapper {
                   </label>
                   <label
                     className="label"
+                    htmlFor="us"
                   >
                     <input
                       checked={false}
                       className="radio"
+                      id="us"
                       name="units"
                       onChange={[MockFunction]}
                       type="radio"
@@ -1823,6 +2592,7 @@ ShallowWrapper {
                     >
                       <Icon
                         icon="checkmark"
+                        title="icon"
                         viewBox="0 0 50 50"
                       />
                     </span>
@@ -1830,10 +2600,12 @@ ShallowWrapper {
                   </label>
                   <label
                     className="label"
+                    htmlFor="uk2"
                   >
                     <input
                       checked={false}
                       className="radio"
+                      id="uk2"
                       name="units"
                       onChange={[MockFunction]}
                       type="radio"
@@ -1849,6 +2621,7 @@ ShallowWrapper {
                     >
                       <Icon
                         icon="checkmark"
+                        title="icon"
                         viewBox="0 0 50 50"
                       />
                     </span>
@@ -1856,10 +2629,12 @@ ShallowWrapper {
                   </label>
                   <label
                     className="label"
+                    htmlFor="ca"
                   >
                     <input
                       checked={false}
                       className="radio"
+                      id="ca"
                       name="units"
                       onChange={[MockFunction]}
                       type="radio"
@@ -1875,6 +2650,7 @@ ShallowWrapper {
                     >
                       <Icon
                         icon="checkmark"
+                        title="icon"
                         viewBox="0 0 50 50"
                       />
                     </span>
@@ -1905,10 +2681,12 @@ ShallowWrapper {
                   "children": Array [
                     <label
                       className="label active"
+                      htmlFor="si"
                     >
                       <input
                         checked={true}
                         className="radio"
+                        id="si"
                         name="units"
                         onChange={[MockFunction]}
                         type="radio"
@@ -1924,6 +2702,7 @@ ShallowWrapper {
                       >
                         <Icon
                           icon="checkmark"
+                          title="icon"
                           viewBox="0 0 50 50"
                         />
                       </span>
@@ -1931,10 +2710,12 @@ ShallowWrapper {
                     </label>,
                     <label
                       className="label"
+                      htmlFor="us"
                     >
                       <input
                         checked={false}
                         className="radio"
+                        id="us"
                         name="units"
                         onChange={[MockFunction]}
                         type="radio"
@@ -1950,6 +2731,7 @@ ShallowWrapper {
                       >
                         <Icon
                           icon="checkmark"
+                          title="icon"
                           viewBox="0 0 50 50"
                         />
                       </span>
@@ -1957,10 +2739,12 @@ ShallowWrapper {
                     </label>,
                     <label
                       className="label"
+                      htmlFor="uk2"
                     >
                       <input
                         checked={false}
                         className="radio"
+                        id="uk2"
                         name="units"
                         onChange={[MockFunction]}
                         type="radio"
@@ -1976,6 +2760,7 @@ ShallowWrapper {
                       >
                         <Icon
                           icon="checkmark"
+                          title="icon"
                           viewBox="0 0 50 50"
                         />
                       </span>
@@ -1983,10 +2768,12 @@ ShallowWrapper {
                     </label>,
                     <label
                       className="label"
+                      htmlFor="ca"
                     >
                       <input
                         checked={false}
                         className="radio"
+                        id="ca"
                         name="units"
                         onChange={[MockFunction]}
                         type="radio"
@@ -2002,6 +2789,7 @@ ShallowWrapper {
                       >
                         <Icon
                           icon="checkmark"
+                          title="icon"
                           viewBox="0 0 50 50"
                         />
                       </span>
@@ -2021,6 +2809,7 @@ ShallowWrapper {
                         <input
                           checked={true}
                           className="radio"
+                          id="si"
                           name="units"
                           onChange={[MockFunction]}
                           type="radio"
@@ -2036,12 +2825,14 @@ ShallowWrapper {
                         >
                           <Icon
                             icon="checkmark"
+                            title="icon"
                             viewBox="0 0 50 50"
                           />
                         </span>,
                         "SI",
                       ],
                       "className": "label active",
+                      "htmlFor": "si",
                     },
                     "ref": null,
                     "rendered": Array [
@@ -2052,6 +2843,7 @@ ShallowWrapper {
                         "props": Object {
                           "checked": true,
                           "className": "radio",
+                          "id": "si",
                           "name": "units",
                           "onChange": [MockFunction],
                           "type": "radio",
@@ -2068,6 +2860,7 @@ ShallowWrapper {
                         "props": Object {
                           "children": <Icon
                             icon="checkmark"
+                            title="icon"
                             viewBox="0 0 50 50"
                           />,
                           "className": "radioButton",
@@ -2082,6 +2875,7 @@ ShallowWrapper {
                           "nodeType": "function",
                           "props": Object {
                             "icon": "checkmark",
+                            "title": "icon",
                             "viewBox": "0 0 50 50",
                           },
                           "ref": null,
@@ -2103,6 +2897,7 @@ ShallowWrapper {
                         <input
                           checked={false}
                           className="radio"
+                          id="us"
                           name="units"
                           onChange={[MockFunction]}
                           type="radio"
@@ -2118,12 +2913,14 @@ ShallowWrapper {
                         >
                           <Icon
                             icon="checkmark"
+                            title="icon"
                             viewBox="0 0 50 50"
                           />
                         </span>,
                         "US",
                       ],
                       "className": "label",
+                      "htmlFor": "us",
                     },
                     "ref": null,
                     "rendered": Array [
@@ -2134,6 +2931,7 @@ ShallowWrapper {
                         "props": Object {
                           "checked": false,
                           "className": "radio",
+                          "id": "us",
                           "name": "units",
                           "onChange": [MockFunction],
                           "type": "radio",
@@ -2150,6 +2948,7 @@ ShallowWrapper {
                         "props": Object {
                           "children": <Icon
                             icon="checkmark"
+                            title="icon"
                             viewBox="0 0 50 50"
                           />,
                           "className": "radioButton",
@@ -2164,6 +2963,7 @@ ShallowWrapper {
                           "nodeType": "function",
                           "props": Object {
                             "icon": "checkmark",
+                            "title": "icon",
                             "viewBox": "0 0 50 50",
                           },
                           "ref": null,
@@ -2185,6 +2985,7 @@ ShallowWrapper {
                         <input
                           checked={false}
                           className="radio"
+                          id="uk2"
                           name="units"
                           onChange={[MockFunction]}
                           type="radio"
@@ -2200,12 +3001,14 @@ ShallowWrapper {
                         >
                           <Icon
                             icon="checkmark"
+                            title="icon"
                             viewBox="0 0 50 50"
                           />
                         </span>,
                         "UK",
                       ],
                       "className": "label",
+                      "htmlFor": "uk2",
                     },
                     "ref": null,
                     "rendered": Array [
@@ -2216,6 +3019,7 @@ ShallowWrapper {
                         "props": Object {
                           "checked": false,
                           "className": "radio",
+                          "id": "uk2",
                           "name": "units",
                           "onChange": [MockFunction],
                           "type": "radio",
@@ -2232,6 +3036,7 @@ ShallowWrapper {
                         "props": Object {
                           "children": <Icon
                             icon="checkmark"
+                            title="icon"
                             viewBox="0 0 50 50"
                           />,
                           "className": "radioButton",
@@ -2246,6 +3051,7 @@ ShallowWrapper {
                           "nodeType": "function",
                           "props": Object {
                             "icon": "checkmark",
+                            "title": "icon",
                             "viewBox": "0 0 50 50",
                           },
                           "ref": null,
@@ -2267,6 +3073,7 @@ ShallowWrapper {
                         <input
                           checked={false}
                           className="radio"
+                          id="ca"
                           name="units"
                           onChange={[MockFunction]}
                           type="radio"
@@ -2282,12 +3089,14 @@ ShallowWrapper {
                         >
                           <Icon
                             icon="checkmark"
+                            title="icon"
                             viewBox="0 0 50 50"
                           />
                         </span>,
                         "CA",
                       ],
                       "className": "label",
+                      "htmlFor": "ca",
                     },
                     "ref": null,
                     "rendered": Array [
@@ -2298,6 +3107,7 @@ ShallowWrapper {
                         "props": Object {
                           "checked": false,
                           "className": "radio",
+                          "id": "ca",
                           "name": "units",
                           "onChange": [MockFunction],
                           "type": "radio",
@@ -2314,6 +3124,7 @@ ShallowWrapper {
                         "props": Object {
                           "children": <Icon
                             icon="checkmark"
+                            title="icon"
                             viewBox="0 0 50 50"
                           />,
                           "className": "radioButton",
@@ -2328,6 +3139,7 @@ ShallowWrapper {
                           "nodeType": "function",
                           "props": Object {
                             "icon": "checkmark",
+                            "title": "icon",
                             "viewBox": "0 0 50 50",
                           },
                           "ref": null,
@@ -2345,6 +3157,15 @@ ShallowWrapper {
               },
             ],
             "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
           },
         ],
         "type": "div",
@@ -2383,10 +3204,12 @@ ShallowWrapper {
               >
                 <label
                   className="label active"
+                  htmlFor="pl"
                 >
                   <input
                     checked={true}
                     className="radio"
+                    id="pl"
                     name="language"
                     onChange={[MockFunction]}
                     type="radio"
@@ -2402,6 +3225,7 @@ ShallowWrapper {
                   >
                     <Icon
                       icon="checkmark"
+                      title="icon"
                       viewBox="0 0 50 50"
                     />
                   </span>
@@ -2420,10 +3244,12 @@ ShallowWrapper {
               >
                 <label
                   className="label"
+                  htmlFor="pink"
                 >
                   <input
                     checked={false}
                     className="radio"
+                    id="pink"
                     name="theme"
                     onChange={[MockFunction]}
                     type="radio"
@@ -2439,6 +3265,7 @@ ShallowWrapper {
                   >
                     <Icon
                       icon="checkmark"
+                      title="icon"
                       viewBox="0 0 50 50"
                     />
                   </span>
@@ -2446,10 +3273,12 @@ ShallowWrapper {
                 </label>
                 <label
                   className="label"
+                  htmlFor="pinkDark"
                 >
                   <input
                     checked={false}
                     className="radio"
+                    id="pinkDark"
                     name="theme"
                     onChange={[MockFunction]}
                     type="radio"
@@ -2465,6 +3294,7 @@ ShallowWrapper {
                   >
                     <Icon
                       icon="checkmark"
+                      title="icon"
                       viewBox="0 0 50 50"
                     />
                   </span>
@@ -2472,10 +3302,12 @@ ShallowWrapper {
                 </label>
                 <label
                   className="label"
+                  htmlFor="pumpkin"
                 >
                   <input
                     checked={false}
                     className="radio"
+                    id="pumpkin"
                     name="theme"
                     onChange={[MockFunction]}
                     type="radio"
@@ -2491,6 +3323,7 @@ ShallowWrapper {
                   >
                     <Icon
                       icon="checkmark"
+                      title="icon"
                       viewBox="0 0 50 50"
                     />
                   </span>
@@ -2498,10 +3331,12 @@ ShallowWrapper {
                 </label>
                 <label
                   className="label"
+                  htmlFor="evening"
                 >
                   <input
                     checked={false}
                     className="radio"
+                    id="evening"
                     name="theme"
                     onChange={[MockFunction]}
                     type="radio"
@@ -2517,6 +3352,7 @@ ShallowWrapper {
                   >
                     <Icon
                       icon="checkmark"
+                      title="icon"
                       viewBox="0 0 50 50"
                     />
                   </span>
@@ -2524,10 +3360,12 @@ ShallowWrapper {
                 </label>
                 <label
                   className="label"
+                  htmlFor="sky"
                 >
                   <input
                     checked={false}
                     className="radio"
+                    id="sky"
                     name="theme"
                     onChange={[MockFunction]}
                     type="radio"
@@ -2543,6 +3381,7 @@ ShallowWrapper {
                   >
                     <Icon
                       icon="checkmark"
+                      title="icon"
                       viewBox="0 0 50 50"
                     />
                   </span>
@@ -2550,10 +3389,12 @@ ShallowWrapper {
                 </label>
                 <label
                   className="label"
+                  htmlFor="harvey"
                 >
                   <input
                     checked={false}
                     className="radio"
+                    id="harvey"
                     name="theme"
                     onChange={[MockFunction]}
                     type="radio"
@@ -2569,10 +3410,98 @@ ShallowWrapper {
                   >
                     <Icon
                       icon="checkmark"
+                      title="icon"
                       viewBox="0 0 50 50"
                     />
                   </span>
                   Harvey
+                </label>
+                <label
+                  className="label"
+                  htmlFor="spring"
+                >
+                  <input
+                    checked={false}
+                    className="radio"
+                    id="spring"
+                    name="theme"
+                    onChange={[MockFunction]}
+                    type="radio"
+                    value="spring"
+                  />
+                  <span
+                    className="radioButton"
+                    style={
+                      Object {
+                        "opacity": 0,
+                      }
+                    }
+                  >
+                    <Icon
+                      icon="checkmark"
+                      title="icon"
+                      viewBox="0 0 50 50"
+                    />
+                  </span>
+                  Spring
+                </label>
+                <label
+                  className="label"
+                  htmlFor="lime"
+                >
+                  <input
+                    checked={false}
+                    className="radio"
+                    id="lime"
+                    name="theme"
+                    onChange={[MockFunction]}
+                    type="radio"
+                    value="lime"
+                  />
+                  <span
+                    className="radioButton"
+                    style={
+                      Object {
+                        "opacity": 0,
+                      }
+                    }
+                  >
+                    <Icon
+                      icon="checkmark"
+                      title="icon"
+                      viewBox="0 0 50 50"
+                    />
+                  </span>
+                  Lime Dark
+                </label>
+                <label
+                  className="label"
+                  htmlFor="vampire"
+                >
+                  <input
+                    checked={false}
+                    className="radio"
+                    id="vampire"
+                    name="theme"
+                    onChange={[MockFunction]}
+                    type="radio"
+                    value="vampire"
+                  />
+                  <span
+                    className="radioButton"
+                    style={
+                      Object {
+                        "opacity": 0,
+                      }
+                    }
+                  >
+                    <Icon
+                      icon="checkmark"
+                      title="icon"
+                      viewBox="0 0 50 50"
+                    />
+                  </span>
+                  Vampire Dark
                 </label>
               </form>
             </div>
@@ -2587,10 +3516,12 @@ ShallowWrapper {
               >
                 <label
                   className="label active"
+                  htmlFor="si"
                 >
                   <input
                     checked={true}
                     className="radio"
+                    id="si"
                     name="units"
                     onChange={[MockFunction]}
                     type="radio"
@@ -2606,6 +3537,7 @@ ShallowWrapper {
                   >
                     <Icon
                       icon="checkmark"
+                      title="icon"
                       viewBox="0 0 50 50"
                     />
                   </span>
@@ -2613,10 +3545,12 @@ ShallowWrapper {
                 </label>
                 <label
                   className="label"
+                  htmlFor="us"
                 >
                   <input
                     checked={false}
                     className="radio"
+                    id="us"
                     name="units"
                     onChange={[MockFunction]}
                     type="radio"
@@ -2632,6 +3566,7 @@ ShallowWrapper {
                   >
                     <Icon
                       icon="checkmark"
+                      title="icon"
                       viewBox="0 0 50 50"
                     />
                   </span>
@@ -2639,10 +3574,12 @@ ShallowWrapper {
                 </label>
                 <label
                   className="label"
+                  htmlFor="uk2"
                 >
                   <input
                     checked={false}
                     className="radio"
+                    id="uk2"
                     name="units"
                     onChange={[MockFunction]}
                     type="radio"
@@ -2658,6 +3595,7 @@ ShallowWrapper {
                   >
                     <Icon
                       icon="checkmark"
+                      title="icon"
                       viewBox="0 0 50 50"
                     />
                   </span>
@@ -2665,10 +3603,12 @@ ShallowWrapper {
                 </label>
                 <label
                   className="label"
+                  htmlFor="ca"
                 >
                   <input
                     checked={false}
                     className="radio"
+                    id="ca"
                     name="units"
                     onChange={[MockFunction]}
                     type="radio"
@@ -2684,6 +3624,7 @@ ShallowWrapper {
                   >
                     <Icon
                       icon="checkmark"
+                      title="icon"
                       viewBox="0 0 50 50"
                     />
                   </span>
@@ -2691,6 +3632,7 @@ ShallowWrapper {
                 </label>
               </form>
             </div>
+            <Footer />
           </div>,
         ],
       },
@@ -2725,10 +3667,12 @@ ShallowWrapper {
                 >
                   <label
                     className="label active"
+                    htmlFor="pl"
                   >
                     <input
                       checked={true}
                       className="radio"
+                      id="pl"
                       name="language"
                       onChange={[MockFunction]}
                       type="radio"
@@ -2744,6 +3688,7 @@ ShallowWrapper {
                     >
                       <Icon
                         icon="checkmark"
+                        title="icon"
                         viewBox="0 0 50 50"
                       />
                     </span>
@@ -2762,10 +3707,12 @@ ShallowWrapper {
                 >
                   <label
                     className="label"
+                    htmlFor="pink"
                   >
                     <input
                       checked={false}
                       className="radio"
+                      id="pink"
                       name="theme"
                       onChange={[MockFunction]}
                       type="radio"
@@ -2781,6 +3728,7 @@ ShallowWrapper {
                     >
                       <Icon
                         icon="checkmark"
+                        title="icon"
                         viewBox="0 0 50 50"
                       />
                     </span>
@@ -2788,10 +3736,12 @@ ShallowWrapper {
                   </label>
                   <label
                     className="label"
+                    htmlFor="pinkDark"
                   >
                     <input
                       checked={false}
                       className="radio"
+                      id="pinkDark"
                       name="theme"
                       onChange={[MockFunction]}
                       type="radio"
@@ -2807,6 +3757,7 @@ ShallowWrapper {
                     >
                       <Icon
                         icon="checkmark"
+                        title="icon"
                         viewBox="0 0 50 50"
                       />
                     </span>
@@ -2814,10 +3765,12 @@ ShallowWrapper {
                   </label>
                   <label
                     className="label"
+                    htmlFor="pumpkin"
                   >
                     <input
                       checked={false}
                       className="radio"
+                      id="pumpkin"
                       name="theme"
                       onChange={[MockFunction]}
                       type="radio"
@@ -2833,6 +3786,7 @@ ShallowWrapper {
                     >
                       <Icon
                         icon="checkmark"
+                        title="icon"
                         viewBox="0 0 50 50"
                       />
                     </span>
@@ -2840,10 +3794,12 @@ ShallowWrapper {
                   </label>
                   <label
                     className="label"
+                    htmlFor="evening"
                   >
                     <input
                       checked={false}
                       className="radio"
+                      id="evening"
                       name="theme"
                       onChange={[MockFunction]}
                       type="radio"
@@ -2859,6 +3815,7 @@ ShallowWrapper {
                     >
                       <Icon
                         icon="checkmark"
+                        title="icon"
                         viewBox="0 0 50 50"
                       />
                     </span>
@@ -2866,10 +3823,12 @@ ShallowWrapper {
                   </label>
                   <label
                     className="label"
+                    htmlFor="sky"
                   >
                     <input
                       checked={false}
                       className="radio"
+                      id="sky"
                       name="theme"
                       onChange={[MockFunction]}
                       type="radio"
@@ -2885,6 +3844,7 @@ ShallowWrapper {
                     >
                       <Icon
                         icon="checkmark"
+                        title="icon"
                         viewBox="0 0 50 50"
                       />
                     </span>
@@ -2892,10 +3852,12 @@ ShallowWrapper {
                   </label>
                   <label
                     className="label"
+                    htmlFor="harvey"
                   >
                     <input
                       checked={false}
                       className="radio"
+                      id="harvey"
                       name="theme"
                       onChange={[MockFunction]}
                       type="radio"
@@ -2911,10 +3873,98 @@ ShallowWrapper {
                     >
                       <Icon
                         icon="checkmark"
+                        title="icon"
                         viewBox="0 0 50 50"
                       />
                     </span>
                     Harvey
+                  </label>
+                  <label
+                    className="label"
+                    htmlFor="spring"
+                  >
+                    <input
+                      checked={false}
+                      className="radio"
+                      id="spring"
+                      name="theme"
+                      onChange={[MockFunction]}
+                      type="radio"
+                      value="spring"
+                    />
+                    <span
+                      className="radioButton"
+                      style={
+                        Object {
+                          "opacity": 0,
+                        }
+                      }
+                    >
+                      <Icon
+                        icon="checkmark"
+                        title="icon"
+                        viewBox="0 0 50 50"
+                      />
+                    </span>
+                    Spring
+                  </label>
+                  <label
+                    className="label"
+                    htmlFor="lime"
+                  >
+                    <input
+                      checked={false}
+                      className="radio"
+                      id="lime"
+                      name="theme"
+                      onChange={[MockFunction]}
+                      type="radio"
+                      value="lime"
+                    />
+                    <span
+                      className="radioButton"
+                      style={
+                        Object {
+                          "opacity": 0,
+                        }
+                      }
+                    >
+                      <Icon
+                        icon="checkmark"
+                        title="icon"
+                        viewBox="0 0 50 50"
+                      />
+                    </span>
+                    Lime Dark
+                  </label>
+                  <label
+                    className="label"
+                    htmlFor="vampire"
+                  >
+                    <input
+                      checked={false}
+                      className="radio"
+                      id="vampire"
+                      name="theme"
+                      onChange={[MockFunction]}
+                      type="radio"
+                      value="vampire"
+                    />
+                    <span
+                      className="radioButton"
+                      style={
+                        Object {
+                          "opacity": 0,
+                        }
+                      }
+                    >
+                      <Icon
+                        icon="checkmark"
+                        title="icon"
+                        viewBox="0 0 50 50"
+                      />
+                    </span>
+                    Vampire Dark
                   </label>
                 </form>
               </div>,
@@ -2929,10 +3979,12 @@ ShallowWrapper {
                 >
                   <label
                     className="label active"
+                    htmlFor="si"
                   >
                     <input
                       checked={true}
                       className="radio"
+                      id="si"
                       name="units"
                       onChange={[MockFunction]}
                       type="radio"
@@ -2948,6 +4000,7 @@ ShallowWrapper {
                     >
                       <Icon
                         icon="checkmark"
+                        title="icon"
                         viewBox="0 0 50 50"
                       />
                     </span>
@@ -2955,10 +4008,12 @@ ShallowWrapper {
                   </label>
                   <label
                     className="label"
+                    htmlFor="us"
                   >
                     <input
                       checked={false}
                       className="radio"
+                      id="us"
                       name="units"
                       onChange={[MockFunction]}
                       type="radio"
@@ -2974,6 +4029,7 @@ ShallowWrapper {
                     >
                       <Icon
                         icon="checkmark"
+                        title="icon"
                         viewBox="0 0 50 50"
                       />
                     </span>
@@ -2981,10 +4037,12 @@ ShallowWrapper {
                   </label>
                   <label
                     className="label"
+                    htmlFor="uk2"
                   >
                     <input
                       checked={false}
                       className="radio"
+                      id="uk2"
                       name="units"
                       onChange={[MockFunction]}
                       type="radio"
@@ -3000,6 +4058,7 @@ ShallowWrapper {
                     >
                       <Icon
                         icon="checkmark"
+                        title="icon"
                         viewBox="0 0 50 50"
                       />
                     </span>
@@ -3007,10 +4066,12 @@ ShallowWrapper {
                   </label>
                   <label
                     className="label"
+                    htmlFor="ca"
                   >
                     <input
                       checked={false}
                       className="radio"
+                      id="ca"
                       name="units"
                       onChange={[MockFunction]}
                       type="radio"
@@ -3026,6 +4087,7 @@ ShallowWrapper {
                     >
                       <Icon
                         icon="checkmark"
+                        title="icon"
                         viewBox="0 0 50 50"
                       />
                     </span>
@@ -3033,6 +4095,7 @@ ShallowWrapper {
                   </label>
                 </form>
               </div>,
+              <Footer />,
             ],
             "className": "Settings",
             "style": Object {
@@ -3056,10 +4119,12 @@ ShallowWrapper {
                   >
                     <label
                       className="label active"
+                      htmlFor="pl"
                     >
                       <input
                         checked={true}
                         className="radio"
+                        id="pl"
                         name="language"
                         onChange={[MockFunction]}
                         type="radio"
@@ -3075,6 +4140,7 @@ ShallowWrapper {
                       >
                         <Icon
                           icon="checkmark"
+                          title="icon"
                           viewBox="0 0 50 50"
                         />
                       </span>
@@ -3105,10 +4171,12 @@ ShallowWrapper {
                     "children": Array [
                       <label
                         className="label active"
+                        htmlFor="pl"
                       >
                         <input
                           checked={true}
                           className="radio"
+                          id="pl"
                           name="language"
                           onChange={[MockFunction]}
                           type="radio"
@@ -3124,6 +4192,7 @@ ShallowWrapper {
                         >
                           <Icon
                             icon="checkmark"
+                            title="icon"
                             viewBox="0 0 50 50"
                           />
                         </span>
@@ -3143,6 +4212,7 @@ ShallowWrapper {
                           <input
                             checked={true}
                             className="radio"
+                            id="pl"
                             name="language"
                             onChange={[MockFunction]}
                             type="radio"
@@ -3158,12 +4228,14 @@ ShallowWrapper {
                           >
                             <Icon
                               icon="checkmark"
+                              title="icon"
                               viewBox="0 0 50 50"
                             />
                           </span>,
                           "Polski",
                         ],
                         "className": "label active",
+                        "htmlFor": "pl",
                       },
                       "ref": null,
                       "rendered": Array [
@@ -3174,6 +4246,7 @@ ShallowWrapper {
                           "props": Object {
                             "checked": true,
                             "className": "radio",
+                            "id": "pl",
                             "name": "language",
                             "onChange": [MockFunction],
                             "type": "radio",
@@ -3190,6 +4263,7 @@ ShallowWrapper {
                           "props": Object {
                             "children": <Icon
                               icon="checkmark"
+                              title="icon"
                               viewBox="0 0 50 50"
                             />,
                             "className": "radioButton",
@@ -3204,6 +4278,7 @@ ShallowWrapper {
                             "nodeType": "function",
                             "props": Object {
                               "icon": "checkmark",
+                              "title": "icon",
                               "viewBox": "0 0 50 50",
                             },
                             "ref": null,
@@ -3236,10 +4311,12 @@ ShallowWrapper {
                   >
                     <label
                       className="label"
+                      htmlFor="pink"
                     >
                       <input
                         checked={false}
                         className="radio"
+                        id="pink"
                         name="theme"
                         onChange={[MockFunction]}
                         type="radio"
@@ -3255,6 +4332,7 @@ ShallowWrapper {
                       >
                         <Icon
                           icon="checkmark"
+                          title="icon"
                           viewBox="0 0 50 50"
                         />
                       </span>
@@ -3262,10 +4340,12 @@ ShallowWrapper {
                     </label>
                     <label
                       className="label"
+                      htmlFor="pinkDark"
                     >
                       <input
                         checked={false}
                         className="radio"
+                        id="pinkDark"
                         name="theme"
                         onChange={[MockFunction]}
                         type="radio"
@@ -3281,6 +4361,7 @@ ShallowWrapper {
                       >
                         <Icon
                           icon="checkmark"
+                          title="icon"
                           viewBox="0 0 50 50"
                         />
                       </span>
@@ -3288,10 +4369,12 @@ ShallowWrapper {
                     </label>
                     <label
                       className="label"
+                      htmlFor="pumpkin"
                     >
                       <input
                         checked={false}
                         className="radio"
+                        id="pumpkin"
                         name="theme"
                         onChange={[MockFunction]}
                         type="radio"
@@ -3307,6 +4390,7 @@ ShallowWrapper {
                       >
                         <Icon
                           icon="checkmark"
+                          title="icon"
                           viewBox="0 0 50 50"
                         />
                       </span>
@@ -3314,10 +4398,12 @@ ShallowWrapper {
                     </label>
                     <label
                       className="label"
+                      htmlFor="evening"
                     >
                       <input
                         checked={false}
                         className="radio"
+                        id="evening"
                         name="theme"
                         onChange={[MockFunction]}
                         type="radio"
@@ -3333,6 +4419,7 @@ ShallowWrapper {
                       >
                         <Icon
                           icon="checkmark"
+                          title="icon"
                           viewBox="0 0 50 50"
                         />
                       </span>
@@ -3340,10 +4427,12 @@ ShallowWrapper {
                     </label>
                     <label
                       className="label"
+                      htmlFor="sky"
                     >
                       <input
                         checked={false}
                         className="radio"
+                        id="sky"
                         name="theme"
                         onChange={[MockFunction]}
                         type="radio"
@@ -3359,6 +4448,7 @@ ShallowWrapper {
                       >
                         <Icon
                           icon="checkmark"
+                          title="icon"
                           viewBox="0 0 50 50"
                         />
                       </span>
@@ -3366,10 +4456,12 @@ ShallowWrapper {
                     </label>
                     <label
                       className="label"
+                      htmlFor="harvey"
                     >
                       <input
                         checked={false}
                         className="radio"
+                        id="harvey"
                         name="theme"
                         onChange={[MockFunction]}
                         type="radio"
@@ -3385,10 +4477,98 @@ ShallowWrapper {
                       >
                         <Icon
                           icon="checkmark"
+                          title="icon"
                           viewBox="0 0 50 50"
                         />
                       </span>
                       Harvey
+                    </label>
+                    <label
+                      className="label"
+                      htmlFor="spring"
+                    >
+                      <input
+                        checked={false}
+                        className="radio"
+                        id="spring"
+                        name="theme"
+                        onChange={[MockFunction]}
+                        type="radio"
+                        value="spring"
+                      />
+                      <span
+                        className="radioButton"
+                        style={
+                          Object {
+                            "opacity": 0,
+                          }
+                        }
+                      >
+                        <Icon
+                          icon="checkmark"
+                          title="icon"
+                          viewBox="0 0 50 50"
+                        />
+                      </span>
+                      Spring
+                    </label>
+                    <label
+                      className="label"
+                      htmlFor="lime"
+                    >
+                      <input
+                        checked={false}
+                        className="radio"
+                        id="lime"
+                        name="theme"
+                        onChange={[MockFunction]}
+                        type="radio"
+                        value="lime"
+                      />
+                      <span
+                        className="radioButton"
+                        style={
+                          Object {
+                            "opacity": 0,
+                          }
+                        }
+                      >
+                        <Icon
+                          icon="checkmark"
+                          title="icon"
+                          viewBox="0 0 50 50"
+                        />
+                      </span>
+                      Lime Dark
+                    </label>
+                    <label
+                      className="label"
+                      htmlFor="vampire"
+                    >
+                      <input
+                        checked={false}
+                        className="radio"
+                        id="vampire"
+                        name="theme"
+                        onChange={[MockFunction]}
+                        type="radio"
+                        value="vampire"
+                      />
+                      <span
+                        className="radioButton"
+                        style={
+                          Object {
+                            "opacity": 0,
+                          }
+                        }
+                      >
+                        <Icon
+                          icon="checkmark"
+                          title="icon"
+                          viewBox="0 0 50 50"
+                        />
+                      </span>
+                      Vampire Dark
                     </label>
                   </form>,
                 ],
@@ -3415,10 +4595,12 @@ ShallowWrapper {
                     "children": Array [
                       <label
                         className="label"
+                        htmlFor="pink"
                       >
                         <input
                           checked={false}
                           className="radio"
+                          id="pink"
                           name="theme"
                           onChange={[MockFunction]}
                           type="radio"
@@ -3434,6 +4616,7 @@ ShallowWrapper {
                         >
                           <Icon
                             icon="checkmark"
+                            title="icon"
                             viewBox="0 0 50 50"
                           />
                         </span>
@@ -3441,10 +4624,12 @@ ShallowWrapper {
                       </label>,
                       <label
                         className="label"
+                        htmlFor="pinkDark"
                       >
                         <input
                           checked={false}
                           className="radio"
+                          id="pinkDark"
                           name="theme"
                           onChange={[MockFunction]}
                           type="radio"
@@ -3460,6 +4645,7 @@ ShallowWrapper {
                         >
                           <Icon
                             icon="checkmark"
+                            title="icon"
                             viewBox="0 0 50 50"
                           />
                         </span>
@@ -3467,10 +4653,12 @@ ShallowWrapper {
                       </label>,
                       <label
                         className="label"
+                        htmlFor="pumpkin"
                       >
                         <input
                           checked={false}
                           className="radio"
+                          id="pumpkin"
                           name="theme"
                           onChange={[MockFunction]}
                           type="radio"
@@ -3486,6 +4674,7 @@ ShallowWrapper {
                         >
                           <Icon
                             icon="checkmark"
+                            title="icon"
                             viewBox="0 0 50 50"
                           />
                         </span>
@@ -3493,10 +4682,12 @@ ShallowWrapper {
                       </label>,
                       <label
                         className="label"
+                        htmlFor="evening"
                       >
                         <input
                           checked={false}
                           className="radio"
+                          id="evening"
                           name="theme"
                           onChange={[MockFunction]}
                           type="radio"
@@ -3512,6 +4703,7 @@ ShallowWrapper {
                         >
                           <Icon
                             icon="checkmark"
+                            title="icon"
                             viewBox="0 0 50 50"
                           />
                         </span>
@@ -3519,10 +4711,12 @@ ShallowWrapper {
                       </label>,
                       <label
                         className="label"
+                        htmlFor="sky"
                       >
                         <input
                           checked={false}
                           className="radio"
+                          id="sky"
                           name="theme"
                           onChange={[MockFunction]}
                           type="radio"
@@ -3538,6 +4732,7 @@ ShallowWrapper {
                         >
                           <Icon
                             icon="checkmark"
+                            title="icon"
                             viewBox="0 0 50 50"
                           />
                         </span>
@@ -3545,10 +4740,12 @@ ShallowWrapper {
                       </label>,
                       <label
                         className="label"
+                        htmlFor="harvey"
                       >
                         <input
                           checked={false}
                           className="radio"
+                          id="harvey"
                           name="theme"
                           onChange={[MockFunction]}
                           type="radio"
@@ -3564,10 +4761,98 @@ ShallowWrapper {
                         >
                           <Icon
                             icon="checkmark"
+                            title="icon"
                             viewBox="0 0 50 50"
                           />
                         </span>
                         Harvey
+                      </label>,
+                      <label
+                        className="label"
+                        htmlFor="spring"
+                      >
+                        <input
+                          checked={false}
+                          className="radio"
+                          id="spring"
+                          name="theme"
+                          onChange={[MockFunction]}
+                          type="radio"
+                          value="spring"
+                        />
+                        <span
+                          className="radioButton"
+                          style={
+                            Object {
+                              "opacity": 0,
+                            }
+                          }
+                        >
+                          <Icon
+                            icon="checkmark"
+                            title="icon"
+                            viewBox="0 0 50 50"
+                          />
+                        </span>
+                        Spring
+                      </label>,
+                      <label
+                        className="label"
+                        htmlFor="lime"
+                      >
+                        <input
+                          checked={false}
+                          className="radio"
+                          id="lime"
+                          name="theme"
+                          onChange={[MockFunction]}
+                          type="radio"
+                          value="lime"
+                        />
+                        <span
+                          className="radioButton"
+                          style={
+                            Object {
+                              "opacity": 0,
+                            }
+                          }
+                        >
+                          <Icon
+                            icon="checkmark"
+                            title="icon"
+                            viewBox="0 0 50 50"
+                          />
+                        </span>
+                        Lime Dark
+                      </label>,
+                      <label
+                        className="label"
+                        htmlFor="vampire"
+                      >
+                        <input
+                          checked={false}
+                          className="radio"
+                          id="vampire"
+                          name="theme"
+                          onChange={[MockFunction]}
+                          type="radio"
+                          value="vampire"
+                        />
+                        <span
+                          className="radioButton"
+                          style={
+                            Object {
+                              "opacity": 0,
+                            }
+                          }
+                        >
+                          <Icon
+                            icon="checkmark"
+                            title="icon"
+                            viewBox="0 0 50 50"
+                          />
+                        </span>
+                        Vampire Dark
                       </label>,
                     ],
                     "className": "form theme",
@@ -3583,6 +4868,7 @@ ShallowWrapper {
                           <input
                             checked={false}
                             className="radio"
+                            id="pink"
                             name="theme"
                             onChange={[MockFunction]}
                             type="radio"
@@ -3598,12 +4884,14 @@ ShallowWrapper {
                           >
                             <Icon
                               icon="checkmark"
+                              title="icon"
                               viewBox="0 0 50 50"
                             />
                           </span>,
                           "Pink",
                         ],
                         "className": "label",
+                        "htmlFor": "pink",
                       },
                       "ref": null,
                       "rendered": Array [
@@ -3614,6 +4902,7 @@ ShallowWrapper {
                           "props": Object {
                             "checked": false,
                             "className": "radio",
+                            "id": "pink",
                             "name": "theme",
                             "onChange": [MockFunction],
                             "type": "radio",
@@ -3630,6 +4919,7 @@ ShallowWrapper {
                           "props": Object {
                             "children": <Icon
                               icon="checkmark"
+                              title="icon"
                               viewBox="0 0 50 50"
                             />,
                             "className": "radioButton",
@@ -3644,6 +4934,7 @@ ShallowWrapper {
                             "nodeType": "function",
                             "props": Object {
                               "icon": "checkmark",
+                              "title": "icon",
                               "viewBox": "0 0 50 50",
                             },
                             "ref": null,
@@ -3665,6 +4956,7 @@ ShallowWrapper {
                           <input
                             checked={false}
                             className="radio"
+                            id="pinkDark"
                             name="theme"
                             onChange={[MockFunction]}
                             type="radio"
@@ -3680,12 +4972,14 @@ ShallowWrapper {
                           >
                             <Icon
                               icon="checkmark"
+                              title="icon"
                               viewBox="0 0 50 50"
                             />
                           </span>,
                           "Pink Dark",
                         ],
                         "className": "label",
+                        "htmlFor": "pinkDark",
                       },
                       "ref": null,
                       "rendered": Array [
@@ -3696,6 +4990,7 @@ ShallowWrapper {
                           "props": Object {
                             "checked": false,
                             "className": "radio",
+                            "id": "pinkDark",
                             "name": "theme",
                             "onChange": [MockFunction],
                             "type": "radio",
@@ -3712,6 +5007,7 @@ ShallowWrapper {
                           "props": Object {
                             "children": <Icon
                               icon="checkmark"
+                              title="icon"
                               viewBox="0 0 50 50"
                             />,
                             "className": "radioButton",
@@ -3726,6 +5022,7 @@ ShallowWrapper {
                             "nodeType": "function",
                             "props": Object {
                               "icon": "checkmark",
+                              "title": "icon",
                               "viewBox": "0 0 50 50",
                             },
                             "ref": null,
@@ -3747,6 +5044,7 @@ ShallowWrapper {
                           <input
                             checked={false}
                             className="radio"
+                            id="pumpkin"
                             name="theme"
                             onChange={[MockFunction]}
                             type="radio"
@@ -3762,12 +5060,14 @@ ShallowWrapper {
                           >
                             <Icon
                               icon="checkmark"
+                              title="icon"
                               viewBox="0 0 50 50"
                             />
                           </span>,
                           "Pumpkin Dark",
                         ],
                         "className": "label",
+                        "htmlFor": "pumpkin",
                       },
                       "ref": null,
                       "rendered": Array [
@@ -3778,6 +5078,7 @@ ShallowWrapper {
                           "props": Object {
                             "checked": false,
                             "className": "radio",
+                            "id": "pumpkin",
                             "name": "theme",
                             "onChange": [MockFunction],
                             "type": "radio",
@@ -3794,6 +5095,7 @@ ShallowWrapper {
                           "props": Object {
                             "children": <Icon
                               icon="checkmark"
+                              title="icon"
                               viewBox="0 0 50 50"
                             />,
                             "className": "radioButton",
@@ -3808,6 +5110,7 @@ ShallowWrapper {
                             "nodeType": "function",
                             "props": Object {
                               "icon": "checkmark",
+                              "title": "icon",
                               "viewBox": "0 0 50 50",
                             },
                             "ref": null,
@@ -3829,6 +5132,7 @@ ShallowWrapper {
                           <input
                             checked={false}
                             className="radio"
+                            id="evening"
                             name="theme"
                             onChange={[MockFunction]}
                             type="radio"
@@ -3844,12 +5148,14 @@ ShallowWrapper {
                           >
                             <Icon
                               icon="checkmark"
+                              title="icon"
                               viewBox="0 0 50 50"
                             />
                           </span>,
                           "Evening Dark",
                         ],
                         "className": "label",
+                        "htmlFor": "evening",
                       },
                       "ref": null,
                       "rendered": Array [
@@ -3860,6 +5166,7 @@ ShallowWrapper {
                           "props": Object {
                             "checked": false,
                             "className": "radio",
+                            "id": "evening",
                             "name": "theme",
                             "onChange": [MockFunction],
                             "type": "radio",
@@ -3876,6 +5183,7 @@ ShallowWrapper {
                           "props": Object {
                             "children": <Icon
                               icon="checkmark"
+                              title="icon"
                               viewBox="0 0 50 50"
                             />,
                             "className": "radioButton",
@@ -3890,6 +5198,7 @@ ShallowWrapper {
                             "nodeType": "function",
                             "props": Object {
                               "icon": "checkmark",
+                              "title": "icon",
                               "viewBox": "0 0 50 50",
                             },
                             "ref": null,
@@ -3911,6 +5220,7 @@ ShallowWrapper {
                           <input
                             checked={false}
                             className="radio"
+                            id="sky"
                             name="theme"
                             onChange={[MockFunction]}
                             type="radio"
@@ -3926,12 +5236,14 @@ ShallowWrapper {
                           >
                             <Icon
                               icon="checkmark"
+                              title="icon"
                               viewBox="0 0 50 50"
                             />
                           </span>,
                           "Cool Sky",
                         ],
                         "className": "label",
+                        "htmlFor": "sky",
                       },
                       "ref": null,
                       "rendered": Array [
@@ -3942,6 +5254,7 @@ ShallowWrapper {
                           "props": Object {
                             "checked": false,
                             "className": "radio",
+                            "id": "sky",
                             "name": "theme",
                             "onChange": [MockFunction],
                             "type": "radio",
@@ -3958,6 +5271,7 @@ ShallowWrapper {
                           "props": Object {
                             "children": <Icon
                               icon="checkmark"
+                              title="icon"
                               viewBox="0 0 50 50"
                             />,
                             "className": "radioButton",
@@ -3972,6 +5286,7 @@ ShallowWrapper {
                             "nodeType": "function",
                             "props": Object {
                               "icon": "checkmark",
+                              "title": "icon",
                               "viewBox": "0 0 50 50",
                             },
                             "ref": null,
@@ -3993,6 +5308,7 @@ ShallowWrapper {
                           <input
                             checked={false}
                             className="radio"
+                            id="harvey"
                             name="theme"
                             onChange={[MockFunction]}
                             type="radio"
@@ -4008,12 +5324,14 @@ ShallowWrapper {
                           >
                             <Icon
                               icon="checkmark"
+                              title="icon"
                               viewBox="0 0 50 50"
                             />
                           </span>,
                           "Harvey",
                         ],
                         "className": "label",
+                        "htmlFor": "harvey",
                       },
                       "ref": null,
                       "rendered": Array [
@@ -4024,6 +5342,7 @@ ShallowWrapper {
                           "props": Object {
                             "checked": false,
                             "className": "radio",
+                            "id": "harvey",
                             "name": "theme",
                             "onChange": [MockFunction],
                             "type": "radio",
@@ -4040,6 +5359,7 @@ ShallowWrapper {
                           "props": Object {
                             "children": <Icon
                               icon="checkmark"
+                              title="icon"
                               viewBox="0 0 50 50"
                             />,
                             "className": "radioButton",
@@ -4054,6 +5374,7 @@ ShallowWrapper {
                             "nodeType": "function",
                             "props": Object {
                               "icon": "checkmark",
+                              "title": "icon",
                               "viewBox": "0 0 50 50",
                             },
                             "ref": null,
@@ -4063,6 +5384,270 @@ ShallowWrapper {
                           "type": "span",
                         },
                         "Harvey",
+                      ],
+                      "type": "label",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "Spring",
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <input
+                            checked={false}
+                            className="radio"
+                            id="spring"
+                            name="theme"
+                            onChange={[MockFunction]}
+                            type="radio"
+                            value="spring"
+                          />,
+                          <span
+                            className="radioButton"
+                            style={
+                              Object {
+                                "opacity": 0,
+                              }
+                            }
+                          >
+                            <Icon
+                              icon="checkmark"
+                              title="icon"
+                              viewBox="0 0 50 50"
+                            />
+                          </span>,
+                          "Spring",
+                        ],
+                        "className": "label",
+                        "htmlFor": "spring",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "checked": false,
+                            "className": "radio",
+                            "id": "spring",
+                            "name": "theme",
+                            "onChange": [MockFunction],
+                            "type": "radio",
+                            "value": "spring",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": "input",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": <Icon
+                              icon="checkmark"
+                              title="icon"
+                              viewBox="0 0 50 50"
+                            />,
+                            "className": "radioButton",
+                            "style": Object {
+                              "opacity": 0,
+                            },
+                          },
+                          "ref": null,
+                          "rendered": Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "function",
+                            "props": Object {
+                              "icon": "checkmark",
+                              "title": "icon",
+                              "viewBox": "0 0 50 50",
+                            },
+                            "ref": null,
+                            "rendered": null,
+                            "type": [Function],
+                          },
+                          "type": "span",
+                        },
+                        "Spring",
+                      ],
+                      "type": "label",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "Lime Dark",
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <input
+                            checked={false}
+                            className="radio"
+                            id="lime"
+                            name="theme"
+                            onChange={[MockFunction]}
+                            type="radio"
+                            value="lime"
+                          />,
+                          <span
+                            className="radioButton"
+                            style={
+                              Object {
+                                "opacity": 0,
+                              }
+                            }
+                          >
+                            <Icon
+                              icon="checkmark"
+                              title="icon"
+                              viewBox="0 0 50 50"
+                            />
+                          </span>,
+                          "Lime Dark",
+                        ],
+                        "className": "label",
+                        "htmlFor": "lime",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "checked": false,
+                            "className": "radio",
+                            "id": "lime",
+                            "name": "theme",
+                            "onChange": [MockFunction],
+                            "type": "radio",
+                            "value": "lime",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": "input",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": <Icon
+                              icon="checkmark"
+                              title="icon"
+                              viewBox="0 0 50 50"
+                            />,
+                            "className": "radioButton",
+                            "style": Object {
+                              "opacity": 0,
+                            },
+                          },
+                          "ref": null,
+                          "rendered": Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "function",
+                            "props": Object {
+                              "icon": "checkmark",
+                              "title": "icon",
+                              "viewBox": "0 0 50 50",
+                            },
+                            "ref": null,
+                            "rendered": null,
+                            "type": [Function],
+                          },
+                          "type": "span",
+                        },
+                        "Lime Dark",
+                      ],
+                      "type": "label",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "Vampire Dark",
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <input
+                            checked={false}
+                            className="radio"
+                            id="vampire"
+                            name="theme"
+                            onChange={[MockFunction]}
+                            type="radio"
+                            value="vampire"
+                          />,
+                          <span
+                            className="radioButton"
+                            style={
+                              Object {
+                                "opacity": 0,
+                              }
+                            }
+                          >
+                            <Icon
+                              icon="checkmark"
+                              title="icon"
+                              viewBox="0 0 50 50"
+                            />
+                          </span>,
+                          "Vampire Dark",
+                        ],
+                        "className": "label",
+                        "htmlFor": "vampire",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "checked": false,
+                            "className": "radio",
+                            "id": "vampire",
+                            "name": "theme",
+                            "onChange": [MockFunction],
+                            "type": "radio",
+                            "value": "vampire",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": "input",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": <Icon
+                              icon="checkmark"
+                              title="icon"
+                              viewBox="0 0 50 50"
+                            />,
+                            "className": "radioButton",
+                            "style": Object {
+                              "opacity": 0,
+                            },
+                          },
+                          "ref": null,
+                          "rendered": Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "function",
+                            "props": Object {
+                              "icon": "checkmark",
+                              "title": "icon",
+                              "viewBox": "0 0 50 50",
+                            },
+                            "ref": null,
+                            "rendered": null,
+                            "type": [Function],
+                          },
+                          "type": "span",
+                        },
+                        "Vampire Dark",
                       ],
                       "type": "label",
                     },
@@ -4086,10 +5671,12 @@ ShallowWrapper {
                   >
                     <label
                       className="label active"
+                      htmlFor="si"
                     >
                       <input
                         checked={true}
                         className="radio"
+                        id="si"
                         name="units"
                         onChange={[MockFunction]}
                         type="radio"
@@ -4105,6 +5692,7 @@ ShallowWrapper {
                       >
                         <Icon
                           icon="checkmark"
+                          title="icon"
                           viewBox="0 0 50 50"
                         />
                       </span>
@@ -4112,10 +5700,12 @@ ShallowWrapper {
                     </label>
                     <label
                       className="label"
+                      htmlFor="us"
                     >
                       <input
                         checked={false}
                         className="radio"
+                        id="us"
                         name="units"
                         onChange={[MockFunction]}
                         type="radio"
@@ -4131,6 +5721,7 @@ ShallowWrapper {
                       >
                         <Icon
                           icon="checkmark"
+                          title="icon"
                           viewBox="0 0 50 50"
                         />
                       </span>
@@ -4138,10 +5729,12 @@ ShallowWrapper {
                     </label>
                     <label
                       className="label"
+                      htmlFor="uk2"
                     >
                       <input
                         checked={false}
                         className="radio"
+                        id="uk2"
                         name="units"
                         onChange={[MockFunction]}
                         type="radio"
@@ -4157,6 +5750,7 @@ ShallowWrapper {
                       >
                         <Icon
                           icon="checkmark"
+                          title="icon"
                           viewBox="0 0 50 50"
                         />
                       </span>
@@ -4164,10 +5758,12 @@ ShallowWrapper {
                     </label>
                     <label
                       className="label"
+                      htmlFor="ca"
                     >
                       <input
                         checked={false}
                         className="radio"
+                        id="ca"
                         name="units"
                         onChange={[MockFunction]}
                         type="radio"
@@ -4183,6 +5779,7 @@ ShallowWrapper {
                       >
                         <Icon
                           icon="checkmark"
+                          title="icon"
                           viewBox="0 0 50 50"
                         />
                       </span>
@@ -4213,10 +5810,12 @@ ShallowWrapper {
                     "children": Array [
                       <label
                         className="label active"
+                        htmlFor="si"
                       >
                         <input
                           checked={true}
                           className="radio"
+                          id="si"
                           name="units"
                           onChange={[MockFunction]}
                           type="radio"
@@ -4232,6 +5831,7 @@ ShallowWrapper {
                         >
                           <Icon
                             icon="checkmark"
+                            title="icon"
                             viewBox="0 0 50 50"
                           />
                         </span>
@@ -4239,10 +5839,12 @@ ShallowWrapper {
                       </label>,
                       <label
                         className="label"
+                        htmlFor="us"
                       >
                         <input
                           checked={false}
                           className="radio"
+                          id="us"
                           name="units"
                           onChange={[MockFunction]}
                           type="radio"
@@ -4258,6 +5860,7 @@ ShallowWrapper {
                         >
                           <Icon
                             icon="checkmark"
+                            title="icon"
                             viewBox="0 0 50 50"
                           />
                         </span>
@@ -4265,10 +5868,12 @@ ShallowWrapper {
                       </label>,
                       <label
                         className="label"
+                        htmlFor="uk2"
                       >
                         <input
                           checked={false}
                           className="radio"
+                          id="uk2"
                           name="units"
                           onChange={[MockFunction]}
                           type="radio"
@@ -4284,6 +5889,7 @@ ShallowWrapper {
                         >
                           <Icon
                             icon="checkmark"
+                            title="icon"
                             viewBox="0 0 50 50"
                           />
                         </span>
@@ -4291,10 +5897,12 @@ ShallowWrapper {
                       </label>,
                       <label
                         className="label"
+                        htmlFor="ca"
                       >
                         <input
                           checked={false}
                           className="radio"
+                          id="ca"
                           name="units"
                           onChange={[MockFunction]}
                           type="radio"
@@ -4310,6 +5918,7 @@ ShallowWrapper {
                         >
                           <Icon
                             icon="checkmark"
+                            title="icon"
                             viewBox="0 0 50 50"
                           />
                         </span>
@@ -4329,6 +5938,7 @@ ShallowWrapper {
                           <input
                             checked={true}
                             className="radio"
+                            id="si"
                             name="units"
                             onChange={[MockFunction]}
                             type="radio"
@@ -4344,12 +5954,14 @@ ShallowWrapper {
                           >
                             <Icon
                               icon="checkmark"
+                              title="icon"
                               viewBox="0 0 50 50"
                             />
                           </span>,
                           "SI",
                         ],
                         "className": "label active",
+                        "htmlFor": "si",
                       },
                       "ref": null,
                       "rendered": Array [
@@ -4360,6 +5972,7 @@ ShallowWrapper {
                           "props": Object {
                             "checked": true,
                             "className": "radio",
+                            "id": "si",
                             "name": "units",
                             "onChange": [MockFunction],
                             "type": "radio",
@@ -4376,6 +5989,7 @@ ShallowWrapper {
                           "props": Object {
                             "children": <Icon
                               icon="checkmark"
+                              title="icon"
                               viewBox="0 0 50 50"
                             />,
                             "className": "radioButton",
@@ -4390,6 +6004,7 @@ ShallowWrapper {
                             "nodeType": "function",
                             "props": Object {
                               "icon": "checkmark",
+                              "title": "icon",
                               "viewBox": "0 0 50 50",
                             },
                             "ref": null,
@@ -4411,6 +6026,7 @@ ShallowWrapper {
                           <input
                             checked={false}
                             className="radio"
+                            id="us"
                             name="units"
                             onChange={[MockFunction]}
                             type="radio"
@@ -4426,12 +6042,14 @@ ShallowWrapper {
                           >
                             <Icon
                               icon="checkmark"
+                              title="icon"
                               viewBox="0 0 50 50"
                             />
                           </span>,
                           "US",
                         ],
                         "className": "label",
+                        "htmlFor": "us",
                       },
                       "ref": null,
                       "rendered": Array [
@@ -4442,6 +6060,7 @@ ShallowWrapper {
                           "props": Object {
                             "checked": false,
                             "className": "radio",
+                            "id": "us",
                             "name": "units",
                             "onChange": [MockFunction],
                             "type": "radio",
@@ -4458,6 +6077,7 @@ ShallowWrapper {
                           "props": Object {
                             "children": <Icon
                               icon="checkmark"
+                              title="icon"
                               viewBox="0 0 50 50"
                             />,
                             "className": "radioButton",
@@ -4472,6 +6092,7 @@ ShallowWrapper {
                             "nodeType": "function",
                             "props": Object {
                               "icon": "checkmark",
+                              "title": "icon",
                               "viewBox": "0 0 50 50",
                             },
                             "ref": null,
@@ -4493,6 +6114,7 @@ ShallowWrapper {
                           <input
                             checked={false}
                             className="radio"
+                            id="uk2"
                             name="units"
                             onChange={[MockFunction]}
                             type="radio"
@@ -4508,12 +6130,14 @@ ShallowWrapper {
                           >
                             <Icon
                               icon="checkmark"
+                              title="icon"
                               viewBox="0 0 50 50"
                             />
                           </span>,
                           "UK",
                         ],
                         "className": "label",
+                        "htmlFor": "uk2",
                       },
                       "ref": null,
                       "rendered": Array [
@@ -4524,6 +6148,7 @@ ShallowWrapper {
                           "props": Object {
                             "checked": false,
                             "className": "radio",
+                            "id": "uk2",
                             "name": "units",
                             "onChange": [MockFunction],
                             "type": "radio",
@@ -4540,6 +6165,7 @@ ShallowWrapper {
                           "props": Object {
                             "children": <Icon
                               icon="checkmark"
+                              title="icon"
                               viewBox="0 0 50 50"
                             />,
                             "className": "radioButton",
@@ -4554,6 +6180,7 @@ ShallowWrapper {
                             "nodeType": "function",
                             "props": Object {
                               "icon": "checkmark",
+                              "title": "icon",
                               "viewBox": "0 0 50 50",
                             },
                             "ref": null,
@@ -4575,6 +6202,7 @@ ShallowWrapper {
                           <input
                             checked={false}
                             className="radio"
+                            id="ca"
                             name="units"
                             onChange={[MockFunction]}
                             type="radio"
@@ -4590,12 +6218,14 @@ ShallowWrapper {
                           >
                             <Icon
                               icon="checkmark"
+                              title="icon"
                               viewBox="0 0 50 50"
                             />
                           </span>,
                           "CA",
                         ],
                         "className": "label",
+                        "htmlFor": "ca",
                       },
                       "ref": null,
                       "rendered": Array [
@@ -4606,6 +6236,7 @@ ShallowWrapper {
                           "props": Object {
                             "checked": false,
                             "className": "radio",
+                            "id": "ca",
                             "name": "units",
                             "onChange": [MockFunction],
                             "type": "radio",
@@ -4622,6 +6253,7 @@ ShallowWrapper {
                           "props": Object {
                             "children": <Icon
                               icon="checkmark"
+                              title="icon"
                               viewBox="0 0 50 50"
                             />,
                             "className": "radioButton",
@@ -4636,6 +6268,7 @@ ShallowWrapper {
                             "nodeType": "function",
                             "props": Object {
                               "icon": "checkmark",
+                              "title": "icon",
                               "viewBox": "0 0 50 50",
                             },
                             "ref": null,
@@ -4653,6 +6286,15 @@ ShallowWrapper {
                 },
               ],
               "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
             },
           ],
           "type": "div",

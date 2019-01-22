@@ -38,7 +38,7 @@ const Hourly = ({
   const graphColorGrey = getComputedStyle(document.documentElement).getPropertyValue('--color-grey-graph')
 
   return (
-    <div className={classes.Hourly}>
+    <section className={classes.Hourly}>
       <Summary>{hourly.summary}</Summary>
       <div className={classes.chartContainer}>
         <ResponsiveContainer width="100%" height={300}>
@@ -57,7 +57,7 @@ const Hourly = ({
         </ResponsiveContainer>
       </div>
       
-    </div>
+    </section>
   )
 }
 

@@ -10,7 +10,6 @@ import Daily from '../../components/Daily/Daily'
 import Spinner from '../../components/Spinner/Spinner'
 import Hourly from '../../components/Hourly/Hourly'
 import Updated from '../../components/Updated/Updated'
-import Footer from '../../components/Footer/Footer'
 import ScreenMessage from '../../components/ScreenMessage/ScreenMessage'
 
 
@@ -75,6 +74,15 @@ class Weather extends Component {
     
     console.log(placeNames[0])
 
+    // for(let i = 0; i < placeNames.length; i++) {
+    //   for(let j = 0; j < placeNames[i].address_components.length; j++) {
+    //     if (placeNames[i].address_components[j].types.includes("locality")) {
+    //       shortName = placeNames[i].address_components[j].short_name
+    //       longName = placeNames[i].address_components[j].long_name
+    //       break
+    //     }
+    //   }
+    // }
     for(let i = 0; i < placeNames[0].address_components.length; i++) {
         if (placeNames[0].address_components[i].types.includes("locality")) {
           shortName = placeNames[0].address_components[i].short_name
@@ -174,7 +182,6 @@ class Weather extends Component {
             updateText={this.props.text.update}
             address={this.state.address}
           />
-          <Footer />
         </Fragment>
       )
     }

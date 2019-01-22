@@ -3,9 +3,7 @@
   margin: 0 auto;
   margin-bottom: 5.5rem;
   background-color: var(--color-back);
-}
-
-.headerBar {
-  width: 100%;
-  background-color: #dd0055;
+  @media only screen and (min-width: 577px) {
+    margin-bottom: 1rem;
+  }
 }

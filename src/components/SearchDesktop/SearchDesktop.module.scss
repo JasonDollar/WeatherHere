@@ -1,9 +1,3 @@
-// .container {
-//   flex: 1;
-
-//   overflow: hidden;
-  
-// }
 
 .Search {
   flex: 1 1;
@@ -11,8 +5,6 @@
   align-content: flex-end;
   padding-bottom: 1rem;
   margin: 0;
-  
-
 
   @media only screen and (min-width: 806px) {
     padding: 1rem 0 1rem 1rem;
@@ -49,7 +41,6 @@
   }
 
   & .formButton {
-    
     & svg {
       height: var(--normal-text-font-size);
       width: var(--normal-text-font-size);
@@ -88,7 +79,6 @@
 }
 
 .buttonSettings {
-  // display: block;
   padding: 0.5rem 0 0;
   margin: 0 1rem;
   & svg {

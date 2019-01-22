@@ -48,8 +48,9 @@
     line-height: normal;
     box-sizing: inherit;
     flex: 1;
-    padding: 1rem 0 1rem 1.5rem;
+    padding: 1rem 0rem 1rem 1.5rem;
     border: none;
+    border-bottom: 1px solid transparent;
     border-radius: 5px;
     font-size: var(--big-text-font-size);
     box-shadow: 2px 1px 3px -2px var(--color-box-shadow);

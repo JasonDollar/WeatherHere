@@ -1,9 +1,21 @@
 .Footer {
-  padding: 1.5rem 3rem;
-  background-color: var(--color-back);
+  
+  // background-color: var(--color-back);
+  margin: 1rem auto;
+  font-size: 2rem;
 }
 
-.link {
+.link:link,
+.link:visited {
   color: inherit;
   text-decoration: none;
+  cursor: pointer;
+  padding: 1rem 1rem;
+  border-bottom: 2px solid transparent;
+  transition: .15s all;
+}
+
+.link:hover,
+.link:active {
+  border-bottom: 2px solid var(--color-primary-offset);
 }

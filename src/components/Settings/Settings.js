@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Icon from '../Icon/Icon'
 import Backdrop from '../Backdrop/Backdrop'
+import Footer from '../Footer/Footer'
 import layouts from '../../data/layouts'
 import { unitsNames } from '../../data/unitsNames'
 import classes from './Settings.module.scss'
@@ -23,8 +24,10 @@ const Settings = ({
     <label 
       key={item.id}
       className={item.id === selectedLanguage ? `${classes.label} ${classes.active}` : classes.label}
+      htmlFor={item.id}
     >
       <input
+        id={item.id}
         type="radio"
         name="language"
         checked={item.id === selectedLanguage}
@@ -44,8 +47,10 @@ const Settings = ({
       <label 
         key={layouts[item].name}
         className={layouts[item].id === themeName ? `${classes.label} ${classes.active}` : classes.label}
+        htmlFor={layouts[item].id}
       >
         <input
+          id={layouts[item].id}
           type="radio"
           name="theme"
           checked={layouts[item].id === themeName}
@@ -64,8 +69,10 @@ const Settings = ({
     <label 
       key={unitsNames[item].id}
       className={unitsNames[item].id === units ? `${classes.label} ${classes.active}` : classes.label}
+      htmlFor={unitsNames[item].id}
     >
       <input
+        id={unitsNames[item].id}
         type="radio"
         name="units"
         checked={unitsNames[item].id === units}
@@ -111,7 +118,7 @@ const Settings = ({
 
           </form>
         </div>
-        
+        <Footer />
       </div>
     </React.Fragment>
   )
@@ -125,7 +132,7 @@ Settings.propTypes = {
   languageNames: PropTypes.arrayOf(PropTypes.shape({
     name: PropTypes.string,
     id: PropTypes.string,
-  })),
+  })).isRequired,
   selectedLanguage: PropTypes.string.isRequired,
   showBackdrop: PropTypes.bool.isRequired, 
   hideBackdrop: PropTypes.func.isRequired,

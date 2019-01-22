@@ -11,9 +11,10 @@ let dataWind = formatNumber(data.weather.currently.windSpeed)
 let unitPercent = '%'
 let unitWind = 'm/s'
 let additionalData = data.weather.currently.windBearing
+let text = data.text.pl.current
 let wrapper
 
-
+// TODO update test for visual circle data js polyfill
 
 describe('DataCircle test', () => {
   describe('DataCircle comp. with humidity data (works for most types)', () => {
@@ -23,6 +24,7 @@ describe('DataCircle test', () => {
           type={typeHumidity}
           data={dataHumidity}
           unit={unitPercent}
+          text={text}
         />,
       )
     })
@@ -48,6 +50,7 @@ describe('DataCircle test', () => {
           data={dataWind}
           unit={unitWind}
           additionalData={additionalData}
+          text={text}
         />,
       )
     })

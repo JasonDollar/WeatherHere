@@ -11,22 +11,27 @@ const MobileMenu = ({
     <button
       className={activeMenuClass === 'search' ? `${classes.active} ${classes.setting}` : classes.setting} 
       onClick={showSearchHandler}
+      type="button"
     >
       <span className="hidden">{text.search}</span>
       <Icon icon="search" viewBox="0 0 50 50" title={text.icon} />
       <span>{text.search}</span>
     </button>
+
     <button 
       className={activeMenuClass === 'forecast' ? `${classes.active} ${classes.setting}` : classes.setting} 
       onClick={showForecastHandler}
+      type="button"
     >
       <span className="hidden">{text.forecast}</span>
       <Icon icon="sun" viewBox="0 0 50 50" title={text.icon} />
       <span>{text.forecast}</span>
     </button>
+    
     <button
       className={activeMenuClass === 'settings' ? `${classes.active} ${classes.setting}` : classes.setting} 
       onClick={showSettingsHandler}
+      type="button"
     >
       <span className="hidden">{text.setings}</span>
       <Icon icon="settings" viewBox="0 0 50 50" title={text.icon} />

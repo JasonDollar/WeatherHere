@@ -11,7 +11,7 @@ import classes from './MainInfo.module.scss'
 const MainInfo = ({
   locationShortName, currentText, currently, dateText, today, timezone, sunPositionTime, units,
 }) => (
-  <div className={classes.MainInfo}>
+  <section className={classes.MainInfo}>
     <div className={classes.weather}>
       <div className={classes.city}>{locationShortName || currentText.location}</div>
       <div className={classes.icon}>
@@ -49,7 +49,7 @@ const MainInfo = ({
       </div>
     </div>
     <Summary>{currently.summary}</Summary>
-  </div>
+  </section>
 
       
 

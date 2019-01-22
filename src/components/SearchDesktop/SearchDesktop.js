@@ -16,13 +16,13 @@ const SearchDesktop = ({
           
       </button>
     </form>
-    <button className={`${classes.button} ${classes.buttonGeo}`} onClick={getUserLocation}>
+    <button className={`${classes.button} ${classes.buttonGeo}`} onClick={getUserLocation} type="button">
       <span className="hidden">{text.geoFull}</span>
       <Icon icon="gpsArrow" viewBox="0 0 51.636 51.636" title={text.icon} />
       <span>{text.geo}</span>
         
     </button>
-    <button className={`${classes.button} ${classes.buttonSettings}`} onClick={onSettingIconClick}>
+    <button className={`${classes.button} ${classes.buttonSettings}`} onClick={onSettingIconClick} type="button">
       <span className="hidden">{text.settings}</span>
       <Icon icon="settings" viewBox="0 0 50 50" title={text.icon} />
       <span>{text.settings}</span>
@@ -36,6 +36,7 @@ export default SearchDesktop
 
 SearchDesktop.propTypes = {
   onSearchFormSubmit: PropTypes.func.isRequired, 
+  onSettingIconClick: PropTypes.func.isRequired, 
   onInputChange: PropTypes.func.isRequired, 
   inputValue: PropTypes.string.isRequired, 
   text: PropTypes.shape({

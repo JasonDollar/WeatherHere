@@ -2,9 +2,9 @@ import React from 'react'
 import classes from './Summary.module.scss'
 
 const Summary = ({ children }) => (
-  <p className={classes.Summary}>
+  <h3 className={classes.Summary}>
     {children}
-  </p>
+  </h3>
 )
 
 export default Summary

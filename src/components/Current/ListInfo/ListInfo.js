@@ -7,7 +7,7 @@ import classes from './ListInfo.module.scss'
 const ListInfo = ({
   currentText, currently, moonphase, units, 
 }) => (
-  <div className={classes.Current}>
+  <section className={classes.Current}>
   
     <div className={classes.element}>
       <div>{currentText.appTemp}</div>
@@ -69,7 +69,7 @@ const ListInfo = ({
       </div>
     </div>
 
-  </div>
+  </section>
 )
 
 export default ListInfo

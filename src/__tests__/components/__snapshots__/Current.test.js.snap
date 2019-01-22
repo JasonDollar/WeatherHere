@@ -438,7 +438,7 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "host",
+    "nodeType": "function",
     "props": Object {
       "children": Array [
         <MainInfo
@@ -665,7 +665,6 @@ ShallowWrapper {
           units="si"
         />,
       ],
-      "className": "Current",
     },
     "ref": null,
     "rendered": Array [
@@ -899,13 +898,13 @@ ShallowWrapper {
         "type": [Function],
       },
     ],
-    "type": "div",
+    "type": Symbol(react.fragment),
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "host",
+      "nodeType": "function",
       "props": Object {
         "children": Array [
           <MainInfo
@@ -1132,7 +1131,6 @@ ShallowWrapper {
             units="si"
           />,
         ],
-        "className": "Current",
       },
       "ref": null,
       "rendered": Array [
@@ -1366,7 +1364,7 @@ ShallowWrapper {
           "type": [Function],
         },
       ],
-      "type": "div",
+      "type": Symbol(react.fragment),
     },
   ],
   Symbol(enzyme.__options__): Object {

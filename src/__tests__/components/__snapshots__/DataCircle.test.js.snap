@@ -6,6 +6,41 @@ ShallowWrapper {
   Symbol(enzyme.__unrendered__): <DataCircle
     additionalData={null}
     data={94}
+    text={
+      Object {
+        "appTemp": "Temperatura odczuwalna",
+        "cloudCov": "Zachmurzenie",
+        "date": "Data",
+        "dewPoint": "Punkt rosy",
+        "humidity": "Wilgotność",
+        "icon": "Ikona pogody",
+        "location": "Nieznana lokacja",
+        "moon": Array [
+          "Nów",
+          "Wschodzący sierp",
+          "Pierwsza kwadra",
+          "Wschodzący księżyc",
+          "Pełnia",
+          "Ubywający księżyc",
+          "Trzecia kwadra",
+          "Ubywający sierp",
+        ],
+        "moonphase": "Faza księżyca",
+        "ozone": "Ozon",
+        "precipInt": "Intensywność opadu",
+        "precipProb": "Opady",
+        "precipType": "Rodzaj opadu",
+        "pressure": "Ciśnienie",
+        "sun": "Słońce",
+        "sunrise": "Wschód słońca",
+        "sunset": "Zachód słońca",
+        "today": "Dziś",
+        "uvIndex": "Indeks UV",
+        "visibility": "Widoczność",
+        "wind": "Wiatr",
+        "windGust": "Wiatr w porywach",
+      }
+    }
     type="Wilgotność"
     unit="%"
   />,
@@ -24,6 +59,14 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <div
+          className="dataColor"
+          style={
+            Object {
+              "background": "conic-gradient( 0%,  50%, 94%,  94%,  94% 100%)",
+            }
+          }
+        />,
+        <div
           className="dataFront"
         />,
         <div
@@ -37,13 +80,24 @@ ShallowWrapper {
           </span>
         </div>,
       ],
-      "className": "DataCircle",
-      "style": Object {
-        "background": "conic-gradient(99 0 94%,  94% 100%)",
-      },
+      "className": "DataCircle humidity",
     },
     "ref": null,
     "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "className": "dataColor",
+          "style": Object {
+            "background": "conic-gradient( 0%,  50%, 94%,  94%,  94% 100%)",
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "div",
+      },
       Object {
         "instance": null,
         "key": undefined,
@@ -110,6 +164,14 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <div
+            className="dataColor"
+            style={
+              Object {
+                "background": "conic-gradient( 0%,  50%, 94%,  94%,  94% 100%)",
+              }
+            }
+          />,
+          <div
             className="dataFront"
           />,
           <div
@@ -123,13 +185,24 @@ ShallowWrapper {
             </span>
           </div>,
         ],
-        "className": "DataCircle",
-        "style": Object {
-          "background": "conic-gradient(99 0 94%,  94% 100%)",
-        },
+        "className": "DataCircle humidity",
       },
       "ref": null,
       "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "dataColor",
+            "style": Object {
+              "background": "conic-gradient( 0%,  50%, 94%,  94%,  94% 100%)",
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "div",
+        },
         Object {
           "instance": null,
           "key": undefined,
@@ -213,10 +286,45 @@ exports[`DataCircle test DataCircle comp. with wind data Data Circle wind snapsh
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <DataCircle
-    additionalData={99}
-    data={5.7}
-    type="Wiatr"
-    unit="m/s"
+    additionalData={null}
+    data={94}
+    text={
+      Object {
+        "appTemp": "Temperatura odczuwalna",
+        "cloudCov": "Zachmurzenie",
+        "date": "Data",
+        "dewPoint": "Punkt rosy",
+        "humidity": "Wilgotność",
+        "icon": "Ikona pogody",
+        "location": "Nieznana lokacja",
+        "moon": Array [
+          "Nów",
+          "Wschodzący sierp",
+          "Pierwsza kwadra",
+          "Wschodzący księżyc",
+          "Pełnia",
+          "Ubywający księżyc",
+          "Trzecia kwadra",
+          "Ubywający sierp",
+        ],
+        "moonphase": "Faza księżyca",
+        "ozone": "Ozon",
+        "precipInt": "Intensywność opadu",
+        "precipProb": "Opady",
+        "precipType": "Rodzaj opadu",
+        "pressure": "Ciśnienie",
+        "sun": "Słońce",
+        "sunrise": "Wschód słońca",
+        "sunset": "Zachód słońca",
+        "today": "Dziś",
+        "uvIndex": "Indeks UV",
+        "visibility": "Widoczność",
+        "wind": "Wiatr",
+        "windGust": "Wiatr w porywach",
+      }
+    }
+    type="Wilgotność"
+    unit="%"
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -233,39 +341,45 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <div
+          className="dataColor"
+          style={
+            Object {
+              "background": "conic-gradient( 0%,  50%, 94%,  94%,  94% 100%)",
+            }
+          }
+        />,
+        <div
           className="dataFront"
         />,
         <div
           className="dataContainer"
         >
-          <div
-            className="bigArrow"
-            style={
-              Object {
-                "transform": "rotate(9deg)",
-              }
-            }
-          >
-            <Icon
-              icon="arrow"
-              viewBox="0 0 24 24"
-            />
-          </div>
           <span>
-            5.7m/s
+            94%
           </span>
           <span>
-            Wiatr
+            Wilgotność
           </span>
         </div>,
       ],
-      "className": "DataCircle",
-      "style": Object {
-        "background": "conic-gradient(99 0 5.7%,  5.7% 100%)",
-      },
+      "className": "DataCircle humidity",
     },
     "ref": null,
     "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "className": "dataColor",
+          "style": Object {
+            "background": "conic-gradient( 0%,  50%, 94%,  94%,  94% 100%)",
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "div",
+      },
       Object {
         "instance": null,
         "key": undefined,
@@ -283,68 +397,28 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <div
-              className="bigArrow"
-              style={
-                Object {
-                  "transform": "rotate(9deg)",
-                }
-              }
-            >
-              <Icon
-                icon="arrow"
-                viewBox="0 0 24 24"
-              />
-            </div>,
+            null,
             <span>
-              5.7m/s
+              94%
             </span>,
             <span>
-              Wiatr
+              Wilgotność
             </span>,
           ],
           "className": "dataContainer",
         },
         "ref": null,
         "rendered": Array [
+          null,
           Object {
             "instance": null,
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": <Icon
-                icon="arrow"
-                viewBox="0 0 24 24"
-              />,
-              "className": "bigArrow",
-              "style": Object {
-                "transform": "rotate(9deg)",
-              },
+              "children": "94%",
             },
             "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "function",
-              "props": Object {
-                "icon": "arrow",
-                "viewBox": "0 0 24 24",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            "type": "div",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "5.7m/s",
-            },
-            "ref": null,
-            "rendered": "5.7m/s",
+            "rendered": "94%",
             "type": "span",
           },
           Object {
@@ -352,10 +426,10 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Wiatr",
+              "children": "Wilgotność",
             },
             "ref": null,
-            "rendered": "Wiatr",
+            "rendered": "Wilgotność",
             "type": "span",
           },
         ],
@@ -372,39 +446,45 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <div
+            className="dataColor"
+            style={
+              Object {
+                "background": "conic-gradient( 0%,  50%, 94%,  94%,  94% 100%)",
+              }
+            }
+          />,
+          <div
             className="dataFront"
           />,
           <div
             className="dataContainer"
           >
-            <div
-              className="bigArrow"
-              style={
-                Object {
-                  "transform": "rotate(9deg)",
-                }
-              }
-            >
-              <Icon
-                icon="arrow"
-                viewBox="0 0 24 24"
-              />
-            </div>
             <span>
-              5.7m/s
+              94%
             </span>
             <span>
-              Wiatr
+              Wilgotność
             </span>
           </div>,
         ],
-        "className": "DataCircle",
-        "style": Object {
-          "background": "conic-gradient(99 0 5.7%,  5.7% 100%)",
-        },
+        "className": "DataCircle humidity",
       },
       "ref": null,
       "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "dataColor",
+            "style": Object {
+              "background": "conic-gradient( 0%,  50%, 94%,  94%,  94% 100%)",
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "div",
+        },
         Object {
           "instance": null,
           "key": undefined,
@@ -422,68 +502,28 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <div
-                className="bigArrow"
-                style={
-                  Object {
-                    "transform": "rotate(9deg)",
-                  }
-                }
-              >
-                <Icon
-                  icon="arrow"
-                  viewBox="0 0 24 24"
-                />
-              </div>,
+              null,
               <span>
-                5.7m/s
+                94%
               </span>,
               <span>
-                Wiatr
+                Wilgotność
               </span>,
             ],
             "className": "dataContainer",
           },
           "ref": null,
           "rendered": Array [
+            null,
             Object {
               "instance": null,
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": <Icon
-                  icon="arrow"
-                  viewBox="0 0 24 24"
-                />,
-                "className": "bigArrow",
-                "style": Object {
-                  "transform": "rotate(9deg)",
-                },
+                "children": "94%",
               },
               "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "function",
-                "props": Object {
-                  "icon": "arrow",
-                  "viewBox": "0 0 24 24",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-              "type": "div",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "5.7m/s",
-              },
-              "ref": null,
-              "rendered": "5.7m/s",
+              "rendered": "94%",
               "type": "span",
             },
             Object {
@@ -491,10 +531,10 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Wiatr",
+                "children": "Wilgotność",
               },
               "ref": null,
-              "rendered": "Wiatr",
+              "rendered": "Wilgotność",
               "type": "span",
             },
           ],

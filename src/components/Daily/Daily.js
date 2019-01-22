@@ -12,6 +12,7 @@ import classes from './Daily.module.scss'
 const Daily = ({
   daily, dateText, timezone, units,
 }) => {
+  
   const graphColorPrimary = getComputedStyle(document.documentElement).getPropertyValue('--color-primary')
   const graphColorSecondary = getComputedStyle(document.documentElement).getPropertyValue('--color-anti-graph')
   const graphColorGrey = getComputedStyle(document.documentElement).getPropertyValue('--color-grey-graph')
@@ -19,28 +20,35 @@ const Daily = ({
     .split('')
     .filter(item => !isNaN(item))
     .join('')
-  let fullTempDisplay
-  const data = daily.data.map(({ time, temperatureHigh, temperatureLow, summary }, index) => {
+  let fullTempDisplay = `${dateText.temperature} (${units !== 'us' ? '°C' : '°F'})`
+
+  const data = daily.data.map(({
+    time, temperatureHigh, temperatureLow, summary, 
+  }, index) => {
     const formattedHighTemperature = formatNumber(temperatureHigh)
-    const formattedLowTemperature = formattedHighTemperature === formatNumber(temperatureLow) ? formatNumber(temperatureLow - 0.1) : formatNumber(temperatureLow)
+    const formattedLowTemperature = (
+      formattedHighTemperature === formatNumber(temperatureLow) ? formatNumber(temperatureLow - 0.1) : formatNumber(temperatureLow)
+    )
     const day = getTimeFromSeconds(time, timezone)
     let dayName
+
     if (index === 0) {
       dayName = dateText.today
-    } else dayName = dateText.weekDayShort[day.day]
-    fullTempDisplay = `${dateText.temperature} (${units !== 'us' ? '°C' : '°F'})`
+    } else {
+      dayName = dateText.weekDayShort[day.day]
+    }
+
     return {
       name: dayName,
-      // change temperature later to localized name
       [fullTempDisplay]: [formattedHighTemperature, formattedLowTemperature],
-      summary: summary
+      summary,
     }
   })
 
   
   
   return (
-    <div className={classes.Daily}>
+    <section className={classes.Daily}>
       <Summary>{daily.summary}</Summary>
       <div className={classes.chartContainer}> 
         <ResponsiveContainer height={300} width="95%">
@@ -56,7 +64,6 @@ const Daily = ({
             <YAxis type="number" stroke={graphColorGrey} />
             <Tooltip
               content={<CustomTooltip tempText={dateText} type="daily" units={units} windowWidth={parseInt(windowWidth)} />}
-
             />
             <Legend layout="horizontal" />
             <Bar dataKey={fullTempDisplay} fill="url(#colorPrimary)" unit={units} />
@@ -64,7 +71,7 @@ const Daily = ({
           </BarChart>
         </ResponsiveContainer>
       </div>
-    </div>
+    </section>
   )
 }
 

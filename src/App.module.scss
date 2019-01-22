@@ -1,11 +1,3 @@
-// .container {
-//   display: flex;
-//   /* flex-direction: column; */ 
-
-//   & > * {
-//     width: 100%;
-//   }
-// }
 .App {
   color: var(--color-text-primary);
   background-color: var(--color-back);
@@ -27,12 +19,3 @@
   background-color: var(--color-primary);
 }
 
-
-.footerContainer {
-  padding-bottom: calc(var(--screen-height) / 10);
-  // justify-content: center;
-
-  @media only screen and (min-width: 577px) {
-    padding-bottom: 2rem;
-  } 
-}
