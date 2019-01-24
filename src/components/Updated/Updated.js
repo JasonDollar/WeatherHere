@@ -5,7 +5,7 @@ import classes from './Updated.module.scss'
 
 const Updated = ({ updateTime, updateText, address }) => (
   <div className={classes.Updated}>
-    {`${updateText}${moment(updateTime).format('D.M HH:mm')}`}
+    <span>{`${updateText}${moment(updateTime).format('D.M HH:mm')}`}</span>
     <span>{address}</span>
   </div>
 )

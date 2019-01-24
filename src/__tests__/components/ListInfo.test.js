@@ -1,5 +1,5 @@
 import React from 'react'
-import { shallow, configure } from 'enzyme'
+import { shallow } from 'enzyme'
 import { appTestData as data } from '../../data/fixtures'
 import ListInfo from '../../components/Current/ListInfo/ListInfo'
 
@@ -24,8 +24,8 @@ beforeAll(() => {
   )
 })
 
-describe('ListInfo comp. test', () => {
-  test('ListInfo match to Snapshot', () => {
+describe('ListInfo component test', () => {
+  test('Matches snapshot', () => {
     expect(wrapper).toMatchSnapshot()
   })
 })

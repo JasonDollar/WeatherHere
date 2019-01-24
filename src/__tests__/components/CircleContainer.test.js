@@ -3,15 +3,12 @@ import { shallow } from 'enzyme'
 import { appTestData as data } from '../../data/fixtures'
 import CircleContainer from '../../components/CircleContainer/CircleContainer' 
 
-let currentText 
-let currently 
-let units
+let currentText = data.text.pl.current
+let currently = data.weather.currently
+let units = data.units.si.id
 let wrapper
 
 beforeAll(() => {
-  currentText = data.text.pl.current
-  currently = data.weather.currently
-  units = data.units.si.id
   wrapper = shallow(
     <CircleContainer 
       currentText={currentText}
@@ -21,6 +18,6 @@ beforeAll(() => {
   )
 })
 
-test('CircleContainer match to Snapshot', () => {
+test('CircleContainer matches Snapshot', () => {
   expect(wrapper).toMatchSnapshot()
 })

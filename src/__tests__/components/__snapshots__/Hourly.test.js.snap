@@ -1,0 +1,4393 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Hourly component test Matches snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Hourly
+    hourly={
+      Object {
+        "data": Array [
+          Object {
+            "apparentTemperature": 6.14,
+            "cloudCover": 0.91,
+            "dewPoint": 8,
+            "humidity": 0.93,
+            "icon": "partly-cloudy-night",
+            "ozone": 290.67,
+            "precipIntensity": 0,
+            "precipProbability": 0,
+            "pressure": 1010.16,
+            "summary": "Średnie zachmurzenie",
+            "temperature": 9,
+            "time": 1540832400,
+            "uvIndex": 0,
+            "visibility": 16.09,
+            "windBearing": 96,
+            "windGust": 10.38,
+            "windSpeed": 5.52,
+          },
+          Object {
+            "apparentTemperature": 6.82,
+            "cloudCover": 0.93,
+            "dewPoint": 8.78,
+            "humidity": 0.94,
+            "icon": "partly-cloudy-night",
+            "ozone": 290.48,
+            "precipIntensity": 0.0076,
+            "precipProbability": 0.02,
+            "precipType": "rain",
+            "pressure": 1009.83,
+            "summary": "Średnie zachmurzenie",
+            "temperature": 9.66,
+            "time": 1540836000,
+            "uvIndex": 0,
+            "visibility": 16.09,
+            "windBearing": 101,
+            "windGust": 11.04,
+            "windSpeed": 5.95,
+          },
+          Object {
+            "apparentTemperature": 11.69,
+            "cloudCover": 0.93,
+            "dewPoint": 10.88,
+            "humidity": 0.95,
+            "icon": "partly-cloudy-night",
+            "ozone": 290.73,
+            "precipIntensity": 0.0051,
+            "precipProbability": 0.03,
+            "precipType": "rain",
+            "pressure": 1008.98,
+            "summary": "Średnie zachmurzenie",
+            "temperature": 11.69,
+            "time": 1540839600,
+            "uvIndex": 0,
+            "visibility": 16.09,
+            "windBearing": 108,
+            "windGust": 11.35,
+            "windSpeed": 5.69,
+          },
+          Object {
+            "apparentTemperature": 11.27,
+            "cloudCover": 0.91,
+            "dewPoint": 10.33,
+            "humidity": 0.94,
+            "icon": "partly-cloudy-night",
+            "ozone": 291.34,
+            "precipIntensity": 0.0051,
+            "precipProbability": 0.03,
+            "precipType": "rain",
+            "pressure": 1008.83,
+            "summary": "Średnie zachmurzenie",
+            "temperature": 11.27,
+            "time": 1540843200,
+            "uvIndex": 0,
+            "visibility": 16.09,
+            "windBearing": 110,
+            "windGust": 11.52,
+            "windSpeed": 6.32,
+          },
+          Object {
+            "apparentTemperature": 12.46,
+            "cloudCover": 0.91,
+            "dewPoint": 11.52,
+            "humidity": 0.94,
+            "icon": "partly-cloudy-night",
+            "ozone": 292.11,
+            "precipIntensity": 0,
+            "precipProbability": 0,
+            "pressure": 1008.32,
+            "summary": "Średnie zachmurzenie",
+            "temperature": 12.46,
+            "time": 1540846800,
+            "uvIndex": 0,
+            "visibility": 16.09,
+            "windBearing": 117,
+            "windGust": 11.82,
+            "windSpeed": 6.03,
+          },
+          Object {
+            "apparentTemperature": 12.4,
+            "cloudCover": 0.91,
+            "dewPoint": 11.17,
+            "humidity": 0.92,
+            "icon": "partly-cloudy-night",
+            "ozone": 293.16,
+            "precipIntensity": 0,
+            "precipProbability": 0,
+            "pressure": 1008.14,
+            "summary": "Średnie zachmurzenie",
+            "temperature": 12.4,
+            "time": 1540850400,
+            "uvIndex": 0,
+            "visibility": 16.09,
+            "windBearing": 118,
+            "windGust": 12.34,
+            "windSpeed": 6.44,
+          },
+          Object {
+            "apparentTemperature": 12.75,
+            "cloudCover": 0.92,
+            "dewPoint": 11.24,
+            "humidity": 0.91,
+            "icon": "partly-cloudy-night",
+            "ozone": 294.46,
+            "precipIntensity": 0,
+            "precipProbability": 0,
+            "pressure": 1007.99,
+            "summary": "Średnie zachmurzenie",
+            "temperature": 12.75,
+            "time": 1540854000,
+            "uvIndex": 0,
+            "visibility": 16.09,
+            "windBearing": 123,
+            "windGust": 13,
+            "windSpeed": 6.39,
+          },
+          Object {
+            "apparentTemperature": 13.13,
+            "cloudCover": 0.94,
+            "dewPoint": 11.32,
+            "humidity": 0.89,
+            "icon": "cloudy",
+            "ozone": 295.45,
+            "precipIntensity": 0,
+            "precipProbability": 0,
+            "pressure": 1007.78,
+            "summary": "Duże zachmurzenie",
+            "temperature": 13.13,
+            "time": 1540857600,
+            "uvIndex": 0,
+            "visibility": 16.09,
+            "windBearing": 127,
+            "windGust": 13.74,
+            "windSpeed": 6.45,
+          },
+          Object {
+            "apparentTemperature": 13.68,
+            "cloudCover": 0.95,
+            "dewPoint": 11.82,
+            "humidity": 0.89,
+            "icon": "cloudy",
+            "ozone": 296.08,
+            "precipIntensity": 0,
+            "precipProbability": 0,
+            "pressure": 1007.52,
+            "summary": "Duże zachmurzenie",
+            "temperature": 13.68,
+            "time": 1540861200,
+            "uvIndex": 0,
+            "visibility": 16.09,
+            "windBearing": 126,
+            "windGust": 14.6,
+            "windSpeed": 6.7,
+          },
+          Object {
+            "apparentTemperature": 13.79,
+            "cloudCover": 0.97,
+            "dewPoint": 11.89,
+            "humidity": 0.88,
+            "icon": "wind",
+            "ozone": 296.38,
+            "precipIntensity": 0,
+            "precipProbability": 0,
+            "pressure": 1006.98,
+            "summary": "Słaby wiatr, duże zachmurzenie",
+            "temperature": 13.79,
+            "time": 1540864800,
+            "uvIndex": 0,
+            "visibility": 16.09,
+            "windBearing": 127,
+            "windGust": 15.54,
+            "windSpeed": 7.11,
+          },
+          Object {
+            "apparentTemperature": 14.03,
+            "cloudCover": 0.98,
+            "dewPoint": 12.06,
+            "humidity": 0.88,
+            "icon": "wind",
+            "ozone": 296.41,
+            "precipIntensity": 0,
+            "precipProbability": 0,
+            "pressure": 1006.63,
+            "summary": "Słaby wiatr, duże zachmurzenie",
+            "temperature": 14.03,
+            "time": 1540868400,
+            "uvIndex": 0,
+            "visibility": 16.09,
+            "windBearing": 128,
+            "windGust": 16.48,
+            "windSpeed": 7.43,
+          },
+          Object {
+            "apparentTemperature": 14.48,
+            "cloudCover": 0.99,
+            "dewPoint": 12.26,
+            "humidity": 0.87,
+            "icon": "wind",
+            "ozone": 295.88,
+            "precipIntensity": 0,
+            "precipProbability": 0,
+            "pressure": 1006.56,
+            "summary": "Umiarkowany wiatr, duże zachmurzenie",
+            "temperature": 14.48,
+            "time": 1540872000,
+            "uvIndex": 0,
+            "visibility": 16.09,
+            "windBearing": 132,
+            "windGust": 17.55,
+            "windSpeed": 7.68,
+          },
+          Object {
+            "apparentTemperature": 14.27,
+            "cloudCover": 0.99,
+            "dewPoint": 11.98,
+            "humidity": 0.86,
+            "icon": "wind",
+            "ozone": 295.05,
+            "precipIntensity": 0,
+            "precipProbability": 0,
+            "pressure": 1006.3,
+            "summary": "Umiarkowany wiatr, duże zachmurzenie",
+            "temperature": 14.27,
+            "time": 1540875600,
+            "uvIndex": 0,
+            "visibility": 16.09,
+            "windBearing": 138,
+            "windGust": 18.6,
+            "windSpeed": 8.02,
+          },
+          Object {
+            "apparentTemperature": 14.39,
+            "cloudCover": 0.99,
+            "dewPoint": 11.89,
+            "humidity": 0.85,
+            "icon": "wind",
+            "ozone": 293.74,
+            "precipIntensity": 0,
+            "precipProbability": 0,
+            "pressure": 1006.18,
+            "summary": "Umiarkowany wiatr, duże zachmurzenie",
+            "temperature": 14.39,
+            "time": 1540879200,
+            "uvIndex": 0,
+            "visibility": 16.09,
+            "windBearing": 141,
+            "windGust": 18.97,
+            "windSpeed": 8.26,
+          },
+          Object {
+            "apparentTemperature": 15.26,
+            "cloudCover": 0.99,
+            "dewPoint": 12.21,
+            "humidity": 0.82,
+            "icon": "wind",
+            "ozone": 291.77,
+            "precipIntensity": 0,
+            "precipProbability": 0,
+            "pressure": 1006.3,
+            "summary": "Umiarkowany wiatr, duże zachmurzenie",
+            "temperature": 15.26,
+            "time": 1540882800,
+            "uvIndex": 0,
+            "visibility": 16.09,
+            "windBearing": 144,
+            "windGust": 18.19,
+            "windSpeed": 8.39,
+          },
+          Object {
+            "apparentTemperature": 16.5,
+            "cloudCover": 0.99,
+            "dewPoint": 12.66,
+            "humidity": 0.78,
+            "icon": "wind",
+            "ozone": 289.33,
+            "precipIntensity": 0.0076,
+            "precipProbability": 0.04,
+            "precipType": "rain",
+            "pressure": 1006.55,
+            "summary": "Słaby wiatr, duże zachmurzenie",
+            "temperature": 16.5,
+            "time": 1540886400,
+            "uvIndex": 1,
+            "visibility": 16.09,
+            "windBearing": 146,
+            "windGust": 16.71,
+            "windSpeed": 8.4,
+          },
+          Object {
+            "apparentTemperature": 17.72,
+            "cloudCover": 0.98,
+            "dewPoint": 12.97,
+            "humidity": 0.74,
+            "icon": "wind",
+            "ozone": 287.42,
+            "precipIntensity": 0.0178,
+            "precipProbability": 0.06,
+            "precipType": "rain",
+            "pressure": 1006.71,
+            "summary": "Słaby wiatr, duże zachmurzenie",
+            "temperature": 17.72,
+            "time": 1540890000,
+            "uvIndex": 1,
+            "visibility": 16.09,
+            "windBearing": 149,
+            "windGust": 15.36,
+            "windSpeed": 8.19,
+          },
+          Object {
+            "apparentTemperature": 18.52,
+            "cloudCover": 0.99,
+            "dewPoint": 13.16,
+            "humidity": 0.71,
+            "icon": "wind",
+            "ozone": 286.33,
+            "precipIntensity": 0.0305,
+            "precipProbability": 0.09,
+            "precipType": "rain",
+            "pressure": 1006.63,
+            "summary": "Słaby wiatr, duże zachmurzenie",
+            "temperature": 18.52,
+            "time": 1540893600,
+            "uvIndex": 1,
+            "visibility": 16.09,
+            "windBearing": 153,
+            "windGust": 14.22,
+            "windSpeed": 7.62,
+          },
+          Object {
+            "apparentTemperature": 18.96,
+            "cloudCover": 0.99,
+            "dewPoint": 13.28,
+            "humidity": 0.7,
+            "icon": "cloudy",
+            "ozone": 285.94,
+            "precipIntensity": 0.0457,
+            "precipProbability": 0.11,
+            "precipType": "rain",
+            "pressure": 1006.47,
+            "summary": "Duże zachmurzenie",
+            "temperature": 18.96,
+            "time": 1540897200,
+            "uvIndex": 1,
+            "visibility": 16.09,
+            "windBearing": 159,
+            "windGust": 13.18,
+            "windSpeed": 6.86,
+          },
+          Object {
+            "apparentTemperature": 18.97,
+            "cloudCover": 0.99,
+            "dewPoint": 13.18,
+            "humidity": 0.69,
+            "icon": "cloudy",
+            "ozone": 286.1,
+            "precipIntensity": 0.0584,
+            "precipProbability": 0.08,
+            "precipType": "rain",
+            "pressure": 1006.43,
+            "summary": "Duże zachmurzenie",
+            "temperature": 18.97,
+            "time": 1540900800,
+            "uvIndex": 1,
+            "visibility": 16.09,
+            "windBearing": 164,
+            "windGust": 12.68,
+            "windSpeed": 6.36,
+          },
+          Object {
+            "apparentTemperature": 18.54,
+            "cloudCover": 0.99,
+            "dewPoint": 12.78,
+            "humidity": 0.69,
+            "icon": "cloudy",
+            "ozone": 287.37,
+            "precipIntensity": 0.0737,
+            "precipProbability": 0.05,
+            "precipType": "rain",
+            "pressure": 1006.51,
+            "summary": "Duże zachmurzenie",
+            "temperature": 18.54,
+            "time": 1540904400,
+            "uvIndex": 1,
+            "visibility": 16.09,
+            "windBearing": 163,
+            "windGust": 13.11,
+            "windSpeed": 6.47,
+          },
+          Object {
+            "apparentTemperature": 17.71,
+            "cloudCover": 0.99,
+            "dewPoint": 12.24,
+            "humidity": 0.7,
+            "icon": "cloudy",
+            "ozone": 289.35,
+            "precipIntensity": 0.0838,
+            "precipProbability": 0.04,
+            "precipType": "rain",
+            "pressure": 1006.7,
+            "summary": "Duże zachmurzenie",
+            "temperature": 17.71,
+            "time": 1540908000,
+            "uvIndex": 0,
+            "visibility": 16.09,
+            "windBearing": 163,
+            "windGust": 14.08,
+            "windSpeed": 6.93,
+          },
+          Object {
+            "apparentTemperature": 17.06,
+            "cloudCover": 0.98,
+            "dewPoint": 11.84,
+            "humidity": 0.71,
+            "icon": "wind",
+            "ozone": 290.32,
+            "precipIntensity": 0.0762,
+            "precipProbability": 0.04,
+            "precipType": "rain",
+            "pressure": 1007.07,
+            "summary": "Słaby wiatr, duże zachmurzenie",
+            "temperature": 17.06,
+            "time": 1540911600,
+            "uvIndex": 0,
+            "visibility": 16.09,
+            "windBearing": 163,
+            "windGust": 14.86,
+            "windSpeed": 7.27,
+          },
+          Object {
+            "apparentTemperature": 16.36,
+            "cloudCover": 1,
+            "dewPoint": 11.61,
+            "humidity": 0.74,
+            "icon": "wind",
+            "ozone": 289.27,
+            "precipIntensity": 0.0406,
+            "precipProbability": 0.03,
+            "precipType": "rain",
+            "pressure": 1007.65,
+            "summary": "Słaby wiatr, duże zachmurzenie",
+            "temperature": 16.36,
+            "time": 1540915200,
+            "uvIndex": 0,
+            "visibility": 16.09,
+            "windBearing": 166,
+            "windGust": 15.16,
+            "windSpeed": 7.08,
+          },
+          Object {
+            "apparentTemperature": 15.56,
+            "cloudCover": 1,
+            "dewPoint": 11.38,
+            "humidity": 0.76,
+            "icon": "cloudy",
+            "ozone": 287.19,
+            "precipIntensity": 0.0102,
+            "precipProbability": 0.02,
+            "precipType": "rain",
+            "pressure": 1008.4,
+            "summary": "Duże zachmurzenie",
+            "temperature": 15.56,
+            "time": 1540918800,
+            "uvIndex": 0,
+            "visibility": 16.09,
+            "windBearing": 171,
+            "windGust": 15.26,
+            "windSpeed": 6.61,
+          },
+          Object {
+            "apparentTemperature": 14.86,
+            "cloudCover": 0.94,
+            "dewPoint": 10.92,
+            "humidity": 0.77,
+            "icon": "cloudy",
+            "ozone": 285.63,
+            "precipIntensity": 0,
+            "precipProbability": 0,
+            "pressure": 1009.19,
+            "summary": "Duże zachmurzenie",
+            "temperature": 14.86,
+            "time": 1540922400,
+            "uvIndex": 0,
+            "visibility": 16.09,
+            "windBearing": 177,
+            "windGust": 15.28,
+            "windSpeed": 6.27,
+          },
+          Object {
+            "apparentTemperature": 14.26,
+            "cloudCover": 0.68,
+            "dewPoint": 10.07,
+            "humidity": 0.76,
+            "icon": "partly-cloudy-night",
+            "ozone": 284.69,
+            "precipIntensity": 0,
+            "precipProbability": 0,
+            "pressure": 1010.02,
+            "summary": "Średnie zachmurzenie",
+            "temperature": 14.26,
+            "time": 1540926000,
+            "uvIndex": 0,
+            "visibility": 16.09,
+            "windBearing": 180,
+            "windGust": 15.2,
+            "windSpeed": 6.25,
+          },
+          Object {
+            "apparentTemperature": 13.65,
+            "cloudCover": 0.34,
+            "dewPoint": 9.05,
+            "humidity": 0.74,
+            "icon": "partly-cloudy-night",
+            "ozone": 284.17,
+            "precipIntensity": 0,
+            "precipProbability": 0,
+            "pressure": 1010.87,
+            "summary": "Niewielkie zachmurzenie",
+            "temperature": 13.65,
+            "time": 1540929600,
+            "uvIndex": 0,
+            "visibility": 16.09,
+            "windBearing": 182,
+            "windGust": 15.06,
+            "windSpeed": 6.41,
+          },
+          Object {
+            "apparentTemperature": 13.19,
+            "cloudCover": 0.08,
+            "dewPoint": 8.24,
+            "humidity": 0.72,
+            "icon": "clear-night",
+            "ozone": 285.68,
+            "precipIntensity": 0,
+            "precipProbability": 0,
+            "pressure": 1011.71,
+            "summary": "Bezchmurnie",
+            "temperature": 13.19,
+            "time": 1540933200,
+            "uvIndex": 0,
+            "visibility": 16.09,
+            "windBearing": 185,
+            "windGust": 14.91,
+            "windSpeed": 6.51,
+          },
+          Object {
+            "apparentTemperature": 12.96,
+            "cloudCover": 0.02,
+            "dewPoint": 7.81,
+            "humidity": 0.71,
+            "icon": "clear-night",
+            "ozone": 290.88,
+            "precipIntensity": 0,
+            "precipProbability": 0,
+            "pressure": 1012.5,
+            "summary": "Bezchmurnie",
+            "temperature": 12.96,
+            "time": 1540936800,
+            "uvIndex": 0,
+            "visibility": 16.09,
+            "windBearing": 187,
+            "windGust": 14.96,
+            "windSpeed": 6.49,
+          },
+          Object {
+            "apparentTemperature": 12.69,
+            "cloudCover": 0.02,
+            "dewPoint": 7.57,
+            "humidity": 0.71,
+            "icon": "clear-night",
+            "ozone": 298.14,
+            "precipIntensity": 0,
+            "precipProbability": 0,
+            "pressure": 1013.25,
+            "summary": "Bezchmurnie",
+            "temperature": 12.69,
+            "time": 1540940400,
+            "uvIndex": 0,
+            "visibility": 16.09,
+            "windBearing": 190,
+            "windGust": 15.04,
+            "windSpeed": 6.37,
+          },
+          Object {
+            "apparentTemperature": 12.42,
+            "cloudCover": 0.05,
+            "dewPoint": 7.33,
+            "humidity": 0.71,
+            "icon": "clear-night",
+            "ozone": 303.15,
+            "precipIntensity": 0,
+            "precipProbability": 0,
+            "pressure": 1014.07,
+            "summary": "Bezchmurnie",
+            "temperature": 12.42,
+            "time": 1540944000,
+            "uvIndex": 0,
+            "visibility": 16.09,
+            "windBearing": 193,
+            "windGust": 14.65,
+            "windSpeed": 6.16,
+          },
+          Object {
+            "apparentTemperature": 12.09,
+            "cloudCover": 0.09,
+            "dewPoint": 7.03,
+            "humidity": 0.71,
+            "icon": "clear-night",
+            "ozone": 303.86,
+            "precipIntensity": 0,
+            "precipProbability": 0,
+            "pressure": 1014.96,
+            "summary": "Bezchmurnie",
+            "temperature": 12.09,
+            "time": 1540947600,
+            "uvIndex": 0,
+            "visibility": 16.09,
+            "windBearing": 196,
+            "windGust": 13.43,
+            "windSpeed": 5.8,
+          },
+          Object {
+            "apparentTemperature": 11.66,
+            "cloudCover": 0.17,
+            "dewPoint": 6.75,
+            "humidity": 0.72,
+            "icon": "clear-night",
+            "ozone": 302.3,
+            "precipIntensity": 0,
+            "precipProbability": 0,
+            "pressure": 1015.88,
+            "summary": "Bezchmurnie",
+            "temperature": 11.66,
+            "time": 1540951200,
+            "uvIndex": 0,
+            "visibility": 16.09,
+            "windBearing": 198,
+            "windGust": 11.77,
+            "windSpeed": 5.35,
+          },
+          Object {
+            "apparentTemperature": 11.21,
+            "cloudCover": 0.25,
+            "dewPoint": 6.51,
+            "humidity": 0.73,
+            "icon": "partly-cloudy-night",
+            "ozone": 300.94,
+            "precipIntensity": 0,
+            "precipProbability": 0,
+            "pressure": 1016.85,
+            "summary": "Niewielkie zachmurzenie",
+            "temperature": 11.21,
+            "time": 1540954800,
+            "uvIndex": 0,
+            "visibility": 16.09,
+            "windBearing": 201,
+            "windGust": 10.33,
+            "windSpeed": 4.84,
+          },
+          Object {
+            "apparentTemperature": 10.27,
+            "cloudCover": 0.35,
+            "dewPoint": 6.29,
+            "humidity": 0.76,
+            "icon": "partly-cloudy-night",
+            "ozone": 300.5,
+            "precipIntensity": 0,
+            "precipProbability": 0,
+            "pressure": 1017.93,
+            "summary": "Niewielkie zachmurzenie",
+            "temperature": 10.27,
+            "time": 1540958400,
+            "uvIndex": 0,
+            "visibility": 16.09,
+            "windBearing": 205,
+            "windGust": 9.45,
+            "windSpeed": 4.29,
+          },
+          Object {
+            "apparentTemperature": 7.07,
+            "cloudCover": 0.46,
+            "dewPoint": 6.12,
+            "humidity": 0.81,
+            "icon": "partly-cloudy-night",
+            "ozone": 300.13,
+            "precipIntensity": 0,
+            "precipProbability": 0,
+            "pressure": 1018.99,
+            "summary": "Niewielkie zachmurzenie",
+            "temperature": 9.12,
+            "time": 1540962000,
+            "uvIndex": 0,
+            "visibility": 16.09,
+            "windBearing": 210,
+            "windGust": 8.79,
+            "windSpeed": 3.69,
+          },
+          Object {
+            "apparentTemperature": 6.75,
+            "cloudCover": 0.49,
+            "dewPoint": 6,
+            "humidity": 0.83,
+            "icon": "partly-cloudy-day",
+            "ozone": 300.14,
+            "precipIntensity": 0,
+            "precipProbability": 0,
+            "pressure": 1020.01,
+            "summary": "Niewielkie zachmurzenie",
+            "temperature": 8.64,
+            "time": 1540965600,
+            "uvIndex": 0,
+            "visibility": 16.09,
+            "windBearing": 214,
+            "windGust": 8.16,
+            "windSpeed": 3.23,
+          },
+          Object {
+            "apparentTemperature": 7.76,
+            "cloudCover": 0.37,
+            "dewPoint": 5.97,
+            "humidity": 0.79,
+            "icon": "partly-cloudy-day",
+            "ozone": 300.91,
+            "precipIntensity": 0,
+            "precipProbability": 0,
+            "pressure": 1020.96,
+            "summary": "Niewielkie zachmurzenie",
+            "temperature": 9.36,
+            "time": 1540969200,
+            "uvIndex": 0,
+            "visibility": 16.09,
+            "windBearing": 216,
+            "windGust": 7.51,
+            "windSpeed": 2.96,
+          },
+          Object {
+            "apparentTemperature": 11.02,
+            "cloudCover": 0.17,
+            "dewPoint": 6.02,
+            "humidity": 0.71,
+            "icon": "clear-day",
+            "ozone": 301.98,
+            "precipIntensity": 0,
+            "precipProbability": 0,
+            "pressure": 1021.85,
+            "summary": "Bezchmurnie",
+            "temperature": 11.02,
+            "time": 1540972800,
+            "uvIndex": 1,
+            "visibility": 16.09,
+            "windBearing": 217,
+            "windGust": 6.87,
+            "windSpeed": 2.8,
+          },
+          Object {
+            "apparentTemperature": 12.69,
+            "cloudCover": 0.02,
+            "dewPoint": 6.08,
+            "humidity": 0.64,
+            "icon": "clear-day",
+            "ozone": 302.42,
+            "precipIntensity": 0,
+            "precipProbability": 0,
+            "pressure": 1022.55,
+            "summary": "Bezchmurnie",
+            "temperature": 12.69,
+            "time": 1540976400,
+            "uvIndex": 1,
+            "visibility": 16.09,
+            "windBearing": 213,
+            "windGust": 6.27,
+            "windSpeed": 2.68,
+          },
+          Object {
+            "apparentTemperature": 14.07,
+            "cloudCover": 0.01,
+            "dewPoint": 6.11,
+            "humidity": 0.59,
+            "icon": "clear-day",
+            "ozone": 301.8,
+            "precipIntensity": 0,
+            "precipProbability": 0,
+            "pressure": 1022.96,
+            "summary": "Bezchmurnie",
+            "temperature": 14.07,
+            "time": 1540980000,
+            "uvIndex": 1,
+            "visibility": 16.09,
+            "windBearing": 205,
+            "windGust": 5.72,
+            "windSpeed": 2.59,
+          },
+          Object {
+            "apparentTemperature": 15.21,
+            "cloudCover": 0.01,
+            "dewPoint": 6.13,
+            "humidity": 0.55,
+            "icon": "clear-day",
+            "ozone": 300.56,
+            "precipIntensity": 0,
+            "precipProbability": 0,
+            "pressure": 1023.19,
+            "summary": "Bezchmurnie",
+            "temperature": 15.21,
+            "time": 1540983600,
+            "uvIndex": 1,
+            "visibility": 16.09,
+            "windBearing": 194,
+            "windGust": 5.2,
+            "windSpeed": 2.55,
+          },
+          Object {
+            "apparentTemperature": 15.82,
+            "cloudCover": 0.01,
+            "dewPoint": 6.19,
+            "humidity": 0.53,
+            "icon": "clear-day",
+            "ozone": 298.84,
+            "precipIntensity": 0,
+            "precipProbability": 0,
+            "pressure": 1023.37,
+            "summary": "Bezchmurnie",
+            "temperature": 15.82,
+            "time": 1540987200,
+            "uvIndex": 1,
+            "visibility": 16.09,
+            "windBearing": 183,
+            "windGust": 4.62,
+            "windSpeed": 2.53,
+          },
+          Object {
+            "apparentTemperature": 15.54,
+            "cloudCover": 0,
+            "dewPoint": 6.39,
+            "humidity": 0.54,
+            "icon": "clear-day",
+            "ozone": 296.38,
+            "precipIntensity": 0,
+            "precipProbability": 0,
+            "pressure": 1023.48,
+            "summary": "Bezchmurnie",
+            "temperature": 15.54,
+            "time": 1540990800,
+            "uvIndex": 1,
+            "visibility": 16.09,
+            "windBearing": 171,
+            "windGust": 3.83,
+            "windSpeed": 2.52,
+          },
+          Object {
+            "apparentTemperature": 14.8,
+            "cloudCover": 0,
+            "dewPoint": 6.67,
+            "humidity": 0.58,
+            "icon": "clear-day",
+            "ozone": 293.45,
+            "precipIntensity": 0,
+            "precipProbability": 0,
+            "pressure": 1023.56,
+            "summary": "Bezchmurnie",
+            "temperature": 14.8,
+            "time": 1540994400,
+            "uvIndex": 0,
+            "visibility": 16.09,
+            "windBearing": 159,
+            "windGust": 2.98,
+            "windSpeed": 2.56,
+          },
+          Object {
+            "apparentTemperature": 13.78,
+            "cloudCover": 0,
+            "dewPoint": 6.86,
+            "humidity": 0.63,
+            "icon": "clear-day",
+            "ozone": 291.17,
+            "precipIntensity": 0,
+            "precipProbability": 0,
+            "pressure": 1023.66,
+            "summary": "Bezchmurnie",
+            "temperature": 13.78,
+            "time": 1540998000,
+            "uvIndex": 0,
+            "visibility": 16.09,
+            "windBearing": 149,
+            "windGust": 2.69,
+            "windSpeed": 2.69,
+          },
+          Object {
+            "apparentTemperature": 12.86,
+            "cloudCover": 0.01,
+            "dewPoint": 6.88,
+            "humidity": 0.67,
+            "icon": "clear-night",
+            "ozone": 290.34,
+            "precipIntensity": 0,
+            "precipProbability": 0,
+            "pressure": 1023.94,
+            "summary": "Bezchmurnie",
+            "temperature": 12.86,
+            "time": 1541001600,
+            "uvIndex": 0,
+            "visibility": 16.09,
+            "windBearing": 141,
+            "windGust": 2.93,
+            "windSpeed": 2.93,
+          },
+          Object {
+            "apparentTemperature": 11.83,
+            "cloudCover": 0.03,
+            "dewPoint": 6.8,
+            "humidity": 0.71,
+            "icon": "clear-night",
+            "ozone": 290.19,
+            "precipIntensity": 0,
+            "precipProbability": 0,
+            "pressure": 1024.3,
+            "summary": "Bezchmurnie",
+            "temperature": 11.83,
+            "time": 1541005200,
+            "uvIndex": 0,
+            "visibility": 16.09,
+            "windBearing": 134,
+            "windGust": 3.25,
+            "windSpeed": 3.25,
+          },
+        ],
+        "icon": "wind",
+        "summary": "Duże zachmurzenie w ciągu dnia, nocą słaby wiatr, skończy się jutro rano.",
+      }
+    }
+    hourlyText={
+      Object {
+        "temperature": "Temperatura",
+        "temperatureMax": "Temperatura Max.",
+        "temperatureMin": "Temperatura Min.",
+        "today": "Dziś",
+        "weekDay": Array [
+          "Niedziela",
+          "Poniedziałek",
+          "Wtorek",
+          "Środa",
+          "Czwartek",
+          "Piątek",
+          "Sobota",
+          "Dziś",
+        ],
+        "weekDayShort": Array [
+          "Nie",
+          "Pon",
+          "Wt",
+          "Śr",
+          "Czw",
+          "Pt",
+          "Sob",
+        ],
+      }
+    }
+    timezone="Europe/Warsaw"
+    units="si"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Summary>
+          Duże zachmurzenie w ciągu dnia, nocą słaby wiatr, skończy się jutro rano.
+        </Summary>,
+        <div
+          className="chartContainer"
+        >
+          <ResponsiveContainer
+            debounce={0}
+            height={300}
+            width="100%"
+          >
+            <LineChart
+              barCategoryGap="10%"
+              barGap={4}
+              data={
+                Array [
+                  Object {
+                    "Temperatura (°C)": 9,
+                    "summary": "Średnie zachmurzenie",
+                    "time": "18:00",
+                    "undefined": 0,
+                  },
+                  Object {
+                    "Temperatura (°C)": 11.2,
+                    "summary": "Średnie zachmurzenie",
+                    "time": "21:00",
+                    "undefined": 3,
+                  },
+                  Object {
+                    "Temperatura (°C)": 12.7,
+                    "summary": "Średnie zachmurzenie",
+                    "time": "00:00",
+                    "undefined": 0,
+                  },
+                  Object {
+                    "Temperatura (°C)": 13.7,
+                    "summary": "Słaby wiatr, duże zachmurzenie",
+                    "time": "03:00",
+                    "undefined": 0,
+                  },
+                  Object {
+                    "Temperatura (°C)": 14.2,
+                    "summary": "Umiarkowany wiatr, duże zachmurzenie",
+                    "time": "06:00",
+                    "undefined": 0,
+                  },
+                  Object {
+                    "Temperatura (°C)": 16.5,
+                    "summary": "Słaby wiatr, duże zachmurzenie",
+                    "time": "09:00",
+                    "undefined": 4,
+                  },
+                  Object {
+                    "Temperatura (°C)": 18.9,
+                    "summary": "Duże zachmurzenie",
+                    "time": "12:00",
+                    "undefined": 11,
+                  },
+                  Object {
+                    "Temperatura (°C)": 17.7,
+                    "summary": "Duże zachmurzenie",
+                    "time": "15:00",
+                    "undefined": 4,
+                  },
+                  Object {
+                    "Temperatura (°C)": 15.5,
+                    "summary": "Duże zachmurzenie",
+                    "time": "18:00",
+                    "undefined": 2,
+                  },
+                  Object {
+                    "Temperatura (°C)": 13.6,
+                    "summary": "Niewielkie zachmurzenie",
+                    "time": "21:00",
+                    "undefined": 0,
+                  },
+                  Object {
+                    "Temperatura (°C)": 12.6,
+                    "summary": "Bezchmurnie",
+                    "time": "00:00",
+                    "undefined": 0,
+                  },
+                  Object {
+                    "Temperatura (°C)": 11.6,
+                    "summary": "Bezchmurnie",
+                    "time": "03:00",
+                    "undefined": 0,
+                  },
+                  Object {
+                    "Temperatura (°C)": 9.1,
+                    "summary": "Niewielkie zachmurzenie",
+                    "time": "06:00",
+                    "undefined": 0,
+                  },
+                  Object {
+                    "Temperatura (°C)": 11,
+                    "summary": "Bezchmurnie",
+                    "time": "09:00",
+                    "undefined": 0,
+                  },
+                  Object {
+                    "Temperatura (°C)": 15.2,
+                    "summary": "Bezchmurnie",
+                    "time": "12:00",
+                    "undefined": 0,
+                  },
+                  Object {
+                    "Temperatura (°C)": 14.8,
+                    "summary": "Bezchmurnie",
+                    "time": "15:00",
+                    "undefined": 0,
+                  },
+                  Object {
+                    "Temperatura (°C)": 11.8,
+                    "summary": "Bezchmurnie",
+                    "time": "18:00",
+                    "undefined": 0,
+                  },
+                ]
+              }
+              layout="horizontal"
+              margin={
+                Object {
+                  "bottom": 5,
+                  "left": 5,
+                  "right": 5,
+                  "top": 5,
+                }
+              }
+              reverseStackOrder={false}
+              stackOffset="none"
+            >
+              <CartesianGrid
+                fill="none"
+                horizontal={true}
+                horizontalFill={Array []}
+                horizontalPoints={Array []}
+                stroke="#ccc"
+                strokeDasharray="3 3"
+                vertical={true}
+                verticalFill={Array []}
+                verticalPoints={Array []}
+              />
+              <XAxis
+                allowDataOverflow={false}
+                allowDecimals={true}
+                allowDuplicatedCategory={true}
+                dataKey="time"
+                domain={
+                  Array [
+                    0,
+                    "auto",
+                  ]
+                }
+                height={30}
+                hide={false}
+                mirror={false}
+                orientation="bottom"
+                padding={
+                  Object {
+                    "left": 0,
+                    "right": 0,
+                  }
+                }
+                reversed={false}
+                scale="auto"
+                stroke=""
+                tickCount={5}
+                type="category"
+                width={0}
+                xAxisId={0}
+              />
+              <YAxis
+                allowDataOverflow={false}
+                allowDecimals={true}
+                allowDuplicatedCategory={true}
+                domain={
+                  Array [
+                    "auto",
+                    "auto",
+                  ]
+                }
+                height={0}
+                hide={false}
+                mirror={false}
+                orientation="left"
+                padding={
+                  Object {
+                    "bottom": 0,
+                    "top": 0,
+                  }
+                }
+                reversed={false}
+                scale="auto"
+                tick={
+                  Object {
+                    "stroke": "",
+                  }
+                }
+                tickCount={5}
+                type="number"
+                width={60}
+                yAxisId="left"
+              />
+              <YAxis
+                allowDataOverflow={false}
+                allowDecimals={true}
+                allowDuplicatedCategory={true}
+                domain={
+                  Array [
+                    0,
+                    100,
+                  ]
+                }
+                height={0}
+                hide={false}
+                mirror={false}
+                orientation="right"
+                padding={
+                  Object {
+                    "bottom": 0,
+                    "top": 0,
+                  }
+                }
+                reversed={false}
+                scale="auto"
+                stroke=""
+                tickCount={5}
+                type="number"
+                width={60}
+                yAxisId="right"
+              />
+              <Tooltip
+                active={false}
+                animationDuration={400}
+                animationEasing="ease"
+                content={
+                  <CustomTooltip
+                    tempText={
+                      Object {
+                        "temperature": "Temperatura",
+                        "temperatureMax": "Temperatura Max.",
+                        "temperatureMin": "Temperatura Min.",
+                        "today": "Dziś",
+                        "weekDay": Array [
+                          "Niedziela",
+                          "Poniedziałek",
+                          "Wtorek",
+                          "Środa",
+                          "Czwartek",
+                          "Piątek",
+                          "Sobota",
+                          "Dziś",
+                        ],
+                        "weekDayShort": Array [
+                          "Nie",
+                          "Pon",
+                          "Wt",
+                          "Śr",
+                          "Czw",
+                          "Pt",
+                          "Sob",
+                        ],
+                      }
+                    }
+                    type="hourly"
+                    units="si"
+                  />
+                }
+                contentStyle={Object {}}
+                coordinate={
+                  Object {
+                    "x": 0,
+                    "y": 0,
+                  }
+                }
+                cursor={true}
+                cursorStyle={Object {}}
+                filterNull={true}
+                isAnimationActive={true}
+                itemSorter={[Function]}
+                itemStyle={Object {}}
+                labelStyle={Object {}}
+                offset={10}
+                separator=" : "
+                useTranslate3d={false}
+                viewBox={
+                  Object {
+                    "x1": 0,
+                    "x2": 0,
+                    "y1": 0,
+                    "y2": 0,
+                  }
+                }
+                wrapperStyle={Object {}}
+              />
+              <Legend
+                align="center"
+                iconSize={14}
+                layout="vertical"
+                verticalAlign="bottom"
+              />
+              <Line
+                activeDot={
+                  Object {
+                    "r": 8,
+                  }
+                }
+                animateNewValues={true}
+                animationBegin={0}
+                animationDuration={1500}
+                animationEasing="ease"
+                connectNulls={false}
+                dataKey="Temperatura (°C)"
+                dot={true}
+                fill="#fff"
+                hide={false}
+                isAnimationActive={true}
+                legendType="line"
+                onAnimationEnd={[Function]}
+                onAnimationStart={[Function]}
+                points={Array []}
+                stroke=""
+                strokeWidth={1}
+                type="monotone"
+                xAxisId={0}
+                yAxisId="left"
+              />
+              <Line
+                activeDot={true}
+                animateNewValues={true}
+                animationBegin={0}
+                animationDuration={1500}
+                animationEasing="ease"
+                connectNulls={false}
+                dot={true}
+                fill="#fff"
+                hide={false}
+                isAnimationActive={true}
+                legendType="line"
+                onAnimationEnd={[Function]}
+                onAnimationStart={[Function]}
+                points={Array []}
+                stroke=""
+                strokeWidth={1}
+                type="monotone"
+                xAxisId={0}
+                yAxisId="right"
+              />
+            </LineChart>
+          </ResponsiveContainer>
+        </div>,
+      ],
+      "className": "Hourly",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": "Duże zachmurzenie w ciągu dnia, nocą słaby wiatr, skończy się jutro rano.",
+        },
+        "ref": null,
+        "rendered": "Duże zachmurzenie w ciągu dnia, nocą słaby wiatr, skończy się jutro rano.",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <ResponsiveContainer
+            debounce={0}
+            height={300}
+            width="100%"
+          >
+            <LineChart
+              barCategoryGap="10%"
+              barGap={4}
+              data={
+                Array [
+                  Object {
+                    "Temperatura (°C)": 9,
+                    "summary": "Średnie zachmurzenie",
+                    "time": "18:00",
+                    "undefined": 0,
+                  },
+                  Object {
+                    "Temperatura (°C)": 11.2,
+                    "summary": "Średnie zachmurzenie",
+                    "time": "21:00",
+                    "undefined": 3,
+                  },
+                  Object {
+                    "Temperatura (°C)": 12.7,
+                    "summary": "Średnie zachmurzenie",
+                    "time": "00:00",
+                    "undefined": 0,
+                  },
+                  Object {
+                    "Temperatura (°C)": 13.7,
+                    "summary": "Słaby wiatr, duże zachmurzenie",
+                    "time": "03:00",
+                    "undefined": 0,
+                  },
+                  Object {
+                    "Temperatura (°C)": 14.2,
+                    "summary": "Umiarkowany wiatr, duże zachmurzenie",
+                    "time": "06:00",
+                    "undefined": 0,
+                  },
+                  Object {
+                    "Temperatura (°C)": 16.5,
+                    "summary": "Słaby wiatr, duże zachmurzenie",
+                    "time": "09:00",
+                    "undefined": 4,
+                  },
+                  Object {
+                    "Temperatura (°C)": 18.9,
+                    "summary": "Duże zachmurzenie",
+                    "time": "12:00",
+                    "undefined": 11,
+                  },
+                  Object {
+                    "Temperatura (°C)": 17.7,
+                    "summary": "Duże zachmurzenie",
+                    "time": "15:00",
+                    "undefined": 4,
+                  },
+                  Object {
+                    "Temperatura (°C)": 15.5,
+                    "summary": "Duże zachmurzenie",
+                    "time": "18:00",
+                    "undefined": 2,
+                  },
+                  Object {
+                    "Temperatura (°C)": 13.6,
+                    "summary": "Niewielkie zachmurzenie",
+                    "time": "21:00",
+                    "undefined": 0,
+                  },
+                  Object {
+                    "Temperatura (°C)": 12.6,
+                    "summary": "Bezchmurnie",
+                    "time": "00:00",
+                    "undefined": 0,
+                  },
+                  Object {
+                    "Temperatura (°C)": 11.6,
+                    "summary": "Bezchmurnie",
+                    "time": "03:00",
+                    "undefined": 0,
+                  },
+                  Object {
+                    "Temperatura (°C)": 9.1,
+                    "summary": "Niewielkie zachmurzenie",
+                    "time": "06:00",
+                    "undefined": 0,
+                  },
+                  Object {
+                    "Temperatura (°C)": 11,
+                    "summary": "Bezchmurnie",
+                    "time": "09:00",
+                    "undefined": 0,
+                  },
+                  Object {
+                    "Temperatura (°C)": 15.2,
+                    "summary": "Bezchmurnie",
+                    "time": "12:00",
+                    "undefined": 0,
+                  },
+                  Object {
+                    "Temperatura (°C)": 14.8,
+                    "summary": "Bezchmurnie",
+                    "time": "15:00",
+                    "undefined": 0,
+                  },
+                  Object {
+                    "Temperatura (°C)": 11.8,
+                    "summary": "Bezchmurnie",
+                    "time": "18:00",
+                    "undefined": 0,
+                  },
+                ]
+              }
+              layout="horizontal"
+              margin={
+                Object {
+                  "bottom": 5,
+                  "left": 5,
+                  "right": 5,
+                  "top": 5,
+                }
+              }
+              reverseStackOrder={false}
+              stackOffset="none"
+            >
+              <CartesianGrid
+                fill="none"
+                horizontal={true}
+                horizontalFill={Array []}
+                horizontalPoints={Array []}
+                stroke="#ccc"
+                strokeDasharray="3 3"
+                vertical={true}
+                verticalFill={Array []}
+                verticalPoints={Array []}
+              />
+              <XAxis
+                allowDataOverflow={false}
+                allowDecimals={true}
+                allowDuplicatedCategory={true}
+                dataKey="time"
+                domain={
+                  Array [
+                    0,
+                    "auto",
+                  ]
+                }
+                height={30}
+                hide={false}
+                mirror={false}
+                orientation="bottom"
+                padding={
+                  Object {
+                    "left": 0,
+                    "right": 0,
+                  }
+                }
+                reversed={false}
+                scale="auto"
+                stroke=""
+                tickCount={5}
+                type="category"
+                width={0}
+                xAxisId={0}
+              />
+              <YAxis
+                allowDataOverflow={false}
+                allowDecimals={true}
+                allowDuplicatedCategory={true}
+                domain={
+                  Array [
+                    "auto",
+                    "auto",
+                  ]
+                }
+                height={0}
+                hide={false}
+                mirror={false}
+                orientation="left"
+                padding={
+                  Object {
+                    "bottom": 0,
+                    "top": 0,
+                  }
+                }
+                reversed={false}
+                scale="auto"
+                tick={
+                  Object {
+                    "stroke": "",
+                  }
+                }
+                tickCount={5}
+                type="number"
+                width={60}
+                yAxisId="left"
+              />
+              <YAxis
+                allowDataOverflow={false}
+                allowDecimals={true}
+                allowDuplicatedCategory={true}
+                domain={
+                  Array [
+                    0,
+                    100,
+                  ]
+                }
+                height={0}
+                hide={false}
+                mirror={false}
+                orientation="right"
+                padding={
+                  Object {
+                    "bottom": 0,
+                    "top": 0,
+                  }
+                }
+                reversed={false}
+                scale="auto"
+                stroke=""
+                tickCount={5}
+                type="number"
+                width={60}
+                yAxisId="right"
+              />
+              <Tooltip
+                active={false}
+                animationDuration={400}
+                animationEasing="ease"
+                content={
+                  <CustomTooltip
+                    tempText={
+                      Object {
+                        "temperature": "Temperatura",
+                        "temperatureMax": "Temperatura Max.",
+                        "temperatureMin": "Temperatura Min.",
+                        "today": "Dziś",
+                        "weekDay": Array [
+                          "Niedziela",
+                          "Poniedziałek",
+                          "Wtorek",
+                          "Środa",
+                          "Czwartek",
+                          "Piątek",
+                          "Sobota",
+                          "Dziś",
+                        ],
+                        "weekDayShort": Array [
+                          "Nie",
+                          "Pon",
+                          "Wt",
+                          "Śr",
+                          "Czw",
+                          "Pt",
+                          "Sob",
+                        ],
+                      }
+                    }
+                    type="hourly"
+                    units="si"
+                  />
+                }
+                contentStyle={Object {}}
+                coordinate={
+                  Object {
+                    "x": 0,
+                    "y": 0,
+                  }
+                }
+                cursor={true}
+                cursorStyle={Object {}}
+                filterNull={true}
+                isAnimationActive={true}
+                itemSorter={[Function]}
+                itemStyle={Object {}}
+                labelStyle={Object {}}
+                offset={10}
+                separator=" : "
+                useTranslate3d={false}
+                viewBox={
+                  Object {
+                    "x1": 0,
+                    "x2": 0,
+                    "y1": 0,
+                    "y2": 0,
+                  }
+                }
+                wrapperStyle={Object {}}
+              />
+              <Legend
+                align="center"
+                iconSize={14}
+                layout="vertical"
+                verticalAlign="bottom"
+              />
+              <Line
+                activeDot={
+                  Object {
+                    "r": 8,
+                  }
+                }
+                animateNewValues={true}
+                animationBegin={0}
+                animationDuration={1500}
+                animationEasing="ease"
+                connectNulls={false}
+                dataKey="Temperatura (°C)"
+                dot={true}
+                fill="#fff"
+                hide={false}
+                isAnimationActive={true}
+                legendType="line"
+                onAnimationEnd={[Function]}
+                onAnimationStart={[Function]}
+                points={Array []}
+                stroke=""
+                strokeWidth={1}
+                type="monotone"
+                xAxisId={0}
+                yAxisId="left"
+              />
+              <Line
+                activeDot={true}
+                animateNewValues={true}
+                animationBegin={0}
+                animationDuration={1500}
+                animationEasing="ease"
+                connectNulls={false}
+                dot={true}
+                fill="#fff"
+                hide={false}
+                isAnimationActive={true}
+                legendType="line"
+                onAnimationEnd={[Function]}
+                onAnimationStart={[Function]}
+                points={Array []}
+                stroke=""
+                strokeWidth={1}
+                type="monotone"
+                xAxisId={0}
+                yAxisId="right"
+              />
+            </LineChart>
+          </ResponsiveContainer>,
+          "className": "chartContainer",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <LineChart
+              barCategoryGap="10%"
+              barGap={4}
+              data={
+                Array [
+                  Object {
+                    "Temperatura (°C)": 9,
+                    "summary": "Średnie zachmurzenie",
+                    "time": "18:00",
+                    "undefined": 0,
+                  },
+                  Object {
+                    "Temperatura (°C)": 11.2,
+                    "summary": "Średnie zachmurzenie",
+                    "time": "21:00",
+                    "undefined": 3,
+                  },
+                  Object {
+                    "Temperatura (°C)": 12.7,
+                    "summary": "Średnie zachmurzenie",
+                    "time": "00:00",
+                    "undefined": 0,
+                  },
+                  Object {
+                    "Temperatura (°C)": 13.7,
+                    "summary": "Słaby wiatr, duże zachmurzenie",
+                    "time": "03:00",
+                    "undefined": 0,
+                  },
+                  Object {
+                    "Temperatura (°C)": 14.2,
+                    "summary": "Umiarkowany wiatr, duże zachmurzenie",
+                    "time": "06:00",
+                    "undefined": 0,
+                  },
+                  Object {
+                    "Temperatura (°C)": 16.5,
+                    "summary": "Słaby wiatr, duże zachmurzenie",
+                    "time": "09:00",
+                    "undefined": 4,
+                  },
+                  Object {
+                    "Temperatura (°C)": 18.9,
+                    "summary": "Duże zachmurzenie",
+                    "time": "12:00",
+                    "undefined": 11,
+                  },
+                  Object {
+                    "Temperatura (°C)": 17.7,
+                    "summary": "Duże zachmurzenie",
+                    "time": "15:00",
+                    "undefined": 4,
+                  },
+                  Object {
+                    "Temperatura (°C)": 15.5,
+                    "summary": "Duże zachmurzenie",
+                    "time": "18:00",
+                    "undefined": 2,
+                  },
+                  Object {
+                    "Temperatura (°C)": 13.6,
+                    "summary": "Niewielkie zachmurzenie",
+                    "time": "21:00",
+                    "undefined": 0,
+                  },
+                  Object {
+                    "Temperatura (°C)": 12.6,
+                    "summary": "Bezchmurnie",
+                    "time": "00:00",
+                    "undefined": 0,
+                  },
+                  Object {
+                    "Temperatura (°C)": 11.6,
+                    "summary": "Bezchmurnie",
+                    "time": "03:00",
+                    "undefined": 0,
+                  },
+                  Object {
+                    "Temperatura (°C)": 9.1,
+                    "summary": "Niewielkie zachmurzenie",
+                    "time": "06:00",
+                    "undefined": 0,
+                  },
+                  Object {
+                    "Temperatura (°C)": 11,
+                    "summary": "Bezchmurnie",
+                    "time": "09:00",
+                    "undefined": 0,
+                  },
+                  Object {
+                    "Temperatura (°C)": 15.2,
+                    "summary": "Bezchmurnie",
+                    "time": "12:00",
+                    "undefined": 0,
+                  },
+                  Object {
+                    "Temperatura (°C)": 14.8,
+                    "summary": "Bezchmurnie",
+                    "time": "15:00",
+                    "undefined": 0,
+                  },
+                  Object {
+                    "Temperatura (°C)": 11.8,
+                    "summary": "Bezchmurnie",
+                    "time": "18:00",
+                    "undefined": 0,
+                  },
+                ]
+              }
+              layout="horizontal"
+              margin={
+                Object {
+                  "bottom": 5,
+                  "left": 5,
+                  "right": 5,
+                  "top": 5,
+                }
+              }
+              reverseStackOrder={false}
+              stackOffset="none"
+            >
+              <CartesianGrid
+                fill="none"
+                horizontal={true}
+                horizontalFill={Array []}
+                horizontalPoints={Array []}
+                stroke="#ccc"
+                strokeDasharray="3 3"
+                vertical={true}
+                verticalFill={Array []}
+                verticalPoints={Array []}
+              />
+              <XAxis
+                allowDataOverflow={false}
+                allowDecimals={true}
+                allowDuplicatedCategory={true}
+                dataKey="time"
+                domain={
+                  Array [
+                    0,
+                    "auto",
+                  ]
+                }
+                height={30}
+                hide={false}
+                mirror={false}
+                orientation="bottom"
+                padding={
+                  Object {
+                    "left": 0,
+                    "right": 0,
+                  }
+                }
+                reversed={false}
+                scale="auto"
+                stroke=""
+                tickCount={5}
+                type="category"
+                width={0}
+                xAxisId={0}
+              />
+              <YAxis
+                allowDataOverflow={false}
+                allowDecimals={true}
+                allowDuplicatedCategory={true}
+                domain={
+                  Array [
+                    "auto",
+                    "auto",
+                  ]
+                }
+                height={0}
+                hide={false}
+                mirror={false}
+                orientation="left"
+                padding={
+                  Object {
+                    "bottom": 0,
+                    "top": 0,
+                  }
+                }
+                reversed={false}
+                scale="auto"
+                tick={
+                  Object {
+                    "stroke": "",
+                  }
+                }
+                tickCount={5}
+                type="number"
+                width={60}
+                yAxisId="left"
+              />
+              <YAxis
+                allowDataOverflow={false}
+                allowDecimals={true}
+                allowDuplicatedCategory={true}
+                domain={
+                  Array [
+                    0,
+                    100,
+                  ]
+                }
+                height={0}
+                hide={false}
+                mirror={false}
+                orientation="right"
+                padding={
+                  Object {
+                    "bottom": 0,
+                    "top": 0,
+                  }
+                }
+                reversed={false}
+                scale="auto"
+                stroke=""
+                tickCount={5}
+                type="number"
+                width={60}
+                yAxisId="right"
+              />
+              <Tooltip
+                active={false}
+                animationDuration={400}
+                animationEasing="ease"
+                content={
+                  <CustomTooltip
+                    tempText={
+                      Object {
+                        "temperature": "Temperatura",
+                        "temperatureMax": "Temperatura Max.",
+                        "temperatureMin": "Temperatura Min.",
+                        "today": "Dziś",
+                        "weekDay": Array [
+                          "Niedziela",
+                          "Poniedziałek",
+                          "Wtorek",
+                          "Środa",
+                          "Czwartek",
+                          "Piątek",
+                          "Sobota",
+                          "Dziś",
+                        ],
+                        "weekDayShort": Array [
+                          "Nie",
+                          "Pon",
+                          "Wt",
+                          "Śr",
+                          "Czw",
+                          "Pt",
+                          "Sob",
+                        ],
+                      }
+                    }
+                    type="hourly"
+                    units="si"
+                  />
+                }
+                contentStyle={Object {}}
+                coordinate={
+                  Object {
+                    "x": 0,
+                    "y": 0,
+                  }
+                }
+                cursor={true}
+                cursorStyle={Object {}}
+                filterNull={true}
+                isAnimationActive={true}
+                itemSorter={[Function]}
+                itemStyle={Object {}}
+                labelStyle={Object {}}
+                offset={10}
+                separator=" : "
+                useTranslate3d={false}
+                viewBox={
+                  Object {
+                    "x1": 0,
+                    "x2": 0,
+                    "y1": 0,
+                    "y2": 0,
+                  }
+                }
+                wrapperStyle={Object {}}
+              />
+              <Legend
+                align="center"
+                iconSize={14}
+                layout="vertical"
+                verticalAlign="bottom"
+              />
+              <Line
+                activeDot={
+                  Object {
+                    "r": 8,
+                  }
+                }
+                animateNewValues={true}
+                animationBegin={0}
+                animationDuration={1500}
+                animationEasing="ease"
+                connectNulls={false}
+                dataKey="Temperatura (°C)"
+                dot={true}
+                fill="#fff"
+                hide={false}
+                isAnimationActive={true}
+                legendType="line"
+                onAnimationEnd={[Function]}
+                onAnimationStart={[Function]}
+                points={Array []}
+                stroke=""
+                strokeWidth={1}
+                type="monotone"
+                xAxisId={0}
+                yAxisId="left"
+              />
+              <Line
+                activeDot={true}
+                animateNewValues={true}
+                animationBegin={0}
+                animationDuration={1500}
+                animationEasing="ease"
+                connectNulls={false}
+                dot={true}
+                fill="#fff"
+                hide={false}
+                isAnimationActive={true}
+                legendType="line"
+                onAnimationEnd={[Function]}
+                onAnimationStart={[Function]}
+                points={Array []}
+                stroke=""
+                strokeWidth={1}
+                type="monotone"
+                xAxisId={0}
+                yAxisId="right"
+              />
+            </LineChart>,
+            "debounce": 0,
+            "height": 300,
+            "width": "100%",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "barCategoryGap": "10%",
+              "barGap": 4,
+              "children": Array [
+                <CartesianGrid
+                  fill="none"
+                  horizontal={true}
+                  horizontalFill={Array []}
+                  horizontalPoints={Array []}
+                  stroke="#ccc"
+                  strokeDasharray="3 3"
+                  vertical={true}
+                  verticalFill={Array []}
+                  verticalPoints={Array []}
+                />,
+                <XAxis
+                  allowDataOverflow={false}
+                  allowDecimals={true}
+                  allowDuplicatedCategory={true}
+                  dataKey="time"
+                  domain={
+                    Array [
+                      0,
+                      "auto",
+                    ]
+                  }
+                  height={30}
+                  hide={false}
+                  mirror={false}
+                  orientation="bottom"
+                  padding={
+                    Object {
+                      "left": 0,
+                      "right": 0,
+                    }
+                  }
+                  reversed={false}
+                  scale="auto"
+                  stroke=""
+                  tickCount={5}
+                  type="category"
+                  width={0}
+                  xAxisId={0}
+                />,
+                <YAxis
+                  allowDataOverflow={false}
+                  allowDecimals={true}
+                  allowDuplicatedCategory={true}
+                  domain={
+                    Array [
+                      "auto",
+                      "auto",
+                    ]
+                  }
+                  height={0}
+                  hide={false}
+                  mirror={false}
+                  orientation="left"
+                  padding={
+                    Object {
+                      "bottom": 0,
+                      "top": 0,
+                    }
+                  }
+                  reversed={false}
+                  scale="auto"
+                  tick={
+                    Object {
+                      "stroke": "",
+                    }
+                  }
+                  tickCount={5}
+                  type="number"
+                  width={60}
+                  yAxisId="left"
+                />,
+                <YAxis
+                  allowDataOverflow={false}
+                  allowDecimals={true}
+                  allowDuplicatedCategory={true}
+                  domain={
+                    Array [
+                      0,
+                      100,
+                    ]
+                  }
+                  height={0}
+                  hide={false}
+                  mirror={false}
+                  orientation="right"
+                  padding={
+                    Object {
+                      "bottom": 0,
+                      "top": 0,
+                    }
+                  }
+                  reversed={false}
+                  scale="auto"
+                  stroke=""
+                  tickCount={5}
+                  type="number"
+                  width={60}
+                  yAxisId="right"
+                />,
+                <Tooltip
+                  active={false}
+                  animationDuration={400}
+                  animationEasing="ease"
+                  content={
+                    <CustomTooltip
+                      tempText={
+                        Object {
+                          "temperature": "Temperatura",
+                          "temperatureMax": "Temperatura Max.",
+                          "temperatureMin": "Temperatura Min.",
+                          "today": "Dziś",
+                          "weekDay": Array [
+                            "Niedziela",
+                            "Poniedziałek",
+                            "Wtorek",
+                            "Środa",
+                            "Czwartek",
+                            "Piątek",
+                            "Sobota",
+                            "Dziś",
+                          ],
+                          "weekDayShort": Array [
+                            "Nie",
+                            "Pon",
+                            "Wt",
+                            "Śr",
+                            "Czw",
+                            "Pt",
+                            "Sob",
+                          ],
+                        }
+                      }
+                      type="hourly"
+                      units="si"
+                    />
+                  }
+                  contentStyle={Object {}}
+                  coordinate={
+                    Object {
+                      "x": 0,
+                      "y": 0,
+                    }
+                  }
+                  cursor={true}
+                  cursorStyle={Object {}}
+                  filterNull={true}
+                  isAnimationActive={true}
+                  itemSorter={[Function]}
+                  itemStyle={Object {}}
+                  labelStyle={Object {}}
+                  offset={10}
+                  separator=" : "
+                  useTranslate3d={false}
+                  viewBox={
+                    Object {
+                      "x1": 0,
+                      "x2": 0,
+                      "y1": 0,
+                      "y2": 0,
+                    }
+                  }
+                  wrapperStyle={Object {}}
+                />,
+                <Legend
+                  align="center"
+                  iconSize={14}
+                  layout="vertical"
+                  verticalAlign="bottom"
+                />,
+                <Line
+                  activeDot={
+                    Object {
+                      "r": 8,
+                    }
+                  }
+                  animateNewValues={true}
+                  animationBegin={0}
+                  animationDuration={1500}
+                  animationEasing="ease"
+                  connectNulls={false}
+                  dataKey="Temperatura (°C)"
+                  dot={true}
+                  fill="#fff"
+                  hide={false}
+                  isAnimationActive={true}
+                  legendType="line"
+                  onAnimationEnd={[Function]}
+                  onAnimationStart={[Function]}
+                  points={Array []}
+                  stroke=""
+                  strokeWidth={1}
+                  type="monotone"
+                  xAxisId={0}
+                  yAxisId="left"
+                />,
+                <Line
+                  activeDot={true}
+                  animateNewValues={true}
+                  animationBegin={0}
+                  animationDuration={1500}
+                  animationEasing="ease"
+                  connectNulls={false}
+                  dot={true}
+                  fill="#fff"
+                  hide={false}
+                  isAnimationActive={true}
+                  legendType="line"
+                  onAnimationEnd={[Function]}
+                  onAnimationStart={[Function]}
+                  points={Array []}
+                  stroke=""
+                  strokeWidth={1}
+                  type="monotone"
+                  xAxisId={0}
+                  yAxisId="right"
+                />,
+              ],
+              "data": Array [
+                Object {
+                  "Temperatura (°C)": 9,
+                  "summary": "Średnie zachmurzenie",
+                  "time": "18:00",
+                  "undefined": 0,
+                },
+                Object {
+                  "Temperatura (°C)": 11.2,
+                  "summary": "Średnie zachmurzenie",
+                  "time": "21:00",
+                  "undefined": 3,
+                },
+                Object {
+                  "Temperatura (°C)": 12.7,
+                  "summary": "Średnie zachmurzenie",
+                  "time": "00:00",
+                  "undefined": 0,
+                },
+                Object {
+                  "Temperatura (°C)": 13.7,
+                  "summary": "Słaby wiatr, duże zachmurzenie",
+                  "time": "03:00",
+                  "undefined": 0,
+                },
+                Object {
+                  "Temperatura (°C)": 14.2,
+                  "summary": "Umiarkowany wiatr, duże zachmurzenie",
+                  "time": "06:00",
+                  "undefined": 0,
+                },
+                Object {
+                  "Temperatura (°C)": 16.5,
+                  "summary": "Słaby wiatr, duże zachmurzenie",
+                  "time": "09:00",
+                  "undefined": 4,
+                },
+                Object {
+                  "Temperatura (°C)": 18.9,
+                  "summary": "Duże zachmurzenie",
+                  "time": "12:00",
+                  "undefined": 11,
+                },
+                Object {
+                  "Temperatura (°C)": 17.7,
+                  "summary": "Duże zachmurzenie",
+                  "time": "15:00",
+                  "undefined": 4,
+                },
+                Object {
+                  "Temperatura (°C)": 15.5,
+                  "summary": "Duże zachmurzenie",
+                  "time": "18:00",
+                  "undefined": 2,
+                },
+                Object {
+                  "Temperatura (°C)": 13.6,
+                  "summary": "Niewielkie zachmurzenie",
+                  "time": "21:00",
+                  "undefined": 0,
+                },
+                Object {
+                  "Temperatura (°C)": 12.6,
+                  "summary": "Bezchmurnie",
+                  "time": "00:00",
+                  "undefined": 0,
+                },
+                Object {
+                  "Temperatura (°C)": 11.6,
+                  "summary": "Bezchmurnie",
+                  "time": "03:00",
+                  "undefined": 0,
+                },
+                Object {
+                  "Temperatura (°C)": 9.1,
+                  "summary": "Niewielkie zachmurzenie",
+                  "time": "06:00",
+                  "undefined": 0,
+                },
+                Object {
+                  "Temperatura (°C)": 11,
+                  "summary": "Bezchmurnie",
+                  "time": "09:00",
+                  "undefined": 0,
+                },
+                Object {
+                  "Temperatura (°C)": 15.2,
+                  "summary": "Bezchmurnie",
+                  "time": "12:00",
+                  "undefined": 0,
+                },
+                Object {
+                  "Temperatura (°C)": 14.8,
+                  "summary": "Bezchmurnie",
+                  "time": "15:00",
+                  "undefined": 0,
+                },
+                Object {
+                  "Temperatura (°C)": 11.8,
+                  "summary": "Bezchmurnie",
+                  "time": "18:00",
+                  "undefined": 0,
+                },
+              ],
+              "layout": "horizontal",
+              "margin": Object {
+                "bottom": 5,
+                "left": 5,
+                "right": 5,
+                "top": 5,
+              },
+              "reverseStackOrder": false,
+              "stackOffset": "none",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "fill": "none",
+                  "horizontal": true,
+                  "horizontalFill": Array [],
+                  "horizontalPoints": Array [],
+                  "stroke": "#ccc",
+                  "strokeDasharray": "3 3",
+                  "vertical": true,
+                  "verticalFill": Array [],
+                  "verticalPoints": Array [],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "allowDataOverflow": false,
+                  "allowDecimals": true,
+                  "allowDuplicatedCategory": true,
+                  "dataKey": "time",
+                  "domain": Array [
+                    0,
+                    "auto",
+                  ],
+                  "height": 30,
+                  "hide": false,
+                  "mirror": false,
+                  "orientation": "bottom",
+                  "padding": Object {
+                    "left": 0,
+                    "right": 0,
+                  },
+                  "reversed": false,
+                  "scale": "auto",
+                  "stroke": "",
+                  "tickCount": 5,
+                  "type": "category",
+                  "width": 0,
+                  "xAxisId": 0,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "allowDataOverflow": false,
+                  "allowDecimals": true,
+                  "allowDuplicatedCategory": true,
+                  "domain": Array [
+                    "auto",
+                    "auto",
+                  ],
+                  "height": 0,
+                  "hide": false,
+                  "mirror": false,
+                  "orientation": "left",
+                  "padding": Object {
+                    "bottom": 0,
+                    "top": 0,
+                  },
+                  "reversed": false,
+                  "scale": "auto",
+                  "tick": Object {
+                    "stroke": "",
+                  },
+                  "tickCount": 5,
+                  "type": "number",
+                  "width": 60,
+                  "yAxisId": "left",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "allowDataOverflow": false,
+                  "allowDecimals": true,
+                  "allowDuplicatedCategory": true,
+                  "domain": Array [
+                    0,
+                    100,
+                  ],
+                  "height": 0,
+                  "hide": false,
+                  "mirror": false,
+                  "orientation": "right",
+                  "padding": Object {
+                    "bottom": 0,
+                    "top": 0,
+                  },
+                  "reversed": false,
+                  "scale": "auto",
+                  "stroke": "",
+                  "tickCount": 5,
+                  "type": "number",
+                  "width": 60,
+                  "yAxisId": "right",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "active": false,
+                  "animationDuration": 400,
+                  "animationEasing": "ease",
+                  "content": <CustomTooltip
+                    tempText={
+                      Object {
+                        "temperature": "Temperatura",
+                        "temperatureMax": "Temperatura Max.",
+                        "temperatureMin": "Temperatura Min.",
+                        "today": "Dziś",
+                        "weekDay": Array [
+                          "Niedziela",
+                          "Poniedziałek",
+                          "Wtorek",
+                          "Środa",
+                          "Czwartek",
+                          "Piątek",
+                          "Sobota",
+                          "Dziś",
+                        ],
+                        "weekDayShort": Array [
+                          "Nie",
+                          "Pon",
+                          "Wt",
+                          "Śr",
+                          "Czw",
+                          "Pt",
+                          "Sob",
+                        ],
+                      }
+                    }
+                    type="hourly"
+                    units="si"
+                  />,
+                  "contentStyle": Object {},
+                  "coordinate": Object {
+                    "x": 0,
+                    "y": 0,
+                  },
+                  "cursor": true,
+                  "cursorStyle": Object {},
+                  "filterNull": true,
+                  "isAnimationActive": true,
+                  "itemSorter": [Function],
+                  "itemStyle": Object {},
+                  "labelStyle": Object {},
+                  "offset": 10,
+                  "separator": " : ",
+                  "useTranslate3d": false,
+                  "viewBox": Object {
+                    "x1": 0,
+                    "x2": 0,
+                    "y1": 0,
+                    "y2": 0,
+                  },
+                  "wrapperStyle": Object {},
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "align": "center",
+                  "iconSize": 14,
+                  "layout": "vertical",
+                  "verticalAlign": "bottom",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "activeDot": Object {
+                    "r": 8,
+                  },
+                  "animateNewValues": true,
+                  "animationBegin": 0,
+                  "animationDuration": 1500,
+                  "animationEasing": "ease",
+                  "connectNulls": false,
+                  "dataKey": "Temperatura (°C)",
+                  "dot": true,
+                  "fill": "#fff",
+                  "hide": false,
+                  "isAnimationActive": true,
+                  "legendType": "line",
+                  "onAnimationEnd": [Function],
+                  "onAnimationStart": [Function],
+                  "points": Array [],
+                  "stroke": "",
+                  "strokeWidth": 1,
+                  "type": "monotone",
+                  "xAxisId": 0,
+                  "yAxisId": "left",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "activeDot": true,
+                  "animateNewValues": true,
+                  "animationBegin": 0,
+                  "animationDuration": 1500,
+                  "animationEasing": "ease",
+                  "connectNulls": false,
+                  "dataKey": undefined,
+                  "dot": true,
+                  "fill": "#fff",
+                  "hide": false,
+                  "isAnimationActive": true,
+                  "legendType": "line",
+                  "onAnimationEnd": [Function],
+                  "onAnimationStart": [Function],
+                  "points": Array [],
+                  "stroke": "",
+                  "strokeWidth": 1,
+                  "type": "monotone",
+                  "xAxisId": 0,
+                  "yAxisId": "right",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        "type": "div",
+      },
+    ],
+    "type": "section",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Summary>
+            Duże zachmurzenie w ciągu dnia, nocą słaby wiatr, skończy się jutro rano.
+          </Summary>,
+          <div
+            className="chartContainer"
+          >
+            <ResponsiveContainer
+              debounce={0}
+              height={300}
+              width="100%"
+            >
+              <LineChart
+                barCategoryGap="10%"
+                barGap={4}
+                data={
+                  Array [
+                    Object {
+                      "Temperatura (°C)": 9,
+                      "summary": "Średnie zachmurzenie",
+                      "time": "18:00",
+                      "undefined": 0,
+                    },
+                    Object {
+                      "Temperatura (°C)": 11.2,
+                      "summary": "Średnie zachmurzenie",
+                      "time": "21:00",
+                      "undefined": 3,
+                    },
+                    Object {
+                      "Temperatura (°C)": 12.7,
+                      "summary": "Średnie zachmurzenie",
+                      "time": "00:00",
+                      "undefined": 0,
+                    },
+                    Object {
+                      "Temperatura (°C)": 13.7,
+                      "summary": "Słaby wiatr, duże zachmurzenie",
+                      "time": "03:00",
+                      "undefined": 0,
+                    },
+                    Object {
+                      "Temperatura (°C)": 14.2,
+                      "summary": "Umiarkowany wiatr, duże zachmurzenie",
+                      "time": "06:00",
+                      "undefined": 0,
+                    },
+                    Object {
+                      "Temperatura (°C)": 16.5,
+                      "summary": "Słaby wiatr, duże zachmurzenie",
+                      "time": "09:00",
+                      "undefined": 4,
+                    },
+                    Object {
+                      "Temperatura (°C)": 18.9,
+                      "summary": "Duże zachmurzenie",
+                      "time": "12:00",
+                      "undefined": 11,
+                    },
+                    Object {
+                      "Temperatura (°C)": 17.7,
+                      "summary": "Duże zachmurzenie",
+                      "time": "15:00",
+                      "undefined": 4,
+                    },
+                    Object {
+                      "Temperatura (°C)": 15.5,
+                      "summary": "Duże zachmurzenie",
+                      "time": "18:00",
+                      "undefined": 2,
+                    },
+                    Object {
+                      "Temperatura (°C)": 13.6,
+                      "summary": "Niewielkie zachmurzenie",
+                      "time": "21:00",
+                      "undefined": 0,
+                    },
+                    Object {
+                      "Temperatura (°C)": 12.6,
+                      "summary": "Bezchmurnie",
+                      "time": "00:00",
+                      "undefined": 0,
+                    },
+                    Object {
+                      "Temperatura (°C)": 11.6,
+                      "summary": "Bezchmurnie",
+                      "time": "03:00",
+                      "undefined": 0,
+                    },
+                    Object {
+                      "Temperatura (°C)": 9.1,
+                      "summary": "Niewielkie zachmurzenie",
+                      "time": "06:00",
+                      "undefined": 0,
+                    },
+                    Object {
+                      "Temperatura (°C)": 11,
+                      "summary": "Bezchmurnie",
+                      "time": "09:00",
+                      "undefined": 0,
+                    },
+                    Object {
+                      "Temperatura (°C)": 15.2,
+                      "summary": "Bezchmurnie",
+                      "time": "12:00",
+                      "undefined": 0,
+                    },
+                    Object {
+                      "Temperatura (°C)": 14.8,
+                      "summary": "Bezchmurnie",
+                      "time": "15:00",
+                      "undefined": 0,
+                    },
+                    Object {
+                      "Temperatura (°C)": 11.8,
+                      "summary": "Bezchmurnie",
+                      "time": "18:00",
+                      "undefined": 0,
+                    },
+                  ]
+                }
+                layout="horizontal"
+                margin={
+                  Object {
+                    "bottom": 5,
+                    "left": 5,
+                    "right": 5,
+                    "top": 5,
+                  }
+                }
+                reverseStackOrder={false}
+                stackOffset="none"
+              >
+                <CartesianGrid
+                  fill="none"
+                  horizontal={true}
+                  horizontalFill={Array []}
+                  horizontalPoints={Array []}
+                  stroke="#ccc"
+                  strokeDasharray="3 3"
+                  vertical={true}
+                  verticalFill={Array []}
+                  verticalPoints={Array []}
+                />
+                <XAxis
+                  allowDataOverflow={false}
+                  allowDecimals={true}
+                  allowDuplicatedCategory={true}
+                  dataKey="time"
+                  domain={
+                    Array [
+                      0,
+                      "auto",
+                    ]
+                  }
+                  height={30}
+                  hide={false}
+                  mirror={false}
+                  orientation="bottom"
+                  padding={
+                    Object {
+                      "left": 0,
+                      "right": 0,
+                    }
+                  }
+                  reversed={false}
+                  scale="auto"
+                  stroke=""
+                  tickCount={5}
+                  type="category"
+                  width={0}
+                  xAxisId={0}
+                />
+                <YAxis
+                  allowDataOverflow={false}
+                  allowDecimals={true}
+                  allowDuplicatedCategory={true}
+                  domain={
+                    Array [
+                      "auto",
+                      "auto",
+                    ]
+                  }
+                  height={0}
+                  hide={false}
+                  mirror={false}
+                  orientation="left"
+                  padding={
+                    Object {
+                      "bottom": 0,
+                      "top": 0,
+                    }
+                  }
+                  reversed={false}
+                  scale="auto"
+                  tick={
+                    Object {
+                      "stroke": "",
+                    }
+                  }
+                  tickCount={5}
+                  type="number"
+                  width={60}
+                  yAxisId="left"
+                />
+                <YAxis
+                  allowDataOverflow={false}
+                  allowDecimals={true}
+                  allowDuplicatedCategory={true}
+                  domain={
+                    Array [
+                      0,
+                      100,
+                    ]
+                  }
+                  height={0}
+                  hide={false}
+                  mirror={false}
+                  orientation="right"
+                  padding={
+                    Object {
+                      "bottom": 0,
+                      "top": 0,
+                    }
+                  }
+                  reversed={false}
+                  scale="auto"
+                  stroke=""
+                  tickCount={5}
+                  type="number"
+                  width={60}
+                  yAxisId="right"
+                />
+                <Tooltip
+                  active={false}
+                  animationDuration={400}
+                  animationEasing="ease"
+                  content={
+                    <CustomTooltip
+                      tempText={
+                        Object {
+                          "temperature": "Temperatura",
+                          "temperatureMax": "Temperatura Max.",
+                          "temperatureMin": "Temperatura Min.",
+                          "today": "Dziś",
+                          "weekDay": Array [
+                            "Niedziela",
+                            "Poniedziałek",
+                            "Wtorek",
+                            "Środa",
+                            "Czwartek",
+                            "Piątek",
+                            "Sobota",
+                            "Dziś",
+                          ],
+                          "weekDayShort": Array [
+                            "Nie",
+                            "Pon",
+                            "Wt",
+                            "Śr",
+                            "Czw",
+                            "Pt",
+                            "Sob",
+                          ],
+                        }
+                      }
+                      type="hourly"
+                      units="si"
+                    />
+                  }
+                  contentStyle={Object {}}
+                  coordinate={
+                    Object {
+                      "x": 0,
+                      "y": 0,
+                    }
+                  }
+                  cursor={true}
+                  cursorStyle={Object {}}
+                  filterNull={true}
+                  isAnimationActive={true}
+                  itemSorter={[Function]}
+                  itemStyle={Object {}}
+                  labelStyle={Object {}}
+                  offset={10}
+                  separator=" : "
+                  useTranslate3d={false}
+                  viewBox={
+                    Object {
+                      "x1": 0,
+                      "x2": 0,
+                      "y1": 0,
+                      "y2": 0,
+                    }
+                  }
+                  wrapperStyle={Object {}}
+                />
+                <Legend
+                  align="center"
+                  iconSize={14}
+                  layout="vertical"
+                  verticalAlign="bottom"
+                />
+                <Line
+                  activeDot={
+                    Object {
+                      "r": 8,
+                    }
+                  }
+                  animateNewValues={true}
+                  animationBegin={0}
+                  animationDuration={1500}
+                  animationEasing="ease"
+                  connectNulls={false}
+                  dataKey="Temperatura (°C)"
+                  dot={true}
+                  fill="#fff"
+                  hide={false}
+                  isAnimationActive={true}
+                  legendType="line"
+                  onAnimationEnd={[Function]}
+                  onAnimationStart={[Function]}
+                  points={Array []}
+                  stroke=""
+                  strokeWidth={1}
+                  type="monotone"
+                  xAxisId={0}
+                  yAxisId="left"
+                />
+                <Line
+                  activeDot={true}
+                  animateNewValues={true}
+                  animationBegin={0}
+                  animationDuration={1500}
+                  animationEasing="ease"
+                  connectNulls={false}
+                  dot={true}
+                  fill="#fff"
+                  hide={false}
+                  isAnimationActive={true}
+                  legendType="line"
+                  onAnimationEnd={[Function]}
+                  onAnimationStart={[Function]}
+                  points={Array []}
+                  stroke=""
+                  strokeWidth={1}
+                  type="monotone"
+                  xAxisId={0}
+                  yAxisId="right"
+                />
+              </LineChart>
+            </ResponsiveContainer>
+          </div>,
+        ],
+        "className": "Hourly",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": "Duże zachmurzenie w ciągu dnia, nocą słaby wiatr, skończy się jutro rano.",
+          },
+          "ref": null,
+          "rendered": "Duże zachmurzenie w ciągu dnia, nocą słaby wiatr, skończy się jutro rano.",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <ResponsiveContainer
+              debounce={0}
+              height={300}
+              width="100%"
+            >
+              <LineChart
+                barCategoryGap="10%"
+                barGap={4}
+                data={
+                  Array [
+                    Object {
+                      "Temperatura (°C)": 9,
+                      "summary": "Średnie zachmurzenie",
+                      "time": "18:00",
+                      "undefined": 0,
+                    },
+                    Object {
+                      "Temperatura (°C)": 11.2,
+                      "summary": "Średnie zachmurzenie",
+                      "time": "21:00",
+                      "undefined": 3,
+                    },
+                    Object {
+                      "Temperatura (°C)": 12.7,
+                      "summary": "Średnie zachmurzenie",
+                      "time": "00:00",
+                      "undefined": 0,
+                    },
+                    Object {
+                      "Temperatura (°C)": 13.7,
+                      "summary": "Słaby wiatr, duże zachmurzenie",
+                      "time": "03:00",
+                      "undefined": 0,
+                    },
+                    Object {
+                      "Temperatura (°C)": 14.2,
+                      "summary": "Umiarkowany wiatr, duże zachmurzenie",
+                      "time": "06:00",
+                      "undefined": 0,
+                    },
+                    Object {
+                      "Temperatura (°C)": 16.5,
+                      "summary": "Słaby wiatr, duże zachmurzenie",
+                      "time": "09:00",
+                      "undefined": 4,
+                    },
+                    Object {
+                      "Temperatura (°C)": 18.9,
+                      "summary": "Duże zachmurzenie",
+                      "time": "12:00",
+                      "undefined": 11,
+                    },
+                    Object {
+                      "Temperatura (°C)": 17.7,
+                      "summary": "Duże zachmurzenie",
+                      "time": "15:00",
+                      "undefined": 4,
+                    },
+                    Object {
+                      "Temperatura (°C)": 15.5,
+                      "summary": "Duże zachmurzenie",
+                      "time": "18:00",
+                      "undefined": 2,
+                    },
+                    Object {
+                      "Temperatura (°C)": 13.6,
+                      "summary": "Niewielkie zachmurzenie",
+                      "time": "21:00",
+                      "undefined": 0,
+                    },
+                    Object {
+                      "Temperatura (°C)": 12.6,
+                      "summary": "Bezchmurnie",
+                      "time": "00:00",
+                      "undefined": 0,
+                    },
+                    Object {
+                      "Temperatura (°C)": 11.6,
+                      "summary": "Bezchmurnie",
+                      "time": "03:00",
+                      "undefined": 0,
+                    },
+                    Object {
+                      "Temperatura (°C)": 9.1,
+                      "summary": "Niewielkie zachmurzenie",
+                      "time": "06:00",
+                      "undefined": 0,
+                    },
+                    Object {
+                      "Temperatura (°C)": 11,
+                      "summary": "Bezchmurnie",
+                      "time": "09:00",
+                      "undefined": 0,
+                    },
+                    Object {
+                      "Temperatura (°C)": 15.2,
+                      "summary": "Bezchmurnie",
+                      "time": "12:00",
+                      "undefined": 0,
+                    },
+                    Object {
+                      "Temperatura (°C)": 14.8,
+                      "summary": "Bezchmurnie",
+                      "time": "15:00",
+                      "undefined": 0,
+                    },
+                    Object {
+                      "Temperatura (°C)": 11.8,
+                      "summary": "Bezchmurnie",
+                      "time": "18:00",
+                      "undefined": 0,
+                    },
+                  ]
+                }
+                layout="horizontal"
+                margin={
+                  Object {
+                    "bottom": 5,
+                    "left": 5,
+                    "right": 5,
+                    "top": 5,
+                  }
+                }
+                reverseStackOrder={false}
+                stackOffset="none"
+              >
+                <CartesianGrid
+                  fill="none"
+                  horizontal={true}
+                  horizontalFill={Array []}
+                  horizontalPoints={Array []}
+                  stroke="#ccc"
+                  strokeDasharray="3 3"
+                  vertical={true}
+                  verticalFill={Array []}
+                  verticalPoints={Array []}
+                />
+                <XAxis
+                  allowDataOverflow={false}
+                  allowDecimals={true}
+                  allowDuplicatedCategory={true}
+                  dataKey="time"
+                  domain={
+                    Array [
+                      0,
+                      "auto",
+                    ]
+                  }
+                  height={30}
+                  hide={false}
+                  mirror={false}
+                  orientation="bottom"
+                  padding={
+                    Object {
+                      "left": 0,
+                      "right": 0,
+                    }
+                  }
+                  reversed={false}
+                  scale="auto"
+                  stroke=""
+                  tickCount={5}
+                  type="category"
+                  width={0}
+                  xAxisId={0}
+                />
+                <YAxis
+                  allowDataOverflow={false}
+                  allowDecimals={true}
+                  allowDuplicatedCategory={true}
+                  domain={
+                    Array [
+                      "auto",
+                      "auto",
+                    ]
+                  }
+                  height={0}
+                  hide={false}
+                  mirror={false}
+                  orientation="left"
+                  padding={
+                    Object {
+                      "bottom": 0,
+                      "top": 0,
+                    }
+                  }
+                  reversed={false}
+                  scale="auto"
+                  tick={
+                    Object {
+                      "stroke": "",
+                    }
+                  }
+                  tickCount={5}
+                  type="number"
+                  width={60}
+                  yAxisId="left"
+                />
+                <YAxis
+                  allowDataOverflow={false}
+                  allowDecimals={true}
+                  allowDuplicatedCategory={true}
+                  domain={
+                    Array [
+                      0,
+                      100,
+                    ]
+                  }
+                  height={0}
+                  hide={false}
+                  mirror={false}
+                  orientation="right"
+                  padding={
+                    Object {
+                      "bottom": 0,
+                      "top": 0,
+                    }
+                  }
+                  reversed={false}
+                  scale="auto"
+                  stroke=""
+                  tickCount={5}
+                  type="number"
+                  width={60}
+                  yAxisId="right"
+                />
+                <Tooltip
+                  active={false}
+                  animationDuration={400}
+                  animationEasing="ease"
+                  content={
+                    <CustomTooltip
+                      tempText={
+                        Object {
+                          "temperature": "Temperatura",
+                          "temperatureMax": "Temperatura Max.",
+                          "temperatureMin": "Temperatura Min.",
+                          "today": "Dziś",
+                          "weekDay": Array [
+                            "Niedziela",
+                            "Poniedziałek",
+                            "Wtorek",
+                            "Środa",
+                            "Czwartek",
+                            "Piątek",
+                            "Sobota",
+                            "Dziś",
+                          ],
+                          "weekDayShort": Array [
+                            "Nie",
+                            "Pon",
+                            "Wt",
+                            "Śr",
+                            "Czw",
+                            "Pt",
+                            "Sob",
+                          ],
+                        }
+                      }
+                      type="hourly"
+                      units="si"
+                    />
+                  }
+                  contentStyle={Object {}}
+                  coordinate={
+                    Object {
+                      "x": 0,
+                      "y": 0,
+                    }
+                  }
+                  cursor={true}
+                  cursorStyle={Object {}}
+                  filterNull={true}
+                  isAnimationActive={true}
+                  itemSorter={[Function]}
+                  itemStyle={Object {}}
+                  labelStyle={Object {}}
+                  offset={10}
+                  separator=" : "
+                  useTranslate3d={false}
+                  viewBox={
+                    Object {
+                      "x1": 0,
+                      "x2": 0,
+                      "y1": 0,
+                      "y2": 0,
+                    }
+                  }
+                  wrapperStyle={Object {}}
+                />
+                <Legend
+                  align="center"
+                  iconSize={14}
+                  layout="vertical"
+                  verticalAlign="bottom"
+                />
+                <Line
+                  activeDot={
+                    Object {
+                      "r": 8,
+                    }
+                  }
+                  animateNewValues={true}
+                  animationBegin={0}
+                  animationDuration={1500}
+                  animationEasing="ease"
+                  connectNulls={false}
+                  dataKey="Temperatura (°C)"
+                  dot={true}
+                  fill="#fff"
+                  hide={false}
+                  isAnimationActive={true}
+                  legendType="line"
+                  onAnimationEnd={[Function]}
+                  onAnimationStart={[Function]}
+                  points={Array []}
+                  stroke=""
+                  strokeWidth={1}
+                  type="monotone"
+                  xAxisId={0}
+                  yAxisId="left"
+                />
+                <Line
+                  activeDot={true}
+                  animateNewValues={true}
+                  animationBegin={0}
+                  animationDuration={1500}
+                  animationEasing="ease"
+                  connectNulls={false}
+                  dot={true}
+                  fill="#fff"
+                  hide={false}
+                  isAnimationActive={true}
+                  legendType="line"
+                  onAnimationEnd={[Function]}
+                  onAnimationStart={[Function]}
+                  points={Array []}
+                  stroke=""
+                  strokeWidth={1}
+                  type="monotone"
+                  xAxisId={0}
+                  yAxisId="right"
+                />
+              </LineChart>
+            </ResponsiveContainer>,
+            "className": "chartContainer",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <LineChart
+                barCategoryGap="10%"
+                barGap={4}
+                data={
+                  Array [
+                    Object {
+                      "Temperatura (°C)": 9,
+                      "summary": "Średnie zachmurzenie",
+                      "time": "18:00",
+                      "undefined": 0,
+                    },
+                    Object {
+                      "Temperatura (°C)": 11.2,
+                      "summary": "Średnie zachmurzenie",
+                      "time": "21:00",
+                      "undefined": 3,
+                    },
+                    Object {
+                      "Temperatura (°C)": 12.7,
+                      "summary": "Średnie zachmurzenie",
+                      "time": "00:00",
+                      "undefined": 0,
+                    },
+                    Object {
+                      "Temperatura (°C)": 13.7,
+                      "summary": "Słaby wiatr, duże zachmurzenie",
+                      "time": "03:00",
+                      "undefined": 0,
+                    },
+                    Object {
+                      "Temperatura (°C)": 14.2,
+                      "summary": "Umiarkowany wiatr, duże zachmurzenie",
+                      "time": "06:00",
+                      "undefined": 0,
+                    },
+                    Object {
+                      "Temperatura (°C)": 16.5,
+                      "summary": "Słaby wiatr, duże zachmurzenie",
+                      "time": "09:00",
+                      "undefined": 4,
+                    },
+                    Object {
+                      "Temperatura (°C)": 18.9,
+                      "summary": "Duże zachmurzenie",
+                      "time": "12:00",
+                      "undefined": 11,
+                    },
+                    Object {
+                      "Temperatura (°C)": 17.7,
+                      "summary": "Duże zachmurzenie",
+                      "time": "15:00",
+                      "undefined": 4,
+                    },
+                    Object {
+                      "Temperatura (°C)": 15.5,
+                      "summary": "Duże zachmurzenie",
+                      "time": "18:00",
+                      "undefined": 2,
+                    },
+                    Object {
+                      "Temperatura (°C)": 13.6,
+                      "summary": "Niewielkie zachmurzenie",
+                      "time": "21:00",
+                      "undefined": 0,
+                    },
+                    Object {
+                      "Temperatura (°C)": 12.6,
+                      "summary": "Bezchmurnie",
+                      "time": "00:00",
+                      "undefined": 0,
+                    },
+                    Object {
+                      "Temperatura (°C)": 11.6,
+                      "summary": "Bezchmurnie",
+                      "time": "03:00",
+                      "undefined": 0,
+                    },
+                    Object {
+                      "Temperatura (°C)": 9.1,
+                      "summary": "Niewielkie zachmurzenie",
+                      "time": "06:00",
+                      "undefined": 0,
+                    },
+                    Object {
+                      "Temperatura (°C)": 11,
+                      "summary": "Bezchmurnie",
+                      "time": "09:00",
+                      "undefined": 0,
+                    },
+                    Object {
+                      "Temperatura (°C)": 15.2,
+                      "summary": "Bezchmurnie",
+                      "time": "12:00",
+                      "undefined": 0,
+                    },
+                    Object {
+                      "Temperatura (°C)": 14.8,
+                      "summary": "Bezchmurnie",
+                      "time": "15:00",
+                      "undefined": 0,
+                    },
+                    Object {
+                      "Temperatura (°C)": 11.8,
+                      "summary": "Bezchmurnie",
+                      "time": "18:00",
+                      "undefined": 0,
+                    },
+                  ]
+                }
+                layout="horizontal"
+                margin={
+                  Object {
+                    "bottom": 5,
+                    "left": 5,
+                    "right": 5,
+                    "top": 5,
+                  }
+                }
+                reverseStackOrder={false}
+                stackOffset="none"
+              >
+                <CartesianGrid
+                  fill="none"
+                  horizontal={true}
+                  horizontalFill={Array []}
+                  horizontalPoints={Array []}
+                  stroke="#ccc"
+                  strokeDasharray="3 3"
+                  vertical={true}
+                  verticalFill={Array []}
+                  verticalPoints={Array []}
+                />
+                <XAxis
+                  allowDataOverflow={false}
+                  allowDecimals={true}
+                  allowDuplicatedCategory={true}
+                  dataKey="time"
+                  domain={
+                    Array [
+                      0,
+                      "auto",
+                    ]
+                  }
+                  height={30}
+                  hide={false}
+                  mirror={false}
+                  orientation="bottom"
+                  padding={
+                    Object {
+                      "left": 0,
+                      "right": 0,
+                    }
+                  }
+                  reversed={false}
+                  scale="auto"
+                  stroke=""
+                  tickCount={5}
+                  type="category"
+                  width={0}
+                  xAxisId={0}
+                />
+                <YAxis
+                  allowDataOverflow={false}
+                  allowDecimals={true}
+                  allowDuplicatedCategory={true}
+                  domain={
+                    Array [
+                      "auto",
+                      "auto",
+                    ]
+                  }
+                  height={0}
+                  hide={false}
+                  mirror={false}
+                  orientation="left"
+                  padding={
+                    Object {
+                      "bottom": 0,
+                      "top": 0,
+                    }
+                  }
+                  reversed={false}
+                  scale="auto"
+                  tick={
+                    Object {
+                      "stroke": "",
+                    }
+                  }
+                  tickCount={5}
+                  type="number"
+                  width={60}
+                  yAxisId="left"
+                />
+                <YAxis
+                  allowDataOverflow={false}
+                  allowDecimals={true}
+                  allowDuplicatedCategory={true}
+                  domain={
+                    Array [
+                      0,
+                      100,
+                    ]
+                  }
+                  height={0}
+                  hide={false}
+                  mirror={false}
+                  orientation="right"
+                  padding={
+                    Object {
+                      "bottom": 0,
+                      "top": 0,
+                    }
+                  }
+                  reversed={false}
+                  scale="auto"
+                  stroke=""
+                  tickCount={5}
+                  type="number"
+                  width={60}
+                  yAxisId="right"
+                />
+                <Tooltip
+                  active={false}
+                  animationDuration={400}
+                  animationEasing="ease"
+                  content={
+                    <CustomTooltip
+                      tempText={
+                        Object {
+                          "temperature": "Temperatura",
+                          "temperatureMax": "Temperatura Max.",
+                          "temperatureMin": "Temperatura Min.",
+                          "today": "Dziś",
+                          "weekDay": Array [
+                            "Niedziela",
+                            "Poniedziałek",
+                            "Wtorek",
+                            "Środa",
+                            "Czwartek",
+                            "Piątek",
+                            "Sobota",
+                            "Dziś",
+                          ],
+                          "weekDayShort": Array [
+                            "Nie",
+                            "Pon",
+                            "Wt",
+                            "Śr",
+                            "Czw",
+                            "Pt",
+                            "Sob",
+                          ],
+                        }
+                      }
+                      type="hourly"
+                      units="si"
+                    />
+                  }
+                  contentStyle={Object {}}
+                  coordinate={
+                    Object {
+                      "x": 0,
+                      "y": 0,
+                    }
+                  }
+                  cursor={true}
+                  cursorStyle={Object {}}
+                  filterNull={true}
+                  isAnimationActive={true}
+                  itemSorter={[Function]}
+                  itemStyle={Object {}}
+                  labelStyle={Object {}}
+                  offset={10}
+                  separator=" : "
+                  useTranslate3d={false}
+                  viewBox={
+                    Object {
+                      "x1": 0,
+                      "x2": 0,
+                      "y1": 0,
+                      "y2": 0,
+                    }
+                  }
+                  wrapperStyle={Object {}}
+                />
+                <Legend
+                  align="center"
+                  iconSize={14}
+                  layout="vertical"
+                  verticalAlign="bottom"
+                />
+                <Line
+                  activeDot={
+                    Object {
+                      "r": 8,
+                    }
+                  }
+                  animateNewValues={true}
+                  animationBegin={0}
+                  animationDuration={1500}
+                  animationEasing="ease"
+                  connectNulls={false}
+                  dataKey="Temperatura (°C)"
+                  dot={true}
+                  fill="#fff"
+                  hide={false}
+                  isAnimationActive={true}
+                  legendType="line"
+                  onAnimationEnd={[Function]}
+                  onAnimationStart={[Function]}
+                  points={Array []}
+                  stroke=""
+                  strokeWidth={1}
+                  type="monotone"
+                  xAxisId={0}
+                  yAxisId="left"
+                />
+                <Line
+                  activeDot={true}
+                  animateNewValues={true}
+                  animationBegin={0}
+                  animationDuration={1500}
+                  animationEasing="ease"
+                  connectNulls={false}
+                  dot={true}
+                  fill="#fff"
+                  hide={false}
+                  isAnimationActive={true}
+                  legendType="line"
+                  onAnimationEnd={[Function]}
+                  onAnimationStart={[Function]}
+                  points={Array []}
+                  stroke=""
+                  strokeWidth={1}
+                  type="monotone"
+                  xAxisId={0}
+                  yAxisId="right"
+                />
+              </LineChart>,
+              "debounce": 0,
+              "height": 300,
+              "width": "100%",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "barCategoryGap": "10%",
+                "barGap": 4,
+                "children": Array [
+                  <CartesianGrid
+                    fill="none"
+                    horizontal={true}
+                    horizontalFill={Array []}
+                    horizontalPoints={Array []}
+                    stroke="#ccc"
+                    strokeDasharray="3 3"
+                    vertical={true}
+                    verticalFill={Array []}
+                    verticalPoints={Array []}
+                  />,
+                  <XAxis
+                    allowDataOverflow={false}
+                    allowDecimals={true}
+                    allowDuplicatedCategory={true}
+                    dataKey="time"
+                    domain={
+                      Array [
+                        0,
+                        "auto",
+                      ]
+                    }
+                    height={30}
+                    hide={false}
+                    mirror={false}
+                    orientation="bottom"
+                    padding={
+                      Object {
+                        "left": 0,
+                        "right": 0,
+                      }
+                    }
+                    reversed={false}
+                    scale="auto"
+                    stroke=""
+                    tickCount={5}
+                    type="category"
+                    width={0}
+                    xAxisId={0}
+                  />,
+                  <YAxis
+                    allowDataOverflow={false}
+                    allowDecimals={true}
+                    allowDuplicatedCategory={true}
+                    domain={
+                      Array [
+                        "auto",
+                        "auto",
+                      ]
+                    }
+                    height={0}
+                    hide={false}
+                    mirror={false}
+                    orientation="left"
+                    padding={
+                      Object {
+                        "bottom": 0,
+                        "top": 0,
+                      }
+                    }
+                    reversed={false}
+                    scale="auto"
+                    tick={
+                      Object {
+                        "stroke": "",
+                      }
+                    }
+                    tickCount={5}
+                    type="number"
+                    width={60}
+                    yAxisId="left"
+                  />,
+                  <YAxis
+                    allowDataOverflow={false}
+                    allowDecimals={true}
+                    allowDuplicatedCategory={true}
+                    domain={
+                      Array [
+                        0,
+                        100,
+                      ]
+                    }
+                    height={0}
+                    hide={false}
+                    mirror={false}
+                    orientation="right"
+                    padding={
+                      Object {
+                        "bottom": 0,
+                        "top": 0,
+                      }
+                    }
+                    reversed={false}
+                    scale="auto"
+                    stroke=""
+                    tickCount={5}
+                    type="number"
+                    width={60}
+                    yAxisId="right"
+                  />,
+                  <Tooltip
+                    active={false}
+                    animationDuration={400}
+                    animationEasing="ease"
+                    content={
+                      <CustomTooltip
+                        tempText={
+                          Object {
+                            "temperature": "Temperatura",
+                            "temperatureMax": "Temperatura Max.",
+                            "temperatureMin": "Temperatura Min.",
+                            "today": "Dziś",
+                            "weekDay": Array [
+                              "Niedziela",
+                              "Poniedziałek",
+                              "Wtorek",
+                              "Środa",
+                              "Czwartek",
+                              "Piątek",
+                              "Sobota",
+                              "Dziś",
+                            ],
+                            "weekDayShort": Array [
+                              "Nie",
+                              "Pon",
+                              "Wt",
+                              "Śr",
+                              "Czw",
+                              "Pt",
+                              "Sob",
+                            ],
+                          }
+                        }
+                        type="hourly"
+                        units="si"
+                      />
+                    }
+                    contentStyle={Object {}}
+                    coordinate={
+                      Object {
+                        "x": 0,
+                        "y": 0,
+                      }
+                    }
+                    cursor={true}
+                    cursorStyle={Object {}}
+                    filterNull={true}
+                    isAnimationActive={true}
+                    itemSorter={[Function]}
+                    itemStyle={Object {}}
+                    labelStyle={Object {}}
+                    offset={10}
+                    separator=" : "
+                    useTranslate3d={false}
+                    viewBox={
+                      Object {
+                        "x1": 0,
+                        "x2": 0,
+                        "y1": 0,
+                        "y2": 0,
+                      }
+                    }
+                    wrapperStyle={Object {}}
+                  />,
+                  <Legend
+                    align="center"
+                    iconSize={14}
+                    layout="vertical"
+                    verticalAlign="bottom"
+                  />,
+                  <Line
+                    activeDot={
+                      Object {
+                        "r": 8,
+                      }
+                    }
+                    animateNewValues={true}
+                    animationBegin={0}
+                    animationDuration={1500}
+                    animationEasing="ease"
+                    connectNulls={false}
+                    dataKey="Temperatura (°C)"
+                    dot={true}
+                    fill="#fff"
+                    hide={false}
+                    isAnimationActive={true}
+                    legendType="line"
+                    onAnimationEnd={[Function]}
+                    onAnimationStart={[Function]}
+                    points={Array []}
+                    stroke=""
+                    strokeWidth={1}
+                    type="monotone"
+                    xAxisId={0}
+                    yAxisId="left"
+                  />,
+                  <Line
+                    activeDot={true}
+                    animateNewValues={true}
+                    animationBegin={0}
+                    animationDuration={1500}
+                    animationEasing="ease"
+                    connectNulls={false}
+                    dot={true}
+                    fill="#fff"
+                    hide={false}
+                    isAnimationActive={true}
+                    legendType="line"
+                    onAnimationEnd={[Function]}
+                    onAnimationStart={[Function]}
+                    points={Array []}
+                    stroke=""
+                    strokeWidth={1}
+                    type="monotone"
+                    xAxisId={0}
+                    yAxisId="right"
+                  />,
+                ],
+                "data": Array [
+                  Object {
+                    "Temperatura (°C)": 9,
+                    "summary": "Średnie zachmurzenie",
+                    "time": "18:00",
+                    "undefined": 0,
+                  },
+                  Object {
+                    "Temperatura (°C)": 11.2,
+                    "summary": "Średnie zachmurzenie",
+                    "time": "21:00",
+                    "undefined": 3,
+                  },
+                  Object {
+                    "Temperatura (°C)": 12.7,
+                    "summary": "Średnie zachmurzenie",
+                    "time": "00:00",
+                    "undefined": 0,
+                  },
+                  Object {
+                    "Temperatura (°C)": 13.7,
+                    "summary": "Słaby wiatr, duże zachmurzenie",
+                    "time": "03:00",
+                    "undefined": 0,
+                  },
+                  Object {
+                    "Temperatura (°C)": 14.2,
+                    "summary": "Umiarkowany wiatr, duże zachmurzenie",
+                    "time": "06:00",
+                    "undefined": 0,
+                  },
+                  Object {
+                    "Temperatura (°C)": 16.5,
+                    "summary": "Słaby wiatr, duże zachmurzenie",
+                    "time": "09:00",
+                    "undefined": 4,
+                  },
+                  Object {
+                    "Temperatura (°C)": 18.9,
+                    "summary": "Duże zachmurzenie",
+                    "time": "12:00",
+                    "undefined": 11,
+                  },
+                  Object {
+                    "Temperatura (°C)": 17.7,
+                    "summary": "Duże zachmurzenie",
+                    "time": "15:00",
+                    "undefined": 4,
+                  },
+                  Object {
+                    "Temperatura (°C)": 15.5,
+                    "summary": "Duże zachmurzenie",
+                    "time": "18:00",
+                    "undefined": 2,
+                  },
+                  Object {
+                    "Temperatura (°C)": 13.6,
+                    "summary": "Niewielkie zachmurzenie",
+                    "time": "21:00",
+                    "undefined": 0,
+                  },
+                  Object {
+                    "Temperatura (°C)": 12.6,
+                    "summary": "Bezchmurnie",
+                    "time": "00:00",
+                    "undefined": 0,
+                  },
+                  Object {
+                    "Temperatura (°C)": 11.6,
+                    "summary": "Bezchmurnie",
+                    "time": "03:00",
+                    "undefined": 0,
+                  },
+                  Object {
+                    "Temperatura (°C)": 9.1,
+                    "summary": "Niewielkie zachmurzenie",
+                    "time": "06:00",
+                    "undefined": 0,
+                  },
+                  Object {
+                    "Temperatura (°C)": 11,
+                    "summary": "Bezchmurnie",
+                    "time": "09:00",
+                    "undefined": 0,
+                  },
+                  Object {
+                    "Temperatura (°C)": 15.2,
+                    "summary": "Bezchmurnie",
+                    "time": "12:00",
+                    "undefined": 0,
+                  },
+                  Object {
+                    "Temperatura (°C)": 14.8,
+                    "summary": "Bezchmurnie",
+                    "time": "15:00",
+                    "undefined": 0,
+                  },
+                  Object {
+                    "Temperatura (°C)": 11.8,
+                    "summary": "Bezchmurnie",
+                    "time": "18:00",
+                    "undefined": 0,
+                  },
+                ],
+                "layout": "horizontal",
+                "margin": Object {
+                  "bottom": 5,
+                  "left": 5,
+                  "right": 5,
+                  "top": 5,
+                },
+                "reverseStackOrder": false,
+                "stackOffset": "none",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "fill": "none",
+                    "horizontal": true,
+                    "horizontalFill": Array [],
+                    "horizontalPoints": Array [],
+                    "stroke": "#ccc",
+                    "strokeDasharray": "3 3",
+                    "vertical": true,
+                    "verticalFill": Array [],
+                    "verticalPoints": Array [],
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "allowDataOverflow": false,
+                    "allowDecimals": true,
+                    "allowDuplicatedCategory": true,
+                    "dataKey": "time",
+                    "domain": Array [
+                      0,
+                      "auto",
+                    ],
+                    "height": 30,
+                    "hide": false,
+                    "mirror": false,
+                    "orientation": "bottom",
+                    "padding": Object {
+                      "left": 0,
+                      "right": 0,
+                    },
+                    "reversed": false,
+                    "scale": "auto",
+                    "stroke": "",
+                    "tickCount": 5,
+                    "type": "category",
+                    "width": 0,
+                    "xAxisId": 0,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "allowDataOverflow": false,
+                    "allowDecimals": true,
+                    "allowDuplicatedCategory": true,
+                    "domain": Array [
+                      "auto",
+                      "auto",
+                    ],
+                    "height": 0,
+                    "hide": false,
+                    "mirror": false,
+                    "orientation": "left",
+                    "padding": Object {
+                      "bottom": 0,
+                      "top": 0,
+                    },
+                    "reversed": false,
+                    "scale": "auto",
+                    "tick": Object {
+                      "stroke": "",
+                    },
+                    "tickCount": 5,
+                    "type": "number",
+                    "width": 60,
+                    "yAxisId": "left",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "allowDataOverflow": false,
+                    "allowDecimals": true,
+                    "allowDuplicatedCategory": true,
+                    "domain": Array [
+                      0,
+                      100,
+                    ],
+                    "height": 0,
+                    "hide": false,
+                    "mirror": false,
+                    "orientation": "right",
+                    "padding": Object {
+                      "bottom": 0,
+                      "top": 0,
+                    },
+                    "reversed": false,
+                    "scale": "auto",
+                    "stroke": "",
+                    "tickCount": 5,
+                    "type": "number",
+                    "width": 60,
+                    "yAxisId": "right",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "active": false,
+                    "animationDuration": 400,
+                    "animationEasing": "ease",
+                    "content": <CustomTooltip
+                      tempText={
+                        Object {
+                          "temperature": "Temperatura",
+                          "temperatureMax": "Temperatura Max.",
+                          "temperatureMin": "Temperatura Min.",
+                          "today": "Dziś",
+                          "weekDay": Array [
+                            "Niedziela",
+                            "Poniedziałek",
+                            "Wtorek",
+                            "Środa",
+                            "Czwartek",
+                            "Piątek",
+                            "Sobota",
+                            "Dziś",
+                          ],
+                          "weekDayShort": Array [
+                            "Nie",
+                            "Pon",
+                            "Wt",
+                            "Śr",
+                            "Czw",
+                            "Pt",
+                            "Sob",
+                          ],
+                        }
+                      }
+                      type="hourly"
+                      units="si"
+                    />,
+                    "contentStyle": Object {},
+                    "coordinate": Object {
+                      "x": 0,
+                      "y": 0,
+                    },
+                    "cursor": true,
+                    "cursorStyle": Object {},
+                    "filterNull": true,
+                    "isAnimationActive": true,
+                    "itemSorter": [Function],
+                    "itemStyle": Object {},
+                    "labelStyle": Object {},
+                    "offset": 10,
+                    "separator": " : ",
+                    "useTranslate3d": false,
+                    "viewBox": Object {
+                      "x1": 0,
+                      "x2": 0,
+                      "y1": 0,
+                      "y2": 0,
+                    },
+                    "wrapperStyle": Object {},
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "align": "center",
+                    "iconSize": 14,
+                    "layout": "vertical",
+                    "verticalAlign": "bottom",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "activeDot": Object {
+                      "r": 8,
+                    },
+                    "animateNewValues": true,
+                    "animationBegin": 0,
+                    "animationDuration": 1500,
+                    "animationEasing": "ease",
+                    "connectNulls": false,
+                    "dataKey": "Temperatura (°C)",
+                    "dot": true,
+                    "fill": "#fff",
+                    "hide": false,
+                    "isAnimationActive": true,
+                    "legendType": "line",
+                    "onAnimationEnd": [Function],
+                    "onAnimationStart": [Function],
+                    "points": Array [],
+                    "stroke": "",
+                    "strokeWidth": 1,
+                    "type": "monotone",
+                    "xAxisId": 0,
+                    "yAxisId": "left",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "activeDot": true,
+                    "animateNewValues": true,
+                    "animationBegin": 0,
+                    "animationDuration": 1500,
+                    "animationEasing": "ease",
+                    "connectNulls": false,
+                    "dataKey": undefined,
+                    "dot": true,
+                    "fill": "#fff",
+                    "hide": false,
+                    "isAnimationActive": true,
+                    "legendType": "line",
+                    "onAnimationEnd": [Function],
+                    "onAnimationStart": [Function],
+                    "points": Array [],
+                    "stroke": "",
+                    "strokeWidth": 1,
+                    "type": "monotone",
+                    "xAxisId": 0,
+                    "yAxisId": "right",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          "type": "div",
+        },
+      ],
+      "type": "section",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

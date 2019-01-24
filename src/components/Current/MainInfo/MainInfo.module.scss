@@ -17,7 +17,7 @@
   & svg {
     height: var(--head-font-size);
     width: var(--head-font-size);
-    transform: scale(3) translateY(-5%);
+    transform: scale(2.8) translateY(-5%);
     vertical-align: middle;
     
     fill: var(--color-text-primary);
@@ -83,8 +83,9 @@
   & .date {
     display: flex;
     margin: 0 1rem;
-    @media only screen and (min-width: 420px) {
-      font-size: var(--small-head-font-size);
+    font-size: var(--small-head-font-size);
+    @media only screen and (max-width: 374px) {
+      font-size: var(--big-text-font-size);
     }
     @media only screen and (min-width: 870px) {
       font-size: var(--head-font-size);
@@ -97,6 +98,9 @@
         display: inline-block;
         margin-left: 1rem;
         margin-top: 2px;
+        @media only screen and (max-width: 374px) {
+          font-size: var(--medium-text-font-size);
+        }
       }
 
       & svg {

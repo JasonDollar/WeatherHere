@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render Header correctly 1`] = `
+exports[`Header component matches snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Header />,
@@ -37,7 +37,7 @@ ShallowWrapper {
       "rendered": "WeatherHere",
       "type": "h1",
     },
-    "type": "div",
+    "type": "header",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
@@ -65,7 +65,7 @@ ShallowWrapper {
         "rendered": "WeatherHere",
         "type": "h1",
       },
-      "type": "div",
+      "type": "header",
     },
   ],
   Symbol(enzyme.__options__): Object {

@@ -1,36 +1,35 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 import { appTestData as data } from '../../data/fixtures'
-import Daily from '../../components/Daily/Daily'
+import Hourly from '../../components/Hourly/Hourly'
 
-
-let daily
-let dateText
+let hourly
+let hourlyText
 let timezone
 let units
 let wrapper
 
 beforeAll(() => {
-  daily = data.weather.daily
-  dateText = data.text.pl.date
+  hourly = data.weather.hourly
+  hourlyText = data.text.pl.date
   timezone = data.timezone
   units = data.units.si.id
   wrapper = shallow(
-    <Daily 
-      daily={daily}
-      dateText={dateText}
+    <Hourly 
+      hourly={hourly}
+      hourlyText={hourlyText}
       timezone={timezone}
       units={units}
     />,
   )
 })
 
-describe('Daily component test', () => {
+describe('Hourly component test', () => {
   test('Matches snapshot', () => {
     expect(wrapper).toMatchSnapshot()
   })
   test('proper props given to Summary component', () => {
     const element = wrapper.find('Summary')
-    expect(element.props().children).toBe(daily.summary)
+    expect(element.props().children).toBe(hourly.summary) 
   }) 
 })

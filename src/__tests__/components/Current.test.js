@@ -12,7 +12,7 @@ beforeAll(() => {
   dateNowSpy = jest.spyOn(Date, 'now').mockImplementation(() => 1000000)
 })
 describe('Current component tests', () => {
-  test('render Current component', () => {
+  test('Matches Snapshot', () => {
     const wrapper = shallow(
       <Current 
         currently={data.weather.currently} 

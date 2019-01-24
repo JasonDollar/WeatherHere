@@ -1,9 +1,9 @@
 .container {
   max-width: 1040px;
   margin: 0 auto;
-  margin-bottom: 5.5rem;
+  margin-bottom: 6.5rem;
   background-color: var(--color-back);
   @media only screen and (min-width: 577px) {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 }

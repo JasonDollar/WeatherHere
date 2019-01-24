@@ -14,11 +14,13 @@ let additionalData = data.weather.currently.windBearing
 let text = data.text.pl.current
 let wrapper
 
-// TODO update test for visual circle data js polyfill
+
 
 describe('DataCircle test', () => {
   describe('DataCircle comp. with humidity data (works for most types)', () => {
     beforeAll(() => {
+
+      global.document.documentElement.style.setProperty = jest.fn()
       wrapper = shallow(
         <DataCircle 
           type={typeHumidity}
@@ -74,3 +76,28 @@ describe('DataCircle test', () => {
   })
 })
 
+/*
+21: "--s-right-rotate1"
+​
+22: "--s-right-color1"
+​
+23: "--s-left-rotate1"
+​
+24: "--s-left-color1"
+​
+25: "--s-right-color2"
+​
+26: "--s-right-rotate2"
+​
+27: "--s-left-color2"
+​
+28: "--s-left-rotate2"
+​
+29: "--s-right-color3"
+​
+30: "--s-right-rotate3"
+​
+31: "--s-left-color3"
+​
+32: "--s-left-rotate3"
+*/

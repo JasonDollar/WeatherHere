@@ -38,7 +38,7 @@ beforeAll(() => {
 describe('Main Info component tests', () => {
 
 
-  test('MainInfo to match Snapshot', () => {
+  test('Matches snapshot', () => {
     expect(wrapper).toMatchSnapshot()
   })
 
