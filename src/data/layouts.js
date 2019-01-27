@@ -97,7 +97,7 @@ const layouts = {
     primary: '#2980B9',
     primaryOffset: '#46c0ec',
     mobileMenu: '#2980B9',
-    antiGraph: '#756ef0',
+    antiGraph: '#646ad7',
     secondaryGraph: '#31aedb',
     background: '#fcfcfc',
     background2: '#fcfcfc',
@@ -204,7 +204,7 @@ const layouts = {
     grey2: '#999',
     grey3: '#363333',
     grey4: '#464646',
-    greyGraph: '#676767',
+    greyGraph: '#777',
   },
 
 

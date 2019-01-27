@@ -11,20 +11,20 @@ const SearchDesktop = ({
       <input type="text" onChange={onInputChange} value={inputValue} className={classes.input} placeholder={text.inputPlaceholder} />
       <button className={`${classes.button} ${classes.formButton}`} type="submit">
         <span className="hidden">{text.search}</span>
-        <Icon icon="search" viewBox="0 0 50 50" title={text.icon} />
+        <Icon icon="search" viewBox="0 0 50 50" title="" />
         <span>{text.search}</span>
           
       </button>
     </form>
     <button className={`${classes.button} ${classes.buttonGeo}`} onClick={getUserLocation} type="button">
       <span className="hidden">{text.geoFull}</span>
-      <Icon icon="gpsArrow" viewBox="0 0 51.636 51.636" title={text.icon} />
+      <Icon icon="gpsArrow" viewBox="0 0 51.636 51.636" title="" />
       <span>{text.geo}</span>
         
     </button>
     <button className={`${classes.button} ${classes.buttonSettings}`} onClick={onSettingIconClick} type="button">
       <span className="hidden">{text.settings}</span>
-      <Icon icon="settings" viewBox="0 0 50 50" title={text.icon} />
+      <Icon icon="settings" viewBox="0 0 50 50" title="" />
       <span>{text.settings}</span>
         
     </button>

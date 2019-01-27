@@ -25,7 +25,7 @@ code {
   --medium-text-font-size: 2rem;
   --normal-text-font-size: 1.6rem;
   --small-text-font-size: 1.2rem;
-  
+
   --color-text-primary: #222;
   --color-text-grey: #888;
   --color-text-secondary: #bbb;
@@ -67,6 +67,7 @@ code {
   --s-right-rotate3: 3deg;
   --s-left-rotate3: 0deg;
 }
+
 /* 
 0% = #00
 10% = #16
@@ -93,14 +94,30 @@ code {
   margin: 0 auto;
 }
 
-.hidden
-{position:absolute;
-left:-10000px;
-top:auto;
-width:1px;
-height:1px;
-overflow:hidden;}
+.hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
 
+legend {
+  display: table;
+  padding: 0;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  min-width: 0;
+  padding: 0.01em 0 0 0;
+}
+
+body:not(:-moz-handler-blocked) fieldset {
+  display: table-cell;
+}
 
 /* textarea,
 input.text,

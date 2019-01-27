@@ -19,5 +19,5 @@ Icon.propTypes = {
 }
 
 Icon.defaultProps = {
-  title: 'icon',
+  title: '',
 }

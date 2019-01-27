@@ -14,7 +14,7 @@ const MobileMenu = ({
       type="button"
     >
       <span className="hidden">{text.search}</span>
-      <Icon icon="search" viewBox="0 0 50 50" title={text.icon} />
+      <Icon icon="search" viewBox="0 0 50 50" />
       <span>{text.search}</span>
     </button>
 
@@ -24,7 +24,7 @@ const MobileMenu = ({
       type="button"
     >
       <span className="hidden">{text.forecast}</span>
-      <Icon icon="sun" viewBox="0 0 50 50" title={text.icon} />
+      <Icon icon="sun" viewBox="0 0 50 50" />
       <span>{text.forecast}</span>
     </button>
     
@@ -34,7 +34,7 @@ const MobileMenu = ({
       type="button"
     >
       <span className="hidden">{text.setings}</span>
-      <Icon icon="settings" viewBox="0 0 50 50" title={text.icon} />
+      <Icon icon="settings" viewBox="0 0 50 50" />
       <span>{text.settings}</span>
     </button>
   </div>

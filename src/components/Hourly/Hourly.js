@@ -46,7 +46,7 @@ const Hourly = ({
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="time" stroke={graphColorGrey} />
             <YAxis yAxisId="left" type="number" tick={{ stroke: graphColorPrimary }} domain={['auto', 'auto']} />
-            <YAxis yAxisId="right" orientation="right" type="number" domain={[0, 100]} stroke={graphColorGrey} />
+            <YAxis yAxisId="right" orientation="right" type="number" domain={[0, 100]} tick={{ stroke: graphColorSecondary }} />
             <Tooltip
               content={<CustomTooltip tempText={hourlyText} type="hourly" units={units} />} 
             />

@@ -97,27 +97,26 @@ const Settings = ({
           opacity: showSettings ? '1' : '0',
         }}
       >
-        <div className={classes.menu}>
-          <p>{text.changeLang}</p>
+        <fieldset className={classes.menu}>
+          <legend>{text.changeLang}</legend>
           <form className={`${classes.form} ${classes.language}`}>
             {selectLanguageMenu}  
           </form>
-        </div>
+        </fieldset>
 
-        <div className={classes.menu}>
-          <p>{text.changeTheme}</p>
+        <fieldset className={classes.menu}>
+          <legend>{text.changeTheme}</legend>
           <form className={`${classes.form} ${classes.theme}`}>
             {selectThemeMenu}
-
           </form>
-        </div>
-        <div className={`${classes.menu} ${classes.menuUnits}`}>
-          <p>{text.changeUnits}</p>
+        </fieldset>
+
+        <fieldset className={`${classes.menu} ${classes.menuUnits}`}>
+          <legend>{text.changeUnits}</legend>
           <form className={`${classes.form} ${classes.units}`}>
             {selectUnitMenu}
-
           </form>
-        </div>
+        </fieldset>
         <Footer />
       </div>
     </React.Fragment>

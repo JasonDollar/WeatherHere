@@ -10,10 +10,11 @@
 
 .chartContainer {
   overflow: hidden;
-  font-weight: 300;
+  
   @media only screen and (max-width: 576px) {
-    margin: 0 -3.2rem 0 -3rem;
+    margin: 0 -3.2rem 0 -3.2rem;
     font-size: var(--small-text-font-size);
+    font-weight: 300;
   }
 }
 

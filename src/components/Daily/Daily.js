@@ -61,7 +61,7 @@ const Daily = ({
             </defs>
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="name" stroke={graphColorGrey} />
-            <YAxis type="number" stroke={graphColorGrey} />
+            <YAxis type="number" stroke={graphColorGrey} tick={{ stroke: graphColorPrimary }} />
             <Tooltip
               content={<CustomTooltip tempText={dateText} type="daily" units={units} windowWidth={parseInt(windowWidth)} />}
             />
