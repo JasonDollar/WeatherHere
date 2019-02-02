@@ -92,6 +92,7 @@ const Settings = ({
       <Backdrop showBackdrop={showBackdrop} hideBackdrop={hideBackdrop} />
       <div
         className={classes.Settings}
+        id="Settings"
         style={{ 
           transform: showSettings ? 'translateY(0)' : 'translateY(-100vh)',
           opacity: showSettings ? '1' : '0',

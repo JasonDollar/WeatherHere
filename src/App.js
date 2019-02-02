@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
+
 import language from './data/text-locale'
 import layouts from './data/layouts'
 
@@ -25,12 +27,20 @@ class App extends Component {
     activeMenuBarClass: 'forecast',
     themeName: 'pink',
     units: 'si',
+    scrollDisbled: false,
   }
   componentDidMount() {
     this.updateWindowDimensions();
     window.addEventListener('resize', this.updateWindowDimensions);
     this.parseDataFromLocalStorage()
+    this.searchElement = document.getElementById('Search')
+    this.settingsElement = document.getElementById('Settings')
   }
+
+  // componentDidUpdate = (prevProps, prevState) => {
+  //   if (prevState)
+  // }
+  
   
   componentWillUnmount() {
     window.removeEventListener('resize', this.updateWindowDimensions);
@@ -137,18 +147,26 @@ class App extends Component {
 
 
   showSettingsHandler = () => {
+    // enableBodyScroll(this.settingsElement)
+    // enableBodyScroll(this.searchElement)
     let backdropVisibility
     if ((this.state.showBackdrop && !this.state.showSettings) || (!this.state.showBackdrop && !this.state.showSettings)) {
       backdropVisibility = true
     } else {
       backdropVisibility = false
     }
-    this.setState({
-      showSettings: !this.state.showSettings,
+    if (!this.state.scrollDisbled) {
+      disableBodyScroll(this.settingsElement)
+    } else {
+      enableBodyScroll(this.settingsElement)
+    }
+    this.setState(prevState => ({
+      showSettings: !prevState.showSettings,
       showSearch:  false,
       showBackdrop: backdropVisibility,
-      activeMenuBarClass: this.state.activeMenuBarClass !== 'settings' ? 'settings' : 'forecast'
-    })
+      activeMenuBarClass: this.state.activeMenuBarClass !== 'settings' ? 'settings' : 'forecast',
+      scrollDisbled: !prevState.scrollDisbled,
+    }))
   }
 
   showSearchHandler = () => {
@@ -158,19 +176,28 @@ class App extends Component {
     } else {
       backdropVisibility = false
     }
-    this.setState({
-      showSearch: !this.state.showSearch,
+    if (!this.state.scrollDisbled) {
+      disableBodyScroll(this.searchElement)
+    } else {
+      enableBodyScroll(this.searchElement)
+    }
+    this.setState(prevState => ({
+      showSearch: !prevState.showSearch,
       showSettings: false,
       showBackdrop: this.state.width <= 576 ? backdropVisibility : false,
-      activeMenuBarClass: this.state.activeMenuBarClass !== 'search' ? 'search' : 'forecast'
-    })
+      activeMenuBarClass: this.state.activeMenuBarClass !== 'search' ? 'search' : 'forecast',
+      scrollDisbled: !prevState.scrollDisbled,
+    }))
   }
   showForecastHandler = () => {
+    enableBodyScroll(this.settingsElement)
+    enableBodyScroll(this.searchElement)
     this.setState({
       showSettings: false,
       showSearch: false,
       showBackdrop: false,
-      activeMenuBarClass: 'forecast'
+      activeMenuBarClass: 'forecast',
+      scrollDisbled: false,
     })
   }
 
@@ -226,7 +253,7 @@ class App extends Component {
 
           </div>
         </div>
-        {this.state.width <= 576 && (
+        
           <Search    
           showSearch={this.state.showSearch}
           showSearchHandler={this.showSearchHandler}
@@ -238,7 +265,7 @@ class App extends Component {
           showBackdrop={this.state.showBackdrop}
           hideBackdrop={this.showForecastHandler}
           />
-        )}
+        
 
         <Weather 
           text={this.state.localText}

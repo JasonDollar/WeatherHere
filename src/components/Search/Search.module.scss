@@ -103,3 +103,9 @@
     padding-top: 1rem;
   }
 }
+
+.mobileOnly {
+  @media (min-width: 577px) {
+    display: none;
+  }
+}

@@ -7,9 +7,10 @@ import classes from './Search.module.scss'
 const Search = ({ 
   onSearchFormSubmit, onInputChange, inputValue, text, getUserLocation, showBackdrop, hideBackdrop, showSearch,
 }) => (
-  <React.Fragment>
+  <div className={classes.mobileOnly}>
     <Backdrop showBackdrop={showBackdrop} hideBackdrop={hideBackdrop} />
     <div
+      id="Search"
       className={classes.Search}
       style={{ 
         transform: showSearch ? 'translateY(0)' : 'translateY(-100vh)',
@@ -29,7 +30,7 @@ const Search = ({
       </button>
 
     </div>
-  </React.Fragment>
+  </div>
 )
 
 export default Search

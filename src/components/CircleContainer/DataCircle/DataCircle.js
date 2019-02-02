@@ -49,19 +49,19 @@ const DataCircle = ({
     document.documentElement.style.setProperty(colorCSSLeft, colorGrey)
     document.documentElement.style.setProperty(rotateCSSVarLeft, '0deg')
     conic = { background: `conic-gradient(${colorGrey} 0% 100%)` }
-  } else if (data < 50) {
+  } else if (data < 50 && data > 0) {
     document.documentElement.style.setProperty(colorCSSRight, colorGrey)
     document.documentElement.style.setProperty(rotateCSSVarRight, `${parseInt(data * 3.6)}deg`)
     document.documentElement.style.setProperty(colorCSSLeft, colorGrey)
     document.documentElement.style.setProperty(rotateCSSVarLeft, '0deg')
-    conic = { background: `conic-gradient(${graphColorPrimary} 0%, ${graphColorSecondary} ${data}%, ${colorGrey} ${data}% 100%)` }
+    conic = { background: `conic-gradient(${graphColorSecondary} 0%, ${graphColorPrimary} ${data}%, ${colorGrey} ${data}% 100%)` }
   } else if (data === 50) {
     document.documentElement.style.setProperty(rotateCSSVarRight, '0deg')
     document.documentElement.style.setProperty(colorCSSRight, graphColorSecondary)
     document.documentElement.style.setProperty(rotateCSSVarLeft, '0deg')
     document.documentElement.style.setProperty(colorCSSLeft, colorGrey)
-    conic = { background: `conic-gradient(${graphColorPrimary} 0%, ${graphColorSecondary} ${data}%, ${colorGrey} ${data}% 100%)` }
-  } else if (data > 50) {
+    conic = { background: `conic-gradient(${graphColorSecondary} 0%, ${graphColorPrimary} ${data}%, ${colorGrey} ${data}% 100%)` }
+  } else if (data > 50 && data < 100) {
     document.documentElement.style.setProperty(rotateCSSVarRight, '0deg')
     document.documentElement.style.setProperty(colorCSSRight, graphColorSecondary)
     document.documentElement.style.setProperty(rotateCSSVarLeft, `${parseInt(data * 3.6) - 180}deg`)
@@ -72,7 +72,7 @@ const DataCircle = ({
     document.documentElement.style.setProperty(colorCSSRight, graphColorSecondary)
     document.documentElement.style.setProperty(rotateCSSVarLeft, '0deg')
     document.documentElement.style.setProperty(colorCSSLeft, graphColorSecondary)
-    conic = { background: `conic-gradient(${graphColorSecondary} 0%, ${graphColorSecondary} 50%,${graphColorPrimary} ${data}%, ${graphColorSecondary} ${data}%, ${colorGrey} ${data}% 100%)` }
+    conic = { background: 'none' }
   }
  
   return (
