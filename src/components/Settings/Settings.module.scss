@@ -11,13 +11,29 @@
   overflow-y: scroll;
   padding-bottom: 3rem;
   transition: .2s all;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-primary-offset) var(--color-scroll-back);
+  &::-webkit-scrollbar {
+  width: 10px;
+  background-color:  var(--color-scroll-back);/* or add it to the track */
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--color-primary-offset);
+    width: 5px;
+  }
   @media only screen and (min-width: 577px) {
     top: calc(var(--screen-height) / 2 - 280px);
     bottom: calc(var(--screen-height) / 2 - 280px);
     left: calc(var(--screen-width) / 2 - 190px);
     right: calc(var(--screen-width) / 2 - 190px);
     overflow: auto;
+    border: 0px solid transparent;
+    border-radius: 4px;
   }
+
+  // &::scrollbar {
+  //   width: 3rem;
+  // }
 }
 
 .menu {

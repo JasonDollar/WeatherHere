@@ -37,9 +37,10 @@ class App extends Component {
     this.settingsElement = document.getElementById('Settings')
   }
 
-  // componentDidUpdate = (prevProps, prevState) => {
-  //   if (prevState)
-  // }
+  componentWillUnmount = () => {
+    clearAllBodyScrollLocks()
+  }
+  
   
   
   componentWillUnmount() {
@@ -122,6 +123,7 @@ class App extends Component {
     document.documentElement.style.setProperty('--color-grey-3', theme.grey3)
     document.documentElement.style.setProperty('--color-grey-4', theme.grey4)
     document.documentElement.style.setProperty('--color-grey-graph', theme.greyGraph)
+    document.documentElement.style.setProperty('--color-scroll-back', theme.scrollBack)
   }
 
   setLocationCoordsToState = (location) => {

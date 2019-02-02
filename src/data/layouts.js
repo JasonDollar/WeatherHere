@@ -21,6 +21,7 @@ const layouts = {
     grey3: '#eae9e9',
     grey4: '#eae9e9',
     greyGraph: '#676767',
+    scrollBack: '#888',
   },
   pinkDark: {
     id: 'pinkDark',
@@ -44,6 +45,7 @@ const layouts = {
     grey3: '#333',
     grey4: '#363333',
     greyGraph: '#acacac',
+    scrollBack: '#555',
   },
   pumpkin: {
     id: 'pumpkin',
@@ -67,6 +69,7 @@ const layouts = {
     grey3: '#363333',
     grey4: '#363333',
     greyGraph: '#acacac',
+    scrollBack: '#555',
   },
   evening: {
     id: 'evening',
@@ -90,6 +93,7 @@ const layouts = {
     grey3: '#363333',
     grey4: '#363333',
     greyGraph: '#acacac',
+    scrollBack: '#555',
   },
   sky: {
     id: 'sky',
@@ -113,6 +117,7 @@ const layouts = {
     grey3: '#e7e7ec',
     grey4: '#e7e7ec',
     greyGraph: '#676767',
+    scrollBack: '#777',
   },
   harvey: {
     id: 'harvey',
@@ -136,6 +141,7 @@ const layouts = {
     grey3: '#e7eae7',
     grey4: '#e7eae7',
     greyGraph: '#676767',
+    scrollBack: '#5e5e5e',
   },
   spring: {
     id: 'spring',
@@ -159,6 +165,7 @@ const layouts = {
     grey3: '#e7eae7',
     grey4: '#e7eae7',
     greyGraph: '#676767',
+    scrollBack: '#acacac',
   },
   lime: {
     id: 'lime',
@@ -182,6 +189,7 @@ const layouts = {
     grey3: '#363333',
     grey4: '#666',
     greyGraph: '#676767',
+    scrollBack: '#444',
   },
   vampire: {
     id: 'vampire',
@@ -205,6 +213,7 @@ const layouts = {
     grey3: '#363333',
     grey4: '#464646',
     greyGraph: '#777',
+    scrollBack: '#555',
   },
 
 
