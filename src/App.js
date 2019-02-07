@@ -24,7 +24,7 @@ class App extends Component {
     showSearch: false,
     showBackdrop: false,
     location: '',
-    activeMenuBarClass: 'forecast',
+    // activeMenuBarClass: 'forecast',
     themeName: 'pink',
     units: 'si',
     scrollDisbled: false,
@@ -41,7 +41,7 @@ class App extends Component {
     clearAllBodyScrollLocks()
   }
   
-  
+
   
   componentWillUnmount() {
     window.removeEventListener('resize', this.updateWindowDimensions);
@@ -129,7 +129,7 @@ class App extends Component {
   setLocationCoordsToState = (location) => {
     this.setState({
       location,
-      activeMenuBarClass: 'forecast',
+      // activeMenuBarClass: 'forecast',
       showSearch: false,
       showBackdrop: false,
     })
@@ -166,7 +166,7 @@ class App extends Component {
       showSettings: !prevState.showSettings,
       showSearch:  false,
       showBackdrop: backdropVisibility,
-      activeMenuBarClass: this.state.activeMenuBarClass !== 'settings' ? 'settings' : 'forecast',
+      // activeMenuBarClass: this.state.activeMenuBarClass !== 'settings' ? 'settings' : 'forecast',
       scrollDisbled: !prevState.scrollDisbled,
     }))
   }
@@ -187,18 +187,19 @@ class App extends Component {
       showSearch: !prevState.showSearch,
       showSettings: false,
       showBackdrop: this.state.width <= 576 ? backdropVisibility : false,
-      activeMenuBarClass: this.state.activeMenuBarClass !== 'search' ? 'search' : 'forecast',
+      // activeMenuBarClass: this.state.activeMenuBarClass !== 'search' ? 'search' : 'forecast',
       scrollDisbled: !prevState.scrollDisbled,
     }))
   }
   showForecastHandler = () => {
-    enableBodyScroll(this.settingsElement)
-    enableBodyScroll(this.searchElement)
+    // enableBodyScroll(this.settingsElement)
+    // enableBodyScroll(this.searchElement)
+    clearAllBodyScrollLocks()
     this.setState({
       showSettings: false,
       showSearch: false,
       showBackdrop: false,
-      activeMenuBarClass: 'forecast',
+      // activeMenuBarClass: 'forecast',
       scrollDisbled: false,
     })
   }
@@ -227,13 +228,14 @@ class App extends Component {
 
   onSearchFormSubmit = (e) => {
     e.preventDefault();
+    clearAllBodyScrollLocks()
     const searchValue = this.state.inputValue
     this.setState({
       searchValue: searchValue,
       showSearch: false,
       showBackdrop: false,
       inputValue: '',
-      activeMenuBarClass: 'forecast',
+      // activeMenuBarClass: 'forecast',
     })
   }
 
@@ -278,7 +280,6 @@ class App extends Component {
           units={this.state.units}
         />
 
-        
         <Settings 
           showSettings={this.state.showSettings}
           changeLanguage={this.changeLanguageHandler}
@@ -297,19 +298,18 @@ class App extends Component {
           units={this.state.units}
         />
         
-
- 
+        
 
         {this.state.width <= 576 ? (
           <MobileMenu 
             text={this.state.localText.layout}
-            activeMenuClass={this.state.activeMenuBarClass}
+            
             showForecastHandler={this.showForecastHandler}
             showSearchHandler={this.showSearchHandler}
             showSettingsHandler={this.showSettingsHandler}
           />
         ) : null}
-
+          {/*activeMenuClass={this.state.activeMenuBarClass}*/}
 
 
       </div>

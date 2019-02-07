@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import Icon from '../Icon/Icon'
 
@@ -6,39 +6,51 @@ import classes from './MobileMenu.module.scss'
 
 const MobileMenu = ({
   text, showForecastHandler, showSearchHandler, showSettingsHandler, activeMenuClass,
-}) => (
-  <div className={classes.MobileMenu}>
-    <button
-      className={activeMenuClass === 'search' ? `${classes.active} ${classes.setting}` : classes.setting} 
-      onClick={showSearchHandler}
-      type="button"
-    >
-      <span className="hidden">{text.search}</span>
-      <Icon icon="search" viewBox="0 0 50 50" />
-      <span>{text.search}</span>
-    </button>
+}) => {
+  const [activeClass, setActiveClass] = useState('forecast')
+  return (
+    <div className={classes.MobileMenu}>
+      <button
+        className={activeClass === 'search' ? `${classes.active} ${classes.setting}` : classes.setting} 
+        onClick={() => {
+          activeClass === 'search' ? setActiveClass('forecast') : setActiveClass('search')
+          showSearchHandler()
+        }}
+        type="button"
+      >
+        <span className="hidden">{text.search}</span>
+        <Icon icon="search" viewBox="0 0 50 50" />
+        <span>{text.search}</span>
+      </button>
 
-    <button 
-      className={activeMenuClass === 'forecast' ? `${classes.active} ${classes.setting}` : classes.setting} 
-      onClick={showForecastHandler}
-      type="button"
-    >
-      <span className="hidden">{text.forecast}</span>
-      <Icon icon="sun" viewBox="0 0 50 50" />
-      <span>{text.forecast}</span>
-    </button>
-    
-    <button
-      className={activeMenuClass === 'settings' ? `${classes.active} ${classes.setting}` : classes.setting} 
-      onClick={showSettingsHandler}
-      type="button"
-    >
-      <span className="hidden">{text.setings}</span>
-      <Icon icon="settings" viewBox="0 0 50 50" />
-      <span>{text.settings}</span>
-    </button>
-  </div>
-)
+      <button 
+        className={activeClass === 'forecast' ? `${classes.active} ${classes.setting}` : classes.setting} 
+        onClick={() => {
+          setActiveClass('forecast')
+          showForecastHandler()
+        }}
+        type="button"
+      >
+        <span className="hidden">{text.forecast}</span>
+        <Icon icon="sun" viewBox="0 0 50 50" />
+        <span>{text.forecast}</span>
+      </button>
+      
+      <button
+        className={activeClass === 'settings' ? `${classes.active} ${classes.setting}` : classes.setting} 
+        onClick={() => {
+          activeClass === 'settings' ? setActiveClass('forecast') : setActiveClass('settings')
+          showSettingsHandler()
+        }}
+        type="button"
+      >
+        <span className="hidden">{text.setings}</span>
+        <Icon icon="settings" viewBox="0 0 50 50" />
+        <span>{text.settings}</span>
+      </button>
+    </div>
+  )
+}
 
 export default MobileMenu
 
