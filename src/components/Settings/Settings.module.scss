@@ -10,7 +10,7 @@
   background-color: var(--color-grey-3);
   overflow-y: scroll;
   padding-bottom: 3rem;
-  transition: .2s all;
+  transition: transform .2s, opacity .2s;
   scrollbar-width: thin;
   scrollbar-color: var(--color-primary-offset) var(--color-scroll-back);
   &::-webkit-scrollbar {
