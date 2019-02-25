@@ -13,6 +13,7 @@
   transition: transform .2s, opacity .2s;
   scrollbar-width: thin;
   scrollbar-color: var(--color-primary-offset) var(--color-scroll-back);
+  -webkit-overflow-scrolling: touch;
   &::-webkit-scrollbar {
   width: 10px;
   background-color:  var(--color-scroll-back);/* or add it to the track */
