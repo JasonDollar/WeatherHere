@@ -364,7 +364,7 @@ ShallowWrapper {
           >
             <Icon
               icon="arrow"
-              title="icon"
+              title=""
               viewBox="0 0 24 24"
             />
           </div>
@@ -421,7 +421,7 @@ ShallowWrapper {
             >
               <Icon
                 icon="arrow"
-                title="icon"
+                title=""
                 viewBox="0 0 24 24"
               />
             </div>,
@@ -443,7 +443,7 @@ ShallowWrapper {
             "props": Object {
               "children": <Icon
                 icon="arrow"
-                title="icon"
+                title=""
                 viewBox="0 0 24 24"
               />,
               "className": "bigArrow",
@@ -458,7 +458,7 @@ ShallowWrapper {
               "nodeType": "function",
               "props": Object {
                 "icon": "arrow",
-                "title": "icon",
+                "title": "",
                 "viewBox": "0 0 24 24",
               },
               "ref": null,
@@ -526,7 +526,7 @@ ShallowWrapper {
             >
               <Icon
                 icon="arrow"
-                title="icon"
+                title=""
                 viewBox="0 0 24 24"
               />
             </div>
@@ -583,7 +583,7 @@ ShallowWrapper {
               >
                 <Icon
                   icon="arrow"
-                  title="icon"
+                  title=""
                   viewBox="0 0 24 24"
                 />
               </div>,
@@ -605,7 +605,7 @@ ShallowWrapper {
               "props": Object {
                 "children": <Icon
                   icon="arrow"
-                  title="icon"
+                  title=""
                   viewBox="0 0 24 24"
                 />,
                 "className": "bigArrow",
@@ -620,7 +620,7 @@ ShallowWrapper {
                 "nodeType": "function",
                 "props": Object {
                   "icon": "arrow",
-                  "title": "icon",
+                  "title": "",
                   "viewBox": "0 0 24 24",
                 },
                 "ref": null,

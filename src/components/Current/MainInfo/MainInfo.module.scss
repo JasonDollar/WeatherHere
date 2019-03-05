@@ -84,7 +84,7 @@
     display: flex;
     margin: 0;
     margin-right: 1rem;
-    font-size: calc(var(--small-head-font-size) - 1px);
+    font-size: calc(var(--small-head-font-size) - 2px);
     @media only screen and (max-width: 374px) {
       font-size: var(--big-text-font-size);
     }
@@ -97,7 +97,7 @@
     & .sun {
       & span {
         display: inline-block;
-        margin-left: 1rem;
+        margin-left: .5rem;
         margin-top: 2px;
         @media only screen and (max-width: 374px) {
           font-size: calc(var(--medium-text-font-size) - 2px);

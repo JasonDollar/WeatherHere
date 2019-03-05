@@ -18,7 +18,6 @@ const MainInfo = ({
         <Icon icon={currently.icon} viewBox="0 0 100 100" title={currentText.icon} />  
       </div>   
       <div className={classes.temperature}>
-        {/*<Icon icon="temp" viewBox="0 0 100 100" />*/}
         {formatNumber(currently.temperature)}
         <span>{unitsNames[units].temperature}</span>
       </div>

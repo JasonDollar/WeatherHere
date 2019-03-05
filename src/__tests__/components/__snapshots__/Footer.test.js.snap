@@ -20,8 +20,10 @@ ShallowWrapper {
       "children": <a
         className="link"
         href="https://darksky.net/poweredby/"
+        rel="noopener noreferrer"
+        target="_blank"
       >
-        Powered by DarkSky API →
+        Powered by DarkSky →
       </a>,
       "className": "Footer",
     },
@@ -31,12 +33,14 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": "Powered by DarkSky API →",
+        "children": "Powered by DarkSky →",
         "className": "link",
         "href": "https://darksky.net/poweredby/",
+        "rel": "noopener noreferrer",
+        "target": "_blank",
       },
       "ref": null,
-      "rendered": "Powered by DarkSky API →",
+      "rendered": "Powered by DarkSky →",
       "type": "a",
     },
     "type": "div",
@@ -50,8 +54,10 @@ ShallowWrapper {
         "children": <a
           className="link"
           href="https://darksky.net/poweredby/"
+          rel="noopener noreferrer"
+          target="_blank"
         >
-          Powered by DarkSky API →
+          Powered by DarkSky →
         </a>,
         "className": "Footer",
       },
@@ -61,12 +67,14 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Powered by DarkSky API →",
+          "children": "Powered by DarkSky →",
           "className": "link",
           "href": "https://darksky.net/poweredby/",
+          "rel": "noopener noreferrer",
+          "target": "_blank",
         },
         "ref": null,
-        "rendered": "Powered by DarkSky API →",
+        "rendered": "Powered by DarkSky →",
         "type": "a",
       },
       "type": "div",

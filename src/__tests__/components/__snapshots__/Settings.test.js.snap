@@ -57,6 +57,7 @@ ShallowWrapper {
         />,
         <div
           className="Settings"
+          id="Settings"
           style={
             Object {
               "opacity": "1",
@@ -64,12 +65,12 @@ ShallowWrapper {
             }
           }
         >
-          <div
+          <fieldset
             className="menu"
           >
-            <p>
+            <legend>
               Zmień język
-            </p>
+            </legend>
             <form
               className="form language"
             >
@@ -96,20 +97,20 @@ ShallowWrapper {
                 >
                   <Icon
                     icon="checkmark"
-                    title="icon"
+                    title=""
                     viewBox="0 0 50 50"
                   />
                 </span>
                 Polski
               </label>
             </form>
-          </div>
-          <div
+          </fieldset>
+          <fieldset
             className="menu"
           >
-            <p>
+            <legend>
               Zmień motyw
-            </p>
+            </legend>
             <form
               className="form theme"
             >
@@ -136,7 +137,7 @@ ShallowWrapper {
                 >
                   <Icon
                     icon="checkmark"
-                    title="icon"
+                    title=""
                     viewBox="0 0 50 50"
                   />
                 </span>
@@ -165,7 +166,7 @@ ShallowWrapper {
                 >
                   <Icon
                     icon="checkmark"
-                    title="icon"
+                    title=""
                     viewBox="0 0 50 50"
                   />
                 </span>
@@ -194,7 +195,7 @@ ShallowWrapper {
                 >
                   <Icon
                     icon="checkmark"
-                    title="icon"
+                    title=""
                     viewBox="0 0 50 50"
                   />
                 </span>
@@ -223,7 +224,7 @@ ShallowWrapper {
                 >
                   <Icon
                     icon="checkmark"
-                    title="icon"
+                    title=""
                     viewBox="0 0 50 50"
                   />
                 </span>
@@ -252,7 +253,7 @@ ShallowWrapper {
                 >
                   <Icon
                     icon="checkmark"
-                    title="icon"
+                    title=""
                     viewBox="0 0 50 50"
                   />
                 </span>
@@ -281,7 +282,7 @@ ShallowWrapper {
                 >
                   <Icon
                     icon="checkmark"
-                    title="icon"
+                    title=""
                     viewBox="0 0 50 50"
                   />
                 </span>
@@ -310,7 +311,7 @@ ShallowWrapper {
                 >
                   <Icon
                     icon="checkmark"
-                    title="icon"
+                    title=""
                     viewBox="0 0 50 50"
                   />
                 </span>
@@ -339,7 +340,7 @@ ShallowWrapper {
                 >
                   <Icon
                     icon="checkmark"
-                    title="icon"
+                    title=""
                     viewBox="0 0 50 50"
                   />
                 </span>
@@ -368,20 +369,20 @@ ShallowWrapper {
                 >
                   <Icon
                     icon="checkmark"
-                    title="icon"
+                    title=""
                     viewBox="0 0 50 50"
                   />
                 </span>
                 Vampire Dark
               </label>
             </form>
-          </div>
-          <div
+          </fieldset>
+          <fieldset
             className="menu menuUnits"
           >
-            <p>
+            <legend>
               Zmień jednostki
-            </p>
+            </legend>
             <form
               className="form units"
             >
@@ -408,7 +409,7 @@ ShallowWrapper {
                 >
                   <Icon
                     icon="checkmark"
-                    title="icon"
+                    title=""
                     viewBox="0 0 50 50"
                   />
                 </span>
@@ -437,7 +438,7 @@ ShallowWrapper {
                 >
                   <Icon
                     icon="checkmark"
-                    title="icon"
+                    title=""
                     viewBox="0 0 50 50"
                   />
                 </span>
@@ -466,7 +467,7 @@ ShallowWrapper {
                 >
                   <Icon
                     icon="checkmark"
-                    title="icon"
+                    title=""
                     viewBox="0 0 50 50"
                   />
                 </span>
@@ -495,14 +496,14 @@ ShallowWrapper {
                 >
                   <Icon
                     icon="checkmark"
-                    title="icon"
+                    title=""
                     viewBox="0 0 50 50"
                   />
                 </span>
                 CA
               </label>
             </form>
-          </div>
+          </fieldset>
           <Footer />
         </div>,
       ],
@@ -527,12 +528,12 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <div
+            <fieldset
               className="menu"
             >
-              <p>
+              <legend>
                 Zmień język
-              </p>
+              </legend>
               <form
                 className="form language"
               >
@@ -559,20 +560,20 @@ ShallowWrapper {
                   >
                     <Icon
                       icon="checkmark"
-                      title="icon"
+                      title=""
                       viewBox="0 0 50 50"
                     />
                   </span>
                   Polski
                 </label>
               </form>
-            </div>,
-            <div
+            </fieldset>,
+            <fieldset
               className="menu"
             >
-              <p>
+              <legend>
                 Zmień motyw
-              </p>
+              </legend>
               <form
                 className="form theme"
               >
@@ -599,7 +600,7 @@ ShallowWrapper {
                   >
                     <Icon
                       icon="checkmark"
-                      title="icon"
+                      title=""
                       viewBox="0 0 50 50"
                     />
                   </span>
@@ -628,7 +629,7 @@ ShallowWrapper {
                   >
                     <Icon
                       icon="checkmark"
-                      title="icon"
+                      title=""
                       viewBox="0 0 50 50"
                     />
                   </span>
@@ -657,7 +658,7 @@ ShallowWrapper {
                   >
                     <Icon
                       icon="checkmark"
-                      title="icon"
+                      title=""
                       viewBox="0 0 50 50"
                     />
                   </span>
@@ -686,7 +687,7 @@ ShallowWrapper {
                   >
                     <Icon
                       icon="checkmark"
-                      title="icon"
+                      title=""
                       viewBox="0 0 50 50"
                     />
                   </span>
@@ -715,7 +716,7 @@ ShallowWrapper {
                   >
                     <Icon
                       icon="checkmark"
-                      title="icon"
+                      title=""
                       viewBox="0 0 50 50"
                     />
                   </span>
@@ -744,7 +745,7 @@ ShallowWrapper {
                   >
                     <Icon
                       icon="checkmark"
-                      title="icon"
+                      title=""
                       viewBox="0 0 50 50"
                     />
                   </span>
@@ -773,7 +774,7 @@ ShallowWrapper {
                   >
                     <Icon
                       icon="checkmark"
-                      title="icon"
+                      title=""
                       viewBox="0 0 50 50"
                     />
                   </span>
@@ -802,7 +803,7 @@ ShallowWrapper {
                   >
                     <Icon
                       icon="checkmark"
-                      title="icon"
+                      title=""
                       viewBox="0 0 50 50"
                     />
                   </span>
@@ -831,20 +832,20 @@ ShallowWrapper {
                   >
                     <Icon
                       icon="checkmark"
-                      title="icon"
+                      title=""
                       viewBox="0 0 50 50"
                     />
                   </span>
                   Vampire Dark
                 </label>
               </form>
-            </div>,
-            <div
+            </fieldset>,
+            <fieldset
               className="menu menuUnits"
             >
-              <p>
+              <legend>
                 Zmień jednostki
-              </p>
+              </legend>
               <form
                 className="form units"
               >
@@ -871,7 +872,7 @@ ShallowWrapper {
                   >
                     <Icon
                       icon="checkmark"
-                      title="icon"
+                      title=""
                       viewBox="0 0 50 50"
                     />
                   </span>
@@ -900,7 +901,7 @@ ShallowWrapper {
                   >
                     <Icon
                       icon="checkmark"
-                      title="icon"
+                      title=""
                       viewBox="0 0 50 50"
                     />
                   </span>
@@ -929,7 +930,7 @@ ShallowWrapper {
                   >
                     <Icon
                       icon="checkmark"
-                      title="icon"
+                      title=""
                       viewBox="0 0 50 50"
                     />
                   </span>
@@ -958,17 +959,18 @@ ShallowWrapper {
                   >
                     <Icon
                       icon="checkmark"
-                      title="icon"
+                      title=""
                       viewBox="0 0 50 50"
                     />
                   </span>
                   CA
                 </label>
               </form>
-            </div>,
+            </fieldset>,
             <Footer />,
           ],
           "className": "Settings",
+          "id": "Settings",
           "style": Object {
             "opacity": "1",
             "transform": "translateY(0)",
@@ -982,9 +984,9 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
-                <p>
+                <legend>
                   Zmień język
-                </p>,
+                </legend>,
                 <form
                   className="form language"
                 >
@@ -1011,7 +1013,7 @@ ShallowWrapper {
                     >
                       <Icon
                         icon="checkmark"
-                        title="icon"
+                        title=""
                         viewBox="0 0 50 50"
                       />
                     </span>
@@ -1032,7 +1034,7 @@ ShallowWrapper {
                 },
                 "ref": null,
                 "rendered": "Zmień język",
-                "type": "p",
+                "type": "legend",
               },
               Object {
                 "instance": null,
@@ -1063,7 +1065,7 @@ ShallowWrapper {
                       >
                         <Icon
                           icon="checkmark"
-                          title="icon"
+                          title=""
                           viewBox="0 0 50 50"
                         />
                       </span>
@@ -1099,7 +1101,7 @@ ShallowWrapper {
                         >
                           <Icon
                             icon="checkmark"
-                            title="icon"
+                            title=""
                             viewBox="0 0 50 50"
                           />
                         </span>,
@@ -1134,7 +1136,7 @@ ShallowWrapper {
                         "props": Object {
                           "children": <Icon
                             icon="checkmark"
-                            title="icon"
+                            title=""
                             viewBox="0 0 50 50"
                           />,
                           "className": "radioButton",
@@ -1149,7 +1151,7 @@ ShallowWrapper {
                           "nodeType": "function",
                           "props": Object {
                             "icon": "checkmark",
-                            "title": "icon",
+                            "title": "",
                             "viewBox": "0 0 50 50",
                           },
                           "ref": null,
@@ -1166,7 +1168,7 @@ ShallowWrapper {
                 "type": "form",
               },
             ],
-            "type": "div",
+            "type": "fieldset",
           },
           Object {
             "instance": null,
@@ -1174,9 +1176,9 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
-                <p>
+                <legend>
                   Zmień motyw
-                </p>,
+                </legend>,
                 <form
                   className="form theme"
                 >
@@ -1203,7 +1205,7 @@ ShallowWrapper {
                     >
                       <Icon
                         icon="checkmark"
-                        title="icon"
+                        title=""
                         viewBox="0 0 50 50"
                       />
                     </span>
@@ -1232,7 +1234,7 @@ ShallowWrapper {
                     >
                       <Icon
                         icon="checkmark"
-                        title="icon"
+                        title=""
                         viewBox="0 0 50 50"
                       />
                     </span>
@@ -1261,7 +1263,7 @@ ShallowWrapper {
                     >
                       <Icon
                         icon="checkmark"
-                        title="icon"
+                        title=""
                         viewBox="0 0 50 50"
                       />
                     </span>
@@ -1290,7 +1292,7 @@ ShallowWrapper {
                     >
                       <Icon
                         icon="checkmark"
-                        title="icon"
+                        title=""
                         viewBox="0 0 50 50"
                       />
                     </span>
@@ -1319,7 +1321,7 @@ ShallowWrapper {
                     >
                       <Icon
                         icon="checkmark"
-                        title="icon"
+                        title=""
                         viewBox="0 0 50 50"
                       />
                     </span>
@@ -1348,7 +1350,7 @@ ShallowWrapper {
                     >
                       <Icon
                         icon="checkmark"
-                        title="icon"
+                        title=""
                         viewBox="0 0 50 50"
                       />
                     </span>
@@ -1377,7 +1379,7 @@ ShallowWrapper {
                     >
                       <Icon
                         icon="checkmark"
-                        title="icon"
+                        title=""
                         viewBox="0 0 50 50"
                       />
                     </span>
@@ -1406,7 +1408,7 @@ ShallowWrapper {
                     >
                       <Icon
                         icon="checkmark"
-                        title="icon"
+                        title=""
                         viewBox="0 0 50 50"
                       />
                     </span>
@@ -1435,7 +1437,7 @@ ShallowWrapper {
                     >
                       <Icon
                         icon="checkmark"
-                        title="icon"
+                        title=""
                         viewBox="0 0 50 50"
                       />
                     </span>
@@ -1456,7 +1458,7 @@ ShallowWrapper {
                 },
                 "ref": null,
                 "rendered": "Zmień motyw",
-                "type": "p",
+                "type": "legend",
               },
               Object {
                 "instance": null,
@@ -1487,7 +1489,7 @@ ShallowWrapper {
                       >
                         <Icon
                           icon="checkmark"
-                          title="icon"
+                          title=""
                           viewBox="0 0 50 50"
                         />
                       </span>
@@ -1516,7 +1518,7 @@ ShallowWrapper {
                       >
                         <Icon
                           icon="checkmark"
-                          title="icon"
+                          title=""
                           viewBox="0 0 50 50"
                         />
                       </span>
@@ -1545,7 +1547,7 @@ ShallowWrapper {
                       >
                         <Icon
                           icon="checkmark"
-                          title="icon"
+                          title=""
                           viewBox="0 0 50 50"
                         />
                       </span>
@@ -1574,7 +1576,7 @@ ShallowWrapper {
                       >
                         <Icon
                           icon="checkmark"
-                          title="icon"
+                          title=""
                           viewBox="0 0 50 50"
                         />
                       </span>
@@ -1603,7 +1605,7 @@ ShallowWrapper {
                       >
                         <Icon
                           icon="checkmark"
-                          title="icon"
+                          title=""
                           viewBox="0 0 50 50"
                         />
                       </span>
@@ -1632,7 +1634,7 @@ ShallowWrapper {
                       >
                         <Icon
                           icon="checkmark"
-                          title="icon"
+                          title=""
                           viewBox="0 0 50 50"
                         />
                       </span>
@@ -1661,7 +1663,7 @@ ShallowWrapper {
                       >
                         <Icon
                           icon="checkmark"
-                          title="icon"
+                          title=""
                           viewBox="0 0 50 50"
                         />
                       </span>
@@ -1690,7 +1692,7 @@ ShallowWrapper {
                       >
                         <Icon
                           icon="checkmark"
-                          title="icon"
+                          title=""
                           viewBox="0 0 50 50"
                         />
                       </span>
@@ -1719,7 +1721,7 @@ ShallowWrapper {
                       >
                         <Icon
                           icon="checkmark"
-                          title="icon"
+                          title=""
                           viewBox="0 0 50 50"
                         />
                       </span>
@@ -1755,7 +1757,7 @@ ShallowWrapper {
                         >
                           <Icon
                             icon="checkmark"
-                            title="icon"
+                            title=""
                             viewBox="0 0 50 50"
                           />
                         </span>,
@@ -1790,7 +1792,7 @@ ShallowWrapper {
                         "props": Object {
                           "children": <Icon
                             icon="checkmark"
-                            title="icon"
+                            title=""
                             viewBox="0 0 50 50"
                           />,
                           "className": "radioButton",
@@ -1805,7 +1807,7 @@ ShallowWrapper {
                           "nodeType": "function",
                           "props": Object {
                             "icon": "checkmark",
-                            "title": "icon",
+                            "title": "",
                             "viewBox": "0 0 50 50",
                           },
                           "ref": null,
@@ -1843,7 +1845,7 @@ ShallowWrapper {
                         >
                           <Icon
                             icon="checkmark"
-                            title="icon"
+                            title=""
                             viewBox="0 0 50 50"
                           />
                         </span>,
@@ -1878,7 +1880,7 @@ ShallowWrapper {
                         "props": Object {
                           "children": <Icon
                             icon="checkmark"
-                            title="icon"
+                            title=""
                             viewBox="0 0 50 50"
                           />,
                           "className": "radioButton",
@@ -1893,7 +1895,7 @@ ShallowWrapper {
                           "nodeType": "function",
                           "props": Object {
                             "icon": "checkmark",
-                            "title": "icon",
+                            "title": "",
                             "viewBox": "0 0 50 50",
                           },
                           "ref": null,
@@ -1931,7 +1933,7 @@ ShallowWrapper {
                         >
                           <Icon
                             icon="checkmark"
-                            title="icon"
+                            title=""
                             viewBox="0 0 50 50"
                           />
                         </span>,
@@ -1966,7 +1968,7 @@ ShallowWrapper {
                         "props": Object {
                           "children": <Icon
                             icon="checkmark"
-                            title="icon"
+                            title=""
                             viewBox="0 0 50 50"
                           />,
                           "className": "radioButton",
@@ -1981,7 +1983,7 @@ ShallowWrapper {
                           "nodeType": "function",
                           "props": Object {
                             "icon": "checkmark",
-                            "title": "icon",
+                            "title": "",
                             "viewBox": "0 0 50 50",
                           },
                           "ref": null,
@@ -2019,7 +2021,7 @@ ShallowWrapper {
                         >
                           <Icon
                             icon="checkmark"
-                            title="icon"
+                            title=""
                             viewBox="0 0 50 50"
                           />
                         </span>,
@@ -2054,7 +2056,7 @@ ShallowWrapper {
                         "props": Object {
                           "children": <Icon
                             icon="checkmark"
-                            title="icon"
+                            title=""
                             viewBox="0 0 50 50"
                           />,
                           "className": "radioButton",
@@ -2069,7 +2071,7 @@ ShallowWrapper {
                           "nodeType": "function",
                           "props": Object {
                             "icon": "checkmark",
-                            "title": "icon",
+                            "title": "",
                             "viewBox": "0 0 50 50",
                           },
                           "ref": null,
@@ -2107,7 +2109,7 @@ ShallowWrapper {
                         >
                           <Icon
                             icon="checkmark"
-                            title="icon"
+                            title=""
                             viewBox="0 0 50 50"
                           />
                         </span>,
@@ -2142,7 +2144,7 @@ ShallowWrapper {
                         "props": Object {
                           "children": <Icon
                             icon="checkmark"
-                            title="icon"
+                            title=""
                             viewBox="0 0 50 50"
                           />,
                           "className": "radioButton",
@@ -2157,7 +2159,7 @@ ShallowWrapper {
                           "nodeType": "function",
                           "props": Object {
                             "icon": "checkmark",
-                            "title": "icon",
+                            "title": "",
                             "viewBox": "0 0 50 50",
                           },
                           "ref": null,
@@ -2195,7 +2197,7 @@ ShallowWrapper {
                         >
                           <Icon
                             icon="checkmark"
-                            title="icon"
+                            title=""
                             viewBox="0 0 50 50"
                           />
                         </span>,
@@ -2230,7 +2232,7 @@ ShallowWrapper {
                         "props": Object {
                           "children": <Icon
                             icon="checkmark"
-                            title="icon"
+                            title=""
                             viewBox="0 0 50 50"
                           />,
                           "className": "radioButton",
@@ -2245,7 +2247,7 @@ ShallowWrapper {
                           "nodeType": "function",
                           "props": Object {
                             "icon": "checkmark",
-                            "title": "icon",
+                            "title": "",
                             "viewBox": "0 0 50 50",
                           },
                           "ref": null,
@@ -2283,7 +2285,7 @@ ShallowWrapper {
                         >
                           <Icon
                             icon="checkmark"
-                            title="icon"
+                            title=""
                             viewBox="0 0 50 50"
                           />
                         </span>,
@@ -2318,7 +2320,7 @@ ShallowWrapper {
                         "props": Object {
                           "children": <Icon
                             icon="checkmark"
-                            title="icon"
+                            title=""
                             viewBox="0 0 50 50"
                           />,
                           "className": "radioButton",
@@ -2333,7 +2335,7 @@ ShallowWrapper {
                           "nodeType": "function",
                           "props": Object {
                             "icon": "checkmark",
-                            "title": "icon",
+                            "title": "",
                             "viewBox": "0 0 50 50",
                           },
                           "ref": null,
@@ -2371,7 +2373,7 @@ ShallowWrapper {
                         >
                           <Icon
                             icon="checkmark"
-                            title="icon"
+                            title=""
                             viewBox="0 0 50 50"
                           />
                         </span>,
@@ -2406,7 +2408,7 @@ ShallowWrapper {
                         "props": Object {
                           "children": <Icon
                             icon="checkmark"
-                            title="icon"
+                            title=""
                             viewBox="0 0 50 50"
                           />,
                           "className": "radioButton",
@@ -2421,7 +2423,7 @@ ShallowWrapper {
                           "nodeType": "function",
                           "props": Object {
                             "icon": "checkmark",
-                            "title": "icon",
+                            "title": "",
                             "viewBox": "0 0 50 50",
                           },
                           "ref": null,
@@ -2459,7 +2461,7 @@ ShallowWrapper {
                         >
                           <Icon
                             icon="checkmark"
-                            title="icon"
+                            title=""
                             viewBox="0 0 50 50"
                           />
                         </span>,
@@ -2494,7 +2496,7 @@ ShallowWrapper {
                         "props": Object {
                           "children": <Icon
                             icon="checkmark"
-                            title="icon"
+                            title=""
                             viewBox="0 0 50 50"
                           />,
                           "className": "radioButton",
@@ -2509,7 +2511,7 @@ ShallowWrapper {
                           "nodeType": "function",
                           "props": Object {
                             "icon": "checkmark",
-                            "title": "icon",
+                            "title": "",
                             "viewBox": "0 0 50 50",
                           },
                           "ref": null,
@@ -2526,7 +2528,7 @@ ShallowWrapper {
                 "type": "form",
               },
             ],
-            "type": "div",
+            "type": "fieldset",
           },
           Object {
             "instance": null,
@@ -2534,9 +2536,9 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
-                <p>
+                <legend>
                   Zmień jednostki
-                </p>,
+                </legend>,
                 <form
                   className="form units"
                 >
@@ -2563,7 +2565,7 @@ ShallowWrapper {
                     >
                       <Icon
                         icon="checkmark"
-                        title="icon"
+                        title=""
                         viewBox="0 0 50 50"
                       />
                     </span>
@@ -2592,7 +2594,7 @@ ShallowWrapper {
                     >
                       <Icon
                         icon="checkmark"
-                        title="icon"
+                        title=""
                         viewBox="0 0 50 50"
                       />
                     </span>
@@ -2621,7 +2623,7 @@ ShallowWrapper {
                     >
                       <Icon
                         icon="checkmark"
-                        title="icon"
+                        title=""
                         viewBox="0 0 50 50"
                       />
                     </span>
@@ -2650,7 +2652,7 @@ ShallowWrapper {
                     >
                       <Icon
                         icon="checkmark"
-                        title="icon"
+                        title=""
                         viewBox="0 0 50 50"
                       />
                     </span>
@@ -2671,7 +2673,7 @@ ShallowWrapper {
                 },
                 "ref": null,
                 "rendered": "Zmień jednostki",
-                "type": "p",
+                "type": "legend",
               },
               Object {
                 "instance": null,
@@ -2702,7 +2704,7 @@ ShallowWrapper {
                       >
                         <Icon
                           icon="checkmark"
-                          title="icon"
+                          title=""
                           viewBox="0 0 50 50"
                         />
                       </span>
@@ -2731,7 +2733,7 @@ ShallowWrapper {
                       >
                         <Icon
                           icon="checkmark"
-                          title="icon"
+                          title=""
                           viewBox="0 0 50 50"
                         />
                       </span>
@@ -2760,7 +2762,7 @@ ShallowWrapper {
                       >
                         <Icon
                           icon="checkmark"
-                          title="icon"
+                          title=""
                           viewBox="0 0 50 50"
                         />
                       </span>
@@ -2789,7 +2791,7 @@ ShallowWrapper {
                       >
                         <Icon
                           icon="checkmark"
-                          title="icon"
+                          title=""
                           viewBox="0 0 50 50"
                         />
                       </span>
@@ -2825,7 +2827,7 @@ ShallowWrapper {
                         >
                           <Icon
                             icon="checkmark"
-                            title="icon"
+                            title=""
                             viewBox="0 0 50 50"
                           />
                         </span>,
@@ -2860,7 +2862,7 @@ ShallowWrapper {
                         "props": Object {
                           "children": <Icon
                             icon="checkmark"
-                            title="icon"
+                            title=""
                             viewBox="0 0 50 50"
                           />,
                           "className": "radioButton",
@@ -2875,7 +2877,7 @@ ShallowWrapper {
                           "nodeType": "function",
                           "props": Object {
                             "icon": "checkmark",
-                            "title": "icon",
+                            "title": "",
                             "viewBox": "0 0 50 50",
                           },
                           "ref": null,
@@ -2913,7 +2915,7 @@ ShallowWrapper {
                         >
                           <Icon
                             icon="checkmark"
-                            title="icon"
+                            title=""
                             viewBox="0 0 50 50"
                           />
                         </span>,
@@ -2948,7 +2950,7 @@ ShallowWrapper {
                         "props": Object {
                           "children": <Icon
                             icon="checkmark"
-                            title="icon"
+                            title=""
                             viewBox="0 0 50 50"
                           />,
                           "className": "radioButton",
@@ -2963,7 +2965,7 @@ ShallowWrapper {
                           "nodeType": "function",
                           "props": Object {
                             "icon": "checkmark",
-                            "title": "icon",
+                            "title": "",
                             "viewBox": "0 0 50 50",
                           },
                           "ref": null,
@@ -3001,7 +3003,7 @@ ShallowWrapper {
                         >
                           <Icon
                             icon="checkmark"
-                            title="icon"
+                            title=""
                             viewBox="0 0 50 50"
                           />
                         </span>,
@@ -3036,7 +3038,7 @@ ShallowWrapper {
                         "props": Object {
                           "children": <Icon
                             icon="checkmark"
-                            title="icon"
+                            title=""
                             viewBox="0 0 50 50"
                           />,
                           "className": "radioButton",
@@ -3051,7 +3053,7 @@ ShallowWrapper {
                           "nodeType": "function",
                           "props": Object {
                             "icon": "checkmark",
-                            "title": "icon",
+                            "title": "",
                             "viewBox": "0 0 50 50",
                           },
                           "ref": null,
@@ -3089,7 +3091,7 @@ ShallowWrapper {
                         >
                           <Icon
                             icon="checkmark"
-                            title="icon"
+                            title=""
                             viewBox="0 0 50 50"
                           />
                         </span>,
@@ -3124,7 +3126,7 @@ ShallowWrapper {
                         "props": Object {
                           "children": <Icon
                             icon="checkmark"
-                            title="icon"
+                            title=""
                             viewBox="0 0 50 50"
                           />,
                           "className": "radioButton",
@@ -3139,7 +3141,7 @@ ShallowWrapper {
                           "nodeType": "function",
                           "props": Object {
                             "icon": "checkmark",
-                            "title": "icon",
+                            "title": "",
                             "viewBox": "0 0 50 50",
                           },
                           "ref": null,
@@ -3156,7 +3158,7 @@ ShallowWrapper {
                 "type": "form",
               },
             ],
-            "type": "div",
+            "type": "fieldset",
           },
           Object {
             "instance": null,
@@ -3186,6 +3188,7 @@ ShallowWrapper {
           />,
           <div
             className="Settings"
+            id="Settings"
             style={
               Object {
                 "opacity": "1",
@@ -3193,12 +3196,12 @@ ShallowWrapper {
               }
             }
           >
-            <div
+            <fieldset
               className="menu"
             >
-              <p>
+              <legend>
                 Zmień język
-              </p>
+              </legend>
               <form
                 className="form language"
               >
@@ -3225,20 +3228,20 @@ ShallowWrapper {
                   >
                     <Icon
                       icon="checkmark"
-                      title="icon"
+                      title=""
                       viewBox="0 0 50 50"
                     />
                   </span>
                   Polski
                 </label>
               </form>
-            </div>
-            <div
+            </fieldset>
+            <fieldset
               className="menu"
             >
-              <p>
+              <legend>
                 Zmień motyw
-              </p>
+              </legend>
               <form
                 className="form theme"
               >
@@ -3265,7 +3268,7 @@ ShallowWrapper {
                   >
                     <Icon
                       icon="checkmark"
-                      title="icon"
+                      title=""
                       viewBox="0 0 50 50"
                     />
                   </span>
@@ -3294,7 +3297,7 @@ ShallowWrapper {
                   >
                     <Icon
                       icon="checkmark"
-                      title="icon"
+                      title=""
                       viewBox="0 0 50 50"
                     />
                   </span>
@@ -3323,7 +3326,7 @@ ShallowWrapper {
                   >
                     <Icon
                       icon="checkmark"
-                      title="icon"
+                      title=""
                       viewBox="0 0 50 50"
                     />
                   </span>
@@ -3352,7 +3355,7 @@ ShallowWrapper {
                   >
                     <Icon
                       icon="checkmark"
-                      title="icon"
+                      title=""
                       viewBox="0 0 50 50"
                     />
                   </span>
@@ -3381,7 +3384,7 @@ ShallowWrapper {
                   >
                     <Icon
                       icon="checkmark"
-                      title="icon"
+                      title=""
                       viewBox="0 0 50 50"
                     />
                   </span>
@@ -3410,7 +3413,7 @@ ShallowWrapper {
                   >
                     <Icon
                       icon="checkmark"
-                      title="icon"
+                      title=""
                       viewBox="0 0 50 50"
                     />
                   </span>
@@ -3439,7 +3442,7 @@ ShallowWrapper {
                   >
                     <Icon
                       icon="checkmark"
-                      title="icon"
+                      title=""
                       viewBox="0 0 50 50"
                     />
                   </span>
@@ -3468,7 +3471,7 @@ ShallowWrapper {
                   >
                     <Icon
                       icon="checkmark"
-                      title="icon"
+                      title=""
                       viewBox="0 0 50 50"
                     />
                   </span>
@@ -3497,20 +3500,20 @@ ShallowWrapper {
                   >
                     <Icon
                       icon="checkmark"
-                      title="icon"
+                      title=""
                       viewBox="0 0 50 50"
                     />
                   </span>
                   Vampire Dark
                 </label>
               </form>
-            </div>
-            <div
+            </fieldset>
+            <fieldset
               className="menu menuUnits"
             >
-              <p>
+              <legend>
                 Zmień jednostki
-              </p>
+              </legend>
               <form
                 className="form units"
               >
@@ -3537,7 +3540,7 @@ ShallowWrapper {
                   >
                     <Icon
                       icon="checkmark"
-                      title="icon"
+                      title=""
                       viewBox="0 0 50 50"
                     />
                   </span>
@@ -3566,7 +3569,7 @@ ShallowWrapper {
                   >
                     <Icon
                       icon="checkmark"
-                      title="icon"
+                      title=""
                       viewBox="0 0 50 50"
                     />
                   </span>
@@ -3595,7 +3598,7 @@ ShallowWrapper {
                   >
                     <Icon
                       icon="checkmark"
-                      title="icon"
+                      title=""
                       viewBox="0 0 50 50"
                     />
                   </span>
@@ -3624,14 +3627,14 @@ ShallowWrapper {
                   >
                     <Icon
                       icon="checkmark"
-                      title="icon"
+                      title=""
                       viewBox="0 0 50 50"
                     />
                   </span>
                   CA
                 </label>
               </form>
-            </div>
+            </fieldset>
             <Footer />
           </div>,
         ],
@@ -3656,12 +3659,12 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <div
+              <fieldset
                 className="menu"
               >
-                <p>
+                <legend>
                   Zmień język
-                </p>
+                </legend>
                 <form
                   className="form language"
                 >
@@ -3688,20 +3691,20 @@ ShallowWrapper {
                     >
                       <Icon
                         icon="checkmark"
-                        title="icon"
+                        title=""
                         viewBox="0 0 50 50"
                       />
                     </span>
                     Polski
                   </label>
                 </form>
-              </div>,
-              <div
+              </fieldset>,
+              <fieldset
                 className="menu"
               >
-                <p>
+                <legend>
                   Zmień motyw
-                </p>
+                </legend>
                 <form
                   className="form theme"
                 >
@@ -3728,7 +3731,7 @@ ShallowWrapper {
                     >
                       <Icon
                         icon="checkmark"
-                        title="icon"
+                        title=""
                         viewBox="0 0 50 50"
                       />
                     </span>
@@ -3757,7 +3760,7 @@ ShallowWrapper {
                     >
                       <Icon
                         icon="checkmark"
-                        title="icon"
+                        title=""
                         viewBox="0 0 50 50"
                       />
                     </span>
@@ -3786,7 +3789,7 @@ ShallowWrapper {
                     >
                       <Icon
                         icon="checkmark"
-                        title="icon"
+                        title=""
                         viewBox="0 0 50 50"
                       />
                     </span>
@@ -3815,7 +3818,7 @@ ShallowWrapper {
                     >
                       <Icon
                         icon="checkmark"
-                        title="icon"
+                        title=""
                         viewBox="0 0 50 50"
                       />
                     </span>
@@ -3844,7 +3847,7 @@ ShallowWrapper {
                     >
                       <Icon
                         icon="checkmark"
-                        title="icon"
+                        title=""
                         viewBox="0 0 50 50"
                       />
                     </span>
@@ -3873,7 +3876,7 @@ ShallowWrapper {
                     >
                       <Icon
                         icon="checkmark"
-                        title="icon"
+                        title=""
                         viewBox="0 0 50 50"
                       />
                     </span>
@@ -3902,7 +3905,7 @@ ShallowWrapper {
                     >
                       <Icon
                         icon="checkmark"
-                        title="icon"
+                        title=""
                         viewBox="0 0 50 50"
                       />
                     </span>
@@ -3931,7 +3934,7 @@ ShallowWrapper {
                     >
                       <Icon
                         icon="checkmark"
-                        title="icon"
+                        title=""
                         viewBox="0 0 50 50"
                       />
                     </span>
@@ -3960,20 +3963,20 @@ ShallowWrapper {
                     >
                       <Icon
                         icon="checkmark"
-                        title="icon"
+                        title=""
                         viewBox="0 0 50 50"
                       />
                     </span>
                     Vampire Dark
                   </label>
                 </form>
-              </div>,
-              <div
+              </fieldset>,
+              <fieldset
                 className="menu menuUnits"
               >
-                <p>
+                <legend>
                   Zmień jednostki
-                </p>
+                </legend>
                 <form
                   className="form units"
                 >
@@ -4000,7 +4003,7 @@ ShallowWrapper {
                     >
                       <Icon
                         icon="checkmark"
-                        title="icon"
+                        title=""
                         viewBox="0 0 50 50"
                       />
                     </span>
@@ -4029,7 +4032,7 @@ ShallowWrapper {
                     >
                       <Icon
                         icon="checkmark"
-                        title="icon"
+                        title=""
                         viewBox="0 0 50 50"
                       />
                     </span>
@@ -4058,7 +4061,7 @@ ShallowWrapper {
                     >
                       <Icon
                         icon="checkmark"
-                        title="icon"
+                        title=""
                         viewBox="0 0 50 50"
                       />
                     </span>
@@ -4087,17 +4090,18 @@ ShallowWrapper {
                     >
                       <Icon
                         icon="checkmark"
-                        title="icon"
+                        title=""
                         viewBox="0 0 50 50"
                       />
                     </span>
                     CA
                   </label>
                 </form>
-              </div>,
+              </fieldset>,
               <Footer />,
             ],
             "className": "Settings",
+            "id": "Settings",
             "style": Object {
               "opacity": "1",
               "transform": "translateY(0)",
@@ -4111,9 +4115,9 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  <p>
+                  <legend>
                     Zmień język
-                  </p>,
+                  </legend>,
                   <form
                     className="form language"
                   >
@@ -4140,7 +4144,7 @@ ShallowWrapper {
                       >
                         <Icon
                           icon="checkmark"
-                          title="icon"
+                          title=""
                           viewBox="0 0 50 50"
                         />
                       </span>
@@ -4161,7 +4165,7 @@ ShallowWrapper {
                   },
                   "ref": null,
                   "rendered": "Zmień język",
-                  "type": "p",
+                  "type": "legend",
                 },
                 Object {
                   "instance": null,
@@ -4192,7 +4196,7 @@ ShallowWrapper {
                         >
                           <Icon
                             icon="checkmark"
-                            title="icon"
+                            title=""
                             viewBox="0 0 50 50"
                           />
                         </span>
@@ -4228,7 +4232,7 @@ ShallowWrapper {
                           >
                             <Icon
                               icon="checkmark"
-                              title="icon"
+                              title=""
                               viewBox="0 0 50 50"
                             />
                           </span>,
@@ -4263,7 +4267,7 @@ ShallowWrapper {
                           "props": Object {
                             "children": <Icon
                               icon="checkmark"
-                              title="icon"
+                              title=""
                               viewBox="0 0 50 50"
                             />,
                             "className": "radioButton",
@@ -4278,7 +4282,7 @@ ShallowWrapper {
                             "nodeType": "function",
                             "props": Object {
                               "icon": "checkmark",
-                              "title": "icon",
+                              "title": "",
                               "viewBox": "0 0 50 50",
                             },
                             "ref": null,
@@ -4295,7 +4299,7 @@ ShallowWrapper {
                   "type": "form",
                 },
               ],
-              "type": "div",
+              "type": "fieldset",
             },
             Object {
               "instance": null,
@@ -4303,9 +4307,9 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  <p>
+                  <legend>
                     Zmień motyw
-                  </p>,
+                  </legend>,
                   <form
                     className="form theme"
                   >
@@ -4332,7 +4336,7 @@ ShallowWrapper {
                       >
                         <Icon
                           icon="checkmark"
-                          title="icon"
+                          title=""
                           viewBox="0 0 50 50"
                         />
                       </span>
@@ -4361,7 +4365,7 @@ ShallowWrapper {
                       >
                         <Icon
                           icon="checkmark"
-                          title="icon"
+                          title=""
                           viewBox="0 0 50 50"
                         />
                       </span>
@@ -4390,7 +4394,7 @@ ShallowWrapper {
                       >
                         <Icon
                           icon="checkmark"
-                          title="icon"
+                          title=""
                           viewBox="0 0 50 50"
                         />
                       </span>
@@ -4419,7 +4423,7 @@ ShallowWrapper {
                       >
                         <Icon
                           icon="checkmark"
-                          title="icon"
+                          title=""
                           viewBox="0 0 50 50"
                         />
                       </span>
@@ -4448,7 +4452,7 @@ ShallowWrapper {
                       >
                         <Icon
                           icon="checkmark"
-                          title="icon"
+                          title=""
                           viewBox="0 0 50 50"
                         />
                       </span>
@@ -4477,7 +4481,7 @@ ShallowWrapper {
                       >
                         <Icon
                           icon="checkmark"
-                          title="icon"
+                          title=""
                           viewBox="0 0 50 50"
                         />
                       </span>
@@ -4506,7 +4510,7 @@ ShallowWrapper {
                       >
                         <Icon
                           icon="checkmark"
-                          title="icon"
+                          title=""
                           viewBox="0 0 50 50"
                         />
                       </span>
@@ -4535,7 +4539,7 @@ ShallowWrapper {
                       >
                         <Icon
                           icon="checkmark"
-                          title="icon"
+                          title=""
                           viewBox="0 0 50 50"
                         />
                       </span>
@@ -4564,7 +4568,7 @@ ShallowWrapper {
                       >
                         <Icon
                           icon="checkmark"
-                          title="icon"
+                          title=""
                           viewBox="0 0 50 50"
                         />
                       </span>
@@ -4585,7 +4589,7 @@ ShallowWrapper {
                   },
                   "ref": null,
                   "rendered": "Zmień motyw",
-                  "type": "p",
+                  "type": "legend",
                 },
                 Object {
                   "instance": null,
@@ -4616,7 +4620,7 @@ ShallowWrapper {
                         >
                           <Icon
                             icon="checkmark"
-                            title="icon"
+                            title=""
                             viewBox="0 0 50 50"
                           />
                         </span>
@@ -4645,7 +4649,7 @@ ShallowWrapper {
                         >
                           <Icon
                             icon="checkmark"
-                            title="icon"
+                            title=""
                             viewBox="0 0 50 50"
                           />
                         </span>
@@ -4674,7 +4678,7 @@ ShallowWrapper {
                         >
                           <Icon
                             icon="checkmark"
-                            title="icon"
+                            title=""
                             viewBox="0 0 50 50"
                           />
                         </span>
@@ -4703,7 +4707,7 @@ ShallowWrapper {
                         >
                           <Icon
                             icon="checkmark"
-                            title="icon"
+                            title=""
                             viewBox="0 0 50 50"
                           />
                         </span>
@@ -4732,7 +4736,7 @@ ShallowWrapper {
                         >
                           <Icon
                             icon="checkmark"
-                            title="icon"
+                            title=""
                             viewBox="0 0 50 50"
                           />
                         </span>
@@ -4761,7 +4765,7 @@ ShallowWrapper {
                         >
                           <Icon
                             icon="checkmark"
-                            title="icon"
+                            title=""
                             viewBox="0 0 50 50"
                           />
                         </span>
@@ -4790,7 +4794,7 @@ ShallowWrapper {
                         >
                           <Icon
                             icon="checkmark"
-                            title="icon"
+                            title=""
                             viewBox="0 0 50 50"
                           />
                         </span>
@@ -4819,7 +4823,7 @@ ShallowWrapper {
                         >
                           <Icon
                             icon="checkmark"
-                            title="icon"
+                            title=""
                             viewBox="0 0 50 50"
                           />
                         </span>
@@ -4848,7 +4852,7 @@ ShallowWrapper {
                         >
                           <Icon
                             icon="checkmark"
-                            title="icon"
+                            title=""
                             viewBox="0 0 50 50"
                           />
                         </span>
@@ -4884,7 +4888,7 @@ ShallowWrapper {
                           >
                             <Icon
                               icon="checkmark"
-                              title="icon"
+                              title=""
                               viewBox="0 0 50 50"
                             />
                           </span>,
@@ -4919,7 +4923,7 @@ ShallowWrapper {
                           "props": Object {
                             "children": <Icon
                               icon="checkmark"
-                              title="icon"
+                              title=""
                               viewBox="0 0 50 50"
                             />,
                             "className": "radioButton",
@@ -4934,7 +4938,7 @@ ShallowWrapper {
                             "nodeType": "function",
                             "props": Object {
                               "icon": "checkmark",
-                              "title": "icon",
+                              "title": "",
                               "viewBox": "0 0 50 50",
                             },
                             "ref": null,
@@ -4972,7 +4976,7 @@ ShallowWrapper {
                           >
                             <Icon
                               icon="checkmark"
-                              title="icon"
+                              title=""
                               viewBox="0 0 50 50"
                             />
                           </span>,
@@ -5007,7 +5011,7 @@ ShallowWrapper {
                           "props": Object {
                             "children": <Icon
                               icon="checkmark"
-                              title="icon"
+                              title=""
                               viewBox="0 0 50 50"
                             />,
                             "className": "radioButton",
@@ -5022,7 +5026,7 @@ ShallowWrapper {
                             "nodeType": "function",
                             "props": Object {
                               "icon": "checkmark",
-                              "title": "icon",
+                              "title": "",
                               "viewBox": "0 0 50 50",
                             },
                             "ref": null,
@@ -5060,7 +5064,7 @@ ShallowWrapper {
                           >
                             <Icon
                               icon="checkmark"
-                              title="icon"
+                              title=""
                               viewBox="0 0 50 50"
                             />
                           </span>,
@@ -5095,7 +5099,7 @@ ShallowWrapper {
                           "props": Object {
                             "children": <Icon
                               icon="checkmark"
-                              title="icon"
+                              title=""
                               viewBox="0 0 50 50"
                             />,
                             "className": "radioButton",
@@ -5110,7 +5114,7 @@ ShallowWrapper {
                             "nodeType": "function",
                             "props": Object {
                               "icon": "checkmark",
-                              "title": "icon",
+                              "title": "",
                               "viewBox": "0 0 50 50",
                             },
                             "ref": null,
@@ -5148,7 +5152,7 @@ ShallowWrapper {
                           >
                             <Icon
                               icon="checkmark"
-                              title="icon"
+                              title=""
                               viewBox="0 0 50 50"
                             />
                           </span>,
@@ -5183,7 +5187,7 @@ ShallowWrapper {
                           "props": Object {
                             "children": <Icon
                               icon="checkmark"
-                              title="icon"
+                              title=""
                               viewBox="0 0 50 50"
                             />,
                             "className": "radioButton",
@@ -5198,7 +5202,7 @@ ShallowWrapper {
                             "nodeType": "function",
                             "props": Object {
                               "icon": "checkmark",
-                              "title": "icon",
+                              "title": "",
                               "viewBox": "0 0 50 50",
                             },
                             "ref": null,
@@ -5236,7 +5240,7 @@ ShallowWrapper {
                           >
                             <Icon
                               icon="checkmark"
-                              title="icon"
+                              title=""
                               viewBox="0 0 50 50"
                             />
                           </span>,
@@ -5271,7 +5275,7 @@ ShallowWrapper {
                           "props": Object {
                             "children": <Icon
                               icon="checkmark"
-                              title="icon"
+                              title=""
                               viewBox="0 0 50 50"
                             />,
                             "className": "radioButton",
@@ -5286,7 +5290,7 @@ ShallowWrapper {
                             "nodeType": "function",
                             "props": Object {
                               "icon": "checkmark",
-                              "title": "icon",
+                              "title": "",
                               "viewBox": "0 0 50 50",
                             },
                             "ref": null,
@@ -5324,7 +5328,7 @@ ShallowWrapper {
                           >
                             <Icon
                               icon="checkmark"
-                              title="icon"
+                              title=""
                               viewBox="0 0 50 50"
                             />
                           </span>,
@@ -5359,7 +5363,7 @@ ShallowWrapper {
                           "props": Object {
                             "children": <Icon
                               icon="checkmark"
-                              title="icon"
+                              title=""
                               viewBox="0 0 50 50"
                             />,
                             "className": "radioButton",
@@ -5374,7 +5378,7 @@ ShallowWrapper {
                             "nodeType": "function",
                             "props": Object {
                               "icon": "checkmark",
-                              "title": "icon",
+                              "title": "",
                               "viewBox": "0 0 50 50",
                             },
                             "ref": null,
@@ -5412,7 +5416,7 @@ ShallowWrapper {
                           >
                             <Icon
                               icon="checkmark"
-                              title="icon"
+                              title=""
                               viewBox="0 0 50 50"
                             />
                           </span>,
@@ -5447,7 +5451,7 @@ ShallowWrapper {
                           "props": Object {
                             "children": <Icon
                               icon="checkmark"
-                              title="icon"
+                              title=""
                               viewBox="0 0 50 50"
                             />,
                             "className": "radioButton",
@@ -5462,7 +5466,7 @@ ShallowWrapper {
                             "nodeType": "function",
                             "props": Object {
                               "icon": "checkmark",
-                              "title": "icon",
+                              "title": "",
                               "viewBox": "0 0 50 50",
                             },
                             "ref": null,
@@ -5500,7 +5504,7 @@ ShallowWrapper {
                           >
                             <Icon
                               icon="checkmark"
-                              title="icon"
+                              title=""
                               viewBox="0 0 50 50"
                             />
                           </span>,
@@ -5535,7 +5539,7 @@ ShallowWrapper {
                           "props": Object {
                             "children": <Icon
                               icon="checkmark"
-                              title="icon"
+                              title=""
                               viewBox="0 0 50 50"
                             />,
                             "className": "radioButton",
@@ -5550,7 +5554,7 @@ ShallowWrapper {
                             "nodeType": "function",
                             "props": Object {
                               "icon": "checkmark",
-                              "title": "icon",
+                              "title": "",
                               "viewBox": "0 0 50 50",
                             },
                             "ref": null,
@@ -5588,7 +5592,7 @@ ShallowWrapper {
                           >
                             <Icon
                               icon="checkmark"
-                              title="icon"
+                              title=""
                               viewBox="0 0 50 50"
                             />
                           </span>,
@@ -5623,7 +5627,7 @@ ShallowWrapper {
                           "props": Object {
                             "children": <Icon
                               icon="checkmark"
-                              title="icon"
+                              title=""
                               viewBox="0 0 50 50"
                             />,
                             "className": "radioButton",
@@ -5638,7 +5642,7 @@ ShallowWrapper {
                             "nodeType": "function",
                             "props": Object {
                               "icon": "checkmark",
-                              "title": "icon",
+                              "title": "",
                               "viewBox": "0 0 50 50",
                             },
                             "ref": null,
@@ -5655,7 +5659,7 @@ ShallowWrapper {
                   "type": "form",
                 },
               ],
-              "type": "div",
+              "type": "fieldset",
             },
             Object {
               "instance": null,
@@ -5663,9 +5667,9 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  <p>
+                  <legend>
                     Zmień jednostki
-                  </p>,
+                  </legend>,
                   <form
                     className="form units"
                   >
@@ -5692,7 +5696,7 @@ ShallowWrapper {
                       >
                         <Icon
                           icon="checkmark"
-                          title="icon"
+                          title=""
                           viewBox="0 0 50 50"
                         />
                       </span>
@@ -5721,7 +5725,7 @@ ShallowWrapper {
                       >
                         <Icon
                           icon="checkmark"
-                          title="icon"
+                          title=""
                           viewBox="0 0 50 50"
                         />
                       </span>
@@ -5750,7 +5754,7 @@ ShallowWrapper {
                       >
                         <Icon
                           icon="checkmark"
-                          title="icon"
+                          title=""
                           viewBox="0 0 50 50"
                         />
                       </span>
@@ -5779,7 +5783,7 @@ ShallowWrapper {
                       >
                         <Icon
                           icon="checkmark"
-                          title="icon"
+                          title=""
                           viewBox="0 0 50 50"
                         />
                       </span>
@@ -5800,7 +5804,7 @@ ShallowWrapper {
                   },
                   "ref": null,
                   "rendered": "Zmień jednostki",
-                  "type": "p",
+                  "type": "legend",
                 },
                 Object {
                   "instance": null,
@@ -5831,7 +5835,7 @@ ShallowWrapper {
                         >
                           <Icon
                             icon="checkmark"
-                            title="icon"
+                            title=""
                             viewBox="0 0 50 50"
                           />
                         </span>
@@ -5860,7 +5864,7 @@ ShallowWrapper {
                         >
                           <Icon
                             icon="checkmark"
-                            title="icon"
+                            title=""
                             viewBox="0 0 50 50"
                           />
                         </span>
@@ -5889,7 +5893,7 @@ ShallowWrapper {
                         >
                           <Icon
                             icon="checkmark"
-                            title="icon"
+                            title=""
                             viewBox="0 0 50 50"
                           />
                         </span>
@@ -5918,7 +5922,7 @@ ShallowWrapper {
                         >
                           <Icon
                             icon="checkmark"
-                            title="icon"
+                            title=""
                             viewBox="0 0 50 50"
                           />
                         </span>
@@ -5954,7 +5958,7 @@ ShallowWrapper {
                           >
                             <Icon
                               icon="checkmark"
-                              title="icon"
+                              title=""
                               viewBox="0 0 50 50"
                             />
                           </span>,
@@ -5989,7 +5993,7 @@ ShallowWrapper {
                           "props": Object {
                             "children": <Icon
                               icon="checkmark"
-                              title="icon"
+                              title=""
                               viewBox="0 0 50 50"
                             />,
                             "className": "radioButton",
@@ -6004,7 +6008,7 @@ ShallowWrapper {
                             "nodeType": "function",
                             "props": Object {
                               "icon": "checkmark",
-                              "title": "icon",
+                              "title": "",
                               "viewBox": "0 0 50 50",
                             },
                             "ref": null,
@@ -6042,7 +6046,7 @@ ShallowWrapper {
                           >
                             <Icon
                               icon="checkmark"
-                              title="icon"
+                              title=""
                               viewBox="0 0 50 50"
                             />
                           </span>,
@@ -6077,7 +6081,7 @@ ShallowWrapper {
                           "props": Object {
                             "children": <Icon
                               icon="checkmark"
-                              title="icon"
+                              title=""
                               viewBox="0 0 50 50"
                             />,
                             "className": "radioButton",
@@ -6092,7 +6096,7 @@ ShallowWrapper {
                             "nodeType": "function",
                             "props": Object {
                               "icon": "checkmark",
-                              "title": "icon",
+                              "title": "",
                               "viewBox": "0 0 50 50",
                             },
                             "ref": null,
@@ -6130,7 +6134,7 @@ ShallowWrapper {
                           >
                             <Icon
                               icon="checkmark"
-                              title="icon"
+                              title=""
                               viewBox="0 0 50 50"
                             />
                           </span>,
@@ -6165,7 +6169,7 @@ ShallowWrapper {
                           "props": Object {
                             "children": <Icon
                               icon="checkmark"
-                              title="icon"
+                              title=""
                               viewBox="0 0 50 50"
                             />,
                             "className": "radioButton",
@@ -6180,7 +6184,7 @@ ShallowWrapper {
                             "nodeType": "function",
                             "props": Object {
                               "icon": "checkmark",
-                              "title": "icon",
+                              "title": "",
                               "viewBox": "0 0 50 50",
                             },
                             "ref": null,
@@ -6218,7 +6222,7 @@ ShallowWrapper {
                           >
                             <Icon
                               icon="checkmark"
-                              title="icon"
+                              title=""
                               viewBox="0 0 50 50"
                             />
                           </span>,
@@ -6253,7 +6257,7 @@ ShallowWrapper {
                           "props": Object {
                             "children": <Icon
                               icon="checkmark"
-                              title="icon"
+                              title=""
                               viewBox="0 0 50 50"
                             />,
                             "className": "radioButton",
@@ -6268,7 +6272,7 @@ ShallowWrapper {
                             "nodeType": "function",
                             "props": Object {
                               "icon": "checkmark",
-                              "title": "icon",
+                              "title": "",
                               "viewBox": "0 0 50 50",
                             },
                             "ref": null,
@@ -6285,7 +6289,7 @@ ShallowWrapper {
                   "type": "form",
                 },
               ],
-              "type": "div",
+              "type": "fieldset",
             },
             Object {
               "instance": null,

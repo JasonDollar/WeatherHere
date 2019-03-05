@@ -34,7 +34,7 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "function",
+    "nodeType": "host",
     "props": Object {
       "children": Array [
         <Backdrop
@@ -43,6 +43,7 @@ ShallowWrapper {
         />,
         <div
           className="Search"
+          id="Search"
           style={
             Object {
               "opacity": "1",
@@ -67,7 +68,7 @@ ShallowWrapper {
             >
               <Icon
                 icon="search"
-                title="icon"
+                title=""
                 viewBox="0 0 50 50"
               />
               <span>
@@ -82,7 +83,7 @@ ShallowWrapper {
           >
             <Icon
               icon="gpsArrow"
-              title="icon"
+              title=""
               viewBox="0 0 51.636 51.636"
             />
             <span>
@@ -91,6 +92,7 @@ ShallowWrapper {
           </button>
         </div>,
       ],
+      "className": "mobileOnly",
     },
     "ref": null,
     "rendered": Array [
@@ -129,7 +131,7 @@ ShallowWrapper {
               >
                 <Icon
                   icon="search"
-                  title="icon"
+                  title=""
                   viewBox="0 0 50 50"
                 />
                 <span>
@@ -144,7 +146,7 @@ ShallowWrapper {
             >
               <Icon
                 icon="gpsArrow"
-                title="icon"
+                title=""
                 viewBox="0 0 51.636 51.636"
               />
               <span>
@@ -153,6 +155,7 @@ ShallowWrapper {
             </button>,
           ],
           "className": "Search",
+          "id": "Search",
           "style": Object {
             "opacity": "1",
             "transform": "translateY(0)",
@@ -179,7 +182,7 @@ ShallowWrapper {
                 >
                   <Icon
                     icon="search"
-                    title="icon"
+                    title=""
                     viewBox="0 0 50 50"
                   />
                   <span>
@@ -215,7 +218,7 @@ ShallowWrapper {
                   "children": Array [
                     <Icon
                       icon="search"
-                      title="icon"
+                      title=""
                       viewBox="0 0 50 50"
                     />,
                     <span>
@@ -233,7 +236,7 @@ ShallowWrapper {
                     "nodeType": "function",
                     "props": Object {
                       "icon": "search",
-                      "title": "icon",
+                      "title": "",
                       "viewBox": "0 0 50 50",
                     },
                     "ref": null,
@@ -265,7 +268,7 @@ ShallowWrapper {
               "children": Array [
                 <Icon
                   icon="gpsArrow"
-                  title="icon"
+                  title=""
                   viewBox="0 0 51.636 51.636"
                 />,
                 <span>
@@ -284,7 +287,7 @@ ShallowWrapper {
                 "nodeType": "function",
                 "props": Object {
                   "icon": "gpsArrow",
-                  "title": "icon",
+                  "title": "",
                   "viewBox": "0 0 51.636 51.636",
                 },
                 "ref": null,
@@ -309,13 +312,13 @@ ShallowWrapper {
         "type": "div",
       },
     ],
-    "type": Symbol(react.fragment),
+    "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "function",
+      "nodeType": "host",
       "props": Object {
         "children": Array [
           <Backdrop
@@ -324,6 +327,7 @@ ShallowWrapper {
           />,
           <div
             className="Search"
+            id="Search"
             style={
               Object {
                 "opacity": "1",
@@ -348,7 +352,7 @@ ShallowWrapper {
               >
                 <Icon
                   icon="search"
-                  title="icon"
+                  title=""
                   viewBox="0 0 50 50"
                 />
                 <span>
@@ -363,7 +367,7 @@ ShallowWrapper {
             >
               <Icon
                 icon="gpsArrow"
-                title="icon"
+                title=""
                 viewBox="0 0 51.636 51.636"
               />
               <span>
@@ -372,6 +376,7 @@ ShallowWrapper {
             </button>
           </div>,
         ],
+        "className": "mobileOnly",
       },
       "ref": null,
       "rendered": Array [
@@ -410,7 +415,7 @@ ShallowWrapper {
                 >
                   <Icon
                     icon="search"
-                    title="icon"
+                    title=""
                     viewBox="0 0 50 50"
                   />
                   <span>
@@ -425,7 +430,7 @@ ShallowWrapper {
               >
                 <Icon
                   icon="gpsArrow"
-                  title="icon"
+                  title=""
                   viewBox="0 0 51.636 51.636"
                 />
                 <span>
@@ -434,6 +439,7 @@ ShallowWrapper {
               </button>,
             ],
             "className": "Search",
+            "id": "Search",
             "style": Object {
               "opacity": "1",
               "transform": "translateY(0)",
@@ -460,7 +466,7 @@ ShallowWrapper {
                   >
                     <Icon
                       icon="search"
-                      title="icon"
+                      title=""
                       viewBox="0 0 50 50"
                     />
                     <span>
@@ -496,7 +502,7 @@ ShallowWrapper {
                     "children": Array [
                       <Icon
                         icon="search"
-                        title="icon"
+                        title=""
                         viewBox="0 0 50 50"
                       />,
                       <span>
@@ -514,7 +520,7 @@ ShallowWrapper {
                       "nodeType": "function",
                       "props": Object {
                         "icon": "search",
-                        "title": "icon",
+                        "title": "",
                         "viewBox": "0 0 50 50",
                       },
                       "ref": null,
@@ -546,7 +552,7 @@ ShallowWrapper {
                 "children": Array [
                   <Icon
                     icon="gpsArrow"
-                    title="icon"
+                    title=""
                     viewBox="0 0 51.636 51.636"
                   />,
                   <span>
@@ -565,7 +571,7 @@ ShallowWrapper {
                   "nodeType": "function",
                   "props": Object {
                     "icon": "gpsArrow",
-                    "title": "icon",
+                    "title": "",
                     "viewBox": "0 0 51.636 51.636",
                   },
                   "ref": null,
@@ -590,7 +596,7 @@ ShallowWrapper {
           "type": "div",
         },
       ],
-      "type": Symbol(react.fragment),
+      "type": "div",
     },
   ],
   Symbol(enzyme.__options__): Object {

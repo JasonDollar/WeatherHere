@@ -561,6 +561,11 @@ ShallowWrapper {
                 reversed={false}
                 scale="auto"
                 stroke=""
+                tick={
+                  Object {
+                    "stroke": "",
+                  }
+                }
                 tickCount={5}
                 type="number"
                 width={60}
@@ -851,6 +856,11 @@ ShallowWrapper {
                 reversed={false}
                 scale="auto"
                 stroke=""
+                tick={
+                  Object {
+                    "stroke": "",
+                  }
+                }
                 tickCount={5}
                 type="number"
                 width={60}
@@ -1122,6 +1132,11 @@ ShallowWrapper {
                 reversed={false}
                 scale="auto"
                 stroke=""
+                tick={
+                  Object {
+                    "stroke": "",
+                  }
+                }
                 tickCount={5}
                 type="number"
                 width={60}
@@ -1313,6 +1328,11 @@ ShallowWrapper {
                   reversed={false}
                   scale="auto"
                   stroke=""
+                  tick={
+                    Object {
+                      "stroke": "",
+                    }
+                  }
                   tickCount={5}
                   type="number"
                   width={60}
@@ -1643,6 +1663,9 @@ ShallowWrapper {
                   "reversed": false,
                   "scale": "auto",
                   "stroke": "",
+                  "tick": Object {
+                    "stroke": "",
+                  },
                   "tickCount": 5,
                   "type": "number",
                   "width": 60,
@@ -1954,6 +1977,11 @@ ShallowWrapper {
                   reversed={false}
                   scale="auto"
                   stroke=""
+                  tick={
+                    Object {
+                      "stroke": "",
+                    }
+                  }
                   tickCount={5}
                   type="number"
                   width={60}
@@ -2244,6 +2272,11 @@ ShallowWrapper {
                   reversed={false}
                   scale="auto"
                   stroke=""
+                  tick={
+                    Object {
+                      "stroke": "",
+                    }
+                  }
                   tickCount={5}
                   type="number"
                   width={60}
@@ -2515,6 +2548,11 @@ ShallowWrapper {
                   reversed={false}
                   scale="auto"
                   stroke=""
+                  tick={
+                    Object {
+                      "stroke": "",
+                    }
+                  }
                   tickCount={5}
                   type="number"
                   width={60}
@@ -2706,6 +2744,11 @@ ShallowWrapper {
                     reversed={false}
                     scale="auto"
                     stroke=""
+                    tick={
+                      Object {
+                        "stroke": "",
+                      }
+                    }
                     tickCount={5}
                     type="number"
                     width={60}
@@ -3036,6 +3079,9 @@ ShallowWrapper {
                     "reversed": false,
                     "scale": "auto",
                     "stroke": "",
+                    "tick": Object {
+                      "stroke": "",
+                    },
                     "tickCount": 5,
                     "type": "number",
                     "width": 60,
