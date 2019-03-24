@@ -74,22 +74,27 @@ class Weather extends Component {
     
     console.log(placeNames[0])
 
-    // for(let i = 0; i < placeNames.length; i++) {
-    //   for(let j = 0; j < placeNames[i].address_components.length; j++) {
-    //     if (placeNames[i].address_components[j].types.includes("locality")) {
-    //       shortName = placeNames[i].address_components[j].short_name
-    //       longName = placeNames[i].address_components[j].long_name
-    //       break
-    //     }
-    //   }
-    // }
-    for(let i = 0; i < placeNames[0].address_components.length; i++) {
-        if (placeNames[0].address_components[i].types.includes("locality")) {
-          shortName = placeNames[0].address_components[i].short_name
-          longName = placeNames[0].address_components[i].long_name
+        for(let i = 0; i < placeNames.length; i++) {
+      for(let j = 0; j < placeNames[i].address_components.length; j++) {
+        if (placeNames[i].address_components[j].types.includes("locality")) {
+          shortName = placeNames[i].address_components[j].short_name
+          longName = placeNames[i].address_components[j].long_name
           break
+        }
       }
     }
+    
+    // code below return location name only in english for other countries
+    // for(let i = 0; i < placeNames[0].address_components.length; i++) {
+    //     if (placeNames[0].address_components[i].types.includes('locality') || 
+    //     placeNames[0].address_components[i].types.includes('postal_town')
+    //     ) {
+    //       shortName = placeNames[0].address_components[i].short_name
+    //       longName = placeNames[0].address_components[i].long_name
+    //       break
+    //   }
+    // }
+
     if (shortName) {
       localStorage.setItem('locationName', shortName)
       this.setState({
@@ -101,17 +106,14 @@ class Weather extends Component {
 
   getWeather = (lat, long, lang, units) => {
     // returns all places names for given location 
-    axios.post(`${MAP_URL}?latlng=${lat},${long}&key=${MAP_API}&language=${lang}`)
+    axios.post(`${MAP_URL}?latlng=${lat},${long}&key=${MAP_API}&language=${lang}&region=${lang}`)
       .then(res => res.data)
       .then(data => {
         this.searchLocationName(data)
       })
       .catch(error => this.setState({error: error.message}))
 
-    axios.get(`https://cors-anywhere.herokuapp.com/${DARK_URL}${DARK_API}/${lat},${long}?lang=${lang}&units=${units}`, {
-      method: 'HEAD',
-      mode: 'no-cors',
-    })
+    axios.get(`https://cors-anywhere.herokuapp.com/${DARK_URL}${DARK_API}/${lat},${long}?lang=${lang}&units=${units}`)
       .then(res => {
         this.setState({
         forecast: res.data,
@@ -146,7 +148,7 @@ class Weather extends Component {
     let component 
     if (this.state.error) {
       component = <ScreenMessage>{this.state.error}</ScreenMessage>
-    } else if (!this.state.locationShortName && !this.state.location) {
+    } else if (!this.state.forecast) {
       component =  <ScreenMessage>{this.props.text.welcome}</ScreenMessage>
     } else if (this.state.geoForbidden && !this.state.location) {
       component =  <ScreenMessage>Not working</ScreenMessage>

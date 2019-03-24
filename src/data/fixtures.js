@@ -20,4 +20,5 @@ export const appTestData = {
     month: '1.1',
     hour: '11:11',
   },
+  coordinates: { lat: 52.2296756, long: 21.0122287 },
 }

@@ -106,7 +106,11 @@ MainInfo.propTypes = {
     PropTypes.string,
     PropTypes.arrayOf(PropTypes.string),
   ])).isRequired,
-  today: PropTypes.object.isRequired,
+  today: PropTypes.shape({
+    month: PropTypes.string,
+    day: PropTypes.string, 
+    hour: PropTypes.string,
+  }).isRequired,
   timezone: PropTypes.string.isRequired, 
   sunPositionTime: PropTypes.objectOf(PropTypes.number).isRequired, 
   units: PropTypes.string.isRequired,
