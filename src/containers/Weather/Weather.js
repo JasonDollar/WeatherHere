@@ -58,7 +58,8 @@ class Weather extends Component {
       this.onNameLocationSearch(locationShortName)
     } else {
       this.setState({
-        locationShortName: ''
+        locationShortName: '',
+        isLoading: false
       })
     }
   }
@@ -148,7 +149,7 @@ class Weather extends Component {
     let component 
     if (this.state.error) {
       component = <ScreenMessage>{this.state.error}</ScreenMessage>
-    } else if (!this.state.forecast) {
+    } else if (!this.state.forecast && !this.state.locationShortName && !this.state.isLoading) {
       component =  <ScreenMessage>{this.props.text.welcome}</ScreenMessage>
     } else if (this.state.geoForbidden && !this.state.location) {
       component =  <ScreenMessage>Not working</ScreenMessage>
