@@ -44,21 +44,21 @@ describe('Main Info component tests', () => {
 
   test('Proper city name rendered', () => {
     const element = wrapper.find('.city')
-    expect(element.text()).toBe(locationShortName)
+    expect(element.render().text()).toBe(locationShortName)
   })
 
   test('Proper temperature rendered', () => {
     const temperature = formatNumber(currently.temperature)
     const temperatureUnits = data.units.si.temperature
     const element = wrapper.find('.temperature')
-    expect(element.text()).toBe(`${temperature}${temperatureUnits}`)
+    expect(element.render().text()).toBe(`${temperature}${temperatureUnits}`)
   })
   test('Proper today date rendered', () => {
     const screenReaderText = currentText.date
     const dayName = dateText.weekDay[today.day]
     const todayDate = today.month
     const element = wrapper.find('.date')
-    expect(element.text()).toBe(`${screenReaderText} ${dayName} ${todayDate}`)
+    expect(element.render().text()).toBe(`${screenReaderText} ${dayName} ${todayDate}`)
   })
   test('rendered sunrise section with proper information', () => {
     const sunrise = getTimeFromSeconds(sunPositionTime.sunrise, timezone).hour
@@ -69,7 +69,7 @@ describe('Main Info component tests', () => {
     const sunriseIcon = wrapper.find('.sun Icon').at(0)
 
     expect(screenReaderElement.text()).toBe(sunriseText)
-    expect(sunriseElement.text()).toBe(sunrise)
+    expect(sunriseElement.render().text()).toBe(sunrise)
     expect(sunriseIcon.props().icon).toBe('sunrise')
   })
   test('proper sunset time rendered', () => {
@@ -81,7 +81,7 @@ describe('Main Info component tests', () => {
     const sunsetIcon = wrapper.find('.sun Icon').at(1)
 
     expect(screenReaderElement.text()).toBe(sunsetText)
-    expect(sunsetElement.text()).toBe(sunset)
+    expect(sunsetElement.render().text()).toBe(sunset)
     expect(sunsetIcon.props().icon).toBe('sunset')
   })
 

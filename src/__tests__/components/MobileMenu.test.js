@@ -25,7 +25,8 @@ describe('MobileMeny test', () => {
     const element = wrapper.find('button').at(0)
     element.simulate('click')
     expect(testProps.showSearchHandler).toHaveBeenCalledTimes(1)
-    // expect(element.hasClass('active')).toEqual(true)
+    // using css-modules 
+    // expect(element.render().hasClass('search')).toEqual(true)
   })
 
   test('should handle forecast button click', () => {

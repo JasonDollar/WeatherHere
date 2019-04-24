@@ -19,9 +19,5 @@ describe('Weather container', () => {
     wrapper = <Weather {...testProps} />
     expect(wrapper).toMatchSnapshot()
   })
-  
-  test('renders component', () => {
-    wrapper = <Weather {...testProps} />
-    expect(wrapper).toMatchSnapshot()
-  })
+
 })

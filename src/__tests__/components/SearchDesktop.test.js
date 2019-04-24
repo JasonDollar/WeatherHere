@@ -23,7 +23,7 @@ describe('SearchDesktop component tests', () => {
   })
 
   test('simulate input change', () => {
-    const payload = { target: 'City name' }
+    const payload = { target: { value: 'City name' } }
     const element = wrapper.find('input')
     element.simulate('change', payload)
     expect(testProps.onInputChange).toHaveBeenCalledTimes(1)

@@ -37,11 +37,11 @@ describe('DataCircle test', () => {
 
     test('rendered proper data', () => {
       const element = wrapper.find('.dataContainer span').at(0)
-      expect(element.text()).toBe(`${dataHumidity}${unitPercent}`)
+      expect(element.render().text()).toBe(`${dataHumidity}${unitPercent}`)
     })
     test('rendered proper data type', () => {
       const element = wrapper.find('.dataContainer span').at(1)
-      expect(element.text()).toBe(typeHumidity)
+      expect(element.render().text()).toBe(typeHumidity)
     })
   })
   describe('DataCircle comp. with wind data', () => {
@@ -63,11 +63,11 @@ describe('DataCircle test', () => {
 
     test('rendered proper data', () => {
       const element = wrapper.find('.dataContainer span').at(0)
-      expect(element.text()).toBe(`${dataWind}${unitWind}`)
+      expect(element.render().text()).toBe(`${dataWind}${unitWind}`)
     })
     test('rendered proper data type', () => {
       const element = wrapper.find('.dataContainer span').at(1)
-      expect(element.text()).toBe(typeWind)
+      expect(element.render().text()).toBe(typeWind)
     })
     test('additionaldata should be used to apply rotate to arrow element', () => {
       const element = wrapper.find('.bigArrow')

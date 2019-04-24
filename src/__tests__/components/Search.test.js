@@ -25,7 +25,7 @@ describe('Search component tests', () => {
   })
 
   test('simulate input change', () => {
-    const payload = { target: 'City name' }
+    const payload = { target: { value: 'City name' } }
     const element = wrapper.find('input')
     element.simulate('change', payload)
     expect(testProps.onInputChange).toHaveBeenCalledTimes(1)
@@ -39,7 +39,6 @@ describe('Search component tests', () => {
   })
 
   test('simulate form submition', () => {
-    // const payload = { target: 'City name' }
     const element = wrapper.find('form')
     element.simulate('submit', { preventDefault: () => { } })
     expect(testProps.onSearchFormSubmit).toHaveBeenCalledTimes(1)

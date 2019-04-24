@@ -206,7 +206,7 @@ Weather.propTypes = {
       PropTypes.arrayOf(PropTypes.string),
     ])),
     hourly: PropTypes.string,
-    id: PropTypes.string,
+    id: PropTypes.any,
     layout: PropTypes.string,
     name: PropTypes.string,
     settings: PropTypes.objectOf(PropTypes.oneOfType([
