@@ -1,5 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
+import toJSON from 'enzyme-to-json'
 import { appTestData as data } from '../../data/fixtures'
 import SearchDesktop from '../../components/SearchDesktop/SearchDesktop'
 
@@ -19,7 +20,7 @@ beforeAll(() => {
 
 describe('SearchDesktop component tests', () => {
   test('Matches snapshot', () => {
-    expect(wrapper).toMatchSnapshot()
+    expect(toJSON(wrapper)).toMatchSnapshot()
   })
 
   test('simulate input change', () => {

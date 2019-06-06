@@ -1,5 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
+import toJSON from 'enzyme-to-json'
 import { appTestData as data } from '../../data/fixtures'
 import Hourly from '../../components/Hourly/Hourly'
 
@@ -26,7 +27,7 @@ beforeAll(() => {
 
 describe('Hourly component test', () => {
   test('Matches snapshot', () => {
-    expect(wrapper).toMatchSnapshot()
+    expect(toJSON(wrapper)).toMatchSnapshot()
   })
   test('proper props given to Summary component', () => {
     const element = wrapper.find('Summary')

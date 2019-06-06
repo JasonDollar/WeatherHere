@@ -1,5 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
+import toJSON from 'enzyme-to-json'
 import { appTestData as data } from '../../data/fixtures'
 import CircleContainer from '../../components/CircleContainer/CircleContainer' 
 
@@ -19,5 +20,5 @@ beforeAll(() => {
 })
 
 test('CircleContainer matches Snapshot', () => {
-  expect(wrapper).toMatchSnapshot()
+  expect(toJSON(wrapper)).toMatchSnapshot()
 })

@@ -1,5 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
+import toJSON from 'enzyme-to-json'
 import { appTestData as data } from '../../data/fixtures'
 import MobileMenu from '../../components/MobileMenu/MobileMenu'
 
@@ -16,9 +17,9 @@ beforeEach(() => {
   wrapper = shallow(<MobileMenu {...testProps} />)
 })
 
-describe('MobileMeny test', () => {
+describe('MobileMenu test', () => {
   test('Matches snapshot', () => {
-    expect(wrapper).toMatchSnapshot()
+    expect(toJSON(wrapper)).toMatchSnapshot()
   })
 
   test('should handle search button click', () => {

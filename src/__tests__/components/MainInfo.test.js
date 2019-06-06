@@ -1,5 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
+import toJSON from 'enzyme-to-json'
 import { appTestData as data } from '../../data/fixtures'
 import MainInfo from '../../components/Current/MainInfo/MainInfo'
 import { formatNumber, getTimeFromSeconds } from '../../data/utils'
@@ -39,7 +40,7 @@ describe('Main Info component tests', () => {
 
 
   test('Matches snapshot', () => {
-    expect(wrapper).toMatchSnapshot()
+    expect(toJSON(wrapper)).toMatchSnapshot()
   })
 
   test('Proper city name rendered', () => {

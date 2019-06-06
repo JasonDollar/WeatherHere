@@ -1,5 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
+import toJSON from 'enzyme-to-json'
 import { appTestData as data } from '../../data/fixtures'
 import DataCircle from '../../components/CircleContainer/DataCircle/DataCircle' 
 import { formatNumber } from '../../data/utils'
@@ -32,7 +33,7 @@ describe('DataCircle test', () => {
     })
     
     test('Data Circle humidity snapshot', () => {
-      expect(wrapper).toMatchSnapshot()
+      expect(toJSON(wrapper)).toMatchSnapshot()
     })
 
     test('rendered proper data', () => {

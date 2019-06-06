@@ -1,5 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
+import toJSON from 'enzyme-to-json'
 import { appTestData as data } from '../../data/fixtures'
 import Settings from '../../components/Settings/Settings'
 
@@ -39,7 +40,7 @@ beforeEach(() => {
 // added Footer 
 describe('Settings component', () => {
   test('should render correctly', () => {
-    expect(wrapper).toMatchSnapshot()
+    expect(toJSON(wrapper)).toMatchSnapshot()
   })
 
   test('test language element render text for each language name', () => {

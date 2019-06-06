@@ -1,5 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
+import toJSON from 'enzyme-to-json'
 import { appTestData as data } from '../../data/fixtures'
 import Search from '../../components/Search/Search'
 
@@ -21,7 +22,7 @@ beforeAll(() => {
 
 describe('Search component tests', () => {
   test('Matches snapshot', () => {
-    expect(wrapper).toMatchSnapshot()
+    expect(toJSON(wrapper)).toMatchSnapshot()
   })
 
   test('simulate input change', () => {

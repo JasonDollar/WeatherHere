@@ -1,5 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
+import toJSON from 'enzyme-to-json'
 import { appTestData as data } from '../../data/fixtures'
 import ListInfo from '../../components/Current/ListInfo/ListInfo'
 
@@ -26,6 +27,6 @@ beforeAll(() => {
 
 describe('ListInfo component test', () => {
   test('Matches snapshot', () => {
-    expect(wrapper).toMatchSnapshot()
+    expect(toJSON(wrapper)).toMatchSnapshot()
   })
 })

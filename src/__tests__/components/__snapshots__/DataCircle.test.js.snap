@@ -1,285 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`DataCircle test DataCircle comp. with humidity data (works for most types) Data Circle humidity snapshot 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <DataCircle
-    additionalData={null}
-    data={94}
-    text={
+<div
+  className="DataCircle humidity"
+>
+  <div
+    className="dataColor"
+    style={
       Object {
-        "appTemp": "Temperatura odczuwalna",
-        "cloudCov": "Zachmurzenie",
-        "date": "Data",
-        "dewPoint": "Punkt rosy",
-        "humidity": "Wilgotność",
-        "icon": "Ikona pogody",
-        "location": "Nieznana lokacja",
-        "moon": Array [
-          "Nów",
-          "Wschodzący sierp",
-          "Pierwsza kwadra",
-          "Wschodzący księżyc",
-          "Pełnia",
-          "Ubywający księżyc",
-          "Trzecia kwadra",
-          "Ubywający sierp",
-        ],
-        "moonphase": "Faza księżyca",
-        "ozone": "Ozon",
-        "precipInt": "Intensywność opadu",
-        "precipProb": "Opady",
-        "precipType": "Rodzaj opadu",
-        "pressure": "Ciśnienie",
-        "sun": "Słońce",
-        "sunrise": "Wschód słońca",
-        "sunset": "Zachód słońca",
-        "today": "Dziś",
-        "uvIndex": "Indeks UV",
-        "visibility": "Widoczność",
-        "wind": "Wiatr",
-        "windGust": "Wiatr w porywach",
+        "background": "conic-gradient( 0%,  50%, 94%,  94%,  94% 100%)",
       }
     }
-    type="Wilgotność"
-    unit="%"
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateError": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "host",
-    "props": Object {
-      "children": Array [
-        <div
-          className="dataColor"
-          style={
-            Object {
-              "background": "conic-gradient( 0%,  50%, 94%,  94%,  94% 100%)",
-            }
-          }
-        />,
-        <div
-          className="dataFront"
-        />,
-        <div
-          className="dataContainer"
-        >
-          <span>
-            94%
-          </span>
-          <span>
-            Wilgotność
-          </span>
-        </div>,
-      ],
-      "className": "DataCircle humidity",
-    },
-    "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "className": "dataColor",
-          "style": Object {
-            "background": "conic-gradient( 0%,  50%, 94%,  94%,  94% 100%)",
-          },
-        },
-        "ref": null,
-        "rendered": null,
-        "type": "div",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "className": "dataFront",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": "div",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            null,
-            <span>
-              94%
-            </span>,
-            <span>
-              Wilgotność
-            </span>,
-          ],
-          "className": "dataContainer",
-        },
-        "ref": null,
-        "rendered": Array [
-          null,
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "94%",
-            },
-            "ref": null,
-            "rendered": "94%",
-            "type": "span",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "Wilgotność",
-            },
-            "ref": null,
-            "rendered": "Wilgotność",
-            "type": "span",
-          },
-        ],
-        "type": "div",
-      },
-    ],
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": Array [
-          <div
-            className="dataColor"
-            style={
-              Object {
-                "background": "conic-gradient( 0%,  50%, 94%,  94%,  94% 100%)",
-              }
-            }
-          />,
-          <div
-            className="dataFront"
-          />,
-          <div
-            className="dataContainer"
-          >
-            <span>
-              94%
-            </span>
-            <span>
-              Wilgotność
-            </span>
-          </div>,
-        ],
-        "className": "DataCircle humidity",
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "className": "dataColor",
-            "style": Object {
-              "background": "conic-gradient( 0%,  50%, 94%,  94%,  94% 100%)",
-            },
-          },
-          "ref": null,
-          "rendered": null,
-          "type": "div",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "className": "dataFront",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": "div",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              null,
-              <span>
-                94%
-              </span>,
-              <span>
-                Wilgotność
-              </span>,
-            ],
-            "className": "dataContainer",
-          },
-          "ref": null,
-          "rendered": Array [
-            null,
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "94%",
-              },
-              "ref": null,
-              "rendered": "94%",
-              "type": "span",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Wilgotność",
-              },
-              "ref": null,
-              "rendered": "Wilgotność",
-              "type": "span",
-            },
-          ],
-          "type": "div",
-        },
-      ],
-      "type": "div",
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getDerivedStateFromProps": true,
-          "getSnapshotBeforeUpdate": true,
-          "setState": Object {
-            "skipsComponentDidUpdateOnNullish": true,
-          },
-        },
-      },
-    },
-  },
-}
+  />
+  <div
+    className="dataFront"
+  />
+  <div
+    className="dataContainer"
+  >
+    <span>
+      94%
+    </span>
+    <span>
+      Wilgotność
+    </span>
+  </div>
+</div>
 `;
 
 exports[`DataCircle test DataCircle comp. with wind data Data Circle wind snapshot 1`] = `

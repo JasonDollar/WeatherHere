@@ -1,5 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
+import toJSON from 'enzyme-to-json'
 import { appTestData as data } from '../../data/fixtures'
 import Weather from '../../containers/Weather/Weather'
 
@@ -17,7 +18,7 @@ let wrapper
 describe('Weather container', () => {
   test('renders component', () => {
     wrapper = <Weather {...testProps} />
-    expect(wrapper).toMatchSnapshot()
+    expect(toJSON(wrapper)).toMatchSnapshot()
   })
 
 })
