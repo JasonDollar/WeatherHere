@@ -241,7 +241,6 @@ exports[`Daily component test Matches snapshot 1`] = `
           cursorStyle={Object {}}
           filterNull={true}
           isAnimationActive={true}
-          itemSorter={[Function]}
           itemStyle={Object {}}
           labelStyle={Object {}}
           offset={10}
