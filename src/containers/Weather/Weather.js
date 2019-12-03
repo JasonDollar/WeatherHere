@@ -73,9 +73,9 @@ class Weather extends Component {
 
     const placeNames = data.results
     
-    console.log(placeNames[0])
+    // console.log(placeNames[0])
 
-        for(let i = 0; i < placeNames.length; i++) {
+    for(let i = 0; i < placeNames.length; i++) {
       for(let j = 0; j < placeNames[i].address_components.length; j++) {
         if (placeNames[i].address_components[j].types.includes("locality")) {
           shortName = placeNames[i].address_components[j].short_name
